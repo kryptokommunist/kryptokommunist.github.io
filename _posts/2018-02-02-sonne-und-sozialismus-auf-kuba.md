@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sonne und Sozialismus auf Kuba
+category: travel
 tags:
 - travel
 - kuba

@@ -26,7 +26,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-font-awesome-sass
@@ -35,7 +35,12 @@ lunr_search:
   excludes: [rss.xml, atom.xml]
 font-awesome:
   assets: true
-paginate: 6
+pagination:
+  sort_reverse: true
+  enabled: true
+  per_page: 6
+autopages:
+  enabled: false
 excerpt_separator: "<!--more-->"
 sass:
   load_paths: _sass
