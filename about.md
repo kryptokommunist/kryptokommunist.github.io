@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+include: true
 ---
 
 ![Cooles Symbolbild](https://farm5.staticflickr.com/4521/38368540892_7d496429ad_k.jpg "Cooles Symbolbild")
