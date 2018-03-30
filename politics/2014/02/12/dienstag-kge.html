@@ -65,6 +65,13 @@
           
             
             
+              
+                <a class="page-link" href="/categories/">Categories</a>
+              
+            
+          
+            
+            
           
             
             
@@ -80,8 +87,6 @@
           
             
             
-              
-                <a class="page-link" href="/tags/">Tags</a>
               
             
           
