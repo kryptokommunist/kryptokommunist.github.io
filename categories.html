@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Tags
-permalink: /tags/
+title: Categories
+permalink: /categories/
+include: true
 ---
 
 {% comment %}
@@ -11,7 +12,7 @@ The following part extracts all the tags from your posts and sort tags, so that 
 {% endcomment %}
 {% assign rawtags = "" %}
 {% for post in site.posts %}
-	{% assign ttags = post.tags | join:'|' | append:'|' %}
+	{% assign ttags = post.categories | join:'|' | append:'|' %}
 	{% assign rawtags = rawtags | append:ttags %}
 {% endfor %}
 {% assign rawtags = rawtags | split:'|' | sort %}
@@ -38,12 +39,12 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
-<h1 class="post-title">Tags</h1>
+<h1 class="post-title">Categories</h1>
 {% for tag in tags %}
 	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
 	<ul>
 	 {% for post in site.posts %}
-		 {% if post.tags contains tag %}
+		 {% if post.categories contains tag %}
 		 <li>
 		 <h3>
 		 <a href="{{ post.url }}">
