@@ -183,6 +183,16 @@
   
   window.store = {
     
+      "travel-2018-08-07-digital-rgb-led-guide-html": {
+        "date": "Aug 7, 2018",
+        "title": "Digital RGB LED guide",
+        "author": "",
+        "category": "travel",
+        "content": "I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.WS2801This is the first generation of control ICs by World Semiconductor which requires a separate clock input additional to data (SPI).WS2811This is the generation after the WS2801. This IC only requires data input and works with a fixed clock speed of either 400kHz or 800kHz, which might require you to save all stripe color values in a buffer in order to match the required speed.WS2812This is the name for an SMD LED package with an integrated WS2811 IC.WS2812BThis is the improved version of the WS2812. It has a brighter LED with a more uniform color distribution. Also it features an reverse protection circuit, which will prevent breaking the stripe when attaching the power source in the wrong order.WS2813This is the latest version. It works just like WS2812B, but also tolerates failing pixels: see video.sourceSK6812The SK6812 is a clone of the WS2812, that is completely compatible. It’s PWM frequency is twice that of the WS2812B which should result in less flickering.sourceAPA102These LEDs are designed by APA Electronic co. LTD. They don’t show any visible PWM flicker when moving the LED due to a very hight modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.sourceSK9822These are a clone of the APA102. Unfortunately it has a slightly different behaviour regarding it’s protocol since every frame will be displayed on receiving the next start frame. That results in updating all LEDs at once unlike with the APA102 or WS28XX.sourceConclusionTO DO: write a conclusion and order LED stripe                   SK9822      SK6812      APA102      WS2812B      WS2812      WS2811      WS2801                  Update      Simultaneous      Staggered      Staggered      Staggered      Staggered      Staggered      Staggered              Update trigger      Reset frame (0x00000000)      RGB data transmission      RGB data transmission      RGB data transmission      RGB data transmission      RGB data transmission      RGB data transmission              PWM Frequency      ~4.7 kHz      ~1.1kHz      ~19.2 kHz      430 Hz      430 Hz      430 Hz      2.5 kHz              Global brightness control      programmable current source      PWM at ~440 Hz      -      -      -      -      -              Best Price $/m                                                       Voltage dropIn order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.",
+        "url": "/travel/2018/08/07/digital-rgb-led-guide.html"
+      }
+      ,
+    
       "tech-2018-03-19-latex-in-gitlab-ci-html": {
         "date": "Mar 19, 2018",
         "title": "Automating LaTeX compilation in Gitlab-CI",

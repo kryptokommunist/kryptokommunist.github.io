@@ -1,4 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-22T18:21:59+00:00</updated><id>/</id><title type="html">Ein Kaffeehauskommunist erzählt</title><subtitle>Ich bin voll kreativ und cool, Berlin blabla hip, Neukölln, Jutebeutel yada yada... Ok ok, die Seite dient bloß dem shameless self-plugging!</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Automating LaTeX compilation in Gitlab-CI</title><link href="/tech/2018/03/19/latex-in-gitlab-ci.html" rel="alternate" type="text/html" title="Automating LaTeX compilation in Gitlab-CI" /><published>2018-03-19T00:00:00+00:00</published><updated>2018-03-19T00:00:00+00:00</updated><id>/tech/2018/03/19/latex-in-gitlab-ci</id><content type="html" xml:base="/tech/2018/03/19/latex-in-gitlab-ci.html">&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-08T03:05:42+00:00</updated><id>/</id><title type="html">Ein Kaffeehauskommunist erzählt</title><subtitle>Ich bin voll kreativ und cool, Berlin blabla hip, Neukölln, Jutebeutel yada yada... Ok ok, die Seite dient bloß dem shameless self-plugging!</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Digital RGB LED guide</title><link href="/travel/2018/08/07/digital-rgb-led-guide.html" rel="alternate" type="text/html" title="Digital RGB LED guide" /><published>2018-08-07T00:00:00+00:00</published><updated>2018-08-07T00:00:00+00:00</updated><id>/travel/2018/08/07/digital-rgb-led-guide</id><content type="html" xml:base="/travel/2018/08/07/digital-rgb-led-guide.html">&lt;p&gt;I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;h2 id=&quot;ws2801&quot;&gt;WS2801&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ws2801.png&quot; alt=&quot;&quot; style=&quot;width: 220px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the first generation of control ICs by &lt;a href=&quot;http://www.world-semi.com&quot;&gt;World Semiconductor&lt;/a&gt; which requires a separate clock input additional to data (SPI).&lt;/p&gt;
+
+&lt;h2 id=&quot;ws2811&quot;&gt;WS2811&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ws2811.png&quot; alt=&quot;&quot; style=&quot;width: 220px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the generation after the WS2801. This IC only requires data input and works with a fixed clock speed of either 400kHz or 800kHz, which might require you to save all stripe color values in a buffer in order to match the required speed.&lt;/p&gt;
+
+&lt;h2 id=&quot;ws2812&quot;&gt;WS2812&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ws2812.png&quot; alt=&quot;&quot; style=&quot;width: 220px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the name for an SMD LED package with an integrated WS2811 IC.&lt;/p&gt;
+
+&lt;h2 id=&quot;ws2812b&quot;&gt;WS2812B&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ws2812b.png&quot; alt=&quot;&quot; style=&quot;width: 220px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the improved version of the WS2812. It has a brighter LED with a more uniform color distribution. Also it features an reverse protection circuit, which will prevent breaking the stripe when attaching the power source in the wrong order.&lt;/p&gt;
+
+&lt;h2 id=&quot;ws2813&quot;&gt;WS2813&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ws2813.png&quot; alt=&quot;&quot; style=&quot;width: 220px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the latest version. It works just like WS2812B, but also tolerates failing pixels: &lt;a href=&quot;https://www.youtube.com/watch?v=a6s2MlZHnC8&quot;&gt;see video&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://playground.boxtec.ch/doku.php/led/ledpixel_guide&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sk6812&quot;&gt;SK6812&lt;/h2&gt;
+
+&lt;p&gt;The SK6812 is a clone of the WS2812, that is completely compatible. It’s PWM frequency is twice that of the WS2812B which should result in less flickering.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cpldcpu.wordpress.com/2016/03/09/the-sk6812-another-intelligent-rgb-led/&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;apa102&quot;&gt;APA102&lt;/h2&gt;
+
+&lt;p&gt;These LEDs are designed by &lt;a href=&quot;http://neon-world.com/en/&quot;&gt;APA Electronic co. LTD&lt;/a&gt;. They don’t show any visible PWM flicker when moving the LED due to a very hight modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cpldcpu.wordpress.com/2014/08/27/apa102/&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sk9822&quot;&gt;SK9822&lt;/h2&gt;
+
+&lt;p&gt;These are a clone of the APA102. Unfortunately it has a slightly different behaviour regarding it’s protocol since every frame will be displayed on receiving the next start frame. That results in updating all LEDs at once unlike with the APA102 or WS28XX.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cpldcpu.wordpress.com/2016/12/13/sk9822-a-clone-of-the-apa102/&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;TO DO: write a conclusion and order LED stripe&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;SK9822&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;SK6812&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;APA102&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WS2812B&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WS2812&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WS2811&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WS2801&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Update&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Simultaneous&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Update trigger&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Reset frame (0x00000000)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;PWM Frequency&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;~4.7 kHz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;~1.1kHz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;~19.2 kHz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2.5 kHz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Global brightness control&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;programmable current source&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;PWM at ~440 Hz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Best Price $/m&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;voltage-drop&quot;&gt;Voltage drop&lt;/h2&gt;
+
+&lt;p&gt;In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.&lt;/p&gt;</content><author><name>Marcus Ding</name></author><category term="travel" /><category term="led" /><category term="lighting" /><summary type="html">I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.</summary></entry><entry><title type="html">Automating LaTeX compilation in Gitlab-CI</title><link href="/tech/2018/03/19/latex-in-gitlab-ci.html" rel="alternate" type="text/html" title="Automating LaTeX compilation in Gitlab-CI" /><published>2018-03-19T00:00:00+00:00</published><updated>2018-03-19T00:00:00+00:00</updated><id>/tech/2018/03/19/latex-in-gitlab-ci</id><content type="html" xml:base="/tech/2018/03/19/latex-in-gitlab-ci.html">&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 
 &lt;p&gt;You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?&lt;/p&gt;
 
@@ -349,50 +474,4 @@ the stars write.&lt;br/&gt;
 Unknowing I understand:&lt;br/&gt;
 I too am written,&lt;br/&gt;
 and at this very moment&lt;br/&gt;
-someone spells me out.&lt;/blockquote&gt;&amp;#8212;Octavio Paz</content><author><name>Marcus Ding</name></author><category term="poetry" /><summary type="html">I am a man: little do I last and the night is enormous. But I look up: the stars write. Unknowing I understand: I too am written, and at this very moment someone spells me out.&amp;#8212;Octavio Paz</summary></entry><entry><title type="html">Massentourismus in China</title><link href="/travel/2014/11/04/massentourismus-in-china.html" rel="alternate" type="text/html" title="Massentourismus in China" /><published>2014-11-04T22:16:00+00:00</published><updated>2014-11-04T22:16:00+00:00</updated><id>/travel/2014/11/04/massentourismus-in-china</id><content type="html" xml:base="/travel/2014/11/04/massentourismus-in-china.html">&lt;p&gt;Wie immer (etwas angemessener: seit dem letzten Blogeintrag) vorher die Liste mit den Dingen die man (bloß nicht in einer Reisegruppe, außer man betreibt Meta-Massentourismus und will sehen, wie schlechter Tourismus in China aussieht) machen sollte:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;&lt;span&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Lion_Grove_Garden&quot; target=&quot;_blank&quot;&gt;Löwenhaingarten&lt;/a&gt; (&lt;em&gt;&lt;span&gt;Shī Zǐ Lín Yuán, meine Übersetzung ist da etwas holprig) &lt;/span&gt;&lt;/em&gt;besichtigen&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Das &lt;a href=&quot;http://wikitravel.org/en/Zhouzhuang&quot; target=&quot;_blank&quot;&gt;Ehemalige Fischerdorf Zhouzhuang&lt;/a&gt; besuchen&lt;/li&gt;
-&lt;li&gt;Den lokalen &lt;a href=&quot;http://en.wikipedia.org/wiki/Hanshan_Temple&quot; target=&quot;_blank&quot;&gt;Tempel&lt;/a&gt; in Suzhou besichtigen&lt;/li&gt;
-&lt;/ul&gt;&lt;!--more--&gt;
-&lt;p&gt;Da meine Mutter auf die verwegene Idee kam, eine Pauschalreise bei einem lokalen Reisebüro zu buchen, kam ich in den Genuss eines Einblicks in die chinesische Version von Inlandstourismus. Mit erschreckenden Entdeckungen. Los ging es mit einem Kleintransporter in die nächst größere Stadt. Abgesehen von der Zurschaustellung eines bizarren Musikgeschmacks seitens des Fahrers (Scooter meets China…) gab es soweit noch keine Auffälligkeiten. Am Haltepunkt angekommen, mussten wir in einen Bus wechseln, welcher uns zur wiederum nächst größeren Stadt bringen würde. Schon beim Einsteigen kam einem ein Stoß lauwarmer und bestialisch stinkender Luft entgegen. Es roch, wie in einem Luchskäfig, einem lange nicht mehr gereinigtem Luchskäfig. Aber man gewöhnt sich an alles. Nach einer Stunde waren wir dann endlich in Wuxi und durften wieder den Bus wechseln (Anm. d. Red.: Wer Rekursion verstehen will, muss erst einmal Rekursion verstanden haben). Diesmal stieg eine zierliche Reiseleiterin mit einer so gar nicht zur Zierlichkeit passenden schmerzend-schrillen Stimme zu und redete ohne Unterlass durch die zu lauten Bordlautsprecher auf die Fahrgäste ein. Eine geschlagene Stunde lang. Doch die Chinesen schien das wenig zu stören, für sie schien es das normalste der Welt zu sein. Abgesehen davon, dass die Reiseleiterin fleischgewordene Inkompetenz zu sein schien, tat sie sich ebenfalls dadurch hervor, dass sie mehrere Fahrgäste aus Shanghai, welche sich über die schlechte Organisation beschwert hatten, durch die Lautsprecher herabsetzte. “Schaut her, diese tollen Shanghaier aus der Großstadt sollten doch Vorbilder für alle sein und sich nicht so benehmen. Großstädter sind doch zivilisierte Menschen.” Doch diese Brüskierung war das sprichwörtliche Öl ins Feuer gießen und resultierte nun in eine ernsthafte Auseinandersetzung mit der Reiseleiterin.&lt;/p&gt;
-&lt;p&gt;Wie dem auch sei, in Suzhou, der Geburtsstadt des auch im Westen für sein Werk bekannten &lt;a href=&quot;http://de.wikipedia.org/wiki/Die_Kunst_des_Krieges_(Sunzi)&quot; target=&quot;_blank&quot;&gt;Sun Zi&lt;/a&gt; angekommen,  fuhren wir als erstes zu der Attraktion überhaupt: Dem Löwengarten (chin.: &lt;em&gt;Shī Zǐ Lín Yuán)&lt;/em&gt; . Dass dieser Garten Teil des UNESCO-Welterbe ist, spricht Bände. Er ist einer der rund 60 Gärten Suzous. Der Garten wurde vor vielen hundert Jahren von Mönchen angelegt und sogar der Kaiser ließ sich eine Replik anlegen, weil er von der Schönheit des Gartens überwältigt war. Der Garten selbst ist ein Kleinod der Landschaftsbaukunst. Er ist voll und ganz künstlich angelegt und enthält Felsformationen, Teiche, Brücken und Pflanzen, wie sie nur einem klassischen chinesischen Gedichtband entsprungen sein können. Man kann sich in den künstlichen Grotten und Trampelpfaden verlaufen oder den Garten von der ihm säumenden, gediegenen Veranda aus betrachten. Durch die Fenster sind Wasser, Felsen und Pflanzen oftmals wie für ein Gemälde arrangiert. Komposition, Farbe und Symbolik nach könnte es genau so gut eine alte Landschaftszeichnung handeln und das imposante ist, dass eben dieser Eindruck, Stein für Stein, gezielt konstruiert wurde. Ein wundervoller Ort, dem ein ganz eigener Zauber innewohnt, so könnte man es theatralisch zusammenfassen. Wer in der Gegend ist, sollte es sich ansehen – in echt noch schöner als auf den Bildern:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/1f819eb2a917151773ffe1262235c51d/tumblr_inline_nejbzcNQyV1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/49fa9628e9bad1ad9a088ca1790fcdcf/tumblr_inline_nejc0daJq21s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/ffa864cc35c80f6eb27d45fc3703bd90/tumblr_inline_nejbynJu5o1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/20241457a2211ff94b2832daf4e715c2/tumblr_inline_nejc1vofeE1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;Danach wurde es erst richtig spannend, nein nicht die belanglose Bootsfahrt die als nächstes auf dem Programm stand; gemeint ist ein Einblick in die chinesische Tourismus-Mafia, so will ich es einmal bezeichnen. Während der Bootsfahrt fiel bereits auf, dass unsere - ich möchte noch einmal ihre völlige Unzulänglichkeit in jeder Hinsicht betonen - Reiseleiterin auf der Bootsfahrt plötzlich anfing davon zu sprechen, wie großartig Seidendecken seien und was für ein tolles Geschenk es doch für die Daheimgebliebenen sei. Eine knappe Stunde erging sie sich in der Preisung von Seidenware, was den Grund hatte, dass der nächste Programmpunkt die Besichtigung einer “Seidenfabrik” (Man beachte die Anführungszeichen) war. Natürlich handelte es sich nicht um eine Seidenfabrik, sondern um einen zweistöckigen Verkaufspunkt für Seidenbettdecken, -kleidung, Topflappen und noch mehr Tand und Tinnef. Es war eine Museumssimulation mit angeschlossenem Verkaufsbereich. Der Treppenwitz hierbei: Wir hatten eine 2-Tages-Tour gebucht und am nächsten Tag fuhren wir mit einer anderen Reiseleiterin gleich noch ein weiteres Mal zur altbekannten Touristenfalle. Auch hier bietet sich wieder der Vergleich mit dem Email-Spam im echten Leben an. Bei tausend Touristen reicht es, wenn es 10 Dumme oder sagen wir besser Arglose gibt. Nur, dass die neue Reiseleiterin ihre Gäste nicht wie Vollidioten behandelte und offen sagte, dass sie dafür eine hohe Provision erhalte. Auch sonst war diese Leiterin erstaunlich offen zu uns, doch dazu später mehr.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/78f2b477d2f627cc7d89c25b7be565e6/tumblr_inline_nejc34EAK01s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/3a8a04a91d4b13055b0c230aca7a7e5d/tumblr_inline_nejc34AopG1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/c84c262319946234087a90842c86b1e7/tumblr_inline_nejc3cz16I1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/120470f8da5652e12a472d04df04e6ab/tumblr_inline_nejc3jI6VI1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/2f9b9f2a0a774b817c51da44c0b04aef/tumblr_inline_nejc3oR24t1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/0e0fa8947cea79214a8654e30469cb32/tumblr_inline_nejc4tT60k1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;Nun zurück zu Tag 1, denn der fing grade erst an, insgesamt sollten noch 3! weitere Touristenfallen, maximal lustlos als drittklassiges Museum verkappt, folgen. Insgesamt also stolze 4 Stück an einem Tag. Dem Fass den Boden schlug dabei Station 3 aus: das “Perlen-Forschungsinstitut”, an welchem man mit der Reisegruppe in einen kleinen Raum geführt wurde, in welchem man von einer resoluten, klein gewachsenen Mittsechzigerin geistig bearbeitet wurde. Manch böse Zunge würde auch sagen: Gehirngewaschen. Scharlatanerie ist dabei noch die freundlichste Bezeichnung, welche mir dazu einfallen will. Sie zog wahrlich alle Register der Agitprop, von der Behauptung Perlenpulver bekämpfe Krebs bis hin zur präventiven Wirkung in Bezug auf Hämorrhoiden. In Deutschland strafbar, in China eine von vielen wahrheitswidrigen Behauptungen zur Verkaufsförderung. Nach der “Informationsvermittlung” wurde man in die endlos langen Kaufbereiche entlassen, wo doch tatsächlich einige aus der Reisegruppe das angepriesene Perlenpulver erwarben. Später, als wir meiner Tante von dieser Praxis (Pauschalreisende zu belügen und in Verkaufshallen und überteuerte Restaurants zu karren) erzählten, meinte diese, dass die Situation jetzt schon deutlich besser sei. Es gäbe Verbraucherschutzrechte, weshalb man nun auch frei sei, nichts zu kaufen. Früher habe man die Leute zum Kaufen gezwungen: Wer nichts kauft, landet am Straßenrand. Oder der Reiseführer holt gleich ein Messer aus der Taschen und schwingt dieses dräuend, als verkaufsfördernde Maßnahme. Wir seien wohl einer fake-Reiseagentur aufgesessen. Es gäbe auch richtige. Auch hier zeigt sich einmal mehr, dass man in fremden Städten besser “Locals” kennen und diese fragen sollte, bevor man einer wohlbekannten Idiotenfalle anheimfällt. Es gibt genug Leute, die auf Dummenfang gehen, man darf sich nur nicht allzu leicht zur Beute machen. Reisen ist in China für den Unerfahrenen durchaus ein Vanbanquespiel.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/5b5f30038a067f382fa59255e475ae90/tumblr_inline_nejcb1wMR11s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/1d95fa9b148cd9b0370f30318555507e/tumblr_inline_nejcb1raLj1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p class=&quot;caption&quot;&gt;&amp;ldquo;Perlenpulver beugt Krebs vor und verhindert Hämorrhoiden&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/e48eb73b7a3563872eebfe507a1b325e/tumblr_inline_nejcb7Xtv21s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/684b81ec1bae7d767463e9a713e45920/tumblr_inline_nejcbdDzaT1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/94b34e76f59b4a00e8a6d822bc6525ea/tumblr_inline_nejcbox4GR1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/2f173947ee8cd806f943c311cfd16c1c/tumblr_inline_nejcc2SJZT1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/360e875dd4662bf2011060557edc13ad/tumblr_inline_nejccczy2B1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;Die Reiseveranstalter müssen in der Tat einer mafiösen Struktur angehören. Das fragwürdigste Vorkommnis, war die Fahrt zu einem “Restaurant” im Nirgendwo, in welchem man essen musste, da anderes zu weit weg sei und der Bus auch schon in 40min losfahren würde. Dort zahlte man für sehr schlechtes Essen (Die meisten ließen 80% davon zurück) mindestens 100 Yuan, also ca. 12 Euro. Für chinesische Verhältnisse ein sehr teurer Preis. Zu viert kostet ein Besuch in einem sehr guten Restaurant in der Regel etwa 200 Yuan. Bei der niederen Essensqualität dürfte der Reingewinn eingedenk der chinesischen Personalkosten bei 80 Prozent liegen (reine Schätzung). Der große Strippenzieher im Hintergrund dürfte ein abgefeimter, gut vernetzter Mann sein, der nur wenig Skrupel hat. Die Bedienungen, mit ihren verlebten Gesichtern, sind jedenfalls auch ein Opfer des Systems. Es ist wirklich eine Unsäglichkeit. In unserer Reisegruppe waren etwa 40 Personen und es waren noch 2 weitere Busse zu sehen. Legt man zu Grunde, dass konservativ geschätzt immer 4 Personen zusammen das billigste Menü wählen, kommen so pro Stunde 120 x 100 Yuan = 12000 Yuan zusammen. Also gut 72000 Yuan am Tag bei 6h Betrieb. Macht also gut 10.000 Euro Umsatz am Tag und etwa 4 Millionen im Jahr. Und das ist wohlgemerkt die konservative Schätzung! Es ist also eine riesige Geldmenge und ich würde mich wundern, wenn der Betreiber nicht gute Verbindungen zur lokalen Politik hat. Denn soviel Umsatz mit so windigen Methoden macht man sicherlich nicht ohne bei gewissen Funktionären auf lieb Kind zu machen (Auch wieder nur geraten, es ist allerdings schwer vorstellbar, dass die Funktionäre vor Ort die mafiöse Tourismusbranche einfach so übersehen). Die chinesische Binnentourismusindustrie ist mit der integralen Mittelschicht erschaffen worden und so ist die Struktur dieses Marktes womöglich nicht nur Manifestation der chinesischen Turbokapitalismusmentalität, sondern auch die der (noch) fehlenden Marktregulierung durch den Staat beziehungsweise dessen Überforderung damit.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/8fcbf392c453d8e0902c91fb8511a248/tumblr_inline_nejc7aM9Qr1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/f9820d2a60ef0900513697cb3b2aebe0/tumblr_inline_nejc7aJGUV1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/17a02b05aecded30d4233477ad1b6905/tumblr_inline_nejc7iRhnc1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;Am nächsten Tag zeigte die neue Reiseleiterin, dass es auch besser geht. Es ging in ein kleines Fischerdörfchen. Sie sprach offen an, dass sie etwa von der “Seidenfabrik” eine Provision erhält oder, dass sie vom Restaurantbesitzer eine Provision erhält und es stünde uns auch frei woanders hinzugehen. Am Ende des Tages erwähnte sie noch, dass sie im Haus — bzw. genauer gesagt — in der Villa des Restaurantbesitzers war. Es war eine der teuersten Villen in der Gegend des ehemaligen Fischerdörfchens (aka. Das Venedig Chinas). Die Reiseleiterin berichtete von einem Wortwechsel, welcher sich folgendermaßen zutrug: Reiseleiterin: Das ist aber ein schönes Schränkchen, war es teuer? Restaurantbesitzer: Sie stellen die falsche Frage, fragen sie besser aus welcher Dynastie es stammt. Es ist schwer zu fassen, wie man mit dem Konzept lächerlich schlechtes Essen in einem heruntergekommenen Schuppen zu absurden Preisen wirtschaften kann. Dem Geschäftsmodell liegt zugrunde, dass die “Kunden” bzw. korrekter die Opfer eben nur einmal in den Ort kommen und danach nie wieder. Daher investiert der Betreiber auch nichts, sonder schöpft einfach seinen Anteil am Gewinn vom Touristenstrom ab. Weiter berichtete uns die Reiseleiterin, dass das normale Gehalt für die Dorfbewohner bei etwa 3000 Yuan, also gut 400 Euro läge und die sehr guten Jobs seien mit einem Salär von 7000 Yuan, also etwa 900 Euro, versehen. Nicht inkludiert in diese Betrachtungen sind natürlich die Besitzer der “Restaurants” und der anderen Verkaufseinrichtungen im Fischerdörfchen. Hier zeigt sich wieder einmal mehr, dass die Ungleichheit in China extrem ist. Über Nacht wurden die Besitzer von Immobilien an prominenter Stelle zu Millionären und andere wurden zu deren willfährigen Gehilfen, wobei das meiste Geld an sehr wenige Leute geht. Das Dorf ist zwar eine Reise wert, jedoch macht die zwanghafte Monetarisierung von allem und jedem aus einem authentischen Fischerdorf, welches ein altes, längst überholtes China erlebbar machen kann, ein unanständig-geldfixiertes Disneyland. Dazu lässt sich auch noch nahtlos auf das millionenschwere — und offenbar in ernsthaften Finanzierungsschwierigkeiten steckende — Taiwandorf verweisen. Es liegt nahe dem Fischerdorf und soll eine  Art Moviepark zum Thema Taiwan sein. Es krankt an maroder Bausubstanz und einem unschlüssigen Konzept, weshalb der Eintritt für uns auch kostenlos war. Geplant war eine Eröffnung 2010. Man wollte den Tourismusstrom zum Fischerdorf ausnutzen und gleich in das Taiwandorf lenken, um noch mehr Gewinn erzielen zu können. Doch auch hier scheitert die Gewinnsucht am Fehlen der Substanz. Auf Dauer nur schnell Geld zu machen ist suizidal und wird das Dörfchen ohne Abweichen vom Kurs irgendwann in die Irrelevanz katapultieren. Aber China hat viele Menschen und Warnungen scheinen sich nicht schnell genug herumzusprechen.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/18bf360e34071523e3653f059eae06fa/tumblr_inline_nejcecVLao1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/1f02a627ca69eefbe7b9105d2b71670d/tumblr_inline_nejcecPV3F1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/cfa8e1580f61576b5d95e4c07ef5d7b0/tumblr_inline_nejcejEiEi1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/0fc195177681ce250640fe7b5537c056/tumblr_inline_nejcepuQpl1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/6a03a87ba6fb08222491482b14d766c8/tumblr_inline_nejcexzBU61s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/9b2d5020dd05da335cdcb4fbdacde5f0/tumblr_inline_nejcf3MPg21s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/52b2b393840b82c179c3acfb005b4efd/tumblr_inline_nejcfdxuhh1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/09fe9e37911a90e9ea4fdaaab085ae53/tumblr_inline_nejcfnQDFU1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/74c9962c84e9d9cdfe346d178bd11a72/tumblr_inline_nejcfx7ay41s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/d5cea6a4a1c55a17331a122aedb18d54/tumblr_inline_nejcg4W8331s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/181d70694b3dfcf2f0c5f0c92b0ad53a/tumblr_inline_nejcgfcGjp1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/044ffda1547ccff2b6937ac8deea23af/tumblr_inline_nejchymukg1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p class=&quot;caption&quot;&gt;Die unzulängliche Reiseleiterin&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;image&quot; src=&quot;http://78.media.tumblr.com/25be02a81fe400e9c827eabc23cbeb96/tumblr_inline_nejci5fWLk1s0bsjq.jpg&quot;/&gt;&lt;/p&gt;
-&lt;p class=&quot;caption&quot;&gt;Die intelligente Reiseleiterin&lt;/p&gt;</content><author><name>Marcus Ding</name></author><category term="travel" /><category term="travel" /><category term="china" /><category term="suzhou" /><category term="liongrovegarden" /><summary type="html">Wie immer (etwas angemessener: seit dem letzten Blogeintrag) vorher die Liste mit den Dingen die man (bloß nicht in einer Reisegruppe, außer man betreibt Meta-Massentourismus und will sehen, wie schlechter Tourismus in China aussieht) machen sollte: Löwenhaingarten (Shī Zǐ Lín Yuán, meine Übersetzung ist da etwas holprig) besichtigen Das Ehemalige Fischerdorf Zhouzhuang besuchen Den lokalen Tempel in Suzhou besichtigen</summary></entry></feed>
+someone spells me out.&lt;/blockquote&gt;&amp;#8212;Octavio Paz</content><author><name>Marcus Ding</name></author><category term="poetry" /><summary type="html">I am a man: little do I last and the night is enormous. But I look up: the stars write. Unknowing I understand: I too am written, and at this very moment someone spells me out.&amp;#8212;Octavio Paz</summary></entry></feed>
