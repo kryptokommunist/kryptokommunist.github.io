@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Digital RGB LED guide
-category: travel
+category: tech
 tags:
 - led
 - lighting
