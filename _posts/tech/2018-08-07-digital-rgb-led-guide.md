@@ -49,9 +49,10 @@ The SK6812 is a clone of the WS2812, that is completely compatible. It's PWM fre
 
 ## APA102
 
-These LEDs are designed by [APA Electronic co. LTD](http://neon-world.com/en/). They don't show any visible PWM flicker when moving the LED due to a very hight modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.
+These LEDs are designed by [APA Electronic co. LTD](http://neon-world.com/en/). They don't show any visible PWM flicker when moving the LED due to a very high modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.
 
-[source](https://cpldcpu.wordpress.com/2014/08/27/apa102/)
+[source 1](https://cpldcpu.wordpress.com/2014/08/27/apa102/)
+[source 2](https://www.pjrc.com/why-apa102-leds-have-trouble-at-24-mhz/)
 
 ## SK9822
 
@@ -63,14 +64,19 @@ These are a clone of the APA102. Unfortunately it has a slightly different behav
 
 TO DO: write a conclusion and order LED stripe
 
-|                           |            SK9822           |         SK6812        |         APA102        |        WS2812B        |         WS2812        |         WS2811        |         WS2801        |
-|---------------------------|:---------------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
-|           Update          |         Simultaneous        |       Staggered       |       Staggered       |       Staggered       |       Staggered       |       Staggered       |       Staggered       |
-|       Update trigger      |   Reset frame (0x00000000)  | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission |
-|       PWM Frequency       |           ~4.7 kHz          |        ~1.1kHz        |       ~19.2 kHz       |         430 Hz        |         430 Hz        |         430 Hz        |        2.5 kHz        |
-| Global brightness control | programmable current source |     PWM at ~440 Hz    |           -           |           -           |           -           |           -           |           -           |
-|       Best Price $/m      |                             |                       |                       |                       |                       |                       |                       |
+|                           |            SK9822           |         SK6812        |         APA102        |          WS2813        |        WS2812B        |         WS2812        |         WS2811        |         WS2801        |
+|---------------------------|:---------------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
+|           Update          |         Simultaneous        |       Staggered       |       Staggered       |       Staggered       |       Staggered       |       Staggered       |       Staggered       |       Staggered       |
+|       Update trigger      |   Reset frame (0x00000000)  | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission | RGB data transmission |
+|       PWM Frequency       |           ~4.7 kHz          |        ~1.1kHz        |       ~19.2 kHz       |        2kHz          |    430 Hz        |         430 Hz        |         430 Hz        |        2.5 kHz        |
+| Global brightness control | programmable current source |     PWM at ~440 Hz    |           -           |           -           |           -           |           -           |           -           |          -           |
+| max data rate |  30MHZ |  800 kB/s  |  20MBit/s (max input clock)  |  800 kB/s  |  800 kB/s   |   800 kB/s  | 800 kB/s  |    25MBit/s (max input clock)  |
+|       Best Price $/m (IP30)      |          [21.42](https://de.aliexpress.com/item/5mX-New-arrival-SK9822-5050SMD-RGB-digital-flexible-led-strip-light-DC5V-input-30-32-48/32713951190.html)                   |        [16.70](https://www.aliexpress.com/store/product/SK6812-RGBW-similar-ws2812b-4-in-1-1m-4m-5m-30-60-144-leds-pixels-m/836457_32821691618.html)               |        [20.71](https://www.aliexpress.com/store/product/APA102-strip-1m-3m-5m-30-60-72-96-144-leds-pixels-m-APA102-Smart-led/330721_32878004298.html)               |         [18.72](https://de.aliexpress.com/item/Neue-1-mt-5-mt-WS2813-Smart-led-pixel-streifen-Schwarz-Wei-PCB-30-60-leds/32864264738.html)                   | [13.57](https://www.aliexpress.com/item/individually-addressable-full-color-1-3-4-5m-waterproof-ip65-ip67-5050-rgb-30-60-144/32820264632.html)              |            [11.72](https://www.aliexpress.com/store/product/1m-4m-5m-WS2812B-Smart-led-pixel-strip-Black-White-PCB-30-60-144-leds-m/2880007_32793949673.html)          |    144 LED/m not possible              |          144 LED/m not possible             |
 
 ## Voltage drop
 
 In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.
+
+## Conclusion
+
+Finally I decided to purchase the WS2812, because when ordering a lot of LEDs the price difference is very noticeable. (1680€ vs. 1050€) The data speed of 800 kBit/s is enough to run 4 meters of stripe with 60 frames per second. To me the missing features of reverse polarity protection and tolerating failing pixels isn't worth almost twice the price if you compare WS2812 to WS2813. Also the lower PWM frequency is acceptable since the object and the viewer won't move around very fast. Also the external resistor next to every LED is a downside compared to WS2813. 🦄🔥
