@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-09T04:39:59+00:00</updated><id>/</id><title type="html">Ein Kaffeehauskommunist erzählt</title><subtitle>Ich bin voll kreativ und cool, Berlin blabla hip, Neukölln, Jutebeutel yada yada... Ok ok, die Seite dient bloß dem shameless self-plugging!</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Digital RGB LED guide</title><link href="/tech/2018/08/07/digital-rgb-led-guide.html" rel="alternate" type="text/html" title="Digital RGB LED guide" /><published>2018-08-07T00:00:00+00:00</published><updated>2018-08-07T00:00:00+00:00</updated><id>/tech/2018/08/07/digital-rgb-led-guide</id><content type="html" xml:base="/tech/2018/08/07/digital-rgb-led-guide.html">&lt;p&gt;I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-08-30T02:03:40+00:00</updated><id>/</id><title type="html">Ein Kaffeehauskommunist erzählt</title><subtitle>Ich bin voll kreativ und cool, Berlin blabla hip, Neukölln, Jutebeutel yada yada... Ok ok, die Seite dient bloß dem shameless self-plugging!</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Digital RGB LED guide</title><link href="/tech/2018/08/07/digital-rgb-led-guide.html" rel="alternate" type="text/html" title="Digital RGB LED guide" /><published>2018-08-07T00:00:00+00:00</published><updated>2018-08-07T00:00:00+00:00</updated><id>/tech/2018/08/07/digital-rgb-led-guide</id><content type="html" xml:base="/tech/2018/08/07/digital-rgb-led-guide.html">&lt;p&gt;I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.
 &lt;!--more--&gt;&lt;/p&gt;
 &lt;h2 id=&quot;ws2801&quot;&gt;WS2801&lt;/h2&gt;
 
@@ -40,9 +40,10 @@
 
 &lt;h2 id=&quot;apa102&quot;&gt;APA102&lt;/h2&gt;
 
-&lt;p&gt;These LEDs are designed by &lt;a href=&quot;http://neon-world.com/en/&quot;&gt;APA Electronic co. LTD&lt;/a&gt;. They don’t show any visible PWM flicker when moving the LED due to a very hight modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.&lt;/p&gt;
+&lt;p&gt;These LEDs are designed by &lt;a href=&quot;http://neon-world.com/en/&quot;&gt;APA Electronic co. LTD&lt;/a&gt;. They don’t show any visible PWM flicker when moving the LED due to a very high modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://cpldcpu.wordpress.com/2014/08/27/apa102/&quot;&gt;source&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://cpldcpu.wordpress.com/2014/08/27/apa102/&quot;&gt;source 1&lt;/a&gt;
+&lt;a href=&quot;https://www.pjrc.com/why-apa102-leds-have-trouble-at-24-mhz/&quot;&gt;source 2&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;sk9822&quot;&gt;SK9822&lt;/h2&gt;
 
@@ -61,6 +62,7 @@
       &lt;th style=&quot;text-align: center&quot;&gt;SK9822&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;SK6812&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;APA102&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;WS2813&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;WS2812B&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;WS2812&lt;/th&gt;
       &lt;th style=&quot;text-align: center&quot;&gt;WS2811&lt;/th&gt;
@@ -77,10 +79,12 @@
       &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Staggered&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;Update trigger&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;Reset frame (0x00000000)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;RGB data transmission&lt;/td&gt;
@@ -93,6 +97,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt;~4.7 kHz&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;~1.1kHz&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;~19.2 kHz&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2kHz&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;430 Hz&lt;/td&gt;
@@ -107,23 +112,40 @@
       &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;Best Price $/m&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td&gt;max data rate&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;30MHZ&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800 kB/s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;20MBit/s (max input clock)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800 kB/s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800 kB/s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800 kB/s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800 kB/s&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;25MBit/s (max input clock)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Best Price $/m (IP30)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://de.aliexpress.com/item/5mX-New-arrival-SK9822-5050SMD-RGB-digital-flexible-led-strip-light-DC5V-input-30-32-48/32713951190.html&quot;&gt;21.42&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.aliexpress.com/store/product/SK6812-RGBW-similar-ws2812b-4-in-1-1m-4m-5m-30-60-144-leds-pixels-m/836457_32821691618.html&quot;&gt;16.70&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.aliexpress.com/store/product/APA102-strip-1m-3m-5m-30-60-72-96-144-leds-pixels-m-APA102-Smart-led/330721_32878004298.html&quot;&gt;20.71&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://de.aliexpress.com/item/Neue-1-mt-5-mt-WS2813-Smart-led-pixel-streifen-Schwarz-Wei-PCB-30-60-leds/32864264738.html&quot;&gt;18.72&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.aliexpress.com/item/individually-addressable-full-color-1-3-4-5m-waterproof-ip65-ip67-5050-rgb-30-60-144/32820264632.html&quot;&gt;13.57&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://www.aliexpress.com/store/product/1m-4m-5m-WS2812B-Smart-led-pixel-strip-Black-White-PCB-30-60-144-leds-m/2880007_32793949673.html&quot;&gt;11.72&lt;/a&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;144 LED/m not possible&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;144 LED/m not possible&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h2 id=&quot;voltage-drop&quot;&gt;Voltage drop&lt;/h2&gt;
 
-&lt;p&gt;In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.&lt;/p&gt;</content><author><name>Marcus Ding</name></author><category term="tech" /><category term="led" /><category term="lighting" /><summary type="html">I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.</summary></entry><entry><title type="html">Automating LaTeX compilation in Gitlab-CI</title><link href="/tech/2018/03/19/latex-in-gitlab-ci.html" rel="alternate" type="text/html" title="Automating LaTeX compilation in Gitlab-CI" /><published>2018-03-19T00:00:00+00:00</published><updated>2018-03-19T00:00:00+00:00</updated><id>/tech/2018/03/19/latex-in-gitlab-ci</id><content type="html" xml:base="/tech/2018/03/19/latex-in-gitlab-ci.html">&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
+&lt;p&gt;In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion-1&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Finally I decided to purchase the WS2812, because when ordering a lot of LEDs the price difference is very noticeable. (1680€ vs. 1050€) The data speed of 800 kBit/s is enough to run 4 meters of stripe with 60 frames per second. To me the missing features of reverse polarity protection and tolerating failing pixels isn’t worth almost twice the price if you compare WS2812 to WS2813. Also the lower PWM frequency is acceptable since the object and the viewer won’t move around very fast. Also the external resistor next to every LED is a downside compared to WS2813. 🦄🔥&lt;/p&gt;</content><author><name>Marcus Ding</name></author><category term="tech" /><category term="led" /><category term="lighting" /><summary type="html">I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.</summary></entry><entry><title type="html">Automating LaTeX compilation in Gitlab-CI</title><link href="/tech/2018/03/19/latex-in-gitlab-ci.html" rel="alternate" type="text/html" title="Automating LaTeX compilation in Gitlab-CI" /><published>2018-03-19T00:00:00+00:00</published><updated>2018-03-19T00:00:00+00:00</updated><id>/tech/2018/03/19/latex-in-gitlab-ci</id><content type="html" xml:base="/tech/2018/03/19/latex-in-gitlab-ci.html">&lt;h2 id=&quot;the-problem&quot;&gt;The problem&lt;/h2&gt;
 
 &lt;p&gt;You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?&lt;/p&gt;
 

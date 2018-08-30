@@ -226,9 +226,10 @@
 
 <h2 id="apa102">APA102</h2>
 
-<p>These LEDs are designed by <a href="http://neon-world.com/en/">APA Electronic co. LTD</a>. They don’t show any visible PWM flicker when moving the LED due to a very hight modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.</p>
+<p>These LEDs are designed by <a href="http://neon-world.com/en/">APA Electronic co. LTD</a>. They don’t show any visible PWM flicker when moving the LED due to a very high modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.</p>
 
-<p><a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">source</a></p>
+<p><a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">source 1</a>
+<a href="https://www.pjrc.com/why-apa102-leds-have-trouble-at-24-mhz/">source 2</a></p>
 
 <h2 id="sk9822">SK9822</h2>
 
@@ -247,6 +248,7 @@
       <th style="text-align: center">SK9822</th>
       <th style="text-align: center">SK6812</th>
       <th style="text-align: center">APA102</th>
+      <th style="text-align: center">WS2813</th>
       <th style="text-align: center">WS2812B</th>
       <th style="text-align: center">WS2812</th>
       <th style="text-align: center">WS2811</th>
@@ -263,10 +265,12 @@
       <td style="text-align: center">Staggered</td>
       <td style="text-align: center">Staggered</td>
       <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
     </tr>
     <tr>
       <td>Update trigger</td>
       <td style="text-align: center">Reset frame (0x00000000)</td>
+      <td style="text-align: center">RGB data transmission</td>
       <td style="text-align: center">RGB data transmission</td>
       <td style="text-align: center">RGB data transmission</td>
       <td style="text-align: center">RGB data transmission</td>
@@ -279,6 +283,7 @@
       <td style="text-align: center">~4.7 kHz</td>
       <td style="text-align: center">~1.1kHz</td>
       <td style="text-align: center">~19.2 kHz</td>
+      <td style="text-align: center">2kHz</td>
       <td style="text-align: center">430 Hz</td>
       <td style="text-align: center">430 Hz</td>
       <td style="text-align: center">430 Hz</td>
@@ -293,16 +298,29 @@
       <td style="text-align: center">-</td>
       <td style="text-align: center">-</td>
       <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td>Best Price $/m</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
+      <td>max data rate</td>
+      <td style="text-align: center">30MHZ</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">20MBit/s (max input clock)</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">25MBit/s (max input clock)</td>
+    </tr>
+    <tr>
+      <td>Best Price $/m (IP30)</td>
+      <td style="text-align: center"><a href="https://de.aliexpress.com/item/5mX-New-arrival-SK9822-5050SMD-RGB-digital-flexible-led-strip-light-DC5V-input-30-32-48/32713951190.html">21.42</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/SK6812-RGBW-similar-ws2812b-4-in-1-1m-4m-5m-30-60-144-leds-pixels-m/836457_32821691618.html">16.70</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/APA102-strip-1m-3m-5m-30-60-72-96-144-leds-pixels-m-APA102-Smart-led/330721_32878004298.html">20.71</a></td>
+      <td style="text-align: center"><a href="https://de.aliexpress.com/item/Neue-1-mt-5-mt-WS2813-Smart-led-pixel-streifen-Schwarz-Wei-PCB-30-60-leds/32864264738.html">18.72</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/item/individually-addressable-full-color-1-3-4-5m-waterproof-ip65-ip67-5050-rgb-30-60-144/32820264632.html">13.57</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/1m-4m-5m-WS2812B-Smart-led-pixel-strip-Black-White-PCB-30-60-144-leds-m/2880007_32793949673.html">11.72</a></td>
+      <td style="text-align: center">144 LED/m not possible</td>
+      <td style="text-align: center">144 LED/m not possible</td>
     </tr>
   </tbody>
 </table>
@@ -310,6 +328,10 @@
 <h2 id="voltage-drop">Voltage drop</h2>
 
 <p>In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.</p>
+
+<h2 id="conclusion-1">Conclusion</h2>
+
+<p>Finally I decided to purchase the WS2812, because when ordering a lot of LEDs the price difference is very noticeable. (1680€ vs. 1050€) The data speed of 800 kBit/s is enough to run 4 meters of stripe with 60 frames per second. To me the missing features of reverse polarity protection and tolerating failing pixels isn’t worth almost twice the price if you compare WS2812 to WS2813. Also the lower PWM frequency is acceptable since the object and the viewer won’t move around very fast. Also the external resistor next to every LED is a downside compared to WS2813. 🦄🔥</p>
 
   </div>
 
