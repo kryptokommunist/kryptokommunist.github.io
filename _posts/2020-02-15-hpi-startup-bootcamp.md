@@ -12,6 +12,9 @@ tags:
 This year and last year I was lucky to be part of the [HPI Startup Bootcamp](https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps.html). To my suprise my team won the first time I took part ([link or it didn't happen](https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2018.html)) and last year at least got a spontaneous made up prize because the jury liked the idea so much ([can I has link plz](https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2019.html)). But enough humble or not so humble brags. I wanted to condense what I have learned there into a text hopefully giving you guidance on whether to attend and what to expect at such an event aside from late Roman, decadent catering. The learnings are a combination of the practical bootcamp experiences as well as the accompanying lecture called [<em>IT-Entrepreneurship</em>](https://hpi.de/entrepreneurship/veranstaltungen/it-entrepreneurship-vorlesung.html).
 <!--more-->
 
+![](/images/hpi_startup_bootcamp_all.jpg)
+<p class="caption">Lots of people and obligatory branded T-shirts. (image: HPI / Kay Herschelmann)</p>
+
 # Practical Experience from Speakers
 
 The most inspiring and motivating aspect is the wide array of guest speakers that speak about their own failures and success on the startup journey. The key take away from that for myself was that they were just normal people that just did stuff and never stopped trying. Some founded over a dozen companies that eventually failed before becoming part of the winning team. Also people founded companies early in their life but some even started at 40 and succeeded.
@@ -21,6 +24,9 @@ Also many admitted that luck played a big part in the ultimate success. They hit
 Also talking to people from the Venture Capital world was interesting a guy that about every four sentences was saying "You need to ask where's the money!" comes to mind. Also tales of how complicated regulatory rules for creating medical devices in Germany are were part of the learnings.
 
 # Team
+
+![](/images/hpi_startup_bootcamp_team.jpg)
+<p class="caption">This is how a team could look like. (image: HPI / Kay Herschelmann)</p>
 
 The founding team for a startup is essential for its survival. Since resources are scarce in the beginning the team will have to put up with a lot of pressure and needs to solve hard problems in a fast changing environment. The ideal size for a founding team is two to three people. Due to lack of resources and the necessity of fast execution the team members should know each other well so they can judge if they trust each other to manage to deliver in a startup setting. Furthermore the team should consist of smart and driven people, mediocre teams won’t build a great company. A complementary skill set also makes a good team, so there’s someone that is good at marketing and business, design and UX as well as someone comfortable with engineering and developing (Along the lines of Hipster, Hacker, Hustler).
 
