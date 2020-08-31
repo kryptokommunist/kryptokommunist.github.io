@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020 | Ein Kaffeehauskommunist erzählt</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020" />
+<meta name="author" content="Marcus Ding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization. I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a Google Summer of Code project to get closer to realizing this idea." />
+<meta property="og:description" content="Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization. I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a Google Summer of Code project to get closer to realizing this idea." />
+<link rel="canonical" href="/tech/2020/08/31/google-summer-of-code.html" />
+<meta property="og:url" content="/tech/2020/08/31/google-summer-of-code.html" />
+<meta property="og:site_name" content="Ein Kaffeehauskommunist erzählt" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-31T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization. I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a Google Summer of Code project to get closer to realizing this idea.","author":{"@type":"Person","name":"Marcus Ding"},"@type":"BlogPosting","url":"/tech/2020/08/31/google-summer-of-code.html","headline":"Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020","dateModified":"2020-08-31T00:00:00+00:00","datePublished":"2020-08-31T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/tech/2020/08/31/google-summer-of-code.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Ein Kaffeehauskommunist erzählt" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/tech/">Tech</a>
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/about/">About</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="/categories/">Categories</a>
+              
+            
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/overview/">Artikelübersicht</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+          <a class="page-link" href="/search/">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020</h1>
+    <p class="post-meta">
+      <time datetime="2020-08-31T00:00:00+00:00" itemprop="datePublished">
+        
+        Aug 31, 2020
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization.</p>
+
+<p>I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> project to get closer to realizing this idea.</p>
+
+<!--more-->
+
+<p>So I sent out two applications: <a href="https://docs.google.com/document/d/1VgfsD06Qvb87S-tQazfTsyYTp14Z3EjF4V9puPVNCTQ/edit?usp=sharing">A better IPython and Jupyter Notebook Integration for FreeCAD</a> and <a href="https://docs.google.com/document/d/1lxe3MTVMQYnv6r3W7KuuzcKgY_rLS2Qgd6FjZlstwaU/edit?usp=sharing">Measurement tool for FreeCAD</a>. In the end the first one was chosen which was closer to my original idea that got me excited and on the path of applying. I definitely didn’t expect the application to succeed, but that might just be the classic imposter syndrome. I put in quite some thought researching the topic and contacted some of the previous students, I even the one who applied for the exact same idea some years before. He was so nice to send me a link to his old application so I could use the feedback he got on his application from back then. This was especially helpful since I didn’t get any feedback on my application that I admittedly started a bit late. After the acceptance the project started moving. The FreeCAD community ist mostly organized in an old school internet forum. I haven’t used one since I was active on an RC car forum when I was 14. Anyways here is the project thread: <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">link</a>.</p>
+
+<p><img src="/images/gsoc-2020-interactivity-demo.gif" alt="" /></p>
+<p class="caption">It's not much, but it's honest work. This demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
+
+<p>Here is a demo of the entire example Jupyter Notebook. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb">the notebook</a> yourself.</p>
+
+<iframe width="800" height="800" src="https://kryptokommun.ist/google-summer-of-code-2020" style="width: 800px; display:block;"></iframe>
+
+<p><br />But enough with the story telling let’s get to the technical details shall we? As said before, the project is targeting <a href="https://jupyter.org">Jupyter Notebooks</a>. They allow users to run and visualize their code together with markdown text inside the web browser. The notebooks support a multitude of programming environments. One of them is Python. Since FreeCAD is a C++ application with an Python binding, that means we can script FreeCAD inside the notebook. Some members of the FreeCAD community played with the idea before and managed to get FreeCAD running from within the notebook. Unfortunately you had to start the entire desktop app along side if you wanted to visualize what you were scripting. This is were the GSoC (Google Summer of Code) project comes to play. The goal was to display the FreeCAD 3D view inside the notebook.</p>
+
+<p>Since the goal is to have a very general solution that will be able to display any content that exists inside the desktop apps 3D view we need to work directly with it’s scene graph. So how does FreeCAD generate it’s 3D view. Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called <a href="https://coin3d.github.io">Coin3D</a>. Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name <a href="https://github.com/coin3d/pivy">pivy</a>.</p>
+
+<p>Based on this the plan was to somehow extract the objects from the Coin3D scene graph and to then translate them into a <a href="https://en.wikipedia.org/wiki/WebGL">WebGL</a> based library that can be rendered inside the notebook. Yikes this meant I might have to touch JavaScript which is not a beauty to work with. After some deliberations I chose <a href="https://github.com/jupyter-widgets/pythreejs">pythreejs</a> which is a Jupyter Notebook extension that integrates the infamous <a href="https://github.com/mrdoob/three.js">ThreeJS</a> with a Python bridge. That meant less JavaScript and a smooth integration into the Jupyter Notebook environment. My previous experiments with directly inserting the ThreeJS JavaScript library all failed horribly.</p>
+
+<p>In the end the task was not that complex. All I needed to do was to extract faces and edges from the Coin3D scene graph and then reassemble it in a slightly modified structure inside pythreejs. What still made this project a challenge was starting from zero knowledge about FreeCADs internals and computer graphics. Additionally some potential bugs make their way into the project and finding and solving can take a lot of time. Also communication with many stake holder slows down the progress and it can be frustrating if you think you found a bug and then the project is not maintained regularly and you have to watch your <a href="https://github.com/jupyter-widgets/pythreejs/issues/329">issues</a> <a href="https://github.com/jupyter-widgets/pythreejs/issues/331">die silently</a> on Github. Overall it’s still a great experience to work so autonomously on an project that is used by so many people. So I hope there will be some people interested in using FreeCAD inside Jupyter Notebook as well.</p>
+
+<p>I will continue to improve the project in the future. You can find the repository here. If you use the module and encounter any issues or just find it useful, don’t hesitate to post to the <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">forum thread</a> or let me know with a <a href="https://twitter.com/kryptokommunist">tweet</a> or an issue in the <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">repository</a>.</p>
+
+<p>Thanks to my mentors: <a href="https://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=686">@ickby</a>, <a href="https://twitter.com/thekurtwk">@kkremitzki</a>, <a href="https://twitter.com/yorikvanhavre">@yorik</a>. I’m grateful for them spending time on helping me with the project. Doing this entirely in their spare time is insanely great! Also thanks to the entire FreeCAD community who gave helpful input. I was especially impressed by how much effort <a href="https://github.com/FreeCAD/FreeCAD/pull/3569">@vocx-fc</a> put into reviewing my second pull request to FreeCAD.</p>
+
+  </div>
+
+  <div class="post-meta post-tags">
+    
+      <a href="/tags/#tech" class="post-tag"> tech </a>
+    
+      <a href="/tags/#gsoc" class="post-tag"> gsoc </a>
+    
+      <a href="/tags/#opensource" class="post-tag"> opensource </a>
+    
+      <a href="/tags/#freecad" class="post-tag"> freecad </a>
+    
+      <a href="/tags/#english" class="post-tag"> english </a>
+    
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+
+  <div style="text-align: center">
+    <span><a href="mailto:marcusding@me.com"><span class="username"><i class="fa fa-envelope" aria-hidden="true"></i> mail</span></a></span>
+    <span><a href="https://www.facebook.com/kryptokommunist"><span class="username"><i class="fa fa-facebook-square" aria-hidden="true"></i> stalk</span></a></span>
+    <span><a href="https://www.letterboxd.com/kryptokommunist"><span class="username"><i class="fa fa-film" aria-hidden="true"></i> follow</span></a></span>
+    <span><a href="https://www.github.com/kryptokommunist"><i class="fa fa-github-square" aria-hidden="true"></i> judge</span></a></span>
+    <span><a href="https://www.flickr.com/photos/kryptokommunist/"><span class="username"><i class="fa fa-flickr" aria-hidden="true"></i> see</span></a></span>
+    <span><a href="https://www.instagram.com/kryptokommunist/"><span class="username"><i class="fa fa-instagram" aria-hidden="true"></i> insta</span></a></span>
+  </div>
+</div>
+</footer>
+<div class="madewith">
+  <span class="post-meta">powered by <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
+</div>
+</body>
+
+</html>
