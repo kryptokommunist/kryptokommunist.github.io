@@ -2,7 +2,7 @@
 layout: post
 title: Google Summer of Code 2020 – Creating a FreeCAD 3D view inside Jupyter Notebooks
 category:
-- startup
+- opensource
 - english
 tags:
 - tech
