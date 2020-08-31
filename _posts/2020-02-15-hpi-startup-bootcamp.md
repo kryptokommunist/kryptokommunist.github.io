@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HPI Startup Bootcamp - About winning and kinda winning.
+title: HPI Startup Bootcamp
 category:
 - startup
 - english
