@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Summer of Code 2020 – Creating a FreeCAD 3D view inside Jupyter Notebooks
+title: Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020
 category:
 - opensource
 - english
@@ -10,7 +10,7 @@ tags:
 - freecad
 ---
 
-Accidentally while [creating a lamp](https://forum.freecadweb.org/viewtopic.php?f=24&t=48957) I ended up learning [FreeCAD](https://www.freecadweb.org). FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and everyone to use. The software is still in it's alpha version and is far from perfect as you can tell by the current release version number 0.19 and the [heated discussions](https://forum.freecadweb.org/viewtopic.php?t=43461) around how soon a 1.0 release could be reached. Still it's usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization.
+Accidentally while [creating a lamp](https://forum.freecadweb.org/viewtopic.php?f=24&t=48957) I ended up learning [FreeCAD](https://www.freecadweb.org). FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it's alpha version and is far from perfect as you can tell by the current release version number 0.19 and the [heated discussions](https://forum.freecadweb.org/viewtopic.php?t=43461) around how soon a 1.0 release could be reached. Still it's usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization.
 
 I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a [Google Summer of Code](https://summerofcode.withgoogle.com) project to get closer to realizing this idea.
 
@@ -23,9 +23,9 @@ So I sent out two applications: [A better IPython and Jupyter Notebook Integrati
 
 Here is a demo of the entire example Jupyter Notebook. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run [the notebook](https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb) yourself.
 
-<iframe width="800" height="640" src="https://kryptokommun.ist/google-summer-of-code-2020" frameborder="0"></iframe>
+<iframe width="800" height="800" src="https://kryptokommun.ist/google-summer-of-code-2020" style="width: 800px; display:block;"></iframe>
 
-But enough with the story telling let's get to the technical details shall we? As said before, the project is targeting [Jupyter Notebooks](https://jupyter.org). They allow users to run and visualize their code together with markdown text inside the web browser. The notebooks support a multitude of programming environments. One of them is Python. Since FreeCAD is a C++ application with an Python binding, that means we can script FreeCAD inside the notebook. Some members of the FreeCAD community played with the idea before and managed to get FreeCAD running from within the notebook. Unfortunately you had to start the entire desktop app along side if you wanted to visualize what you were scripting. This is were the GSoC (Google Summer of Code) project comes to play. The goal was to display the FreeCAD 3D view inside the notebook.
+<br>But enough with the story telling let's get to the technical details shall we? As said before, the project is targeting [Jupyter Notebooks](https://jupyter.org). They allow users to run and visualize their code together with markdown text inside the web browser. The notebooks support a multitude of programming environments. One of them is Python. Since FreeCAD is a C++ application with an Python binding, that means we can script FreeCAD inside the notebook. Some members of the FreeCAD community played with the idea before and managed to get FreeCAD running from within the notebook. Unfortunately you had to start the entire desktop app along side if you wanted to visualize what you were scripting. This is were the GSoC (Google Summer of Code) project comes to play. The goal was to display the FreeCAD 3D view inside the notebook.
 
 Since the goal is to have a very general solution that will be able to display any content that exists inside the desktop apps 3D view we need to work directly with it's scene graph. So how does FreeCAD generate it's 3D view. Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called [Coin3D](https://coin3d.github.io). Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name [pivy](https://github.com/coin3d/pivy).
 
