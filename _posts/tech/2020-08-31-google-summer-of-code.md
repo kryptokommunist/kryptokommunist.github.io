@@ -2,12 +2,13 @@
 layout: post
 title: Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020
 category:
-- opensource
-- english
+- tech
 tags:
 - tech
 - gsoc
+- opensource
 - freecad
+- english
 ---
 
 Accidentally while [creating a lamp](https://forum.freecadweb.org/viewtopic.php?f=24&t=48957) I ended up learning [FreeCAD](https://www.freecadweb.org). FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and open source. The software is still in it's alpha version and is far from perfect as you can tell by the current release version number 0.19 and the [heated discussions](https://forum.freecadweb.org/viewtopic.php?t=43461) around how soon a 1.0 release could be reached. Still it's usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization.
