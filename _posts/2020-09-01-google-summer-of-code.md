@@ -23,7 +23,7 @@ So I sent out two applications: [A better IPython and Jupyter Notebook Integrati
 
 Here is a demo of the entire example Jupyter Notebook. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run [the notebook](https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb) yourself.
 
-<iframe width="800" height="640" src="https://kryptokommun.ist/google-summer-of-code-2020"frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="640" src="https://kryptokommun.ist/google-summer-of-code-2020" frameborder="0"></iframe>
 
 But enough with the story telling let's get to the technical details shall we? As said before, the project is targeting [Jupyter Notebooks](https://jupyter.org). They allow users to run and visualize their code together with markdown text inside the web browser. The notebooks support a multitude of programming environments. One of them is Python. Since FreeCAD is a C++ application with an Python binding, that means we can script FreeCAD inside the notebook. Some members of the FreeCAD community played with the idea before and managed to get FreeCAD running from within the notebook. Unfortunately you had to start the entire desktop app along side if you wanted to visualize what you were scripting. This is were the GSoC (Google Summer of Code) project comes to play. The goal was to display the FreeCAD 3D view inside the notebook.
 
