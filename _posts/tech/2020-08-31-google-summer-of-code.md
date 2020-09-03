@@ -40,53 +40,7 @@ Here is an example Jupyter Notebook that uses the `freecadviewer` Python module 
 
 <br>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
 
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "6e3e75d38ef44768bdfdd41e66691ee7"
-}
-</script>
-
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "5df91a06223542e49215a5d49fba2276"
-}
-</script>
-
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "b6137ee2d2704cb8a218f4b9fbd53a72"
-}
-</script>
-
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "4b0b4a8558a14eaf9c80ae66737db762"
-}
-</script>
-
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "817ffe1d810741ebbdd9b74929f9ec2c"
-}
-</script>
-
-<script type="application/vnd.jupyter.widget-view+json">
-{
-    "version_major": 2,
-    "version_minor": 0,
-    "model_id": "e666f61a76cd46a08daadff37c1263e9"
-}
-</script>
+<iframe height="600" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
 
 You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
 
