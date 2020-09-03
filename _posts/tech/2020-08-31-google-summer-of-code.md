@@ -38,15 +38,15 @@ Here is an example Jupyter Notebook that uses the `freecadviewer` Python module 
 
 <iframe height="800" src="/google-summer-of-code-2020"></iframe>
 
-<br>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
+<br/>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
 
-<iframe height="600" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
+<iframe height="900" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
 
 You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
 
 <iframe height="800" src="/embedding-single-widget-gsoc-2020.html"></iframe>
 
-<br>But enough with the "Why" let's get to the "How" aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it's scene graph. So how does FreeCAD generate it's 3D view? Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called [Coin3D](https://coin3d.github.io). Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name [pivy](https://github.com/coin3d/pivy).
+<br/>But enough with the "Why" let's get to the "How" aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it's scene graph. So how does FreeCAD generate it's 3D view? Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called [Coin3D](https://coin3d.github.io). Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name [pivy](https://github.com/coin3d/pivy).
 
 Based on this the plan was to somehow extract the objects from the Coin3D scene graph and to then translate them into a [WebGL](https://en.wikipedia.org/wiki/WebGL) based library that can be rendered inside the notebook. Yikes this meant I might have to touch JavaScript which is not a beauty to work with. After some deliberations I chose [pythreejs](https://github.com/jupyter-widgets/pythreejs) which is a Jupyter Notebook extension that integrates the infamous [ThreeJS](https://github.com/mrdoob/three.js) with a Python bridge. That meant less JavaScript and a smooth integration into the Jupyter Notebook environment. My previous experiments with directly inserting the ThreeJS JavaScript library all failed horribly.
 
