@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: gsoc_2020_post_post
 title: Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020
 category:
 - tech
@@ -36,7 +36,7 @@ To make things a bit more clear, [Juypter Notebook](https://jupyter.org) is an m
 
 Here is an example Jupyter Notebook that uses the `freecadviewer` Python module I created during the GSoC. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run [the notebook](https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb) yourself. But still you can pan and zoom the 3D views inside the notebook:
 
-<iframe height="800" src="https://kryptokommun.ist/google-summer-of-code-2020"></iframe>
+<iframe height="800" src="/google-summer-of-code-2020"></iframe>
 
 <br>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
 
@@ -90,7 +90,7 @@ Here is an example Jupyter Notebook that uses the `freecadviewer` Python module 
 
 You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
 
-<iframe src="embedding-single-widget-gsoc-2020.html"></iframe>
+<iframe src="/embedding-single-widget-gsoc-2020.html"></iframe>
 
 <br>But enough with the "Why" let's get to the "How" aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it's scene graph. So how does FreeCAD generate it's 3D view? Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called [Coin3D](https://coin3d.github.io). Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name [pivy](https://github.com/coin3d/pivy).
 
