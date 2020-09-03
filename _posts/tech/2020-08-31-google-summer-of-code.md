@@ -42,7 +42,7 @@ Here is an example Jupyter Notebook that uses the `freecadviewer` Python module 
 
 <iframe height="900" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
 
-You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
+<br/>You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
 
 <iframe height="800" src="/embedding-single-widget-gsoc-2020.html"></iframe>
 
