@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020
 category:
 - tech
