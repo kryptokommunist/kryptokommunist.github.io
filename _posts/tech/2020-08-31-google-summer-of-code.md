@@ -34,17 +34,17 @@ To make things a bit more clear, [Juypter Notebook](https://jupyter.org) is an m
 ![](/images/gsoc-2020-interactivity-demo.gif)
 <p class="caption">It's not much, but it's honest work. This project demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
 
-Here is an example Jupyter Notebook that uses the `freecadviewer` Python module I created during the GSoC. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run [the notebook](https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb) yourself. But still you can pan and zoom the 3D views inside the notebook:
+Here is an example Jupyter Notebook that uses the `freecadviewer` Python module I created during the GSoC. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run [the notebook](https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb) yourself. The link to the full static notebook is <a href="/google-summer-of-code-2020">here</a>. But still you can pan and zoom the 3D views inside the notebook:
 
 <iframe height="800" src="/google-summer-of-code-2020"></iframe>
 
 <br/>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
 
-<iframe height="780" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
+<iframe height="780" src="/embedding-single-widget-gsoc-2020-demo"></iframe>
 
-<br/>You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
+<br/>You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential. The link to the full static notebook is <a href="/embedding-single-widget-gsoc-2020">here</a>.:
 
-<iframe height="800" src="/embedding-single-widget-gsoc-2020.html"></iframe>
+<iframe height="800" src="/embedding-single-widget-gsoc-2020"></iframe>
 
 <br/>But enough with the "Why" let's get to the "How" aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it's scene graph. So how does FreeCAD generate it's 3D view? Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called [Coin3D](https://coin3d.github.io). Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name [pivy](https://github.com/coin3d/pivy).
 
