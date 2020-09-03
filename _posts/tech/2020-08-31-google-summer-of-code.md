@@ -40,7 +40,7 @@ Here is an example Jupyter Notebook that uses the `freecadviewer` Python module 
 
 <br/>As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:
 
-<iframe height="900" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
+<iframe height="780" src="/embedding-single-widget-gsoc-2020-demo.html"></iframe>
 
 <br/>You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential:
 
