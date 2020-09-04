@@ -31,6 +31,27 @@ To make things a bit more clear, [Juypter Notebook](https://jupyter.org) is an m
 ![](/images/jupyterpreview.png)
 <p class="caption">"The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more." (Quote and image from <a href="https://jupyter.org">juypter.org</a>)</p>
 
+During this GSoC I successfully implemented a 3D viewer that can display FreeCAD objects inside a notebook. Currently it's still limited to the Part Workbench, I still have to implement modifications to handle scene objects created by other workbenches. The current project is a good base to build upon. The basic features working right now are:
+
+- displaying FreeCAD scene graph face sets
+- displaying FreeCAD scene graph line sets
+- setting view parameters according to FreeCAD scene graph
+  - position
+  - rotation
+  - metalness
+  - transparency
+  - color
+  - emissive color
+- highlighting FreeCAD object faces
+- selecting FreeCAD object faces
+- displaying FreeCAD object edges indices
+- selecting FreeCAD object edges
+- displaying FreeCAD object faces indices
+- rotating the view
+- zooming the view
+
+There obviously are many more features that should be implemented over time to make this project maximally useful. For example moving the view, view controls matching the FreeCAD key combinations and having the standard FreeCAD view buttons ("top", "bottom", etc.) available would be great.
+
 ![](/images/gsoc-2020-interactivity-demo.gif)
 <p class="caption">It's not much, but it's honest work. This project demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
 
