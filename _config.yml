@@ -13,13 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ein Kaffeehauskommunist erzählt
+title: kryptokommunist's personal blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Ich bin voll kreativ und cool, Berlin blabla hip, Neukölln, Jutebeutel yada
-  yada... Ok ok, die Seite dient bloß dem shameless self-plugging!
+  Making machines help humans to be more human instead of making humans more like machines.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kryptokommun.ist" # the base hostname & protocol for your site, e.g. http://example.com
 author: Marcus Ding
 # Build settings
 markdown: kramdown
