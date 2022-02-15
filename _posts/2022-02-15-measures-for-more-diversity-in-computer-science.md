@@ -17,11 +17,12 @@ Intellectual people predominantly populate academia, natural sciences, and compu
 
 This is highly speculative, but let’s ask how this circumstance could impact diversity in computer science? And more important how could we then increase diversity in computer science? I refer to diversity in a broad sense, socio-economic, gender, nationality, ethnicity. From my experience, it’s fair to say that computer science has an above-average presence of neurodivergent humans, introverts, and a lack of social skills. This can go two ways; on the one hand, I have experienced environments of non-judgment, where nerds just nerd out and really do not care about social norms and therefore also create an inclusive environment, e.g., I’m thinking of the [Chaos Communication Congress](https://en.wikipedia.org/wiki/Chaos_Communication_Congress) here. There you can see a lot of neurodivergence, cross-dressers, trans-humans walking the halls, and also a sense of everyone just being very open and friendly and helpful in ways I haven’t come across elsewhere. For example, when you are tearing something down at the end of the congress, random nerds will show up and offer to help you. The other way this nerdiness can swing is an environment where a lack of self-awareness, empathy, and ego comes together and creates an unempathetic, competitive, and cold climate. There can be dynamics of everyone trying to outsmart everyone else in a hostile instead of humble and caring manner. This is likely to make diverse people, who might identify with being in a weaker minority already, reconsider getting into such an environment. For example, I witnessed male nerds being irritated and, consequently, hurtful or demeaning towards women. They saw them primarily as women and as fellow human second. In conclusion, the question is how to leverage nerdiness to tip the scale towards the first way of the inclusive and non-judgemental environment?
 
-1. A couple of goals come to mind that in my current understanding could increase diversity in computer science:
-2. Promote the values of humbleness, support, collaboration.
-3. Increase self-awareness and using the emotional mind and less lone wolf attitude.
-4. Help everyone to decrease their ego and increase a sense of empathy towards others.
-5. Support of otherness, questioning, and counter-culture.
+A couple of goals come to mind that in my current understanding could increase diversity in computer science:
+
+1. Promote the values of humbleness, support, collaboration.
+2. Increase self-awareness and using the emotional mind and less lone wolf attitude.
+3. Help everyone to decrease their ego and increase a sense of empathy towards others.
+4. Support of otherness, questioning, and counter-culture.
 
 Now the follow-up question is how to get closer to these goals in academic institutions that teach computer science?
 
