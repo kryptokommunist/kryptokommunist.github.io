@@ -2,7 +2,7 @@
 layout: post
 title: Measures for more diversity in computer science
 category:
-- tech
+- essay
 tags:
 - tech
 - ethics
