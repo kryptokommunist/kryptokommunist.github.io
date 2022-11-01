@@ -9,7 +9,7 @@ tags:
 - movie
 ---
 
-A friend recommended me the old sci-fi classic *Fantastic Planet* ([link to the whole movie](https://www.youtube.com/watch?v=-7LuNSHlPco)). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It's a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I recommend you watch the film before reading the text.
+A friend recommended me the old sci-fi classic *Fantastic Planet* ([link to the whole movie](https://www.youtube.com/watch?v=-7LuNSHlPco)). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It's a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I invite you to watch the film before reading the text.
 
 <!--more-->
 
