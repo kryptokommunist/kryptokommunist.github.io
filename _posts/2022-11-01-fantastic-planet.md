@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Fantastic Planet – A 1973 movie revealing hidden truths the human mind and condition 
+title: Fantastic Planet – A 1973 movie revealing hidden truths about the human mind and human condition 
 category:
 - trauma
-- english
+- English
 tags:
 - trauma
 - movie
 ---
 
-A friend recommended me the old scifi classic *Fantastic Planet* ([link to full movie](https://www.youtube.com/watch?v=-7LuNSHlPco)). This movie and it's reception holds the key to understanding a lot of human behaviour and functioning around dissociation, trauma and human sexuality. It's a great example of how mindful awareness and investigation helps to understand something that possibly millions of humans that have watched the movie did not fully piece together. I recommend you to watch the movie before reading the text.
+A friend recommended me the old sci-fi classic *Fantastic Planet* ([link to the whole movie](https://www.youtube.com/watch?v=-7LuNSHlPco)). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It's a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I recommend you watch the film before reading the text.
 
 <!--more-->
 
@@ -18,37 +18,37 @@ A friend recommended me the old scifi classic *Fantastic Planet* ([link to full 
 A quick summary of the movie is as follows:
 
 <blockquote>
-Nothing else has ever looked or felt like director René Laloux s animated marvel Fantastic Planet, a politically minded and visually inventive work of science fiction. The film is set on a distant planet called Ygam, where enslaved humans (Oms) are the playthings of giant blue natives (Draags). After Terr, kept as a pet since infancy, escapes from his gigantic child captor, he is swept up by a band of radical fellow Oms who are resisting the Draags oppression and violence. With its eerie, coolly surreal cutout animation by Roland Topor; brilliant psychedelic jazz score by Alain Goraguer; and wondrous creatures and landscapes, this Cannes-awarded 1973 counterculture classic is a perennially compelling statement against conformity and violence.
+Nothing else has ever looked or felt like director René Laloux s animated marvel Fantastic Planet, a politically minded and visually inventive work of science fiction. The film is set on a distant planet called Ygam, where enslaved humans (Oms) are the playthings of giant blue natives (Draags). After Terr, kept as a pet since infancy, escapes from his gigantic child captor, he is swept up by a band of radical fellow Oms who resist the Draags oppression and violence. With its eerie, coolly surreal cutout animation by Roland Topor; brilliant psychedelic jazz score by Alain Goraguer; and wondrous creatures and landscapes, this Cannes-awarded 1973 counterculture classic is a perennially compelling statement against conformity and violence.
 </blockquote>
 
-But let's dive into what it depicts and the meaning behind it. In the beginning it introduces us to the blue giants that are the masters of the little human that is still a baby at this point in the plot.
+But let's dive into what it depicts and the meaning behind it. In the beginning, it introduces us to the blue giants that are the masters of the little human that is still a baby at this point in the plot.
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxrF89rMfSpZ3cy93hNBsv8uWE2h6eSQ-G&amp;clipt=EKrhGhjKgB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-This meditation in the context of the rest of the movie is referring to having sex while being dissociated. The eyes turning red and the bubble floating above the blue aliens is a great visualization of dissociation, of disconnecting from the body. In the next scene the realtively little human is encountering something in his host family:
+In the context of the rest of the movie, this meditation refers to having sex while being dissociated. The eyes are turning red and the bubble floating above the blue aliens is a great visualization of dissociation, of disconnecting from the body. In the next scene, the relatively little human is encountering something in his host family:
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/zrJMgm6dBHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-This is a key scene of the movie that depicts sexual child abuse in a very detached and geniusly subtle form. I know this might seem like a far fetched claim. First of all there are some details later in the movie that make this interpretation obvious and as well if you closely pay attention to what is happening, you can see this. The trick is to not interpret the scene to literally and start to see and be aware of the meaning behind what is literally happening. You have to loosen your awareness and as well connect with the body to see this. Let's take it slowly.
+This key scene of the movie depicts sexual child abuse in a very detached and ingeniously subtle form. I know this might seem like a far-fetched claim. First of all, there are some details later in the movie that makes this interpretation obvious, and as well if you closely pay attention to what is happening, you can see this. The trick is not to interpret the scene literally and start to see and be aware of the meaning behind what is directly happening. You have to loosen your awareness and connect with the body to see this. Let's take it slowly.
 
 ![](/images/fantastic-planet-1.png)
-<p class="caption">Here the human child shows up in the beginning of this movie scene. The background seems alien, but it does not take too much fantasy to see that these shapes resemble penises.</p>
+<p class="caption"> The human child shows up at the beginning of this movie scene. The background seems alien, but it does not take much fantasy to see that these shapes resemble penises.</p>
 
 ![](/images/fantastic-planet-2.png)
-<p class="caption">The child then sees a group of male aliens and they start to close their eyes, or dissociate, disconnect. A black tentacle makes contact with their bodies and the music implies pleasure.</p>
+<p class="caption">The child then sees a group of male aliens, and they start to close their eyes, dissociate, and disconnect. A black tentacle makes contact with their bodies, and the music implies pleasure.</p>
 ![](/images/fantastic-planet-3.png)
-<p class="caption">The group of male aliens loose their boundaries, their bodies merge.</p>
+<p class="caption">The group of male aliens lose their boundaries, and their bodies merge.</p>
 ![](/images/fantastic-planet-4.png)
 <p class="caption">The small child is shocked, almost ashamed to have witnessed this.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zrJMgm6dBHA?clip=UgkxifcIE2rbUgYZ1-aoyU57FX4rcf-id5is&amp;clipt=EI-KBRjX_gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-When the men are caught they just stop their act suddenly and pretend that nothing happened.
+When the men are caught, they just stop their act suddenly and pretend that nothing happened.
 
 ![](/images/fantastic-planet-6.png)
-<p class="caption">The small child runs under a rain cloud. That represents fear and also grief, the rain is a detached depiction of tears.</p>
+<p class="caption">The small child runs under a rain cloud. That represents fear and also grief; the rain is a detached depiction of tears.</p>
 
 ![](/images/fantastic-planet-7.png)
-<p class="caption">Notice how the child in the end of that rain scene, after running away in desparation smiles. It just put's on a good face.</p>
+<p class="caption">Notice how the child at the end of that rain scene, after running away in desperation smiles. It just puts on a good face.</p>
 
 The child character says the telling words.
 
@@ -56,33 +56,33 @@ The child character says the telling words.
 A drag week was equivalent to one of my years. I was just a live plaything who sometimes dared to rebel. 
 </blockquote>
 
-When you read the reviews and discussions and interpretations of the movie it is astonishing how some people pick up on the movie being about how we should not hurt animals, or how totalitarian regimes are bad. No one seems to see the most obvious here, it's a story about how children growing up in abusive homes are basically powerless and at the mercy of their parents. With abusive parents, in the worst case sexually abusive parents, their children are prisoners of giant aliens that they need to please and they try to rebel but their power is almost none compared to their parents. This movie is about how vulnerable children are. Something that not many that reviewed the movie seemed to have picked up on.
+When you read the reviews, discussions, and interpretations of the movie, it is astonishing how some people pick up on the movie being about how we should not hurt animals or how totalitarian regimes are evil. No one seems to see the most obvious here. It's a story about how children growing up in abusive homes are powerless and at the mercy of their parents. With abusive parents, in the worst case, sexually abusive parents, their children are prisoners of giant aliens that they need to please, and they try to rebel, but their power is almost none compared to their parents. This movie is about how vulnerable children are. Something that not many that reviewed the movie seemed to have picked up on.
 
 The next scene is one where my hunch about this being about child sexual abuse got very certain:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxZEPvXWcE3Oy_P0ritkFNJpnMrJbb6x3w&amp;clipt=ENChXRiw9mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Do you remember the adult aliens dissociation meditation? Well now here the movie explains that it was time for the children to be intiated to this as well. Now what is sexual here? Again it's so subtlely depicted that you need to loosen your awareness and become curious about the plants. In the movie reviews you can read many viewers mentioning that they found the bizarre plants particularly interesting. Well if you look at them closely in this clip of the child meditation you can make a stunning observation.
+Do you remember the adult aliens' dissociation meditation? Well, now here the movie explains that it was time for the children to be initiated to this as well. Now, what is sexual here? Again it's so subtlely depicted that you need to loosen your awareness and become curious about the plants. In the movie reviews, many viewers mention that they found the bizarre plants particularly interesting. Well, if you look at them closely in this clip of the child meditation, you can make a stunning observation.
 
 ![](/images/fantastic-planet-8.png)
-<p class="caption">Notice what these plants might be pointing to in a sexual context. Without viewing these scenes through that way of looking it's easy to miss this. The entire movie has an sexual undertone to activate this consciously as well as subconsciously. But let's put some more attention in here.</p>
+<p class="caption">Notice what these plants might point to in a sexual context. Without viewing these scenes through that way of looking, it's easy to miss this. The entire movie has a sexual undertone to activate this consciously and subconsciously. But let's put some more attention in here.</p>
 
 ![](/images/fantastic-planet-9.png)
-<p class="caption">Maybe you did see it. These plants are pointing to anal and vaginal penetration. Together with the floating children this scene seems to be depicting sexual child abuse as well. The whole movie makes the allusions in such a distanced and relatively subtle way that I feel it's unclear if the movie makers were themselves fully aware about what they were writing and drawing.</p>
+<p class="caption">Maybe you did see it. These plants are pointing to anal and vaginal penetration. Together with the floating children, this scene also seems to be depicting sexual child abuse. The movie makes the allusions in such a distanced and relatively subtle way that I feel it's unclear if the movie makers were themselves fully aware of what they were writing and drawing.</p>
 
-Afer this and some more background story the now adolescent human manages to escape his prison and flees. Not without encountering yet another pointer at the sexual undercurrent of this movie. I think no explanation is needed for this one:
+After this and some more background story, the now adolescent human manages to escape his prison and flees. Not without encountering yet another pointer to the sexual undercurrent of this movie. I think no explanation is needed for this one:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=Ugkxo20SXqDo2w4QI4hD9Y8MPlu7EIIllrRU&amp;clipt=EMzhZBjLzGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-After fleeing our adolescent main protagonist encounters a group of undomesticated wild humans that live in a park. There he observes their mating ritual. Symbolically it begins with them receiving some magical stones that makes them glow. Also they receive that glow while they walk over the dead skull of one of the blue aliens. This one is not entirely obvious but it seems to me that here a healing of sexuality is depicted. The humans in this sequence overcome their childhood abuse by symbollically climbing over the dead abuser and then enganging in adult, consensual sexuality.
+After fleeing, our adolescent main protagonist encounters a group of undomesticated wild humans that live in a park. There he observes their mating ritual. Symbolically it begins with them receiving some magical stones that make them glow. Also, they receive that glow while they walk over the dead skull of one of the blue aliens. This one is not entirely obvious, but it seems to me that healing of sexuality is depicted here. The humans in this sequence overcome their childhood abuse by symbolically climbing over the dead abuser and then engaging in adult, consensual sexuality.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=Ugkx_B5H51K1v6zcNWawEklSkbe_8bwVR2RQ&amp;clipt=ENGXfRix7IAB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In the end of the movie the meaning of the meditation is revealed to be sexuality, intercourse. The humans discover this and this allows them to force the blue aliens to give them their own planet and live without animosity.
+At the movie's end, the meaning of the meditation is revealed to be sexuality, and intercourse. The humans discover this, allowing them to force the blue aliens to give them their own planet and live without hate.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxDkUDF3k98Vp3ty_2Vvq_4Hp7wrdYhr8D&amp;clipt=EIbG7QEY5prxAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The movie has many other layers of meaning, but I focused on childhood sexual abuse because when reading the reviews this is what seems to resonate with many viewers the most as well. So given the above I hope to have shown that this movie is a ingeniously subtle and covert depiction of child sexual abuse. The movie ties this to dissociation, disembodiment. But it also has a message of the possibilty of healing your sexuality despite abuse. Now when you read the reviews and comments of the movie this is where it gets really interesting. First some of the comments under the full length [movie on youtube](https://www.youtube.com/watch?v=-7LuNSHlPco):
+The movie has many other layers of meaning, but I focused on childhood sexual abuse because when reading the reviews, this seems to resonate with many viewers the most. So given the above, I hope to have shown that this movie is an ingeniously subtle and covert depiction of child sexual abuse. The film ties this to dissociation, and disembodiment. But it also has a message of the possibility of healing your sexuality despite the abuse. Now when you read the movie reviews and comments, this is where it gets really interesting. First, some of the words under the entire length [movie on youtube](https://www.youtube.com/watch?v=-7LuNSHlPco):
 
 <blockquote>
 I absolutely love this movie. I wish sci Fi was artistic like this, just pure creativity. It isn't like anything I ever seen, this movie actually is a inspiration in my artwork, still gotta practice but it's my main inspiration. It's so, random but it's not random? If that makes sense, it's a wonderful movie.
@@ -182,7 +182,7 @@ I remember my father showing me this movie when I was 7 years old and ending up 
 This didn't scare me when I was young (about 8) and came across it when I was watching t.v., but now. It mortifies me. It REALLY freaks me out. I don't think I could ever watch it again. That fascinates me. I was so fearless as a child, but now, just the thought of watching this scares the hell out of me.
 </blockquote>
 
-Maybe this is not the movie this commenter is scared about but actually their own experience this movie is pointing towards.
+Maybe this is not the movie this commenter is scared about, but their own experience this movie is pointing towards.
 
 <blockquote>
 There's something disturbing about this movie,but i cant get it out of my head.Genius
