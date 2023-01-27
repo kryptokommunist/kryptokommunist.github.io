@@ -1,4 +1,5 @@
 language: ruby
+before_install: gem install bundler -v "~>1.0"
 before_script:
   - chmod +x "./build.sh"
 script: "./build.sh"
