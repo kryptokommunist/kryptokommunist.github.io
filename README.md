@@ -13,7 +13,7 @@ If you want to use this as a template just generate an github access token.  The
 - remove the last three lines from the [.travis.yml file](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/.travis.yml)
 - generate a personal [github token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 - `gem install travis`
-- `travis encrypt GH_TOKEN=$YOUR_TOKEN_HERE --add env.global`
+- `travis encrypt GH_TOKEN=YOUR_TOKEN_HERE --add env.global`
 - replace github paths/names in the [build.sh](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/build.sh)
 - replace articles in _posts folder
 - create personal repository named $YOUR_GH_USERNAME.github.io
