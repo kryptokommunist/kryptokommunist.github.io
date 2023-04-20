@@ -19,7 +19,7 @@ On the other hand, with the therapist from the US, I noticed that opening up so 
 
 First, what is the goal of therapy? It's learning to become aware of parts of your mind that you are hiding from yourself. It's to learn to love the parts of yourself that you disown. It's learning to become more embodied or embodied at all. It's learning to feel safe in your body. It's learning to notice how feeling relates to body sensations. It's learning to let the emotions move through you rather than fully identifying with them. It's learning to love all of your emotional experiences, especially the difficult ones. It's learning to have boundaries. It's understanding who you are and stopping wanting to change. It's learning to know that you are already perfect. It's learning that whatever you dislike about yourself is a natural, human reaction to your life experience. First I thought that crying often is a sign of a good therapist, but then some people, like me, have parts blocking crying at times.
 
-<b>*A simple heuristic for how good the therapist is: How often do you notice shifts in how you relate to yourself and others after your sessions?*</b>
+<b>*A simple heuristic for how good the therapist is: How often do you notice shifts in how you relate to yourself and others after your sessions? And how much do you feel like you are responsible for your progress?*</b>
 
 <!--more-->
 
