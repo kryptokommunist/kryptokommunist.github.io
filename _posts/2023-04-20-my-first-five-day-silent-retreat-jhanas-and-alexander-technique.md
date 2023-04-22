@@ -1,12 +1,14 @@
 ---
 layout: post
-title: My First Five-Day Silent Retreat: Jhanas & Alexander Technique
+title: "My First Five-Day Silent Retreat: Jhanas & Alexander Technique"
 category:
-- trauma
+- meditation
+- jhanas
 - therapy
 - English
 tags:
-- trauma
+- meditation
+- jhanas
 - therapy
 ---
 
