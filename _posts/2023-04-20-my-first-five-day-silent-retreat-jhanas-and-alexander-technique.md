@@ -16,7 +16,14 @@ Last week, I went on my first silent retreat at [Gaia House](https://gaiahouse.c
 
 At the end of the retreat, I went to London, which was quite a stark contrast to the quiet and peaceful scenery of the rural landscape around the retreat center oozing stillness and peacefulness. But even though it was harder to notice, I could still access the stillness within. It’s always there when I am sensitive enough to look for it. I also noticed colors more intensely and saw the positive and beautiful everywhere, all after five days of maybe six hours of daily meditation in a mix of walking and sitting meditation.
 
+![](/images/gaia_house1.jpeg)
+
 <!--more-->
+
+![](/images/gaia_house2.jpeg)
+g
+![](/images/gaia_house3.jpeg)
+<p class="caption"> The library and the entire place is truly beautiful and encourages you to become more present.</p>
 
 I am pretty sure now that [Alexander Technique](https://en.wikipedia.org/wiki/Alexander_Technique) is basically a form of social body awareness meditation. You can get to the same place without a teacher and just by returning awareness to the whole body over and over. It's also bringing students to expanded awareness and ultimately [nondual awareness](https://en.wikipedia.org/wiki/Nondualism). Over the five days, I noticed my awareness expanding outside but also within my body. At some point, I could feel my hips during walking and generally my whole body. That then automatically improved my posture because my body would automatically untense as soon as awareness was in the tensed area. Also, the feeling after the retreat coming back to the city was similar to receiving Alexander Technique sessions and then walking through Berlin. Awareness is expanded, and I just look everywhere more curiously. There is joy in more small things, the neon light in front of the restaurant, the palm trees. The small becomes big and magical. So there’s more joy in the day.
 
