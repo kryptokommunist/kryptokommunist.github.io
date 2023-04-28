@@ -53,7 +53,7 @@ pagination:
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Neuer</a>
     {% else %}
-      <span>&laquo; Neuer</span>
+      <span>&laquo; Previous</span>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
@@ -74,6 +74,6 @@ pagination:
   </div>
 {% endif %}
 
-  <p class="rss-subscribe">abbonieren <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
