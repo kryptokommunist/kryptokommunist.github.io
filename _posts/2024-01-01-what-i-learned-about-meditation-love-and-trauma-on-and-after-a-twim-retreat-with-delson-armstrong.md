@@ -12,17 +12,17 @@ tags:
 - therapy
 ---
 
-I have been practicing tranquil wisdom insight meditation ([TWIM](https://library.dhammasukha.org/books.html)), a powerful loving-kindness-based meditation system, for the last half a year with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided [TWIM metta meditation](https://www.youtube.com/watch?v=-5a028RS5Ck). During that practice after a month I accidentally dropped into the first and second Jhana, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly living kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.
+I have been practicing tranquil wisdom insight meditation ([TWIM](https://library.dhammasukha.org/books.html)), a powerful loving-kindness-based meditation system, for the last half a year with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided [TWIM metta meditation](https://www.youtube.com/watch?v=-5a028RS5Ck). During that practice after a month I accidentally dropped into the first and second Jhana, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.
 
-![](/images/TWIM/bhudda.jpg)
+![](/images/TWIM/bhudda.jpeg)
 
 <!--more-->
 
-![](/images/TWIM/meditationhall.jpg)
+![](/images/TWIM/meditationhall.jpeg)
 
-![](/images/TWIM/outside.jpg)
+![](/images/TWIM/outside.jpeg)
 
-![](/images/TWIM/forrest.jpg)
+![](/images/TWIM/forrest.jpeg)
 <p class="caption"> Going for a walk in the forest on the last day, the forest and sun rays were captivating as I saw the with fresh eyes like for the first time.</p>
 
 
