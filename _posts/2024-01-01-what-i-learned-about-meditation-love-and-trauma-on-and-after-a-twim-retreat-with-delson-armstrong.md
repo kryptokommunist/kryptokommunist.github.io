@@ -16,6 +16,16 @@ I have been practicing tranquil wisdom insight meditation ([TWIM](https://librar
 
 <!--more-->
 
+![](/images/TWIM/meditationhall.jpg)
+
+![](/images/TWIM/bhudda.jpg)
+
+![](/images/TWIM/outside.jpg)
+
+![](/images/TWIM/forrest.jpg)
+<p class="caption"> Going for a walk in the forest on the last day, the forest and sun rays were captivating as I saw the with fresh eyes like for the first time.</p>
+
+
 ## forgiveness practice, trauma and finding a safe anchor in the heart
 
 This has been the second silent retreat of my life after the 6-day silent retreat with Catherine McGee at Gaia House earlier this year. I started with forgiveness practice for the first three days of the retreat. That meant that I would observe all the thoughts I had throughout the day and forgive them. And I was in for a shock. The whole day my mind was thinking thoughts that were completely referring to the past. My thoughts were mainly going back to replaying situations from my childhood and school as a teenager. Silence at the dinner table due to being on a silent retreat? My mind wouldn’t care and started thinking about being in trouble because there must be some conflict at the dinner table. Looking deeper of course that was how my childhood dinner with family looked like very often. My mind did not care that I was now an adult sitting with meditators at a silent dinner table.
