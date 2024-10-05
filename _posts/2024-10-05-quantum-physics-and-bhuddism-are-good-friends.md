@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Quantum physics and Buddhism are good friends"
+category:
+- meditation
+- jhanas
+- therapy
+- English
+tags:
+- meditation
+- jhanas
+
+---
+
+On my recent long retreat I listened to a talk by Rob Burbea ([at home in the universe](https://dharmaseed.org/talks/13848/)) where he points out how quantum physics implies a non-solid and interdependent world model that aligns with Bhuddistic teachings on emptiness. That was amazing for me because I believed that Bhuddistic spirituality is at odds with science and physics, but it turns out it's only at odds with the solid linear world model of classical physics. It seems that many quantum physicists didn't dare to speak about the extreme implications of their research. From my understanding, the idea of an independent observer does not make sense in quantum physics, the observer making a measurement is always influencing the observation. They are not independent, just as our sense of self is not separable from what we observe. Through entanglement on a macro scale, the world seems relatively stable. This also gave me some ideas about time, for example, quantum entanglement works (quantum states in different locations are coupled) because the information that contains the measurements has to meet, and this will cause a collapse of the quantum states. The email between the two observers syncs up both quantum objects. Similarly, I could imagine, if I imagine sending somebody loving energy and later telling them about it that this might be a way in how I could influence the past. Telling the person would cause a collapse of the quantum wave function and be a determining factor of what the past experience of that person will become. In a similar way I could see how imagining different futures could create parts of my present. It's really wild. Maybe if enough people believed that the earth would rotate the other direction it would actually make it true? Maybe that is exaggerated but I took from it that just how I view reality potentially creates different realities, maybe not just psychologically but also physically.
+
+After the retreat, I met multiple people who said they perceive linear time as an illusion and to them it feels more like everything is happening at the same time. That one was mind-boggling to me. I started to look for my footsteps on the paths I walked back, that would be clear evidence of linear time wouldn't it? But folks told me that all the steps are happening at the same moment and somehow it made a bit of intuitive sense to me.
+
+I realized that the classical physics worldview is assumed by Western culture and is influencing my practice, the idea of an independent observer, permanence, and solidity is part of the western basic worldview I learned as a kid. Letting go of that is letting go of the fabric of my home culture. This view is ubiquitous despite the latest science pointing to a different perspective, later in a zen center I read a book by Carlo Rovelli (he's a legit quantum physicist) in which he makes exactly that point. The book is called [Helgoland](https://www.amazon.com/Helgoland-Making-Sense-Quantum-Revolution/dp/0593328892/ref=sr_1_1?crid=1MKDLZ4IK67US&dib=eyJ2IjoiMSJ9.5CGzALC1a6uilvVPGewcuC-Ugwg8HimUcWZw5o5T741Pf-QDHNW0ZAqUo-swVk7aE_v_U-TOvTXCQQ7rc2QXdo4l3f7o8A8PjCkCoNcxvLh7VQPzF7PglVE8cPUZl0A2PtU-qdcftp2bKgO3nEzZT4wvtU5OYUxzqnFzQ8obMRRfT2nqgppdP3KQ8B75vGFL4uuX_PNnLQzAUqGg1RxmUU101FbD5ew6Q2W8mTTlbSw.8ttTKZ3MvZdoqvGxBaYB38N9LaIJXZ73xznOi4CqQs0&dib_tag=se&keywords=helgoland+carlo+rovelli&qid=1728163281&sprefix=helgoland+car%2Caps%2C193&sr=8-1) and is a great read. I also loved how this was obvious to the folks I talked to there and they said that the public probably will catch up on this in a couple of decades. I just loved how this resolved my nerd's pain of bringing together science and spirituality.
