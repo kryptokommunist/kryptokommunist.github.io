@@ -56,6 +56,8 @@ I could feel my awareness becoming wider after a couple of weeks. For example, I
 
 Another thing that stood out was that I could remember most of my dreams. And after a couple of weeks due to my metta practice a golden heart would start appearing again and again in my dreams.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RQVMKNK2cQk?si=7umgBTLYMAVrhQ3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## narcissism in meditation teachers and the guru pattern
 
 I was clear that I needed to properly vet the teacher since the retreat in silence for two months meant that my only external input would be the teacher since we would vow to not read, write, or communicate with anyone outside the retreat. The teacher was very welcoming and accommodating, it felt like he gave a lot of space and was sensitive to my special needs and concerns due to undertaking this long retreat knowing I have a lot of childhood trauma to work with.
