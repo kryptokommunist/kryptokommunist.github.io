@@ -2,23 +2,12 @@
 
 This is the repo for my personal blog powered by static site generator [jekyll](https://jekyllrb.com) and [github pages](https://pages.github.com).
 
-## Auto deployment on [Travis-CI](https://travis-ci.org)
+## Using the docker environment
 
-The [.travis.yml file](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/.travis.yml) is configured to execute the [build.sh](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/build.sh) with each push to the jekyll branch. The jekyll site will be generated and pushed to the master branch of the repository.
+Generate container: `docker build -t blog`. 
 
-If you want to use this as a template just generate an github access token.  Then
+Run with terminal: `docker run -it --rm -v $(pwd):/site -p 4000:4000 blog /bin/bash`
 
-- `git clone git@github.com:kryptokommunist/kryptokommunist.github.io.git`
-- `git checkout jekyll`
-- remove the last three lines from the [.travis.yml file](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/.travis.yml)
-- generate a personal [github token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
-- now just create secret variable in travis-ci settings of the repo
-  - `gem install travis`
-  - `travis encrypt GH_TOKEN=YOUR_TOKEN_HERE --add env.global`
-- replace github paths/names in the [build.sh](https://github.com/kryptokommunist/kryptokommunist.github.io/blob/jekyll/build.sh)
-- replace articles in _posts folder
-- create personal repository named $YOUR_GH_USERNAME.github.io
-- activate Travis-CI for repo
-- push repo to your personal repository named $YOUR_GH_USERNAME.github.io
+Serve: `bundle exec jekyll serve`.
 
-and you're good to go!
+Generate site: `bundle exec jekyll build`.
