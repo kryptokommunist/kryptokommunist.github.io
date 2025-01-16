@@ -22,7 +22,7 @@ I am a curious being that is very much interest in bhuddism, mindfulness, aliven
         <p class="synopsis">From an early age on I was fascinated with computers and digital light installations as an medium of expression. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. The mesmerizing patterns and the ability to make a place feel magical are what draws me to make these kinds of installation.</p>
 
         <div id="event2Container">
-            {% for post in site.categories['portfolio/art'] | sort: 'date' %}
+            {% for post in site.categories['portfolio/art'] %}
             <section class="projectCard">
                 <a class="titleLink desktopHide" href="{{ post.url }}">
                     <h2>{{ post.title }}</h2>
