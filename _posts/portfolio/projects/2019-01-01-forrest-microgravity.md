@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Forrest Microgravity"
-subtitle: "Site Specific LED installation"
+subtitle: "site specific LED installation"
 year: "2019"
 image: /images/portfolio/art/IMG_0546.JPG
 categories: portfolio/projects

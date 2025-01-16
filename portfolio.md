@@ -19,7 +19,7 @@ I am a curious being that is very much interest in bhuddism, mindfulness, aliven
 
     <div id="projects" class="tab-content active">
         <h1>Projects</h1>
-        <p class="synopsis">From an early age on I was fascinated with computers and digital light installations as an medium of expression. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. The mesmerizing patterns and the ability to make a place feel magical are what draws me to make these kinds of installation.</p>
+        <p class="synopsis">From an early age on I was fascinated with computers. Later also digital light installations catched my attention. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. As well I love making software that is challenging and incorporates hardware as well as machine learning aspects.</p>
 
         <div id="event2Container">
             {% for post in site.categories['portfolio/projects'] %}
