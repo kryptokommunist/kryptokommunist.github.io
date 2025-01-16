@@ -1,0 +1,651 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+$fa-font-path: "fonts/font-awesome/";
+@import 'font-awesome';
+
+.post {
+  margin-bottom: 100px;
+}
+
+.post img {
+  width: 89%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.post .caption {
+  text-align: center;
+}
+
+.post-list img {
+  width: 66%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.post-list .caption {
+  text-align: center;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.post-tags {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.post-tag {
+    display: inline-block;
+    position: relative;
+    background: #424242;;
+    padding: 0 .5rem;
+    margin: .2em;
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: #fff !important;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out
+}
+
+.post-tag:hover {
+    text-decoration: none;
+    background: #6a9fb5;
+    color: #fff
+}
+
+.svg-icon {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: .3rem;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 89%;
+}
+
+#last-name {
+  color: #f22b74 !important;
+}
+
+.site-title {
+    font-weight: bold !important;
+}
+
+.madewith {
+  text-align: right;
+  margin: 1rem;
+  margin-top: -1.5rem;
+}
+
+.pagination {
+    margin-bottom: 1rem
+}
+
+#search-box {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #2a7ae2;
+    margin-bottom: 1em
+}
+.tabs {
+  .tab-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f1f1f1;
+    border-radius: 4px;
+    
+    li {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      background: #ddd;
+      border-right: 1px solid #ccc;
+      
+      &.active {
+        background: #6a9fb5;
+        color: white;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+      }
+    }
+  }
+
+  .tab-content {
+    .tab-pane {
+      display: none;
+      padding: 20px;
+      
+      &.active {
+        display: block;
+      }
+
+      .tile-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+
+        .tile {
+          background: #fff;
+          padding: 15px;
+          border-radius: 6px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          
+          img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+          }
+
+          h3 {
+            margin: 0;
+            font-size: 1.25em;
+            color: #333;
+          }
+
+          p {
+            color: #777;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---- portfolio ---- */
+
+.portfolio {
+
+/* CONTAINER LAYOUTS */
+.projectCard{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 20px;
+}
+
+.twoCol{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+}
+
+.thirdLeft{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 20px;
+}
+
+.thirdRight{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 20px;
+}
+
+.gridGallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+	row-gap: 20px;
+	img {
+		margin: 0;
+	}
+}
+/* ---- ---- */
+
+/* IMAGE CLASSES */
+.tinySquare{
+	width: 90px;
+}
+
+.tinySquare.left{
+	float: left;
+	margin-right: 20px;
+}
+
+.tinySquare.right{
+	float: right;
+	margin-left: 20px;
+}
+/* ---- ---- */
+
+
+/* UTILITY CLASSES */
+.mobileHide{
+	display:block;
+}
+
+.desktopHide{
+	display:none;
+}
+
+.clear {
+	clear: both;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.noJustify{
+	text-align: left;
+}
+/* ---- ---- */
+
+/* PAGE SPECIFIC CLASSES */
+.synopsis{
+	font-weight: bold;
+	line-height: 140%;
+	margin: 0px 0px 20px 0px;
+	text-align: justify;
+}
+
+.recordContainer{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
+.recordContainer * a{
+	width: 100%;
+}
+
+.recordCard{
+	width: 100%;
+}
+
+section{
+	margin-bottom: 20px;
+	display: inline-block;
+	width:100%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-color: #999;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+	border-radius: 9px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+a{
+	color: #000;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+a:has(img){
+	width: 100%;
+	object-fit: cover;
+}
+
+
+.titleLink{
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+	src: url('webfontkit/varelaround-webfont.eot'); /* IE9 Compat Modes */
+	src: local(''),
+    	 url('webfontkit/varelaround-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/varelaround-webfont.woff2') format('woff2'),
+		 url('webfontkit/varelaround-webfont.ttf'),
+         url('webfontkit/varelaround-webfont.woff') format('woff'),
+         url('webfontkit/varelaround-webfont.svg#varela_roundregular') format('svg');
+  }
+
+body {
+	margin: 0;
+	padding: 0 0 0 0;
+	color: #000;
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	letter-spacing:1px;
+	overflow-x: hidden;
+	background-color: #eeeeee;
+}
+
+/* TEXT STYLES */
+
+h1 {
+	display: inline-block;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	color: #000;
+	letter-spacing: 2px;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-weight: bold;
+  	text-align: left;
+  	font-family: 'Varela Round';
+  	font-size: 20pt;
+  	line-height: 1em;
+}
+
+h2 {
+	color: #000;
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	letter-spacing:3px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h3 {
+	display: block;
+	color: #000;
+	font-size: 11pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	letter-spacing:3px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+p{
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 140%;
+	text-align: justify;
+	margin-block-start: 0%;
+	margin-bottom:10px;
+}
+
+.textContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
+.textCol{
+	width: 100%;
+	padding:0%;
+	line-height: 140%;
+	float: left;
+	text-align: justify;
+}
+
+
+/* ---- ID STYLES ---- */
+#container {
+	width: 100vw;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+#header {
+	width: 900px;
+	float: left;
+	overflow: visible;
+	background-color: #eeeeee;
+}
+
+#content {
+	max-width: 1000px;
+	padding: 10px 4% 0% 4%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#footer {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 10px 10px;
+}
+
+#footer ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: 240%;
+}@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+	src: url('webfontkit/varelaround-webfont.eot'); /* IE9 Compat Modes */
+	src: local(''),
+    	 url('webfontkit/varelaround-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/varelaround-webfont.woff2') format('woff2'),
+		 url('webfontkit/varelaround-webfont.ttf'),
+         url('webfontkit/varelaround-webfont.woff') format('woff'),
+         url('webfontkit/varelaround-webfont.svg#varela_roundregular') format('svg');
+  }
+
+body {
+	margin: 0;
+	padding: 0 0 0 0;
+	color: #000;
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	letter-spacing:1px;
+	overflow-x: hidden;
+	background-color: #eeeeee;
+}
+
+/* TEXT STYLES */
+
+h1 {
+	display: inline-block;
+	font-size: 20pt;
+	font-weight: bold;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	color: #000;
+	letter-spacing: 2px;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-weight: bold;
+  	text-align: left;
+  	font-family: 'Varela Round';
+  	font-size: 20pt;
+  	line-height: 1em;
+}
+
+h2 {
+	color: #000;
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	letter-spacing:3px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+h3 {
+	display: block;
+	color: #000;
+	font-size: 11pt;
+	font-weight: normal;
+	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+	text-align: left;
+	letter-spacing:3px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+p{
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 140%;
+	text-align: justify;
+	margin-block-start: 0%;
+	margin-bottom:10px;
+}
+
+.textContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
+}
+
+.textCol{
+	width: 100%;
+	padding:0%;
+	line-height: 140%;
+	float: left;
+	text-align: justify;
+}
+
+
+/* ---- ID STYLES ---- */
+#container {
+	width: 100vw;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+#header {
+	width: 900px;
+	float: left;
+	overflow: visible;
+	background-color: #eeeeee;
+}
+
+#content {
+	max-width: 1000px;
+	padding: 10px 4% 0% 4%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+#footer {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 10px 10px;
+}
+
+#footer ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: 240%;
+}
+
+}
+/* ---- ---- */
+
+.experience {
+
+  .projectCard {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.2s;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .favicon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border-radius: 4px;
+  }
+  
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .mobileHide {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .desktopHide {
+      display: none;
+    }
+  }
+
+}
