@@ -9,7 +9,7 @@ include: true
 
 <p class="synopsis">Hi 👋,
 
-I am a curious being that is very much interest in bhuddism, mindfulness, aliveness, embodiment, technology and qualia. I am good with computers. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. May you be well, friend.</p>
+I am a curious being that is very much interest in bhuddism, mindfulness, aliveness, embodiment, technology and qualia. I'd like to build technology that supports people in becoming more alive. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. May you be well, friend.</p>
 
     <div class="tabs">
         <button class="tab-link active" onclick="openTab(event, 'projects')">Projects</button>
@@ -18,8 +18,7 @@ I am a curious being that is very much interest in bhuddism, mindfulness, aliven
     </div>
 
     <div id="projects" class="tab-content active">
-        <h1>Projects</h1>
-        <p class="synopsis">From an early age on I was fascinated with computers. Later also digital light installations catched my attention. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. As well I love making software that is challenging and incorporates hardware as well as machine learning aspects.</p>
+        <p class="synopsis">From an early age on I was fascinated with computers. During a summer holiday as a teenager I built breakout in Java and fell in love with programming. Later digital light installations catched my attention. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. I love making software that is challenging and especially if it incorporates hardware as well as machine learning aspects.</p>
 
         <div id="event2Container">
             {% for post in site.categories['portfolio/projects'] %}
@@ -43,7 +42,6 @@ I am a curious being that is very much interest in bhuddism, mindfulness, aliven
     </div>
 
     <div id="work" class="tab-content">
-        <h1>Work Experience</h1>
         <p class="synopsis">My professional path reflects my passion for both software and hardware development. From managing IT infrastructure during a startup's growth phase to developing spacecraft systems, I've consistently sought out opportunities that combine technical innovation with practical impact. Through freelance work and various projects, I've maintained a strong focus on creative problem-solving while building systems that make a difference.</p>
         <div id="event2Container">
             <section class="projectCard">
@@ -140,7 +138,6 @@ I am a curious being that is very much interest in bhuddism, mindfulness, aliven
     </div>
 
     <div id="education" class="tab-content">
-        <h1>Education</h1>
         <p class="synopsis">My academic journey combines deep technical expertise with interdisciplinary learning. Starting at Humboldt University with a foundation in computer science and physics, I transitioned to the Hasso-Plattner-Institute to focus on practical IT systems engineering. This combination of theoretical understanding and hands-on implementation has shaped my approach to solving complex technical challenges and developing innovative solutions.</p>
         <div id="event2Container">
             <section class="projectCard">
