@@ -12,17 +12,17 @@ include: true
 I am a curious being that is very much interest in bhuddism, mindfulness, aliveness, embodiment, technology and qualia. I am good with computers. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. May you be well, friend.</p>
 
     <div class="tabs">
-        <button class="tab-link active" onclick="openTab(event, 'art')">Art</button>
+        <button class="tab-link active" onclick="openTab(event, 'projects')">Projects</button>
         <button class="tab-link" onclick="openTab(event, 'work')">Work Experience</button>
         <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
     </div>
 
-    <div id="art" class="tab-content active">
-        <h1>Installations</h1>
+    <div id="projects" class="tab-content active">
+        <h1>Projects</h1>
         <p class="synopsis">From an early age on I was fascinated with computers and digital light installations as an medium of expression. From implementing lighting at forrest raves around Berlin in the early days I moved later to installations for festivals and exhibitions. The mesmerizing patterns and the ability to make a place feel magical are what draws me to make these kinds of installation.</p>
 
         <div id="event2Container">
-            {% for post in site.categories['portfolio/art'] %}
+            {% for post in site.categories['portfolio/projects'] %}
             <section class="projectCard">
                 <a class="titleLink desktopHide" href="{{ post.url }}">
                     <h2>{{ post.title }}</h2>
