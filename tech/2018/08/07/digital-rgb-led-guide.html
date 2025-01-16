@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Digital RGB LED guide | kryptokommunist’s blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Digital RGB LED guide" />
+<meta name="author" content="Marcus Ding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways." />
+<meta property="og:description" content="I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways." />
+<link rel="canonical" href="https://kryptokommun.ist/tech/2018/08/07/digital-rgb-led-guide.html" />
+<meta property="og:url" content="https://kryptokommun.ist/tech/2018/08/07/digital-rgb-led-guide.html" />
+<meta property="og:site_name" content="kryptokommunist’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-07T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Digital RGB LED guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2018-08-07T00:00:00+00:00","datePublished":"2018-08-07T00:00:00+00:00","description":"I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.","headline":"Digital RGB LED guide","mainEntityOfPage":{"@type":"WebPage","@id":"https://kryptokommun.ist/tech/2018/08/07/digital-rgb-led-guide.html"},"url":"https://kryptokommun.ist/tech/2018/08/07/digital-rgb-led-guide.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/tech/">Tech</a>
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/berlinplaces/">Berlin places</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/overview/">Overview</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="/portfolio/">Portfolio</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+          <a class="page-link" href="/search/">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Digital RGB LED guide</h1>
+    <p class="post-meta">
+      <time datetime="2018-08-07T00:00:00+00:00" itemprop="datePublished">
+        
+        Aug 7, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.
+<!--more--></p>
+<h2 id="ws2801">WS2801</h2>
+
+<p><img src="/images/ws2801.png" alt="" style="width: 220px" /></p>
+
+<p>This is the first generation of control ICs by <a href="http://www.world-semi.com">World Semiconductor</a> which requires a separate clock input additional to data (SPI).</p>
+
+<h2 id="ws2811">WS2811</h2>
+
+<p><img src="/images/ws2811.png" alt="" style="width: 220px" /></p>
+
+<p>This is the generation after the WS2801. This IC only requires data input and works with a fixed clock speed of either 400kHz or 800kHz, which might require you to save all stripe color values in a buffer in order to match the required speed.</p>
+
+<h2 id="ws2812">WS2812</h2>
+
+<p><img src="/images/ws2812.png" alt="" style="width: 220px" /></p>
+
+<p>This is the name for an SMD LED package with an integrated WS2811 IC.</p>
+
+<h2 id="ws2812b">WS2812B</h2>
+
+<p><img src="/images/ws2812b.png" alt="" style="width: 220px" /></p>
+
+<p>This is the improved version of the WS2812. It has a brighter LED with a more uniform color distribution. Also it features an reverse protection circuit, which will prevent breaking the stripe when attaching the power source in the wrong order.</p>
+
+<h2 id="ws2813">WS2813</h2>
+
+<p><img src="/images/ws2813.png" alt="" style="width: 220px" /></p>
+
+<p>This is the latest version. It works just like WS2812B, but also tolerates failing pixels: <a href="https://www.youtube.com/watch?v=a6s2MlZHnC8">see video</a>.</p>
+
+<p><a href="https://playground.boxtec.ch/doku.php/led/ledpixel_guide">source</a></p>
+
+<h2 id="sk6812">SK6812</h2>
+
+<p>The SK6812 is a clone of the WS2812, that is completely compatible. It’s PWM frequency is twice that of the WS2812B which should result in less flickering.</p>
+
+<p><a href="https://cpldcpu.wordpress.com/2016/03/09/the-sk6812-another-intelligent-rgb-led/">source</a></p>
+
+<h2 id="apa102">APA102</h2>
+
+<p>These LEDs are designed by <a href="http://neon-world.com/en/">APA Electronic co. LTD</a>. They don’t show any visible PWM flicker when moving the LED due to a very high modulation frequency (19.2 kHz). The full brighness setting (31) should be used to reduce flicker. It was tested running with 60MHz SPI.</p>
+
+<p><a href="https://cpldcpu.wordpress.com/2014/08/27/apa102/">source 1</a>
+<a href="https://www.pjrc.com/why-apa102-leds-have-trouble-at-24-mhz/">source 2</a></p>
+
+<h2 id="sk9822">SK9822</h2>
+
+<p>These are a clone of the APA102. Unfortunately it has a slightly different behaviour regarding it’s protocol since every frame will be displayed on receiving the next start frame. That results in updating all LEDs at once unlike with the APA102 or WS28XX.</p>
+
+<p><a href="https://cpldcpu.wordpress.com/2016/12/13/sk9822-a-clone-of-the-apa102/">source</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>TO DO: write a conclusion and order LED stripe</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th style="text-align: center">SK9822</th>
+      <th style="text-align: center">SK6812</th>
+      <th style="text-align: center">APA102</th>
+      <th style="text-align: center">WS2813</th>
+      <th style="text-align: center">WS2812B</th>
+      <th style="text-align: center">WS2812</th>
+      <th style="text-align: center">WS2811</th>
+      <th style="text-align: center">WS2801</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Update</td>
+      <td style="text-align: center">Simultaneous</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+      <td style="text-align: center">Staggered</td>
+    </tr>
+    <tr>
+      <td>Update trigger</td>
+      <td style="text-align: center">Reset frame (0x00000000)</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+      <td style="text-align: center">RGB data transmission</td>
+    </tr>
+    <tr>
+      <td>PWM Frequency</td>
+      <td style="text-align: center">~4.7 kHz</td>
+      <td style="text-align: center">~1.1kHz</td>
+      <td style="text-align: center">~19.2 kHz</td>
+      <td style="text-align: center">2kHz</td>
+      <td style="text-align: center">430 Hz</td>
+      <td style="text-align: center">430 Hz</td>
+      <td style="text-align: center">430 Hz</td>
+      <td style="text-align: center">2.5 kHz</td>
+    </tr>
+    <tr>
+      <td>Global brightness control</td>
+      <td style="text-align: center">programmable current source</td>
+      <td style="text-align: center">PWM at ~440 Hz</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td>max data rate</td>
+      <td style="text-align: center">30MHZ</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">20MBit/s (max input clock)</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">800 kB/s</td>
+      <td style="text-align: center">25MBit/s (max input clock)</td>
+    </tr>
+    <tr>
+      <td>Best Price $/m (IP30)</td>
+      <td style="text-align: center"><a href="https://de.aliexpress.com/item/5mX-New-arrival-SK9822-5050SMD-RGB-digital-flexible-led-strip-light-DC5V-input-30-32-48/32713951190.html">21.42</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/SK6812-RGBW-similar-ws2812b-4-in-1-1m-4m-5m-30-60-144-leds-pixels-m/836457_32821691618.html">16.70</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/APA102-strip-1m-3m-5m-30-60-72-96-144-leds-pixels-m-APA102-Smart-led/330721_32878004298.html">20.71</a></td>
+      <td style="text-align: center"><a href="https://de.aliexpress.com/item/Neue-1-mt-5-mt-WS2813-Smart-led-pixel-streifen-Schwarz-Wei-PCB-30-60-leds/32864264738.html">18.72</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/item/individually-addressable-full-color-1-3-4-5m-waterproof-ip65-ip67-5050-rgb-30-60-144/32820264632.html">13.57</a></td>
+      <td style="text-align: center"><a href="https://www.aliexpress.com/store/product/1m-4m-5m-WS2812B-Smart-led-pixel-strip-Black-White-PCB-30-60-144-leds-m/2880007_32793949673.html">11.72</a></td>
+      <td style="text-align: center">144 LED/m not possible</td>
+      <td style="text-align: center">144 LED/m not possible</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="voltage-drop">Voltage drop</h2>
+
+<p>In order to overcome voltage drop with long LEDs strips a higher voltage is better. Otherwise power injection every couple meters will be required.</p>
+
+<h2 id="conclusion-1">Conclusion</h2>
+
+<p>Finally I decided to purchase the WS2812, because when ordering a lot of LEDs the price difference is very noticeable. (1680€ vs. 1050€) The data speed of 800 kBit/s is enough to run 4 meters of stripe with 60 frames per second. To me the missing features of reverse polarity protection and tolerating failing pixels isn’t worth almost twice the price if you compare WS2812 to WS2813. Also the lower PWM frequency is acceptable since the object and the viewer won’t move around very fast. Also the external resistor next to every LED is a downside compared to WS2813. 🦄🔥</p>
+
+  </div>
+
+  <div class="post-meta post-tags">
+    
+      <a href="/tags/#led" class="post-tag"> led </a>
+    
+      <a href="/tags/#lighting" class="post-tag"> lighting </a>
+    
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+
+  <div style="text-align: center">
+    <span><a href="mailto:marcusding@me.com"><span class="username"><i class="fas fa-envelope-square"></i> mail</span></a></span>
+    <span><a href="https://twitter.com/kryptokommunist"><span class="username"><i class="fab fa-twitter-square"></i> follow</span></a></span>
+    <span><a href="https://www.letterboxd.com/kryptokommunist"><span class="username"><i class="fas fa-film"></i> watch</span></a></span>
+    <span><a href="https://www.github.com/kryptokommunist"><i class="fab fa-github-square"></i> code</span></a></span>
+    <span><a href="https://www.flickr.com/photos/kryptokommunist/"><span class="username"><i class="fab fa-flickr"></i> see</span></a></span>
+    <span><a href="https://www.instagram.com/kryptokommunist/"><span class="username"><i class="fab fa-instagram"></i> see more</span></a></span>
+  </div>
+</div>
+</footer>
+<div class="madewith">
+  <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
+</div>
+</body>
+
+</html>

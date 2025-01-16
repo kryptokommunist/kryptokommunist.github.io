@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Automating LaTeX compilation in Gitlab-CI | kryptokommunist’s blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Automating LaTeX compilation in Gitlab-CI" />
+<meta name="author" content="Marcus Ding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The problem You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?" />
+<meta property="og:description" content="The problem You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?" />
+<link rel="canonical" href="https://kryptokommun.ist/tech/2018/03/19/latex-in-gitlab-ci.html" />
+<meta property="og:url" content="https://kryptokommun.ist/tech/2018/03/19/latex-in-gitlab-ci.html" />
+<meta property="og:site_name" content="kryptokommunist’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-19T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Automating LaTeX compilation in Gitlab-CI" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2018-03-19T00:00:00+00:00","datePublished":"2018-03-19T00:00:00+00:00","description":"The problem You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?","headline":"Automating LaTeX compilation in Gitlab-CI","mainEntityOfPage":{"@type":"WebPage","@id":"https://kryptokommun.ist/tech/2018/03/19/latex-in-gitlab-ci.html"},"url":"https://kryptokommun.ist/tech/2018/03/19/latex-in-gitlab-ci.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/tech/">Tech</a>
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/berlinplaces/">Berlin places</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/overview/">Overview</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="/portfolio/">Portfolio</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+          <a class="page-link" href="/search/">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Automating LaTeX compilation in Gitlab-CI</h1>
+    <p class="post-meta">
+      <time datetime="2018-03-19T00:00:00+00:00" itemprop="datePublished">
+        
+        Mar 19, 2018
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="the-problem">The problem</h2>
+
+<p>You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?</p>
+
+<!--more-->
+
+<h2 id="the-solution">The solution</h2>
+
+<p>Combining some Python scripting and GitLab-CI configs results in a nice pipeline that processes LaTeX documents automatically while enforcing a certain folder structure. No more garbage and no more pain. Find the <a href="https://gitlab.com/kryptokommunist/latexpipeline">example repo here</a>.</p>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">The working <a href="https://gitlab.com/kryptokommunist/latexpipeline/pipelines">GitLab CI pipeline</a></caption>
+<tr><td><img src="/images/gitlab-ci.png" alt="GitLab CI pipeline" /></td></tr>
+</table>
+</div>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">The script output</caption>
+<tr><td><img src="/images/gitlab-ci-out.png" alt="" /></td></tr>
+</table>
+</div>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">The uploaded resulting artifacts <a href="https://gitlab.com/kryptokommunist/latexpipeline/-/jobs/57720189/artifacts/browse">accessible in GitLab</a></caption>
+<tr><td><img src="/images/gitlab-ci-artifacts.png" alt="accessible in GitLab" /></td></tr>
+</table>
+</div>
+
+<h3 id="email">Email</h3>
+
+<p>For emailing a document for example to your tutors the <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline/latexpipeline.py">scripts/pipeline/latexpipeline.py</a> submodule will parse the commit message and search for the <code class="language-plaintext highlighter-rouge">--final</code> flag. In our example the commit message</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Add my assignment no 5 --final assignment_papers/documentfoldername --comment Sorry for my late submission, it will not happen again! 😇💋
+</code></pre></div></div>
+
+<p>would result in an raw text email being sent to the recipient specified in <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py"><code class="language-plaintext highlighter-rouge">scripts/pipeline_script.py</code></a> with the email of the GitLab User being CCed as Reply-To.</p>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">The mail being sent to the address defined in <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py">scripts/pipeline_script.py</a></caption>
+<tr><td><img src="/images/gitlab-ci-mail.png" alt="scripts/pipeline_script.py" /></td></tr>
+</table>
+</div>
+
+<h3 id="telegram-and-iftt">Telegram and IFTT</h3>
+
+<p>With a little help by <a href="https://ifttt.com">IFTTT.com</a> it’s very easy to integrate Telegram notifications into the system using a bot. One benefit is certainly shaming users into testing their TeX files before submitting them knowing that their utter failure will be public.</p>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">Exemplary Telegram notifications about successes and failures</caption>
+<tr><td><img src="/images/gitlab-ci-telegram.png" alt="" /></td></tr>
+</table>
+</div>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">The applets for the bachelorprojects Telegram group including the Webhook based applet forwarding messages to the Telegram bot.</caption>
+<tr><td><img src="/images/gitlab-ci-ifttt.png" alt="" /></td></tr>
+</table>
+</div>
+
+<h3 id="a-short-intro-to-gitlab-ci">A short intro to GitLab CI</h3>
+
+<p><a href="https://docs.gitlab.com/ce/ci/README.html">GitLab CI</a> is like any other continuous integration platform with the additional feature of <a href="https://docs.gitlab.com/ee/user/project/pipelines/job_artifacts.html">job artifacts</a>. This means a job can produce files as output that will be stored and and can be directly linked to on the GitLab platform. Of course this is ideal for our LaTeX pipeline. Let’s take a look at the <code class="language-plaintext highlighter-rouge">compile_pdf</code> stage:</p>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">compile_pdf</span><span class="pi">:</span>
+  <span class="na">stage</span><span class="pi">:</span> <span class="s">compile_pdf</span>
+  <span class="na">before_script</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">rm -rf htmlcov</span>
+  <span class="na">script</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">python3 scripts/pipeline_script.py run "$GITLAB_USER_NAME" $CI_JOB_ID "$(git log -1 --pretty=%B)" $GITLAB_USER_EMAIL $CI_PROJECT_URL</span>
+  <span class="na">cache</span><span class="pi">:</span>
+    <span class="na">key</span><span class="pi">:</span> <span class="s">single_pdfs</span>
+    <span class="na">paths</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">assignment_papers/latex_output</span>
+      <span class="pi">-</span> <span class="s">letters/latex_output</span>
+  <span class="na">artifacts</span><span class="pi">:</span>
+    <span class="na">paths</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">assignment_papers/*.pdf</span>
+      <span class="pi">-</span> <span class="s">letters/*.pdf</span>
+  <span class="na">only</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">master</span></code></pre></figure>
+
+<p>First it executes the <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py"><code class="language-plaintext highlighter-rouge">scripts/pipeline_script.py</code></a> script. The necessary arguments are the <a href="https://docs.gitlab.com/ce/ci/variables/README.html">GitLab variables</a> <code class="language-plaintext highlighter-rouge">$GITLAB_USER_NAME</code>, <code class="language-plaintext highlighter-rouge">$CI_JOB_ID</code>, <code class="language-plaintext highlighter-rouge">$GITLAB_USER_EMAIL</code> and <code class="language-plaintext highlighter-rouge">$CI_PROJECT_URL</code> as well as the current commit message: <code class="language-plaintext highlighter-rouge">$(git log -1 --pretty=%B)</code>. The executed <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py">scripts/pipeline_script.py</a> will write all files resulting from document compilation to <code class="language-plaintext highlighter-rouge">assignment_papers/latex_output/*</code> and <code class="language-plaintext highlighter-rouge">letters/latex_output/*</code> and copy the PDFs to <code class="language-plaintext highlighter-rouge">assignment_papers/*.pdf</code> and `letters/*.pdf/.</p>
+
+<p>Setting the key <code class="language-plaintext highlighter-rouge">cache</code> results in all files specified under <code class="language-plaintext highlighter-rouge">paths</code> being cached between job runs given you’re using a dedicated <a href="https://docs.gitlab.com/ce/ci/runners/README.html">GitLab runner</a>. Alos it will speed up compilation because documents will only be recompiled if there’s a change. In our example case it reduced the runtime from 5 minutes to just 1 minute. Unfortunately the free shared runners on gitlab.com don’t allow this. But what about the <a href="https://docs.gitlab.com/ee/user/project/pipelines/job_artifacts.html">job artifacts</a>?</p>
+
+<p>The <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py"><code class="language-plaintext highlighter-rouge">scripts/pipeline_script.py</code></a> script will copy the resulting PDFs from <code class="language-plaintext highlighter-rouge">foldername/latex_output/*pdf</code> to <code class="language-plaintext highlighter-rouge">foldername/*.pdf</code>. This happens at the <code class="language-plaintext highlighter-rouge">PIPELINE.move_pdfs()</code> function call. Thus we specify under <code class="language-plaintext highlighter-rouge">artifacts</code> the <code class="language-plaintext highlighter-rouge">paths</code> where GitLab CI will look for matching files to store them as artifacts.</p>
+
+<div class="image-table">
+<table class="image-table">
+<caption align="bottom">Processing time without caching and with enabled caching.</caption>
+<tr><td><img src="/images/gitlab-ci-caching.png" alt="" /></td></tr>
+</table>
+</div>
+
+<h3 id="what-does-the-script-do">What does the script do?</h3>
+
+<p>Ultimately after checking that the folder structures are compliant the script will execute the following lines in the <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline/latexpipeline.py">scripts/pipeline/latexpipeline.py</a> submodule:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python">        <span class="k">for</span> <span class="n">dir_name</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">second_level_items</span><span class="p">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">main_filename</span> <span class="o">=</span> <span class="n">dir_name</span> <span class="o">+</span> <span class="s">".tex"</span>
+            <span class="n">folderpath</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">relative_path</span><span class="p">,</span> <span class="n">dir_name</span><span class="p">)</span>
+            <span class="n">cmd</span> <span class="o">=</span> <span class="p">(</span><span class="s">'cd "{fp}" &amp;&amp; latexmk -output-directory=../latex_output -pdf "{f}"'</span>\
+                <span class="s">" -e '$pdflatex=q/pdflatex %O -shell-escape %S/'"</span><span class="p">)</span>\
+                <span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">fp</span><span class="o">=</span><span class="n">folderpath</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="n">main_filename</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">call</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">sccmsg</span> <span class="o">=</span> <span class="s">"</span><span class="se">\033</span><span class="s">[92mCompiled </span><span class="se">\033</span><span class="s">[94m{d}.tex</span><span class="se">\033</span><span class="s">[92m successfully</span><span class="se">\033</span><span class="s">[0m"</span>\
+                    <span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">dir_name</span><span class="p">)</span>
+                <span class="k">print</span><span class="p">(</span><span class="n">sccmsg</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">errmsg</span> <span class="o">=</span> <span class="s">"</span><span class="se">\033</span><span class="s">[91mError with compiling </span><span class="se">\033</span><span class="s">[94m{d}.tex</span><span class="se">\033</span><span class="s">[0m</span><span class="se">\n</span><span class="s">cmd: {c}"</span>\
+                    <span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">d</span><span class="o">=</span><span class="n">dir_name</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">cmd</span><span class="p">)</span>
+                <span class="bp">self</span><span class="p">.</span><span class="n">error_notify_and_exit</span><span class="p">(</span><span class="n">errmsg</span><span class="p">)</span></code></pre></figure>
+
+<p>The dictionary <code class="language-plaintext highlighter-rouge">second_level_items</code> contains all but the exempted subfolders in a valid root subdirectory. Now all it does for a folder called <code class="language-plaintext highlighter-rouge">documentfoldername</code> residing in <code class="language-plaintext highlighter-rouge">assignment_papers</code> is executing these commands:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd </span>documentfoldername
+latexmk <span class="nt">-output-directory</span><span class="o">=</span>../latex_output <span class="nt">-pdf</span> <span class="s2">"documentfoldername.tex"</span> <span class="nt">-e</span> <span class="s1">'$pdflatex=q/pdflatex %O -shell-escape %S/'</span></code></pre></figure>
+
+<p>After executing the script will print a success message. If the command fails it will notify about this and exit with an error so that the GitLab job will fail.</p>
+
+<h2 id="enforcing-folder-rules">Enforcing folder rules</h2>
+
+<p>The script <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py"><code class="language-plaintext highlighter-rouge">scripts/pipeline_script.py</code></a> enforces a folder structure like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+|
++--assignment_papers
+|  +--documentfoldername
+|  |  +--figures
+|  |  |  +--example.png
+|  |  +--documentfoldername.tex
+|  |  +--preamble.tex
+|  |  +--content.tex
+|  +--otherdocumentfoldername
+|  |  +--figures
+|  |  |  +--example.pdf
+|  |  +--otherdocumentfoldername.tex
+|  |  +--preamble.tex
+|  |  +--content.tex
++--letters
+|  +--documentfoldername
+|  |  +--figures
+|  |  |  +--example.jpg
+|  |  +--documentfoldername.tex
+|  +--otherdocumentfoldername
+|  |  +--figures
+|  |  |  +--example.jpg
+|  |  +--otherdocumentfoldername.tex
+</code></pre></div></div>
+
+<ul>
+  <li>there can be multiple folders the root directory
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">assignment_papers</code>
+        <ul>
+          <li>subfolders must contain <code class="language-plaintext highlighter-rouge">.tex</code> files with the same name</li>
+          <li>subfolders must contain <code class="language-plaintext highlighter-rouge">preamble.tex</code> file</li>
+          <li>subfolders must contain <code class="language-plaintext highlighter-rouge">content.tex</code> file</li>
+          <li>subfolders may contain a figures folder</li>
+        </ul>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">letters</code>
+        <ul>
+          <li>subfolders must contain <code class="language-plaintext highlighter-rouge">.tex</code> files with the same name</li>
+          <li>subfolders may contain a figures folder</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>These rules are determined in the <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py"><code class="language-plaintext highlighter-rouge">scripts/pipeline_script.py</code></a> in the <code class="language-plaintext highlighter-rouge">FOLDER_STRUCTURES</code> dictionary. It maps the root level subfolder names to folder structure rules formatted as dictionaries. For example if a subfolders name begins with a string in the list referenced by the <code class="language-plaintext highlighter-rouge">"exempt_dirs_start_with"</code> key it will be exempted from being processed by the pipeline.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#root level directories we won't process
+</span><span class="n">EXEMPT_DIRS</span> <span class="o">=</span> <span class="p">[</span><span class="s">"scripts"</span><span class="p">,</span> <span class="s">"__pycache__"</span><span class="p">]</span>
+<span class="c1">#dirs starting with given string in LateXPipeline.relative_path will be ignored
+#also applied to root level dirs
+</span><span class="n">EXEMPT_DIRS_START_WITH</span> <span class="o">=</span> <span class="p">[</span><span class="s">"."</span><span class="p">]</span>
+<span class="c1">#files mandatory in each LaTeX folder
+</span><span class="n">MANDATORY_FILES_ASSIGNMENT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"preamble.tex"</span><span class="p">,</span> <span class="s">"references.bib"</span><span class="p">,</span> <span class="s">"content.tex"</span><span class="p">]</span>
+<span class="c1">#directories in LateXPipeline.relative_path the pipeline will ignore
+</span><span class="n">EXEMPT_DIRS_ASSIGNMENT</span> <span class="o">=</span> <span class="p">[</span><span class="s">"latex_output"</span><span class="p">,</span> <span class="s">"BP_COMBINED"</span><span class="p">,</span> <span class="s">"__pycache__"</span><span class="p">]</span>
+<span class="c1">#folders allowed but not mandatory in subdirectories
+</span><span class="n">ALLOWED_SUBDIRS</span> <span class="o">=</span> <span class="p">[</span><span class="s">"figures"</span><span class="p">]</span>
+<span class="c1">#allowed folder structure for folder assignment_papers
+</span><span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span> <span class="o">=</span> <span class="p">{</span><span class="s">"exempt_dirs"</span><span class="p">:</span> <span class="n">EXEMPT_DIRS_ASSIGNMENT</span><span class="p">,</span>\
+    <span class="s">"exempt_dirs_start_with"</span><span class="p">:</span> <span class="n">EXEMPT_DIRS_START_WITH</span><span class="p">,</span>\
+    <span class="s">"mandatory_files"</span><span class="p">:</span> <span class="n">MANDATORY_FILES_ASSIGNMENT</span><span class="p">,</span>\
+    <span class="s">"allowed_subdirs"</span><span class="p">:</span> <span class="n">ALLOWED_SUBDIRS</span><span class="p">}</span>
+<span class="c1">#allowed folder structure for folder letters
+</span><span class="n">FOLDER_STRUCTURE_LETTERS</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">)</span>
+<span class="n">FOLDER_STRUCTURE_LETTERS</span><span class="p">[</span><span class="s">"mandatory_files"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">#different folder structures for each root level dir
+#test_root_folder(_one/two) is necessary for pytest testing
+</span><span class="n">FOLDER_STRUCTURES</span> <span class="o">=</span> <span class="p">{</span><span class="s">"test_root_folder"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">,</span>\
+    <span class="s">"test_script_root_folder"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">,</span>\
+    <span class="s">"test_folder_one"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">,</span> <span class="s">"test_folder_two"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">,</span>\
+    <span class="s">"assignment_papers"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_ASSIGNMENT</span><span class="p">,</span> <span class="s">"letters"</span><span class="p">:</span> <span class="n">FOLDER_STRUCTURE_LETTERS</span><span class="p">}</span></code></pre></figure>
+
+<h3 id="known-issues">Known issues</h3>
+
+<p>There is still a problem with calculating the code coverage. As seen in the current <a href="https://gitlab.com/kryptokommunist/latexpipeline">example repo </a> the displayed code coverage is just about 80% when it should be very close to 100 percent. Unfortunately the tests in <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/tests/test_latexpipeline.py">scripts/tests/test_latexpipeline.py</a> calling the script with <code class="language-plaintext highlighter-rouge">subprocess.run</code> won’t be measured by <code class="language-plaintext highlighter-rouge">codecov</code>:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">test_console_test_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="s">"""Check that Latexmk actually works and the module can be invoked as script from command line"""</span>
+     <span class="n">ret</span> <span class="o">=</span> <span class="n">subprocess</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="s">"python3 "</span> <span class="o">+</span> <span class="n">RELATIVE_SCRIPT_PATH</span> <span class="o">+</span> <span class="s">' test test@test.de "Test --meta lol"'</span><span class="p">,</span>\
+         <span class="n">shell</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cwd</span><span class="o">=</span><span class="n">SCRIPT_TEST_ROOT_DIR_PATH</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="p">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="p">.</span><span class="n">PIPE</span><span class="p">)</span>
+     <span class="k">print</span><span class="p">(</span><span class="n">ret</span><span class="p">.</span><span class="n">stderr</span><span class="p">)</span>
+     <span class="k">assert</span> <span class="sa">b</span><span class="s">"YAY"</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">.</span><span class="n">stdout</span>
+     <span class="k">assert</span> <span class="sa">b</span><span class="s">"Latexmk"</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">.</span><span class="n">stderr</span></code></pre></figure>
+
+
+  </div>
+
+  <div class="post-meta post-tags">
+    
+      <a href="/tags/#gitlab-ci" class="post-tag"> gitlab-ci </a>
+    
+      <a href="/tags/#latex" class="post-tag"> latex </a>
+    
+      <a href="/tags/#python" class="post-tag"> python </a>
+    
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+
+  <div style="text-align: center">
+    <span><a href="mailto:marcusding@me.com"><span class="username"><i class="fas fa-envelope-square"></i> mail</span></a></span>
+    <span><a href="https://twitter.com/kryptokommunist"><span class="username"><i class="fab fa-twitter-square"></i> follow</span></a></span>
+    <span><a href="https://www.letterboxd.com/kryptokommunist"><span class="username"><i class="fas fa-film"></i> watch</span></a></span>
+    <span><a href="https://www.github.com/kryptokommunist"><i class="fab fa-github-square"></i> code</span></a></span>
+    <span><a href="https://www.flickr.com/photos/kryptokommunist/"><span class="username"><i class="fab fa-flickr"></i> see</span></a></span>
+    <span><a href="https://www.instagram.com/kryptokommunist/"><span class="username"><i class="fab fa-instagram"></i> see more</span></a></span>
+  </div>
+</div>
+</footer>
+<div class="madewith">
+  <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
+</div>
+</body>
+
+</html>

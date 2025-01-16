@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020 | kryptokommunist’s blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020" />
+<meta name="author" content="Marcus Ding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD NP-complete? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization. Google Summer of Code (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the card1o cover generator created with OpenSCAD. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020. The result from printing the cover generator customized card1o badge cover. It&#39;s such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don&#39;t have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That&#39;s the experience I wanted to create for my lamp design." />
+<meta property="og:description" content="Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD NP-complete? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization. Google Summer of Code (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the card1o cover generator created with OpenSCAD. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020. The result from printing the cover generator customized card1o badge cover. It&#39;s such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don&#39;t have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That&#39;s the experience I wanted to create for my lamp design." />
+<link rel="canonical" href="https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html" />
+<meta property="og:url" content="https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html" />
+<meta property="og:site_name" content="kryptokommunist’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-31T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2020-08-31T00:00:00+00:00","datePublished":"2020-08-31T00:00:00+00:00","description":"Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD NP-complete? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization. Google Summer of Code (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the card1o cover generator created with OpenSCAD. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020. The result from printing the cover generator customized card1o badge cover. It&#39;s such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don&#39;t have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That&#39;s the experience I wanted to create for my lamp design.","headline":"Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020","mainEntityOfPage":{"@type":"WebPage","@id":"https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html"},"url":"https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="/tech/">Tech</a>
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/berlinplaces/">Berlin places</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+                <a class="page-link" href="/overview/">Overview</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="/portfolio/">Portfolio</a>
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+              
+            
+          
+            
+            
+          
+            
+            
+          
+          <a class="page-link" href="/search/">
+            <i class="fa fa-search"></i>
+          </a>
+        </div>
+      </nav>
+    
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020</h1>
+    <p class="post-meta">
+      <time datetime="2020-08-31T00:00:00+00:00" itemprop="datePublished">
+        
+        Aug 31, 2020
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source <a href="https://en.m.wikipedia.org/wiki/Computer-aided_design">CAD program</a>. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD <a href="https://de.wikipedia.org/wiki/NP-Vollständigkeit">NP-complete</a>? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my <a href="https://github.com/kryptokommunist/tolv">lamp design</a> the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization.</p>
+
+<p><a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the <a href="https://card10-cover.0x1b.de/index.php">card1o cover generator</a> created with <a href="https://www.openscad.org">OpenSCAD</a>. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020.</p>
+
+<p><img src="/images/card1o_badge.gif" alt="" /></p>
+<p class="caption">The result from printing the cover generator customized <a href="https://card10.badge.events.ccc.de">card1o badge</a> cover. It's such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don't have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That's the experience I wanted to create for my lamp design.</p>
+
+<!--more-->
+
+<p>I sent out two applications: <a href="https://docs.google.com/document/d/1VgfsD06Qvb87S-tQazfTsyYTp14Z3EjF4V9puPVNCTQ/edit?usp=sharing">A better IPython and Jupyter Notebook Integration for FreeCAD</a> and <a href="https://docs.google.com/document/d/1lxe3MTVMQYnv6r3W7KuuzcKgY_rLS2Qgd6FjZlstwaU/edit?usp=sharing">Measurement tool for FreeCAD</a>. In the end the first one was chosen. It was closer to my original idea that got me excited and on the path of applying. I definitely didn’t expect the application to succeed, but that might just be the classic imposter syndrome. I put in quite some thought researching the topic and contacted some of the previous students, I even managed to email the student who applied for the exact same idea a couple years before. He was so nice to send me a link to his old application so that I could make us of the feedback he got on his application from back then. After the acceptance the project started moving. The FreeCAD community is mainly organized in an old school internet forum. I haven’t used one since I was active on an RC car forum when I was 14 before I signed up on <a href="https://forum.freecadweb.org">forum.freecadweb.org</a>. Here is the project thread where I posted questions and updates on work progress: <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">link</a>. For the unlikely case that you haven’t read through my 8 page project application let me summarize it for you. Or actually the document is very well written so let me quote it instead:</p>
+
+<blockquote>
+  <p>Currently, FreeCAD’s IPython and Jupyter Notebook integration can only provide visualization by running the entire FreeCAD GUI alongside the notebook. Besides not being elegant it brings many problems with it, like not being able to save the visualizations inside the notebook for sharing or bringing visual complexity of the entire GUI into the view instead of just displaying the 3D model. It is therefore important to find a way to visualize FreeCAD’s 3D scene in the IPython display system as supported by Jupyter Notebook.</p>
+
+  <p>Tackling the open issue <a href="https://tracker.freecadweb.org/view.php?id=2869">“IPython / Jupyter support”</a> I aim to implement a IPython compatible visualization of FreeCAD’s 3D Open Inventor scene graph. To achieve this I intend to choose a suitable JavaScript library able to render a 3D scene graph and to implement a mapping between it and the Open Inventor scene graph. After this as a byproduct I want to implement a better WebGL export based on the scene graph instead of document objects as currently found in FreeCAD. For this I can reuse and integrate the scene graph mapping component. Lastly I want to document the results in the Wiki and create an example Jupyter notebook.</p>
+</blockquote>
+
+<p>To make things a bit more clear, <a href="https://jupyter.org">Juypter Notebook</a> is an multi purpose computation evironment, which basically means you can run interactive code on the web. Since Juypter Notebook and FreeCAD both support Python this is a match made in heaven. With Jupyter you can quickly create interactive UIs and mix them with text into a great experience for learning, communicating and experimenting. Opening this space to FreeCAD users and developers brings potentially endless new possibilities. You get access to all the powerful Jupyter widgets that make it so popular. I certainly hope some of you reading this will take this idea further by writing that interactive Python scripting tutorial inside a notebook, by writing that new workbench which will have a widget for notebooks, by improving your workbenches Python API so you can easily access all GUI functions inside a notebook.</p>
+
+<p><img src="/images/jupyterpreview.png" alt="" /></p>
+<p class="caption">"The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more." (Quote and image from <a href="https://jupyter.org">juypter.org</a>)</p>
+
+<p>During this GSoC I successfully implemented a 3D viewer that can display FreeCAD objects inside a notebook. Currently it’s still limited to the Part Workbench, I still have to implement modifications to handle scene objects created by other workbenches. The current project is a good base to build upon. The basic features working right now are:</p>
+
+<ul>
+  <li>displaying FreeCAD scene graph face sets</li>
+  <li>displaying FreeCAD scene graph line sets</li>
+  <li>setting view parameters according to FreeCAD scene graph
+    <ul>
+      <li>position</li>
+      <li>rotation</li>
+      <li>metalness</li>
+      <li>transparency</li>
+      <li>color</li>
+      <li>emissive color</li>
+    </ul>
+  </li>
+  <li>highlighting FreeCAD object faces</li>
+  <li>selecting FreeCAD object faces</li>
+  <li>displaying FreeCAD object edges indices</li>
+  <li>selecting FreeCAD object edges</li>
+  <li>displaying FreeCAD object faces indices</li>
+  <li>rotating the view</li>
+  <li>zooming the view</li>
+</ul>
+
+<p>There obviously are many more features that should be implemented over time to make this project maximally useful. For example moving the view, view controls matching the FreeCAD key combinations and having the standard FreeCAD view buttons (“top”, “bottom”, etc.) available would be great.</p>
+
+<p><img src="/images/gsoc-2020-interactivity-demo.gif" alt="" /></p>
+<p class="caption">It's not much, but it's honest work. This project demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
+
+<p>Here is an example Jupyter Notebook that uses the <code class="language-plaintext highlighter-rouge">freecadviewer</code> Python module I created during the GSoC. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb">the notebook</a> yourself. The link to the full static notebook is <a href="/google-summer-of-code-2020">here</a>. But still you can pan and zoom the 3D views inside the notebook. Also I recommend viewing this on a bigger screen than a smartphone, even though mobile works, it’s not ideal:</p>
+
+<iframe height="800" src="/google-summer-of-code-2020"></iframe>
+
+<p><br />As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:</p>
+
+<iframe height="770" src="/embedding-single-widget-gsoc-2020-demo" frameborder="0"></iframe>
+
+<p><br />You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential. The link to the full static notebook is <a href="/embedding-single-widget-gsoc-2020">here</a>:</p>
+
+<iframe height="800" src="/embedding-single-widget-gsoc-2020"></iframe>
+
+<p><br />But enough with the “Why” let’s get to the “How” aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it’s scene graph. So how does FreeCAD generate it’s 3D view? Internally FreeCAD relies on a C++ CAD library called <a href="https://www.opencascade.com/content/overview">Open Cascade</a> that implements 2D and 3D geometric modelling. You could say Open Cascade is FreeCADs CAD kernel. Internally Open Cascade represents Geometries mathematically in potentially infinite resulution. The visualization on the other hand is realized with a probably not that widely know framework called <a href="https://coin3d.github.io">Coin3D</a> which itself is based on a format called Open Inventor:</p>
+
+<blockquote>
+  <p>Coin is an OpenGL-based, 3D graphics library that has its roots in the Open Inventor 2.1 API, which Coin still is compatible with.</p>
+
+  <p>If you are not familiar with Open Inventor, it is a scene-graph based, retain-mode, rendering and model manipulation, C++ class library, originally designed by SGI. It quickly became the de facto standard graphics library for 3D visualization and visual simulation software in the scientific and engineering community after its release. It also became the basis for the VRML1 file format standard. Several books exists on the subject of Open Inventor, most notably The Inventor Mentor, and The Inventor Toolmaker, both highly recommended for those who wants to learn how to use Open Inventor.</p>
+</blockquote>
+
+<p>Thankfully someone started creating a Python binding for the Coin3D library as a topic for his masterthesis. It still lives on under the name <a href="https://github.com/coin3d/pivy">pivy</a>. This means that I possibly can implement the project entirely in Python. Which has been a very pleasent language to work with so far.</p>
+
+<p>Based on this the plan was to extract the objects from the Coin3D scene graph and to then translate and represent them within a <a href="https://en.wikipedia.org/wiki/WebGL">WebGL</a> based library that can be used inside a Jupyter notebook. This meant I might have to touch JavaScript which is not a beauty to work with. After some deliberations I chose <a href="https://github.com/jupyter-widgets/pythreejs">pythreejs</a> which is a Jupyter Notebook extension that integrates the infamous <a href="https://github.com/mrdoob/three.js">ThreeJS</a> with a Python bridge. That meant less JavaScript and a smooth integration into the Jupyter Notebook environment. My previous experiments with directly inserting the ThreeJS JavaScript library all failed horribly. Additionally this means that FreeCAD users and developers already familiar with scripting in Python can modify the Jupyter 3D view themselves with a minimal learning curve.</p>
+
+<p>In the end the task was not extremely complex. All I needed to do was to extract faces and edges from the Coin3D scene graph and then reassemble it in a slightly modified structure inside pythreejs. The fundamental structure between both 3D libraries is similar enough that I can represent Coin3D in ThreeJS without major changes. What still made this project a challenge was starting from zero knowledge about FreeCADs internals and computer graphics. Additionally some bugs alsways make their way into the project and finding and solving them can take a lot of time. Especially the notebook environment was new for me and made some aspects more complicated. For examples you now also have to take a look at the Javascript console in the browser from time to time to diagnose a problem. Also coordination and communication with many stake holder slows down the progress and it can be especially frustrating if you think you found a bug and then the project is not maintained regularly and you have to watch your <a href="https://github.com/jupyter-widgets/pythreejs/issues/329">issues</a> <a href="https://github.com/jupyter-widgets/pythreejs/issues/331">die silently</a> on Github. Overall it’s still a great experience to work so autonomously on for an open source project that is used by so many people. So I hope there will be some people interested in using FreeCAD inside Jupyter Notebook as well out there.</p>
+
+<p>I will continue to improve the project in the future. You can find the repository <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">here</a>. If you use the module and encounter any issues or just find it useful, don’t hesitate to post to the <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">forum thread</a> or let me know with a <a href="https://twitter.com/kryptokommunist">tweet</a> or an issue in the <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">repository</a>.</p>
+
+<p>Thanks to my mentors: <a href="https://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=686">@ickby</a>, <a href="https://twitter.com/thekurtwk">@kkremitzki</a>, <a href="https://twitter.com/yorikvanhavre">@yorik</a>. I’m grateful for them spending time on helping me with the project. Doing this entirely in their spare time is insanely great! Also thanks to the entire FreeCAD community who gave helpful input. I was especially impressed by how much effort <a href="https://github.com/FreeCAD/FreeCAD/pull/3569">@vocx-fc</a> put into reviewing my second pull request to FreeCAD. So this GSoC, also by watching what my fellow students where doing, definitely taught me to appreciate free software and open source even more. ❤️</p>
+
+  </div>
+
+  <div class="post-meta post-tags">
+    
+      <a href="/tags/#tech" class="post-tag"> tech </a>
+    
+      <a href="/tags/#gsoc" class="post-tag"> gsoc </a>
+    
+      <a href="/tags/#opensource" class="post-tag"> opensource </a>
+    
+      <a href="/tags/#freecad" class="post-tag"> freecad </a>
+    
+      <a href="/tags/#english" class="post-tag"> english </a>
+    
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+
+  <div style="text-align: center">
+    <span><a href="mailto:marcusding@me.com"><span class="username"><i class="fas fa-envelope-square"></i> mail</span></a></span>
+    <span><a href="https://twitter.com/kryptokommunist"><span class="username"><i class="fab fa-twitter-square"></i> follow</span></a></span>
+    <span><a href="https://www.letterboxd.com/kryptokommunist"><span class="username"><i class="fas fa-film"></i> watch</span></a></span>
+    <span><a href="https://www.github.com/kryptokommunist"><i class="fab fa-github-square"></i> code</span></a></span>
+    <span><a href="https://www.flickr.com/photos/kryptokommunist/"><span class="username"><i class="fab fa-flickr"></i> see</span></a></span>
+    <span><a href="https://www.instagram.com/kryptokommunist/"><span class="username"><i class="fab fa-instagram"></i> see more</span></a></span>
+  </div>
+</div>
+</footer>
+<div class="madewith">
+  <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
+</div>
+</body>
+
+</html>
