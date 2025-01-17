@@ -121,7 +121,7 @@
 <lastmod>2013-10-17T20:56:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2014/01/01/matelight.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2014/01/01/matelight.html</loc>
 <lastmod>2014-01-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -285,11 +285,11 @@
 <lastmod>2020-09-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2020/09/01/gsoc.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2020/09/01/gsoc.html</loc>
 <lastmod>2020-09-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2020/10/01/speculative-ai.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2020/10/01/speculative-ai.html</loc>
 <lastmod>2020-10-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -297,7 +297,7 @@
 <lastmod>2021-01-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2021/10/01/clock.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2021/10/01/clock.html</loc>
 <lastmod>2021-10-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -309,7 +309,11 @@
 <lastmod>2022-02-15T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2022/09/01/systemfailed.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2022/06/01/hingecore.html</loc>
+<lastmod>2022-06-01T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2022/09/01/systemfailed.html</loc>
 <lastmod>2022-09-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -325,7 +329,7 @@
 <lastmod>2023-04-20T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2023/12/01/curium-five.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five.html</loc>
 <lastmod>2023-12-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -333,7 +337,7 @@
 <lastmod>2024-01-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kryptokommun.ist/portfolio/projects/2024/07/01/annata.html</loc>
+<loc>https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html</loc>
 <lastmod>2024-07-01T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -353,6 +357,12 @@
 </url>
 <url>
 <loc>https://kryptokommun.ist/tech/</loc>
+</url>
+<url>
+<loc>https://kryptokommun.ist/tech/page2/</loc>
+</url>
+<url>
+<loc>https://kryptokommun.ist/tech/page3/</loc>
 </url>
 <url>
 <loc>https://kryptokommun.ist/google-summer-of-code-2020.html</loc>
