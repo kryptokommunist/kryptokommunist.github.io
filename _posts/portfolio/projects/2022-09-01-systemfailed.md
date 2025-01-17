@@ -6,6 +6,11 @@ year: "2022"
 image: /images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png
 categories: portfolio/projects
 excerpt: "An interactive AI system that combines LiDAR laser motion tracking, machine learning predictions, and audience engagement via projections, moving heads, and synthetic voice. The system leverages the TrajNet++ framework for live trajectory forecasting and includes a custom-built PyQT5 GUI for control and retraining."
+category:
+- tech
+tags:
+- tech
+- art
 ---
 <div class="portfolio">
 <h1>{{ page.title }}</h1>

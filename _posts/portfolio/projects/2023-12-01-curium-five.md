@@ -6,6 +6,10 @@ year: "2023"
 image: /images/portfolio/projects/banner.png
 categories: portfolio/projects
 excerpt: "The Curium project was designed around the development of 6U CubeSats, using components primarily sourced from commercial manufacturers."
+category:
+- tech
+tags:
+- tech
 ---
 <div class="portfolio">
 

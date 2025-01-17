@@ -6,6 +6,11 @@ year: "2020"
 image: /images/portfolio/projects/ec9151d8d16de474cf9966390812ca43_size_1200x1200.jpeg
 categories: portfolio/projects
 excerpt: "A series of aesthetic experiments designed to make artificial neural network processes perceptible to humans through audiovisual translation. The latest work explores AI empathy and communication using invented languages."
+category:
+- tech
+tags:
+- tech
+- art
 ---
 <div class="portfolio">
 <h1>{{ page.title }}</h1>
