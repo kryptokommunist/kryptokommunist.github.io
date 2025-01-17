@@ -16,7 +16,7 @@ excerpt: "The Curium project was designed around the development of 6U CubeSats,
 <img img="" src="/images/portfolio/projects/banner.png">
 </section>
 <section>
-
+<h3>Overview</h3>
 The Curium project was designed around the development of 6U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. Part of the code is publicly accessible on <a href="https://github.com/Curium-Five">github</a>.
 
 <!--more-->
@@ -33,6 +33,7 @@ My contributions:
 
 </section>
 <section>
+<h3>Gallery</h3>
 <img img="" src="/images/portfolio/projects/pcb.png">
 </section>
 </div>
