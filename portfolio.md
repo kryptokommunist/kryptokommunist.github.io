@@ -9,7 +9,7 @@ include: true
 
 <p class="synopsis">Hi 👋,
 
-I am a curious being that is very much interest in bhuddism, mindfulness, aliveness, embodiment, technology and qualia. I'd like to build technology that supports people in becoming more alive. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. May you be well, friend.</p>
+I'm Marcus. I like to build technology that supports people in becoming more alive. I am interested in technology, bhuddism, mindfulness, aliveness, embodiment and qualia. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. Say hi if we're into some of the same things!</p>
 
     <div class="tabs">
         <button class="tab-link active" onclick="openTab(event, 'projects')">Projects</button>

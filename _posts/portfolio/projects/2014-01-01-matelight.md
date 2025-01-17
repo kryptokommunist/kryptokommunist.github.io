@@ -16,6 +16,7 @@ excerpt: "By night this light installation creates the illusion of 5 light bars 
 <img img="" src="/images/portfolio/art/IMG_8741.JPG">
 </section>
 <section>
+<h3>Overview</h3>
 
 Matelight is an piece that displays various patterns and that can be modularly set up in different sizes. More info <a href="/tech/2015/03/08/matepi-raspberry-pi-meets-mate-crates-how-to.html">here</a>. It was displayed in different clubs and parties.
 <p>
@@ -29,12 +30,14 @@ Matelight is an piece that displays various patterns and that can be modularly s
 </p><!--more-->
 </section>
 <section>
+<h3>Gallery</h3>
 <img img="" src="/images/portfolio/art/IMG_1573.JPG">
 <img img="" src="/images/portfolio/art/IMG_1572.JPG">
 <img img="" src="/images/portfolio/art/b05ae9b9-4910-4f89-b86f-348a009e9d25.jpg">
 </section>
 
 <section>
+<h3>Videos</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/us5hRUn5z_Y?si=2RW77KLAAiV6vO6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 
