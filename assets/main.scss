@@ -300,32 +300,6 @@ img {
 	overflow: hidden;
 }
 
-a{
-	color: #000;
-	text-decoration: underline;
-	display: inline-block;
-}
-
-a:visited {
-	color: #000;
-	text-decoration: underline;
-}
-
-a:hover {
-	color: #000;
-	text-decoration: none;
-}
-
-a:has(img){
-	width: 100%;
-	object-fit: cover;
-}
-
-
-.titleLink{
-	text-decoration: none;
-}
-
 @font-face {
 	font-family: 'Varela Round';
 	font-style: normal;
@@ -359,7 +333,6 @@ h1 {
 	font-weight: bold;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
 	text-align: left;
-	color: #000;
 	letter-spacing: 2px;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -372,7 +345,6 @@ h1 {
 }
 
 h2 {
-	color: #000;
 	font-size: 13pt;
 	font-weight: normal;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
@@ -384,7 +356,6 @@ h2 {
 
 h3 {
 	display: block;
-	color: #000;
 	font-size: 11pt;
 	font-weight: normal;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
@@ -491,7 +462,6 @@ h1 {
 	font-weight: bold;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
 	text-align: left;
-	color: #000;
 	letter-spacing: 2px;
 	margin-top: 0;
 	margin-bottom: 10px;
@@ -504,7 +474,6 @@ h1 {
 }
 
 h2 {
-	color: #000;
 	font-size: 13pt;
 	font-weight: normal;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
@@ -516,7 +485,6 @@ h2 {
 
 h3 {
 	display: block;
-	color: #000;
 	font-size: 11pt;
 	font-weight: normal;
 	font-family: 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
