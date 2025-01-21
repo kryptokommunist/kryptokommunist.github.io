@@ -12,9 +12,9 @@ include: true
 I'm Marcus. I like to build technology that supports people in becoming more alive. I am interested in technology, bhuddism, mindfulness, aliveness, embodiment and qualia. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. Say hi if we're into some of the same things!</p>
 
     <div class="tabs">
-        <button class="tab-link active" onclick="openTab(event, 'projects')">Projects</button>
-        <button class="tab-link" onclick="openTab(event, 'work')">Work Experience</button>
-        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+        <button class="tab-link active" onclick="openTab(event, 'projects')"><a>Projects</a></button>
+        <button class="tab-link" onclick="openTab(event, 'work')"><a>Work Experience</a></button>
+        <button class="tab-link" onclick="openTab(event, 'education')"><a>Education</a></button>
     </div>
 
     <div id="projects" class="tab-content active">
@@ -43,179 +43,159 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
 
     <div id="work" class="tab-content">
         <p class="synopsis">My professional path reflects my passion for both software and hardware development. From managing IT infrastructure during a startup's growth phase to developing spacecraft systems, I've consistently sought out opportunities that combine technical innovation with practical impact. Through freelance work and various projects, I've maintained a strong focus on creative problem-solving while building systems that make a difference.</p>
+
         <div id="event2Container">
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://www.pts.space">
-                    <h2>Embedded Software Developer and Fullstack Web Developer</h2>
-                </a>
-                <a class="titleLink" href="https://www.pts.space">
-                    <h3>Planetary Transportation Systems</h3>
-                </a>
-                <p class="date">June 2023 – January 2024</p>
-                <p class="description">Developing web applications and hardware solutions for STM32-based cube sat onboard computer. Contributing to both spacecraft systems and ground control software development.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Embedded Software Developer and Fullstack Web Developer</h2>
+                        <a class="titleLink" href="https://www.pts.space">
+                            <h3>Planetary Transportation Systems</h3>
+                        </a>
+                        <p class="date">June 2023 – January 2024</p>
+                        <p class="description">Developing web applications and hardware solutions for STM32-based cube sat onboard computer. Contributing to both spacecraft systems and ground control software development.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://www.micropsi-industries.com">
-                    <h2>IT Infrastructure Working Student</h2>
-                </a>
-                <a class="titleLink" href="https://www.micropsi-industries.com">
-                    <h3>micropsi industries</h3>
-                </a>
-                <p class="date">2018 – 2023</p>
-                <p class="description">Led IT infrastructure development during significant company growth from 10 to 50 employees. Managed comprehensive DevOps systems, network configuration, and internal services including Jenkins CI, Office365, and security systems.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>IT Infrastructure Working Student</h2>
+                        <a class="titleLink" href="https://www.micropsi-industries.com">
+                            <h3>micropsi industries</h3>
+                        </a>
+                        <p class="date">2018 – 2023</p>
+                        <p class="description">Led IT infrastructure development during significant company growth from 10 to 50 employees. Managed comprehensive DevOps systems, network configuration, and internal services including Jenkins CI, Office365, and security systems.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://hpi.de">
-                    <h2>Hingecore Master Project</h2>
-                </a>
-                <a class="titleLink" href="https://hpi.de">
-                    <h3>Prof. Baudisch, Hasso-Plattner-Institute</h3>
-                </a>
-                <p class="date">March 2021 – October 2021</p>
-                <p class="description">Developed algorithm for unfolding 3D models into 2D plane, implemented in TypeScript. Led to publication at UIST22 and integration into existing kyub codebase.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Hingecore Master Project</h2>
+                        <a class="titleLink" href="https://hpi.de">
+                            <h3>Prof. Baudisch, Hasso-Plattner-Institute</h3>
+                        </a>
+                        <p class="date">March 2021 – October 2021</p>
+                        <p class="description">Developed algorithm for unfolding 3D models into 2D plane, implemented in TypeScript. Led to publication at UIST22 and integration into existing kyub codebase.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://hpi.de">
-                    <h2>Global Team-Based Innovation</h2>
-                </a>
-                <a class="titleLink" href="https://hpi.de">
-                    <h3>HPI, University of St. Gallen, LBBW</h3>
-                </a>
-                <p class="date">October 2021 – June 2022</p>
-                <p class="description">Collaborated in a cross-disciplinary team of 3 HPI IT-Systems-Engineering and 3 St. Gallen business students on risk analysis solutions for SMEs. Conducted extensive interviews with enterprises, developed design prototypes, and created a final web application for risk analysis through weekly iterations with LBBW stakeholders.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Global Team-Based Innovation</h2>
+                        <a class="titleLink" href="https://hpi.de">
+                            <h3>HPI, University of St. Gallen, LBBW</h3>
+                        </a>
+                        <p class="date">October 2021 – June 2022</p>
+                        <p class="description">Collaborated in a cross-disciplinary team of 3 HPI IT-Systems-Engineering and 3 St. Gallen business students on risk analysis solutions for SMEs. Conducted extensive interviews with enterprises, developed design prototypes, and created a final web application for risk analysis through weekly iterations with LBBW stakeholders.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://summerofcode.withgoogle.com">
-                    <h2>Google Summer of Code Participant</h2>
-                </a>
-                <a class="titleLink" href="https://www.freecadweb.org">
-                    <h3>FreeCAD</h3>
-                </a>
-                <p class="date">May 2020 – August 2020</p>
-                <p class="description">Implemented Jupyter Notebook integration in Python for FreeCAD open-source CAD program. Collaborated with experienced mentors to enhance software capabilities and improve user experience.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Google Summer of Code Participant</h2>
+                        <a class="titleLink" href="https://www.freecadweb.org">
+                            <h3>FreeCAD</h3>
+                        </a>
+                        <p class="date">May 2020 – August 2020</p>
+                        <p class="description">Implemented Jupyter Notebook integration in Python for FreeCAD open-source CAD program. Collaborated with experienced mentors to enhance software capabilities and improve user experience.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://github.com/kryptokommunist">
-                    <h2>Freelance Programmer</h2>
-                </a>
-                <a class="titleLink" href="https://github.com/kryptokommunist">
-                    <h3>Berlin, Germany</h3>
-                </a>
-                <p class="date">2019 – present</p>
-                <p class="description">Designing and implementing custom software solutions in Python and Java, including an installation featured at Ars Electronica 2019. Specializing in both new development and enhancement of existing systems.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Freelance Programmer</h2>
+                        <a class="titleLink" href="https://github.com/kryptokommunist">
+                            <h3>Berlin, Germany</h3>
+                        </a>
+                        <p class="date">2019 – present</p>
+                        <p class="description">Designing and implementing custom software solutions in Python and Java, including an installation featured at Ars Electronica 2019. Specializing in both new development and enhancement of existing systems.</p>
+                    </div>
                 </div>
-            </div>
             </section>
-
         </div>
     </div>
 
     <div id="education" class="tab-content">
         <p class="synopsis">My academic journey combines deep technical expertise with interdisciplinary learning. Starting at Humboldt University with a foundation in computer science and physics, I transitioned to the Hasso-Plattner-Institute to focus on practical IT systems engineering. This combination of theoretical understanding and hands-on implementation has shaped my approach to solving complex technical challenges and developing innovative solutions.</p>
+
         <div id="event2Container">
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://hpi.de">
-                    <h2>Master IT-Systems-Engineering</h2>
-                </a>
-                <a class="titleLink" href="https://hpi.de">
-                    <h3>Hasso-Plattner-Institute</h3>
-                </a>
-                <p class="date">2018 – present</p>
-                <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Master IT-Systems-Engineering</h2>
+                        <a class="titleLink" href="https://hpi.de">
+                            <h3>Hasso-Plattner-Institute</h3>
+                        </a>
+                        <p class="date">2018 – present</p>
+                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://hpi.de">
-                    <h2>Bachelor IT-Systems-Engineering</h2>
-                </a>
-                <a class="titleLink" href="https://hpi.de">
-                    <h3>Hasso-Plattner-Institute</h3>
-                </a>
-                <p class="date">2015 – 2018</p>
-                <p class="description">Completed bachelor's degree with a grade of 1.6 while serving as spokesperson for the Makerklub. Developed strong foundation in IT systems engineering through practical coursework and hands-on projects.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Bachelor IT-Systems-Engineering</h2>
+                        <a class="titleLink" href="https://hpi.de">
+                            <h3>Hasso-Plattner-Institute</h3>
+                        </a>
+                        <p class="date">2015 – 2018</p>
+                        <p class="description">Completed bachelor's degree with a grade of 1.6 while serving as spokesperson for the Makerklub. Developed strong foundation in IT systems engineering through practical coursework and hands-on projects.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://www.spiritrock.org">
-                    <h2>Mindful Leadership Training</h2>
-                </a>
-                <a class="titleLink" href="https://www.spiritrock.org">
-                    <h3>Spirit Rock Meditation Center</h3>
-                </a>
-                <p class="date">2022</p>
-                <p class="description">Completed 9-month training program focused on mindful, compassionate leadership with Nikki Mirghafori, PhD and Marc Lesser, MBA. Developed skills in emotional intelligence, team empowerment, and fostering inclusive environments.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Mindful Leadership Training</h2>
+                        <a class="titleLink" href="https://www.spiritrock.org">
+                            <h3>Spirit Rock Meditation Center</h3>
+                        </a>
+                        <p class="date">2022</p>
+                        <p class="description">Completed 9-month training program focused on mindful, compassionate leadership with Nikki Mirghafori, PhD and Marc Lesser, MBA. Developed skills in emotional intelligence, team empowerment, and fostering inclusive environments.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://hpi.de/school-of-design-thinking">
-                    <h2>Design Thinking Basic Track</h2>
-                </a>
-                <a class="titleLink" href="https://hpi.de/school-of-design-thinking">
-                    <h3>School of Design Thinking</h3>
-                </a>
-                <p class="date">2018</p>
-                <p class="description">Completed one-semester course in user-centered innovation principles. Applied Design Thinking methodology in interdisciplinary team projects with external partners.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Design Thinking Basic Track</h2>
+                        <a class="titleLink" href="https://hpi.de/school-of-design-thinking">
+                            <h3>School of Design Thinking</h3>
+                        </a>
+                        <p class="date">2018</p>
+                        <p class="description">Completed one-semester course in user-centered innovation principles. Applied Design Thinking methodology in interdisciplinary team projects with external partners.</p>
+                    </div>
                 </div>
-            </div>
             </section>
 
             <section class="projectCard">
-            <div class="titleContainer">
-                <div>
-                <a class="titleLink" href="https://www.hu-berlin.de">
-                    <h2>Bachelor in Computer Science/Physics</h2>
-                </a>
-                <a class="titleLink" href="https://www.hu-berlin.de">
-                    <h3>Humboldt-Universität zu Berlin</h3>
-                </a>
-                <p class="date">2013 – 2015</p>
-                <p class="description">Initial studies combining computer science as core subject with physics as minor. Built foundational knowledge in both theoretical computer science and physical sciences.</p>
+                <div class="titleContainer">
+                    <div>
+                        <h2>Bachelor in Computer Science/Physics</h2>
+                        <a class="titleLink" href="https://www.hu-berlin.de">
+                            <h3>Humboldt-Universität zu Berlin</h3>
+                        </a>
+                        <p class="date">2013 – 2015</p>
+                        <p class="description">Initial studies combining computer science as core subject with physics as minor. Built foundational knowledge in both theoretical computer science and physical sciences.</p>
+                    </div>
                 </div>
-            </div>
             </section>
         </div>
     </div>
+
 
 </div>
 
