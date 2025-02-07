@@ -48,12 +48,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Embedded Software Developer and Fullstack Web Developer</h2>
+                        <h2>Part-time Software Engineer: Embedded and Fullstack</h2>
                         <a class="titleLink" href="https://www.pts.space">
                             <h3>Planetary Transportation Systems</h3>
                         </a>
-                        <p class="date">June 2023 – January 2024</p>
-                        <p class="description">Developing web applications and hardware solutions for STM32-based cube sat onboard computer. Contributing to both spacecraft systems and ground control software development.</p>
+                        <p class="date">May 2023 - December 2023</p>
+                        <p class="description">Working as a part-time engineer fullstack on web apps and also hardware and embedded software development for an STM32-based cube sat <a href="https://github.com/Curium-Five">onboard computer</a></p>
                     </div>
                 </div>
             </section>
@@ -61,12 +61,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>IT Infrastructure Working Student</h2>
+                        <h2>Part-time: IT Infrastructure & DevOps Engineer</h2>
                         <a class="titleLink" href="https://www.micropsi-industries.com">
                             <h3>micropsi industries</h3>
                         </a>
                         <p class="date">2018 – 2023</p>
-                        <p class="description">Led IT infrastructure development during significant company growth from 10 to 50 employees. Managed comprehensive DevOps systems, network configuration, and internal services including Jenkins CI, Office365, and security systems.</p>
+                        <p class="description">Main person responsible for company IT infrastructure, oversaw growth from 10 employees, 2 million VC funding to now 50 employees and 25 million VC funding. Managing dev ops systems (failure investigations/backups). Configuring the internal network (router/firewall/VLANs/DNS/DHCP/smart switches monitoring). Implementation of internal services (Jenkins CI/Mail/Office365).</p>
                     </div>
                 </div>
             </section>
@@ -74,7 +74,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Hingecore Master Project</h2>
+                        <h2>Researcher: Hingecore Project</h2>
                         <a class="titleLink" href="https://hpi.de/baudisch">
                             <h3>HCI lab, Prof. Baudisch, Hasso-Plattner-Institute</h3>
                         </a>
@@ -100,7 +100,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Google Summer of Code Participant</h2>
+                        <h2>Google Summer of Code</h2>
                         <a class="titleLink" href="https://www.freecadweb.org">
                             <h3>FreeCAD</h3>
                         </a>
@@ -113,7 +113,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Freelance Programmer</h2>
+                        <h2>Freelance Software Engineer</h2>
                         <a class="titleLink" href="https://github.com/kryptokommunist">
                             <h3>Berlin, Germany</h3>
                         </a>
@@ -151,8 +151,8 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                         <a class="titleLink" href="https://hpi.de">
                             <h3>Hasso-Plattner-Institute</h3>
                         </a>
-                        <p class="date">2018 – present</p>
-                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW.</p>
+                        <p class="date">2020 – 2022, 2025 - present</p>
+                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW. Emphasis on Human Computer Interaction. Took a three-year break to focus on building interactive art, travel and meditate. Now finishing writing my masters thesis.</p>
                     </div>
                 </div>
             </section>
