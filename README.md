@@ -8,6 +8,6 @@ Generate container: `docker build -t blog`.
 
 Run with terminal: `docker run -it --rm -v $(pwd):/site -p 4000:4000 blog /bin/bash`
 
-Serve: `bundle exec jekyll serve`.
+Serve: `bundle exec jekyll serve --host 0.0.0.0`.
 
 Generate site: `bundle exec jekyll build`.

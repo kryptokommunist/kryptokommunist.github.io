@@ -5,7 +5,7 @@ subtitle: "Laser-Cut Foamcore for Fast Assembly"
 year: "2022"
 image: /images/portfolio/projects/csm_Figure_1_0f047a8bef.png
 categories: portfolio/projects
-excerpt: "A novel laser-cutting technique and software for fast, robust, and precise assembly of 3D structures using foamcore materials. HingeCoreMaker automates the design and unfolding of 3D models for laser-cutting layouts."
+excerpt: "HingeCoreMaker automates the design and unfolding of 3D models for laser-cutting layouts."
 category:
 - tech
 tags:
