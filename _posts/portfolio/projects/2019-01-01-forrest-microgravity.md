@@ -5,7 +5,7 @@ subtitle: "site specific LED installation"
 year: "2019"
 image: /images/portfolio/art/IMG_0546.JPG
 categories: portfolio/projects
-excerpt: "By night this light installation creates the illusion of 5 light bars floating mid air. The bright lights project intertwined light beams onto the ground with changing modes between stroboscopic and calm patterns. Due to the suspension the tree movements are picked up by the light arrangement."
+excerpt: "By night this light installation creates the illusion of 5 light bars floating mid air."
 category:
 - art
 tags:

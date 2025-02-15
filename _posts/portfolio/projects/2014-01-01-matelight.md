@@ -5,7 +5,7 @@ subtitle: "LED installation"
 year: "2014"
 image: /images/portfolio/art/IMG_8741.JPG
 categories: portfolio/projects
-excerpt: "By night this light installation creates the illusion of 5 light bars floating mid air. The bright lights project intertwined light beams onto the ground with changing modes between stroboscopic and calm patterns. Due to the suspension the tree movements are picked up by the light arrangement."
+excerpt: "480 bottle of Club Mate in 24 crates turned into an LED wall."
 category:
 - tech
 tags:

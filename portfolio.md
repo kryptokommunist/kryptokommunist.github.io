@@ -35,6 +35,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                     </a>
                     <h3>{{ post.subtitle }}</h3>
                     <p>{{ post.year }}</p>
+                    <p>{{ post.excerpt }}</p>
                 </div>
             </section>
             {% endfor %}
@@ -61,7 +62,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Part-time: IT Infrastructure & DevOps Engineer</h2>
+                        <h2>Part-time IT Infrastructure & DevOps Engineer</h2>
                         <a class="titleLink" href="https://www.micropsi-industries.com">
                             <h3>micropsi industries</h3>
                         </a>
@@ -130,7 +131,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                         <a class="titleLink" href="https://xstageproject.com">
                             <h3>Experimental Stage Project</h3>
                         </a>
-                        <p class="date">2023 – Present</p>
+                        <p class="date">2018 – Present</p>
                         <p class="description">
                             Member of the XStage project, contributing to the design, setup, and maintenance of art installations and science communication exhibits for festivals and conferences. Leveraged tools like microcontrollers, 3D printing, and programming to create engaging and immersive experiences. Collaborated with the team to blend creativity with technology, delivering impactful exhibits that make science accessible to diverse audiences.
                         </p>
@@ -152,7 +153,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                             <h3>Hasso-Plattner-Institute</h3>
                         </a>
                         <p class="date">2020 – 2022, 2025 - present</p>
-                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW. Emphasis on Human Computer Interaction. Took a three-year break to focus on building interactive art, travel and meditate. Now finishing writing my masters thesis.</p>
+                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW. Emphasis on Human Computer Interaction. Took a two-year break to focus on building interactive art, travel and meditate. Now finishing writing my masters thesis.</p>
                     </div>
                 </div>
             </section>
@@ -196,18 +197,6 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                 </div>
             </section>
 
-            <section class="projectCard">
-                <div class="titleContainer">
-                    <div>
-                        <h2>Bachelor in Computer Science/Physics</h2>
-                        <a class="titleLink" href="https://www.hu-berlin.de">
-                            <h3>Humboldt-Universität zu Berlin</h3>
-                        </a>
-                        <p class="date">2013 – 2015</p>
-                        <p class="description">Initial studies combining computer science as core subject with physics as minor. Built foundational knowledge in both theoretical computer science and physical sciences.</p>
-                    </div>
-                </div>
-            </section>
         </div>
     </div>
 
