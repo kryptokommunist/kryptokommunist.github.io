@@ -561,6 +561,13 @@ p{
 }
 
 }
+
+@media (max-width: 768px) {
+
+	#profile-container {
+		width: 100% !important;
+	}
+  }
 /* ---- ---- */
 
 .experience {
@@ -608,6 +615,7 @@ p{
     .mobileHide {
       display: none;
     }
+
   }
   
   @media (min-width: 769px) {
