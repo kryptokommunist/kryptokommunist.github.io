@@ -7,9 +7,21 @@ include: true
 ---
 <div class="portfolio">
 
-<p class="synopsis">Hi 👋,
+<div id="profile-container" style="width: 57%; margin: 0 auto; text-align: center;">
+<section class="projectCard">
+                <a href="{{ post.url }}">
+                    <img src="/images/profile.jpg" alt="">
+                </a>
+                <div>
+                    <p> Hi 👋,<br><br>
+        I'm Marcus. I like to build technology that supports people in becoming more alive.  
+        I am interested in technology, Buddhism, mindfulness, aliveness, embodiment, and qualia.  
+        My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>.  
+        Say hi if we're into some of the same things!</p>
+                </div>
+            </section>
+</div>
 
-I'm Marcus. I like to build technology that supports people in becoming more alive. I am interested in technology, bhuddism, mindfulness, aliveness, embodiment and qualia. My CV is <a class="titleLink" href="/images/Marcus_Ding_Website.pdf">here</a>. Say hi if we're into some of the same things!</p>
 
     <div class="tabs">
         <button class="tab-link active" onclick="openTab(event, 'projects')"><a>Projects</a></button>
@@ -49,12 +61,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Part-time Software Engineer: Embedded and Fullstack</h2>
+                        <h2>Software Engineer</h2>
                         <a class="titleLink" href="https://www.pts.space">
                             <h3>Planetary Transportation Systems</h3>
                         </a>
                         <p class="date">May 2023 - December 2023</p>
-                        <p class="description">Working as a part-time engineer fullstack on web apps and also hardware and embedded software development for an STM32-based cube sat <a href="https://github.com/Curium-Five">onboard computer</a></p>
+                        <p class="description">Developed full-stack web applications with Flask, MySQL, React stack for customer Zeitfracht. Developed satellite onboard computer software for a CubeSat (STM32, FreeRTOS, C++). <a href="https://github.com/Curium-Five">code</a></p>
                     </div>
                 </div>
             </section>
@@ -62,12 +74,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Part-time IT Infrastructure & DevOps Engineer</h2>
+                        <h2>IT Infrastructure & DevOps Engineer (Part-time)</h2>
                         <a class="titleLink" href="https://www.micropsi-industries.com">
                             <h3>micropsi industries</h3>
                         </a>
                         <p class="date">2018 – 2023</p>
-                        <p class="description">Main person responsible for company IT infrastructure, oversaw growth from 10 employees, 2 million VC funding to now 50 employees and 25 million VC funding. Managing dev ops systems (failure investigations/backups). Configuring the internal network (router/firewall/VLANs/DNS/DHCP/smart switches monitoring). Implementation of internal services (Jenkins CI/Mail/Office365).</p>
+                        <p class="description">Led IT infrastructure scaling from 10 to 50 employees, while valuation grew from $2M to $25M. Optimized DevOps workflows, implementing CI/CD pipelines, cutting deployment time by 60%. Managed network configurations and internal services, ensuring 99.99% uptime.</p>
                     </div>
                 </div>
             </section>
@@ -75,12 +87,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Researcher: Hingecore Project</h2>
+                        <h2>Researcher</h2>
                         <a class="titleLink" href="https://hpi.de/baudisch">
                             <h3>HCI lab, Prof. Baudisch, Hasso-Plattner-Institute</h3>
                         </a>
                         <p class="date">March 2021 – October 2021</p>
-                        <p class="description">Developed algorithm for unfolding 3D models into 2D plane, implemented in TypeScript. Led to publication at UIST22 and integration into existing kyub codebase.</p>
+                        <p class="description">Developed algorithms for unfolding 3D models into 2D, implemented in TypeScript. Published at <a href="https://uist.acm.org/uist2022/">UIST22</a>.</p>
                     </div>
                 </div>
             </section>
@@ -106,7 +118,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                             <h3>FreeCAD</h3>
                         </a>
                         <p class="date">May 2020 – August 2020</p>
-                        <p class="description">Implemented Jupyter Notebook integration in Python for FreeCAD open-source CAD program. Collaborated with experienced mentors to enhance software capabilities and improve user experience.</p>
+                        <p class="description">Implemented Jupyter Notebook integration for FreeCAD, enhancing scriptability for open-source CAD software.</p>
                     </div>
                 </div>
             </section>
@@ -114,12 +126,12 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
             <section class="projectCard">
                 <div class="titleContainer">
                     <div>
-                        <h2>Freelance Software Engineer</h2>
+                        <h2>ML & Software Engineer</h2>
                         <a class="titleLink" href="https://github.com/kryptokommunist">
-                            <h3>Berlin, Germany</h3>
+                            <h3>Freelance, Berlin, Germany</h3>
                         </a>
-                        <p class="date">2019 – present</p>
-                        <p class="description">Designing and implementing custom software solutions in Python and Java, including an installation featured at Ars Electronica 2019. Specializing in both new development and enhancement of existing systems.</p>
+                        <p class="date">2018 – 2020</p>
+                        <p class="description">Implemented a deep learning model for human path prediction in interactive theater (PyTorch, PyQT5). Designed a multi-modal AI system on Jetson Nano for Ars Electronica, translating images into sound and vice versa, improved inference time 10x.</p>
                     </div>
                 </div>
             </section>
@@ -132,8 +144,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                             <h3>Experimental Stage Project</h3>
                         </a>
                         <p class="date">2018 – Present</p>
-                        <p class="description">
-                            Member of the XStage project, contributing to the design, setup, and maintenance of art installations and science communication exhibits for festivals and conferences. Leveraged tools like microcontrollers, 3D printing, and programming to create engaging and immersive experiences. Collaborated with the team to blend creativity with technology, delivering impactful exhibits that make science accessible to diverse audiences.
+                        <p class="description">Built interactive installations using microcontrollers, and 3D printing for festivals and conferences with 3000 - 100.000 visitors each.
                         </p>
                     </div>
                 </div>
@@ -153,7 +164,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                             <h3>Hasso-Plattner-Institute</h3>
                         </a>
                         <p class="date">2020 – 2022, 2025 - present</p>
-                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW. Emphasis on Human Computer Interaction. Took a two-year break to focus on building interactive art, travel and meditate. Now finishing writing my masters thesis.</p>
+                        <p class="description">Advanced studies in IT systems engineering with focus on practical project work and innovative technologies. Notable projects include Hingecore algorithm development and Global Team-Based Innovation course with Uni St. Gallen and LBBW. Emphasis on Human Computer Interaction. Resumed MSc after sabbatical exploring AI, art and mindfulness. Now writing my masters thesis.</p>
                     </div>
                 </div>
             </section>
@@ -192,7 +203,7 @@ I'm Marcus. I like to build technology that supports people in becoming more ali
                             <h3>School of Design Thinking</h3>
                         </a>
                         <p class="date">2018</p>
-                        <p class="description">Completed one-semester course in user-centered innovation principles. Applied Design Thinking methodology in interdisciplinary team projects with external partners.</p>
+                        <p class="description">Designed and prototyped solutions for real-world challenges from industry partners with a human-centered design.</p>
                     </div>
                 </div>
             </section>
