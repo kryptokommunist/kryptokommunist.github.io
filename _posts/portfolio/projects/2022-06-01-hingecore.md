@@ -33,7 +33,7 @@ HingeCoreMaker is the accompanying software tool, seamlessly integrating with 3D
 </ul>
 </p>
 <p>
-<a href="https://www.patrickbaudisch.com/" target="_blank">Patrick Baudisch Project Page</a> | 
+<a href="https://hpi.de/baudisch/projects/hingecore.html" target="_blank">HCI chair Project Page</a> | 
 <a href="https://doi.org/10.1145/3526113.3545618" target="_blank">Publication (ACM Digital Library)</a> | 
 <a href="https://youtu.be/N710JaRqcq8" target="_blank">Demo Video (YouTube)</a>
 </p>
