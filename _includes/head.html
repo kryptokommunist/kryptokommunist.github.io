@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+<!-- Additional CSS for search functionality -->
+<style>
+  /* Ensure FontAwesome icons are properly sized */
+  .fas, .far, .fab {
+    font-size: inherit;
+  }
+  
+  /* Search icon specific styles */
+  .search-icon i,
+  .search-overlay-icon i {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  .search-input-wrapper.focused .search-icon i {
+    color: #6a9fb5;
+  }
+</style>

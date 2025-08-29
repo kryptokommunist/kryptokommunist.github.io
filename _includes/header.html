@@ -28,11 +28,37 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          <a class="page-link" href="/search/">
-            <i class="fa fa-search"></i>
+          <a class="page-link" href="/search/" id="search-link">
+            <i class="fas fa-search"></i>
           </a>
         </div>
       </nav>
     {% endif %}
   </div>
+  
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="search-overlay">
+    <div class="search-overlay-content">
+      <div class="search-overlay-header">
+        <h2>Search</h2>
+        <button id="close-search" class="close-search">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="search-overlay-input-wrapper">
+        <input type="text" id="overlay-search-input" placeholder="Search posts..." autocomplete="off" />
+        <div class="search-overlay-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="search-overlay-results" id="overlay-search-results">
+        <div class="search-overlay-placeholder">
+          <i class="fas fa-search"></i>
+          <p>Start typing to search...</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+
+
