@@ -102,6 +102,10 @@
       this.field('tags', { boost: 3 });
       this.field('content', { boost: 1 });
       
+      // Enable partial word matching and fuzzy search
+      this.pipeline.remove(lunr.stemmer);
+      this.pipeline.remove(lunr.stopWordFilter);
+      
       // Add documents to index
       Object.keys(searchStore).forEach(key => {
         const item = searchStore[key];
@@ -156,7 +160,20 @@
     }
 
     try {
-      const results = searchIndex.search(query);
+      // Try exact search first
+      let results = searchIndex.search(query);
+      
+      // If no results, try fuzzy search with wildcards
+      if (results.length === 0) {
+        const wildcardQuery = query.split(' ').map(term => `*${term}*`).join(' ');
+        results = searchIndex.search(wildcardQuery);
+      }
+      
+      // If still no results, try fuzzy search with edit distance
+      if (results.length === 0) {
+        results = searchIndex.search(query + '~2');
+      }
+      
       console.log('✅ Search results:', results);
       displaySearchResults(results.slice(0, SEARCH_CONFIG.maxResults), query);
     } catch (error) {
@@ -178,9 +195,13 @@
       const item = searchStore[result.ref];
       const relevance = Math.round(result.score * 100);
       
-      return `
-        <article class="search-result" data-relevance="${relevance}">
+              const isPortfolio = item.type === 'portfolio';
+        const portfolioBadge = isPortfolio ? '<span class="portfolio-badge"><i class="fas fa-briefcase"></i> Portfolio</span>' : '';
+        
+        return `
+        <article class="search-result ${isPortfolio ? 'portfolio-result' : ''}" data-relevance="${relevance}">
           <div class="result-meta">
+            ${portfolioBadge}
             <span class="result-date"><i class="fas fa-calendar"></i> ${formatDate(item.date)}</span>
             ${item.author ? `<span class="result-author"><i class="fas fa-user"></i> ${item.author}</span>` : ''}
             ${item.category ? `<span class="result-category"><i class="fas fa-folder"></i> ${item.category}</span>` : ''}
