@@ -122,6 +122,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-font-awesome-sass
   jekyll-paginate-v2
+  jekyll-seo-tag (~> 2.8)
   jekyll-sitemap
   kramdown-parser-gfm
   minima (~> 2.5)
