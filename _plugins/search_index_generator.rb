@@ -6,17 +6,22 @@ module Jekyll
     def generate(site)
       search_data = {}
       
-      # Add posts
+      # Add posts (including portfolio posts)
       site.posts.docs.each do |post|
+        # Get the full path to determine if it's a portfolio post
+        full_path = post.path
+        is_portfolio = full_path.include?('portfolio/')
+        
         search_data[post.id] = {
           'id' => post.id,
           'title' => post.data['title'] || '',
           'author' => post.data['author'] || site.config['author'] || '',
-          'category' => post.data['category'] || '',
+          'category' => post.data['category'] || (is_portfolio ? 'portfolio' : ''),
           'tags' => post.data['tags'] || [],
           'content' => post.content.gsub(/\{%\s*include[^%]*%\}/, '').gsub(/<[^>]*>/, '').gsub(/\s+/, ' ').gsub(/["\\]/, '').strip,
           'url' => post.url,
-          'date' => post.date.iso8601
+          'date' => post.date.iso8601,
+          'type' => is_portfolio ? 'portfolio' : 'post'
         }
       end
       

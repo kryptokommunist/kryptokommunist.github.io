@@ -1164,3 +1164,47 @@ p{
     gap: 0.5rem;
   }
 }
+
+/* Portfolio result styling */
+.portfolio-result {
+  border-left: 4px solid #6a9fb5;
+  background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+}
+
+.portfolio-badge {
+  display: inline-block;
+  background: #6a9fb5;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-badge i {
+  margin-right: 0.25rem;
+}
+
+/* Overlay portfolio styling */
+.overlay-portfolio-result {
+  border-left: 3px solid #6a9fb5;
+  background: linear-gradient(135deg, #fff 0%, #f8fbff 100%);
+}
+
+.overlay-portfolio-badge {
+  display: inline-block;
+  background: #6a9fb5;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.overlay-portfolio-badge i {
+  margin-right: 0.2rem;
+}
