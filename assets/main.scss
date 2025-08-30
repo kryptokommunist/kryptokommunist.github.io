@@ -1107,6 +1107,28 @@ p{
   color: #856404;
   padding: 0.1rem 0.2rem;
   border-radius: 3px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced highlighting for search results */
+.search-result mark,
+.overlay-search-result mark {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  color: #856404;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ffeaa7;
+  transition: all 0.2s ease;
+}
+
+.search-result mark:hover,
+.overlay-search-result mark:hover {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .result-footer {
