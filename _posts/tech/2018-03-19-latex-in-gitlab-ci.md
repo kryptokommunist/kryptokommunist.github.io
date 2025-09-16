@@ -18,11 +18,11 @@ You are pushing LateX documents into a repository with all of your friends. Your
 
 Combining some Python scripting and GitLab-CI configs results in a nice pipeline that processes LaTeX documents automatically while enforcing a certain folder structure. No more garbage and no more pain. Find the [example repo here](https://gitlab.com/kryptokommunist/latexpipeline).
 
-{% include image.html url="/images/gitlab-ci.png" description="The working GitLab CI pipeline" %}
+{% include image.html url="/images/gitlab-ci.png" description='The working <a href="https://gitlab.com/kryptokommunist/latexpipeline/pipelines">GitLab CI pipeline</a>' %}
 
 {% include image.html url="/images/gitlab-ci-out.png" description="The script output" %}
 
-{% include image.html url="/images/gitlab-ci-artifacts.png" description="The uploaded resulting artifacts accessible in GitLab" %}
+{% include image.html url="/images/gitlab-ci-artifacts.png" description='The uploaded resulting artifacts <a href="https://gitlab.com/kryptokommunist/latexpipeline/-/jobs/57720189/artifacts/browse">accessible in GitLab</a>' %}
 
 ### Email
 
@@ -32,15 +32,15 @@ For emailing a document for example to your tutors the [scripts/pipeline/latexpi
 
 would result in an raw text email being sent to the recipient specified in [`scripts/pipeline_script.py`](https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py) with the email of the GitLab User being CCed as Reply-To.
 
-{% include image.html url="/images/gitlab-ci-mail.png" description="The mail being sent to the address defined in scripts/pipeline_script.py" %}
+{% include image.html url="/images/gitlab-ci-mail.png" description='The mail being sent to the address defined in <a href="https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py">scripts/pipeline_script.py</a>' %}
 
 ### Telegram and IFTT
 
 With a little help by [IFTTT.com](https://ifttt.com) it's very easy to integrate Telegram notifications into the system using a bot. One benefit is certainly shaming users into testing their TeX files before submitting them knowing that their utter failure will be public.
 
-{% include image.html url="/images/gitlab-ci-telegram.png" description="Exemplary Telegram notifications about successes and failures" %}
+{% include image.html url="/images/gitlab-ci-telegram.png" description='Exemplary Telegram notifications about successes and failures' %}
 
-{% include image.html url="/images/gitlab-ci-ifttt.png" description="The applets for the bachelorprojects Telegram group including the Webhook based applet forwarding messages to the Telegram bot" %}
+{% include image.html url="/images/gitlab-ci-ifttt.png" description='The applets for the bachelorprojects Telegram group including the Webhook based applet forwarding messages to the Telegram bot.' %}
 
 ### A short intro to GitLab CI
 
@@ -72,7 +72,7 @@ Setting the key `cache` results in all files specified under `paths` being cache
 
 The [`scripts/pipeline_script.py`](https://gitlab.com/kryptokommunist/latexpipeline/blob/master/scripts/pipeline_script.py) script will copy the resulting PDFs from `foldername/latex_output/*pdf` to `foldername/*.pdf`. This happens at the `PIPELINE.move_pdfs()` function call. Thus we specify under `artifacts` the `paths` where GitLab CI will look for matching files to store them as artifacts.
 
-{% include image.html url="/images/gitlab-ci-caching.png" description="Processing time without caching and with enabled caching." %}
+{% include image.html url="/images/gitlab-ci-caching.png" description='Processing time without caching and with enabled caching.' %}
 
 ### What does the script do?
 
