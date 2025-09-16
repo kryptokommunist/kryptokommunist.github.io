@@ -2,7 +2,7 @@
 
 This is the repo for my personal blog powered by static site generator [jekyll](https://jekyllrb.com) and [github pages](https://pages.github.com).
 
-## Using the docker environment 
+## Using the docker environment
 
 Generate container: `docker build -t blog`. 
 
