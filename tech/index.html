@@ -83,6 +83,14 @@
           
             
             
+              
+            
+          
+            
+            
+          
+            
+            
           
             
             
@@ -180,7 +188,7 @@
             
             
           
-          <a class="page-link" href="/search/">
+          <a class="page-link" href="#" id="search-link">
             <i class="fa fa-search"></i>
           </a>
         </div>
@@ -402,6 +410,27 @@
 <div class="madewith">
   <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
 </div>
+
+<!-- Search Overlay -->
+<div id="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <input type="text" id="overlay-search-input" placeholder="Search posts..." autocomplete="off">
+      <button id="close-search" type="button">×</button>
+    </div>
+    <div id="overlay-search-results" class="search-overlay-results">
+      <div class="search-overlay-placeholder">
+        <i class="fas fa-search"></i>
+        <p>Start typing to search...</p>
+        <p class="search-tip"><i class="fas fa-lightbulb"></i> Use ⌘K to quickly open search</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search Scripts -->
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search-overlay.js"></script>
 </body>
 
 </html>

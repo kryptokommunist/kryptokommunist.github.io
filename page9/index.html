@@ -84,6 +84,14 @@
           
             
             
+              
+            
+          
+            
+            
+          
+            
+            
           
             
             
@@ -181,7 +189,7 @@
             
             
           
-          <a class="page-link" href="/search/">
+          <a class="page-link" href="#" id="search-link">
             <i class="fa fa-search"></i>
           </a>
         </div>
@@ -199,7 +207,7 @@
 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/politics/2014/03/13/der-nahostkonflikt-gespra-ch-mit-dem-referenten.html">Der Nahostkonflikt - Gespräch mit dem Referenten für Nahost</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/politics/2014/03/13/der-nahostkonflikt-gespr%C3%A4ch-mit-dem-referenten.html">Der Nahostkonflikt - Gespräch mit dem Referenten für Nahost</a></h1>
       <p class="post-meta">
         <time datetime="2014-03-13T00:00:00+01:00" itemprop="datePublished">
           
@@ -211,7 +219,7 @@
     <div class="post-content" itemprop="articleBody">
       <p>Das Gespräch im Außenministerium mit dem Referenten für die Nahostländer (daher fällt der Nahostkonflikt auch in seinen Zuständigkeitsbereich) war nicht nur in Bezug auf den Konflikt höchst aufschlussreich, sondern auch mit Blick auf das Berufsbild des Diplomaten im Auswärtigen Amt sehr interessant. Der Referent selbst war ein Jurist, der über das reguläre Bewerbungsverfahren für den höheren Dienst des Auswärtigen Amts zu der Stelle gekommen war. Vor der jetzigen Tätigkeit war er Koordinator zwischen der Bundesregierung und der NATO im Kosovo. Demnächst wird er in das Kanzleramt wechseln, dass auch eine eigenes Referat für Außenpolitik besitzt, welches allerdings ausschließlich durch Mitarbeiter des Auswärtigen Amtes besetzt wird.</p>
 
-<a href="/politics/2014/03/13/der-nahostkonflikt-gespra-ch-mit-dem-referenten.html">...read more</a>
+<a href="/politics/2014/03/13/der-nahostkonflikt-gespr%C3%A4ch-mit-dem-referenten.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -232,7 +240,7 @@
 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/politics/2014/03/07/der-nahostkonflikt-einfu-hrung.html">Der Nahostkonflikt - Einführung</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/politics/2014/03/07/der-nahostkonflikt-einf%C3%BChrung.html">Der Nahostkonflikt - Einführung</a></h1>
       <p class="post-meta">
         <time datetime="2014-03-07T22:14:00+01:00" itemprop="datePublished">
           
@@ -245,7 +253,7 @@
       <p>Im Rahmen des SPD-Praktikantenprogrammes nehme ich am Themenmodul Nahostkonflikt teil, dies ist für sich genommen schon ein interessantes Thema. Allerdings ist die Tatsache, dass ich diesen Monat für zwei Wochen nach Israel reise, ein nicht unerheblicher Motivationsfaktor.</p>
 <p>Den Beginn stellt die Einführung durch die Wissenschaftlerin Muriel Asseburg dar, die Leiterin der Nahostabteilung der Stiftung Wissenschaft und Politik ist, welche eine von der Bundesregierung gegründete Stiftung ist, die jedoch unabhängig ist. Sie ist ein Pendant des Wissenschaftlichen Dienstes im Bundestag. Dort kann arbeiten, wer eine Promotion und Sprachkenntnisse der Länder auf die er sich spezialisiert hat. Zudem besteht die Möglichkeit dort Praktika in verschiedenen Themenbereichen zu absolvieren.</p>
 
-<a href="/politics/2014/03/07/der-nahostkonflikt-einfu-hrung.html">...read more</a>
+<a href="/politics/2014/03/07/der-nahostkonflikt-einf%C3%BChrung.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -465,6 +473,27 @@
 <div class="madewith">
   <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
 </div>
+
+<!-- Search Overlay -->
+<div id="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <input type="text" id="overlay-search-input" placeholder="Search posts..." autocomplete="off">
+      <button id="close-search" type="button">×</button>
+    </div>
+    <div id="overlay-search-results" class="search-overlay-results">
+      <div class="search-overlay-placeholder">
+        <i class="fas fa-search"></i>
+        <p>Start typing to search...</p>
+        <p class="search-tip"><i class="fas fa-lightbulb"></i> Use ⌘K to quickly open search</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search Scripts -->
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search-overlay.js"></script>
 </body>
 
 </html>

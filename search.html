@@ -3,24 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>findmyfl.at | kryptokommunist’s blog</title>
+<title>Search | kryptokommunist’s blog</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="findmyfl.at" />
+<meta property="og:title" content="Search" />
 <meta name="author" content="Marcus Ding" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers." />
-<meta property="og:description" content="findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers." />
-<link rel="canonical" href="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html" />
-<meta property="og:url" content="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html" />
+<meta name="description" content="May you be happy, friend." />
+<meta property="og:description" content="May you be happy, friend." />
+<link rel="canonical" href="https://kryptokommun.ist/search.html" />
+<meta property="og:url" content="https://kryptokommun.ist/search.html" />
 <meta property="og:site_name" content="kryptokommunist’s blog" />
-<meta property="og:image" content="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-08-21T00:00:00+02:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" />
-<meta property="twitter:title" content="findmyfl.at" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Search" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2025-08-21T00:00:00+02:00","datePublished":"2025-08-21T00:00:00+02:00","description":"findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers.","headline":"findmyfl.at","image":"https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html"},"url":"https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Marcus Ding"},"description":"May you be happy, friend.","headline":"Search","url":"https://kryptokommun.ist/search.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
 <body><header class="site-header" role="banner">
@@ -200,57 +197,20 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="portfolio">
-
-<h1>findmyfl.at</h1>
-<h2>Automated Berlin Apartment Search</h2>
-
-<section>
-<img img="" src="/images/portfolio/projects/findmyflatlandingpage.png" />
-</section>
-
-<section>
-<h3>Overview</h3>
-
-<a href="https://findmyfl.at" target="_blank">findmyflat</a> is a self-hosted web service that helps people find public housing in Berlin more effectively.  
-It continuously scans all major public Berlin housing providers and notifies users instantly via Telegram whenever a new offer appears.  
-With smart filters, real-time updates, and fair pricing, it makes the stressful apartment hunt much easier.  
-
-<!--more-->
-
-<p>
-<ul>
-  <li>24/7 continuous scanning of all Berlin public housing providers</li>
-  <li>Instant Telegram notifications through <code>@findmyfl_at_bot</code></li>
-  <li>Advanced filters: price, rooms, districts, WBS eligibility</li>
-  <li>Transparent pricing with a 7-day free trial</li>
-</ul>
-</p>
-</section>
-
-<section>
-<h3>Technology</h3>
-<p>
-<ul>
-  <li>Python Flask backend</li>
-  <li>React frontend</li>
-  <li>PostgreSQL database</li>
-  <li>Stripe API for payments</li>
-  <li>Telegram API for instant apartment notifications</li>
-  <li>Open Street Maps API for address completion</li>
-  <li>Self-hosted on a VPS</li>
-</ul>
-</p>
-</section>
-
-
-<section>
-<h3>Gallery</h3>
-<img img="" src="/images/portfolio/projects/findmyflatlandingpage.png" />
-<!-- Optional: add screenshots of Telegram bot, pricing page, filters -->
-</section>
-
+        <div class="search-page">
+  <h1>Search</h1>
+  
+  <form action="/search/" method="get">
+    <input type="text" id="search-box" name="query" placeholder="Search posts..." value="">
+  </form>
+  
+  <ul id="search-results" class="search-results">
+    <!-- Search results will be populated by JavaScript -->
+  </ul>
 </div>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search.js"></script>
 
       </div>
     </main>

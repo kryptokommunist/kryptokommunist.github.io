@@ -84,6 +84,14 @@
           
             
             
+              
+            
+          
+            
+            
+          
+            
+            
           
             
             
@@ -181,7 +189,7 @@
             
             
           
-          <a class="page-link" href="/search/">
+          <a class="page-link" href="#" id="search-link">
             <i class="fa fa-search"></i>
           </a>
         </div>
@@ -332,7 +340,7 @@ unmöglich den Sinnen zu bannen.</blockquote>&#8212;Gedankensplitter aus einer v
 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/visual/2013/07/13/seno-r-chang.html">Senõr Chang</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="/visual/2013/07/13/sen%C3%B5r-chang.html">Senõr Chang</a></h1>
       <p class="post-meta">
         <time datetime="2013-07-13T05:49:00+02:00" itemprop="datePublished">
           
@@ -344,7 +352,7 @@ unmöglich den Sinnen zu bannen.</blockquote>&#8212;Gedankensplitter aus einer v
     <div class="post-content" itemprop="articleBody">
       <img src="/images/senor_chang.jpg"/><br/><p>Senõr Chang</p>
 
-<a href="/visual/2013/07/13/seno-r-chang.html">...read more</a>
+<a href="/visual/2013/07/13/sen%C3%B5r-chang.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -484,6 +492,27 @@ unmöglich den Sinnen zu bannen.</blockquote>&#8212;Gedankensplitter aus einer v
 <div class="madewith">
   <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
 </div>
+
+<!-- Search Overlay -->
+<div id="search-overlay">
+  <div class="search-overlay-content">
+    <div class="search-overlay-header">
+      <input type="text" id="overlay-search-input" placeholder="Search posts..." autocomplete="off">
+      <button id="close-search" type="button">×</button>
+    </div>
+    <div id="overlay-search-results" class="search-overlay-results">
+      <div class="search-overlay-placeholder">
+        <i class="fas fa-search"></i>
+        <p>Start typing to search...</p>
+        <p class="search-tip"><i class="fas fa-lightbulb"></i> Use ⌘K to quickly open search</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Search Scripts -->
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/js/search-overlay.js"></script>
 </body>
 
 </html>
