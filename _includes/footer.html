@@ -19,9 +19,3 @@
 <div class="madewith">
   <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
 </div>
-
-<!-- Load search overlay scripts for pages that need them (not search page) -->
-{% unless page.url == '/search.html' %}
-<script src="https://unpkg.com/lunr@2.3.9/lunr.min.js"></script>
-<script src="{{ '/js/search-overlay.js' | relative_url }}"></script>
-{% endunless %}
