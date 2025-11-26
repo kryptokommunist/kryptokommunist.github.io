@@ -1,11 +1,11 @@
 ---
 layout: default
 title: "Curium"
-subtitle: "6U CubeSat on board computer software"
+subtitle: "12U CubeSat on board computer software"
 year: "2023"
 image: /images/portfolio/projects/banner.png
 categories: portfolio/projects
-excerpt: "The Curium project was designed around the development of 6U CubeSats, using components primarily sourced from commercial manufacturers."
+excerpt: "The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers."
 category:
 - tech
 tags:
