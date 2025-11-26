@@ -21,7 +21,7 @@ tags:
 </section>
 <section>
 <h3>Overview</h3>
-The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. Part of the code is publicly accessible on <a href="https://github.com/Curium-Five">github</a> and <a href="https://gitlab.com/curiumsat">gitlab</a>. The satellite was <a href="https://www.nanosats.eu/sat/curium-one">launched succesfully on July 2024</a> on Ariane 6.
+The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. The written code is publicly accessible on <a href="https://github.com/Curium-Five">github</a> and <a href="https://gitlab.com/curiumsat">gitlab</a>. The satellite was <a href="https://www.nanosats.eu/sat/curium-one">launched succesfully in July 2024</a> on Ariane 6.
 
 <!--more-->
 My contributions:
