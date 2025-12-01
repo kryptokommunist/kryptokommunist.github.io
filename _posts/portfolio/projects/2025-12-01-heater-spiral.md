@@ -47,10 +47,10 @@ Heater Spiral is a wearable body-computer interface that delivers gentle, progra
 </section>
 <section>
 <h3>Gallery</h3>
-<img src="/images/portfolio/projects/heater-spiral-front.png" alt="Front of Heater Spiral PCB">
-<img src="/images/portfolio/projects/heater-spiral-spiral.png" alt="Back of Heater Spiral showing heater spiral art">
-<img src="/images/portfolio/projects/heater-spiral-leds.png" alt="Heater Spiral PCB illuminated during test">
-<img src="/images/portfolio/projects/heater-spiral-pendant-front.png" alt="Pendant render showing Heater Spiral board front">
-<img src="/images/portfolio/projects/heater-spiral-pendant-angle.png" alt="Pendant render angled view">
+<img src="/images/portfolio/projects/rendered_heater_spiral.png.png" alt="Front of Heater Spiral PCB">
+<img src="/images/portfolio/projects/rendered_heater_spiral_2.png" alt="Back of Heater Spiral showing heater spiral art">
+<img src="/images/portfolio/projects/solderered_heater_spiral.png" alt="Heater Spiral PCB illuminated during test">
+<img src="/images/portfolio/projects/necklace_heater_spiral.jpeg" alt="Pendant render showing Heater Spiral board front">
+<img src="/images/portfolio/projects/necklace_heater_spiral_2.jpeg" alt="Pendant render angled view">
 </section>
 </div>
