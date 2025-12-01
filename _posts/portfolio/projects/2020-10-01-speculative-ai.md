@@ -23,6 +23,7 @@ tags:
 The SpeculativeAI series consists of aesthetic experiments aimed at making the processes of artificial neural networks perceptible to visitors through audiovisual translation.
 
 The latest work questions an AI’s capacity for empathy and purpose while communicating with another AI. Conceptually supported by the Center for Artificial Intelligence (University of Oviedo), two independent AI systems were set up to communicate using an invented language of audiovisual associations.
+<!--more-->
 <p>
 <ul>
 <li>The light object is a spherical structure with an 80cm diameter, composed of a chaotic heap of 120m LED stripe, a microphone, and an embedded AI computing device (Jetson Nano). It hears sounds and creates images.</li>

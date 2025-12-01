@@ -24,6 +24,7 @@ tags:
 HingeCore introduces a novel laser-cutting approach utilizing foamcore to create 3D structures with finger hinges for fast and glue-free assembly. This method supports the creation of robust, aesthetic, and functional models, ranging from furniture to art objects.
 
 HingeCoreMaker is the accompanying software tool, seamlessly integrating with 3D modeling platforms to automate the conversion of 3D designs into 2D laser-cutting layouts, optimizing for precision and efficiency.
+<!--more-->
 
 <p>
 <ul>

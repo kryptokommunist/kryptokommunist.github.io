@@ -22,6 +22,7 @@ tags:
 <section>
 <h3>Overview</h3>
 By night this light installation creates the illusion of 5 light bars floating mid air. The bright lights project intertwined light beams onto the ground with changing modes between stroboscopic and calm patterns. Due to the suspension the tree movements are picked up by the light arrangement. Displayed at <a href="https://garbiczfestival.com">Garbiczfestival 2019</a>.
+<!--more-->
 <p>
 <ul>
   <li>aluminium bars</li>
@@ -29,7 +30,7 @@ By night this light installation creates the illusion of 5 light bars floating m
   <li>steel wire</li>
   <li>Madmapper software</li>
 </ul>
-</p><!--more-->
+</p>
 </section>
 <section>
 <h3>Gallery</h3>
