@@ -3,7 +3,7 @@ layout: default
 title: "Heater Spiral"
 subtitle: "Heat-based body-computer interface pendant"
 year: "2025"
-image: /images/portfolio/projects/heater-spiral-front.png
+image: /images/portfolio/projects/rendered_heater_spiral.png
 categories: portfolio/projects
 excerpt: "Self-designed PCB pendant that uses a MOSFET-driven heater spiral for embodied awareness practices."
 category:
