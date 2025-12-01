@@ -21,10 +21,10 @@ tags:
 <section>
 <h3>Overview</h3>
 <p>
-Doyle Packing is a generative art tool that animates Doyle spiral circle packings and exports frames for fabrication.
-I use the software to explore evolving geometric textures, then translate the animations into physical pieces through
-etching and laser engraving. The current pipeline renders animated patterns, prepares high-resolution frames for
-tooling, and documents each iteration alongside the source code.
+Doyle Packing is a generative art tool I created to Doyle spiral circle packings and exports frames for fabrication.
+The software can be used to explore evolving geometric textures, then translate the animations into physical pieces through
+etching and laser engraving with a fibo laser. The current pipeline renders animated patterns, prepares high-resolution frames for
+laser engraving. The surfaces reflections can be changed based on the angle of the engrave line pattern.
 </p>
 <p>
 <a href="https://github.com/kryptokommunist/doyle_packing" target="_blank">GitHub Repository</a>
