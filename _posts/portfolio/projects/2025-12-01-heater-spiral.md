@@ -40,14 +40,14 @@ Heater Spiral is a wearable body-computer interface that delivers gentle, progra
 <section>
 <h3>Explorations & Next Steps</h3>
 <ul>
-<li>Next hardware spin will include UWB to refine distance-based warming interactions.</li>
+<li>Next hardware spin will include UWB to refine distance-based warming interactions. Also include fuses as failsafe in case of software failures.</li>
 <li>Long-term vision: scale the concept into a pixel-style thermal display that can cover the whole body.</li>
 <li>Inspired by meditation practice, sauna rituals, and hot stone massage as embodied, heat-driven experiences.</li>
 </ul>
 </section>
 <section>
 <h3>Gallery</h3>
-<img src="/images/portfolio/projects/rendered_heater_spiral.png.png" alt="Front of Heater Spiral PCB">
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB">
 <img src="/images/portfolio/projects/rendered_heater_spiral_2.png" alt="Back of Heater Spiral showing heater spiral art">
 <img src="/images/portfolio/projects/solderered_heater_spiral.png" alt="Heater Spiral PCB illuminated during test">
 <img src="/images/portfolio/projects/necklace_heater_spiral.jpeg" alt="Pendant render showing Heater Spiral board front">
