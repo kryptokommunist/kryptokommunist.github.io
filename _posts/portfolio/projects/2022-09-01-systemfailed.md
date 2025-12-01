@@ -21,6 +21,7 @@ tags:
 <section>
 <h3>Overview</h3>
 System Failed is an AI-powered interactive installation that combines advanced motion tracking, machine learning, and real-time audience interaction. I developed the entire software pipeline, from processing raw laser tracking data to generating live path predictions. Key features include the ability to record and retrain models using new data and a PyQT5-based graphical user interface for system control. The production was succesfully shown to a live audience 11 times.
+<!--more-->
 <p>
 </p>
 <p>
