@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Page 3 of 3 for Tech - page 3 | kryptokommunist’s blog</title>
+<title>Page 3 of 3 for Tech - page 3 | marcusding’s blog</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Tech - page 3" />
 <meta name="author" content="Marcus Ding" />
@@ -12,7 +12,7 @@
 <meta property="og:description" content="May you be happy, friend." />
 <link rel="canonical" href="https://kryptokommun.ist/tech/page3/" />
 <meta property="og:url" content="https://kryptokommun.ist/tech/page3/" />
-<meta property="og:site_name" content="kryptokommunist’s blog" />
+<meta property="og:site_name" content="marcusding’s blog" />
 <meta property="og:type" content="website" />
 <link rel="prev" href="https://kryptokommun.ist/tech/page2/" />
 <meta name="twitter:card" content="summary" />
@@ -20,13 +20,13 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Marcus Ding"},"description":"May you be happy, friend.","headline":"Tech - page 3","url":"https://kryptokommun.ist/tech/page3/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="marcusding&apos;s blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper">
     
     
-    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+    <a href="/" class="site-title"><span id="first-name">marcus</span><span id="last-name">ding</span></a>
 
     
       <nav class="site-nav">
@@ -206,6 +206,70 @@
 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/tech/2020/08/31/google-summer-of-code.html">Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020</a></h1>
+      <p class="post-meta">
+        <time datetime="2020-08-31T00:00:00+02:00" itemprop="datePublished">
+          
+          Aug 31, 2020
+        </time>
+        </p>
+    </header>
+
+    
+    
+    <div class="post-content" itemprop="articleBody">
+      <p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source <a href="https://en.m.wikipedia.org/wiki/Computer-aided_design">CAD program</a>. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD <a href="https://de.wikipedia.org/wiki/NP-Vollständigkeit">NP-complete</a>? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my <a href="https://github.com/kryptokommunist/tolv">lamp design</a> the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization.</p>
+
+<p><a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the <a href="https://card10-cover.0x1b.de/index.php">card1o cover generator</a> created with <a href="https://www.openscad.org">OpenSCAD</a>. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020.</p>
+
+<p><img src="/images/card1o_badge.gif" alt="" /></p>
+<p class="caption">The result from printing the cover generator customized <a href="https://card10.badge.events.ccc.de">card1o badge</a> cover. It's such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don't have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That's the experience I wanted to create for my lamp design.</p>
+
+<a href="/tech/2020/08/31/google-summer-of-code.html">...read more</a>
+    </div>
+    <div class="post-meta post-tags">
+      
+        <a href="/tags/#tech" class="post-tag"> tech </a>
+      
+        <a href="/tags/#gsoc" class="post-tag"> gsoc </a>
+      
+        <a href="/tags/#opensource" class="post-tag"> opensource </a>
+      
+        <a href="/tags/#freecad" class="post-tag"> freecad </a>
+      
+        <a href="/tags/#english" class="post-tag"> english </a>
+      
+    </div>
+  </article>
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/tech/2018/08/07/digital-rgb-led-guide.html">Digital RGB LED guide</a></h1>
+      <p class="post-meta">
+        <time datetime="2018-08-07T00:00:00+02:00" itemprop="datePublished">
+          
+          Aug 7, 2018
+        </time>
+        </p>
+    </header>
+
+    
+    
+    <div class="post-content" itemprop="articleBody">
+      <p>I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.
+<a href="/tech/2018/08/07/digital-rgb-led-guide.html">...read more</a>
+    </div>
+    <div class="post-meta post-tags">
+      
+        <a href="/tags/#led" class="post-tag"> led </a>
+      
+        <a href="/tags/#lighting" class="post-tag"> lighting </a>
+      
+    </div>
+  </article>
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
       <h1 class="post-title" itemprop="name headline"><a href="/tech/2018/03/19/latex-in-gitlab-ci.html">Automating LaTeX compilation in Gitlab-CI</a></h1>
       <p class="post-meta">
         <time datetime="2018-03-19T00:00:00+01:00" itemprop="datePublished">
@@ -215,6 +279,8 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
       <h2 id="the-problem">The problem</h2>
 
@@ -244,10 +310,10 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
-      <p>First of all, why would you want a matepi? Well, that&rsquo;s an easy one: Because it&rsquo;s awesome! Here are some demo reels showing three possible applications:<br/></p><p><br/></p><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJ9Wb-Me6LFc"><iframe width="470" height="281" id="youtube_iframe" src="https://www.youtube.com/embed/J9Wb-Me6LFc?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D125SNfcAyic%26t%3D153"><iframe width="470" height="281" src="https://www.youtube.com/embed/125SNfcAyic?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-vg9KkH5iTg%26t%3D19"><iframe width="470" height="281" src="https://www.youtube.com/embed/-vg9KkH5iTg?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><p><br/></p><p>So is it hard? That depends on your prior knowledge of soldering, leds, the raspberry pi and coding. In the end it turned out to be less complex than i feared. What do you need to build one yourself?
-
-<a href="/tech/2015/03/08/matepi-raspberry-pi-meets-mate-crates-how-to.html">...read more</a>
+      <p>First of all, why would you want a matepi? Well, that&rsquo;s an easy one: Because it&rsquo;s awesome! Here are some demo reels showing three possible applications:<br/></p><p><br/></p><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJ9Wb-Me6LFc"><iframe width="470" height="281" id="youtube_iframe" src="https://www.youtube.com/embed/J9Wb-Me6LFc?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D125SNfcAyic%26t%3D153"><iframe width="470" height="281" src="https://www.youtube.com/embed/125SNfcAyic?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><figure class="tmblr-embed" data-provider="youtube" data-orig-width="470" data-orig-height="304" data-url="https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-vg9KkH5iTg%26t%3D19"><iframe width="470" height="281" src="https://www.youtube.com/embed/-vg9KkH5iTg?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque" frameborder="0"></iframe></figure><p><br/></p><p>So is it hard? That depends on your prior knowledge of soldering, leds, the raspberry pi and coding. In the end it turned out to be less complex than i feared. What do you need to build one yourself?<a href="/tech/2015/03/08/matepi-raspberry-pi-meets-mate-crates-how-to.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -283,8 +349,22 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
-      480 bottle of Club Mate in 24 crates turned into an LED wall.<a href="/portfolio/projects/tech/2014/01/01/matelight.html">...read more</a>
+      <div class="portfolio">
+
+<h1>matelight</h1>
+<h2>LED installation</h2>
+
+<section>
+<img img="" src="/images/portfolio/art/IMG_8741.JPG" />
+</section>
+<section>
+<h3>Overview</h3>
+
+Matelight is an piece that displays various patterns and that can be modularly set up in different sizes. More info <a href="/tech/2015/03/08/matepi-raspberry-pi-meets-mate-crates-how-to.html">here</a>. It was displayed in different clubs and parties.
+<a href="/portfolio/projects/tech/2014/01/01/matelight.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       

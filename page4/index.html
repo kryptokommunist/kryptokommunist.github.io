@@ -3,31 +3,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Page 4 of 15 for kryptokommunist’s blog - page 4 | kryptokommunist’s blog</title>
+<title>Page 4 of 15 for marcusding’s blog - page 4 | marcusding’s blog</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="kryptokommunist’s blog - page 4" />
+<meta property="og:title" content="marcusding’s blog - page 4" />
 <meta name="author" content="Marcus Ding" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="May you be happy, friend." />
 <meta property="og:description" content="May you be happy, friend." />
 <link rel="canonical" href="https://kryptokommun.ist/page4/" />
 <meta property="og:url" content="https://kryptokommun.ist/page4/" />
-<meta property="og:site_name" content="kryptokommunist’s blog" />
+<meta property="og:site_name" content="marcusding’s blog" />
 <meta property="og:type" content="website" />
 <link rel="prev" href="https://kryptokommun.ist/page3/" />
 <link rel="next" href="https://kryptokommun.ist/page5/" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="kryptokommunist’s blog - page 4" />
+<meta property="twitter:title" content="marcusding’s blog - page 4" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Marcus Ding"},"description":"May you be happy, friend.","headline":"kryptokommunist’s blog - page 4","url":"https://kryptokommun.ist/page4/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Marcus Ding"},"description":"May you be happy, friend.","headline":"marcusding’s blog - page 4","url":"https://kryptokommun.ist/page4/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="kryptokommunist&apos;s blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="marcusding&apos;s blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper">
     
     
-    <a href="/" class="site-title"><span id="first-name">krypto</span><span id="last-name">kommunist</span></a>
+    <a href="/" class="site-title"><span id="first-name">marcus</span><span id="last-name">ding</span></a>
 
     
       <nav class="site-nav">
@@ -207,6 +207,70 @@
 
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/tech/2020/08/31/google-summer-of-code.html">Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020</a></h1>
+      <p class="post-meta">
+        <time datetime="2020-08-31T00:00:00+02:00" itemprop="datePublished">
+          
+          Aug 31, 2020
+        </time>
+        </p>
+    </header>
+
+    
+    
+    <div class="post-content" itemprop="articleBody">
+      <p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source <a href="https://en.m.wikipedia.org/wiki/Computer-aided_design">CAD program</a>. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD <a href="https://de.wikipedia.org/wiki/NP-Vollständigkeit">NP-complete</a>? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my <a href="https://github.com/kryptokommunist/tolv">lamp design</a> the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization.</p>
+
+<p><a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the <a href="https://card10-cover.0x1b.de/index.php">card1o cover generator</a> created with <a href="https://www.openscad.org">OpenSCAD</a>. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020.</p>
+
+<p><img src="/images/card1o_badge.gif" alt="" /></p>
+<p class="caption">The result from printing the cover generator customized <a href="https://card10.badge.events.ccc.de">card1o badge</a> cover. It's such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don't have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That's the experience I wanted to create for my lamp design.</p>
+
+<a href="/tech/2020/08/31/google-summer-of-code.html">...read more</a>
+    </div>
+    <div class="post-meta post-tags">
+      
+        <a href="/tags/#tech" class="post-tag"> tech </a>
+      
+        <a href="/tags/#gsoc" class="post-tag"> gsoc </a>
+      
+        <a href="/tags/#opensource" class="post-tag"> opensource </a>
+      
+        <a href="/tags/#freecad" class="post-tag"> freecad </a>
+      
+        <a href="/tags/#english" class="post-tag"> english </a>
+      
+    </div>
+  </article>
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><a href="/startup/english/2020/02/15/hpi-startup-bootcamp.html">HPI Startup Bootcamp</a></h1>
+      <p class="post-meta">
+        <time datetime="2020-02-15T00:00:00+01:00" itemprop="datePublished">
+          
+          Feb 15, 2020
+        </time>
+        </p>
+    </header>
+
+    
+    
+    <div class="post-content" itemprop="articleBody">
+      <p>This year and last year I was lucky to be part of the <a href="https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps.html">HPI Startup Bootcamp</a>. To my suprise my team won the first time I took part (<a href="https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2018.html">link or it didn’t happen</a>) and last year at least got a spontaneous made up prize because the jury liked the idea so much (<a href="https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2019.html">can I has link plz</a>). But enough humble or not so humble brags. I wanted to condense what I have learned there into a text hopefully giving you guidance on whether to attend and what to expect at such an event aside from late Roman, decadent catering. The learnings are a combination of the practical bootcamp experiences as well as the accompanying lecture called <a href="https://hpi.de/entrepreneurship/veranstaltungen/it-entrepreneurship-vorlesung.html"><em>IT-Entrepreneurship</em></a>.
+<a href="/startup/english/2020/02/15/hpi-startup-bootcamp.html">...read more</a>
+    </div>
+    <div class="post-meta post-tags">
+      
+        <a href="/tags/#hpi" class="post-tag"> hpi </a>
+      
+        <a href="/tags/#startup" class="post-tag"> startup </a>
+      
+    </div>
+  </article>
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
       <h1 class="post-title" itemprop="name headline"><a href="/travel/2019/03/27/japan-land-der-aufgehenden-sonne.html">Travel tips – learn from my mistakes</a></h1>
       <p class="post-meta">
         <time datetime="2019-03-27T00:00:00+01:00" itemprop="datePublished">
@@ -216,6 +280,8 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
       <p>I love travelling, every now and then I have the privilege to be able to travel abroad for a longer period. In my case that usually has been about a month. And things go horribly wrong. On the one hand it means I learn something on the other hand it means things like burning 700 Euros for no other reason than being utterly stupid. Therefore I compiled this compact post about how to do things right from the beginning.</p>
 
@@ -239,14 +305,14 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
       <p>I love travelling, every now and then I have the privilege to be able to travel abroad for a longer period. In my case that usually has been about a month. And things go horribly wrong. On the one hand it means I learn something on the other hand it means things like burning 700 Euros for no other reason than being utterly stupid. Therefore I compiled this compact post about how to do things right from the beginning.</p>
 
 <h1 id="do-you-even-prepare-bro">Do you even prepare bro?</h1>
 
-<p>Preparing a trip is something I’d rather avoid doing, it’s just not any fun. I once was asked by a guy on the street if he could crash my couch. As it turned out he was travelling without anything. No money, no plan, not even a backpack. He was basically homeless, just with a drive to explore the world, which made all the difference. All he had was his T-shirt, pants, shoes and most importantly: His willingness to leave his comfort zone.</p>
-
-<a href="/travel/2019/03/21/travel-tips-learn-from-my-mistakes.html">...read more</a>
+<p>Preparing a trip is something I’d rather avoid doing, it’s just not any fun. I once was asked by a guy on the street if he could crash my couch. As it turned out he was travelling without anything. No money, no plan, not even a backpack. He was basically homeless, just with a drive to explore the world, which made all the difference. All he had was his T-shirt, pants, shoes and most importantly: His willingness to leave his comfort zone. <a href="/travel/2019/03/21/travel-tips-learn-from-my-mistakes.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -266,8 +332,21 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
-      By night this light installation creates the illusion of 5 light bars floating mid air.<a href="/portfolio/projects/art/2019/01/01/forrest-microgravity.html">...read more</a>
+      <div class="portfolio">
+
+<h1>Forrest Microgravity</h1>
+<h2>site specific LED installation</h2>
+
+<section>
+<img img="" src="/images/portfolio/art/IMG_0546.JPG" />
+</section>
+<section>
+<h3>Overview</h3>
+By night this light installation creates the illusion of 5 light bars floating mid air. The bright lights project intertwined light beams onto the ground with changing modes between stroboscopic and calm patterns. Due to the suspension the tree movements are picked up by the light arrangement. Displayed at <a href="https://garbiczfestival.com">Garbiczfestival 2019</a>.
+<a href="/portfolio/projects/art/2019/01/01/forrest-microgravity.html">...read more</a>
     </div>
     <div class="post-meta post-tags">
       
@@ -287,6 +366,8 @@
         </p>
     </header>
 
+    
+    
     <div class="post-content" itemprop="articleBody">
       <p>A couple weeks ago I participated in the <a href="https://hpi.de/entrepreneurship/veranstaltungen/startup-bootcamps/hpi-startup-bootcamp-2018.html">Startup Bootcamp #DigitalHealth</a>. Me and my team worked on creating a business plan for a smart diaper that’s based on a cheap humidity sensor built into the diaper. We won the best pitch award. In this post I will summarize my learnings from the lectures and just talking to experts in the field that were present.</p>
 
@@ -384,60 +465,6 @@
     <div class="post-meta post-tags">
       
         <a href="/tags/#entrepreneurship" class="post-tag"> entrepreneurship </a>
-      
-    </div>
-  </article>
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/tech/2018/08/07/digital-rgb-led-guide.html">Digital RGB LED guide</a></h1>
-      <p class="post-meta">
-        <time datetime="2018-08-07T00:00:00+02:00" itemprop="datePublished">
-          
-          Aug 7, 2018
-        </time>
-        </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      <p>I need LEDs, a lot of LEDs. About 13.000 for a lighting project. That should be about 1400$ worth of LED. Therefore here is the result of the research I did to prevent wasting a huge load of cash I do not have anyways.</p>
-
-<a href="/tech/2018/08/07/digital-rgb-led-guide.html">...read more</a>
-    </div>
-    <div class="post-meta post-tags">
-      
-        <a href="/tags/#led" class="post-tag"> led </a>
-      
-        <a href="/tags/#lighting" class="post-tag"> lighting </a>
-      
-    </div>
-  </article>
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="/tech/2018/03/19/latex-in-gitlab-ci.html">Automating LaTeX compilation in Gitlab-CI</a></h1>
-      <p class="post-meta">
-        <time datetime="2018-03-19T00:00:00+01:00" itemprop="datePublished">
-          
-          Mar 19, 2018
-        </time>
-        </p>
-    </header>
-
-    <div class="post-content" itemprop="articleBody">
-      <h2 id="the-problem">The problem</h2>
-
-<p>You are pushing LateX documents into a repository with all of your friends. Your friends compile the PDF files locally and sometimes push garbage into the repo. Also you want to email your assignments to your tutors. But you are already annoyed by writing commit messages. Opening your email client and dragging and dropping that PDF, for you it’s pain in it’s purest form. This makes you very sad. You ask yourself: What could I do about it?</p>
-
-<a href="/tech/2018/03/19/latex-in-gitlab-ci.html">...read more</a>
-    </div>
-    <div class="post-meta post-tags">
-      
-        <a href="/tags/#gitlab-ci" class="post-tag"> gitlab-ci </a>
-      
-        <a href="/tags/#latex" class="post-tag"> latex </a>
-      
-        <a href="/tags/#python" class="post-tag"> python </a>
       
     </div>
   </article>

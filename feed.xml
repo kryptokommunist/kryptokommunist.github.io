@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2025-09-16T23:17:31+02:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">kryptokommunist’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">findmyfl.at</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html" rel="alternate" type="text/html" title="findmyfl.at" /><published>2025-08-21T00:00:00+02:00</published><updated>2025-08-21T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html"><![CDATA[<div class="portfolio">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2025-12-01T22:54:36+01:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Heater Spiral</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html" rel="alternate" type="text/html" title="Heater Spiral" /><published>2025-12-01T00:00:00+01:00</published><updated>2025-12-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html"><![CDATA[<div class="portfolio">
+<h1>Heater Spiral</h1>
+<h2>Heat-based body-computer interface pendant</h2>
+<section>
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB" />
+</section>
+<section>
+<h3>Overview</h3>
+Heater Spiral is a wearable body-computer interface that delivers gentle, programmable warmth through a spiral heater trace. I designed and assembled the circular PCB from scratch, integrating a MOSFET-controlled heater that can raise the surface temperature to around 50&nbsp;°C. One application I explored was wearing it as a necklace over the heart with rhythmic warm-up and cooldown phases to anchor attention in the body—similar to metta meditation sessions I tested during retreat. I also prototyped an app that modulates heat based on how near another wearer is, and I plan to redesign the next iteration with a UWB chip for more accurate distance sensing.
+<!--more-->
+<p></p>
+<p>
+<a href="https://github.com/kryptokommunist/heater_spiral" target="_blank">GitHub Repository</a> |
+<a href="https://x.com/kryptokommunist/status/1901057389018681477" target="_blank">Project Tweet Thread</a>
+</p>
+</section>
+<section>
+<h3>Technical Details</h3>
+<ul>
+<li>Custom two-layer PCB with ornamental copper spiral heater and matching silkscreen art.</li>
+<li>MOSFET-based power stage to drive the heater element up to ~50&nbsp;°C.</li>
+<li>USB-C for power and programming, with onboard microcontroller and status LEDs.</li>
+<li>Test program cycles heating and cooling periods for somatic awareness practice, plus a proximity-based heating demo for paired wearers.</li>
+<li>Designed pendant enclosure concepts to house the board as wearable jewelry.</li>
+</ul>
+</section>
+<section>
+<h3>Explorations &amp; Next Steps</h3>
+<ul>
+<li>Next hardware spin will include UWB to refine distance-based warming interactions. Also include fuses as failsafe in case of software failures.</li>
+<li>Long-term vision: scale the concept into a pixel-style thermal display that can cover the whole body.</li>
+<li>Inspired by meditation practice, sauna rituals, and hot stone massage as embodied, heat-driven experiences.</li>
+</ul>
+</section>
+<section>
+<h3>Gallery</h3>
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB" />
+<img src="/images/portfolio/projects/rendered_heater_spiral_2.png" alt="Back of Heater Spiral showing heater spiral art" />
+<img src="/images/portfolio/projects/solderered_heater_spiral.png" alt="Heater Spiral PCB illuminated during test" />
+<img src="/images/portfolio/projects/necklace_heater_spiral.jpeg" alt="Pendant render showing Heater Spiral board front" />
+<img src="/images/portfolio/projects/necklace_heater_spiral_2.jpeg" alt="Pendant render angled view" />
+<img src="/images/portfolio/projects/heater_spiral_bake.png" alt="Heater Spiral board baking in an oven" />
+</section>
+<h3>Videos</h3>
+<section>
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JpYmuttcDTM" title="Heater Spiral build video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+</div>
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Self-designed PCB pendant that uses a MOSFET-driven heater spiral for embodied awareness practices.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/rendered_heater_spiral.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/rendered_heater_spiral.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Doyle Packing</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html" rel="alternate" type="text/html" title="Doyle Packing" /><published>2025-11-01T00:00:00+01:00</published><updated>2025-11-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html"><![CDATA[<div class="portfolio">
+<h1>Doyle Packing</h1>
+<h2>Generative Doyle spiral animations etched into steel and wood</h2>
+<section>
+<img src="/images/portfolio/projects/doyle_spiral_2.png" alt="Doyle Packing heading image" />
+</section>
+<section>
+<h3>Overview</h3>
+<p>
+Doyle Packing is a generative art tool I created to Doyle spiral circle packings and exports frames for fabrication.
+The software can be used to explore evolving geometric textures, then translate the animations into physical pieces through
+etching and laser engraving with a fibo laser. The current pipeline renders animated patterns, prepares high-resolution frames for
+laser engraving. The surfaces reflections can be changed based on the angle of the engrave line pattern.
+</p>
+<!--more-->
+<p>
+<a href="https://github.com/kryptokommunist/doyle_packing" target="_blank">GitHub Repository</a>
+</p>
+</section>
+<section>
+<h3>Experiments</h3>
+<ul>
+<li>Tested both steel etching and wood lasering; both work, but steel is more promising for crisp contrast and durability.</li>
+<li>Ongoing tuning of fabrication settings to make the animated motion very clearly visible in the etched results.</li>
+<li>Planned animation UI driven by cellular automata rules to vary the Doyle spiral parameters over time.</li>
+<li>Future experiments with pixel-grid renderings to compare against the smooth circle packings for alternative animation aesthetics.</li>
+</ul>
+</section>
+<section>
+<h3>Gallery</h3>
+<img src="/images/portfolio/projects/doyle_software_2.png" alt="Doyle Packing software view 1" />
+<img src="/images/portfolio/projects/doyle_software.png" alt="Doyle Packing software view 2" />
+<img src="/images/portfolio/projects/doyle_spiral_2.png" alt="Rendered Doyle spiral 1" />
+<img src="/images/portfolio/projects/doyle_spiral.png" alt="Rendered Doyle spiral 2" />
+<img src="/images/portfolio/projects/doyle_spiral_3.png" alt="Rendered Doyle spiral 3" />
+</section>
+<section>
+<h3>Videos</h3>
+<iframe title="Doyle Packing software demo" src="https://www.youtube.com/embed/qkzsHEQotLk?si=xtfMyvqlOFirsrTB" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+<p></p>
+<iframe title="Steel etching result" src="https://www.youtube.com/embed/e94EDtrdqQQ?si=LkIUOwfVj_xGLDMs" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+<p></p>
+<iframe title="Wood laser result" src="https://www.youtube.com/embed/EdZXvTYIgcg?si=x5p5dOq0x1jZuLTG" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Animating Doyle spiral circle packings and translating them into etched steel and wood artworks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">findmyfl.at</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html" rel="alternate" type="text/html" title="findmyfl.at" /><published>2025-08-21T00:00:00+02:00</published><updated>2025-08-21T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html"><![CDATA[<div class="portfolio">
 
 <h1>findmyfl.at</h1>
 <h2>Automated Berlin Apartment Search</h2>
@@ -49,20 +142,21 @@ With smart filters, real-time updates, and fair pricing, it makes the stressful 
 </section>
 
 </div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="web" /><category term="flask" /><category term="react" /><category term="postgres" /><category term="api" /><summary type="html"><![CDATA[findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html" rel="alternate" type="text/html" title="anattā – 𑀅𑀦𑀢𑁆𑀢𑀸" /><published>2024-07-01T00:00:00+02:00</published><updated>2024-07-01T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html"><![CDATA[<div class="portfolio">
-
+ 
 <h1>anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</h1>
 <h2>LED installation</h2>
-
+ 
 <section>
 <img img="" src="/images/portfolio/art/IMG_2698.jpeg" />
 </section>
 <section>
 <h3>Overview</h3>
-
+ 
 Anattā is an experiment in which you are invited to be playful with your identity and that of someone else. Anattā (“non-self”) is a term from Buddhist texts and practices. This experiment for two people invites you to expand the space around the fixed self and to experience that it may not be quite as solid and stable as we often assume. How does it feel to be me?
-
+ 
 How does someone who is not me feel? How does it feel when both categories dissolve?
-<!--more-->
+In 2025 I modified the mirror with two time-of-flight laser sensors so visitors can use hand gestures in front of the surface to control how the two reflections merge, bringing agency and playfulness directly into the blending effect.
+ <!--more-->
 Experiment suggestion:
 <p>
 <ul>
@@ -73,7 +167,7 @@ Experiment suggestion:
 </ul>
 </p>
 Two-way mirror
-
+ 
 The glass is coated with, or has been encased within, a thin and almost transparent layer of metal (window film usually containing aluminium). The result is a mirrored surface that reflects some light and is penetrated by the rest. Light always passes equally in both directions. However, when one side is brightly lit and the other kept dark, the darker side becomes difficult to see from the brightly lit side because it is masked by the much brighter reflection of the lit side.
 <p>
 <ul>
@@ -97,6 +191,10 @@ The glass is coated with, or has been encased within, a thin and almost transpar
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rdVOaDW7ID4?si=I9GRIFfshx4vULWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 <p></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1TenTbWGko8?si=37uTXHwUKxARrl8L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJ331BnvYXY?si=p2mF45AG65sA1ODG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6lovjHYQL-c?si=ucy6QAcC1MTSun9P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 </section>
 
 <section>
@@ -170,14 +268,14 @@ Thanks to Moritz Wehrmann for inspiring this work with his installation <a href=
 <p>This post details my transformative journey through a Tranquil Wisdom Insight Meditation (TWIM) retreat. It helped me break patterns of guilt and shame, uncover deep-seated traumas, and understand my depressive episodes and anxiety. The retreat fostered a sense of presence, acceptance, and expanded awareness in me. I gained insights into the mind-body connection and the power of love and kindness. Post-retreat, I experienced intense emotional release and self-realization, leading to significant life changes. I learned the importance of authenticity, honesty, and listening to my heart. The experience underscored the need for downtime after such an intense retreat for proper integration and adjustment. This retreat has been a life-changing journey, inspiring self-discovery and healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[I have been practicing tranquil wisdom insight meditation (TWIM), a powerful loving-kindness-based meditation system, for the past six months with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided TWIM metta meditation. During that practice after a month I accidentally dropped into the first and second Jhana, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.]]></summary></entry><entry><title type="html">Curium</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five.html" rel="alternate" type="text/html" title="Curium" /><published>2023-12-01T00:00:00+01:00</published><updated>2023-12-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five.html"><![CDATA[<div class="portfolio">
 
 <h1>Curium</h1>
-<h2>6U CubeSat on board computer software</h2>
+<h2>12U CubeSat on board computer software</h2>
 
 <section>
 <img img="" src="/images/portfolio/projects/banner.png" />
 </section>
 <section>
 <h3>Overview</h3>
-The Curium project was designed around the development of 6U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. Part of the code is publicly accessible on <a href="https://github.com/Curium-Five">github</a>.
+The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. The written code is publicly accessible on <a href="https://github.com/Curium-Five">github</a> and <a href="https://gitlab.com/curiumsat">gitlab</a>. The satellite was <a href="https://www.nanosats.eu/sat/curium-one">launched succesfully in July 2024</a> on Ariane 6.
 
 <!--more-->
 My contributions:
@@ -196,7 +294,7 @@ My contributions:
 <h3>Gallery</h3>
 <img img="" src="/images/portfolio/projects/pcb.png" />
 </section>
-</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><summary type="html"><![CDATA[The Curium project was designed around the development of 6U CubeSats, using components primarily sourced from commercial manufacturers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html" rel="alternate" type="text/html" title="My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique" /><published>2023-04-20T00:00:00+02:00</published><updated>2023-04-20T00:00:00+02:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html"><![CDATA[<p>Last week, I went on my first silent retreat at <a href="https://gaiahouse.co.uk">Gaia House</a> in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on <a href="https://dharmaseed.org">dharmaseed.org</a>. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience.</p>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><summary type="html"><![CDATA[The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html" rel="alternate" type="text/html" title="My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique" /><published>2023-04-20T00:00:00+02:00</published><updated>2023-04-20T00:00:00+02:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html"><![CDATA[<p>Last week, I went on my first silent retreat at <a href="https://gaiahouse.co.uk">Gaia House</a> in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on <a href="https://dharmaseed.org">dharmaseed.org</a>. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience.</p>
 
 <p>At the end of the retreat, I went to London, which was quite a stark contrast to the quiet and peaceful scenery of the rural landscape around the retreat center oozing stillness and peacefulness. But even though it was harder to notice, I could still access the stillness within. It’s always there when I am sensitive enough to look for it. I also noticed colors more intensely and saw the positive and beautiful everywhere, all after five days of maybe six hours of daily meditation in a mix of walking and sitting meditation.</p>
 
@@ -487,6 +585,7 @@ Somehow, I can't shake off the impression this was real in some way.
 <section>
 <h3>Overview</h3>
 System Failed is an AI-powered interactive installation that combines advanced motion tracking, machine learning, and real-time audience interaction. I developed the entire software pipeline, from processing raw laser tracking data to generating live path predictions. Key features include the ability to record and retrain models using new data and a PyQT5-based graphical user interface for system control. The production was succesfully shown to a live audience 11 times.
+<!--more-->
 <p>
 </p>
 <p>
@@ -514,70 +613,4 @@ A Deep Learning Perspective by Kothari et al.</a></li>
 <p></p>
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/727335495?h=6933fc5d6a" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
 </section>
-</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Implemented a deep learning model for human path prediction in interactive theater (PyTorch, PyQT5).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">HingeCoreMaker</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2022/06/01/hingecore.html" rel="alternate" type="text/html" title="HingeCoreMaker" /><published>2022-06-01T00:00:00+02:00</published><updated>2022-06-01T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2022/06/01/hingecore</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2022/06/01/hingecore.html"><![CDATA[<div class="portfolio">
-<h1>HingeCoreMaker</h1>
-<h2>Laser-Cut Foamcore for Fast Assembly</h2>
-<section>
-<img src="/images/portfolio/projects/csm_Figure_1_0f047a8bef.png" alt="HingeCore main image" />
-</section>
-<section>
-<h3>Overview</h3>
-HingeCore introduces a novel laser-cutting approach utilizing foamcore to create 3D structures with finger hinges for fast and glue-free assembly. This method supports the creation of robust, aesthetic, and functional models, ranging from furniture to art objects.
-
-HingeCoreMaker is the accompanying software tool, seamlessly integrating with 3D modeling platforms to automate the conversion of 3D designs into 2D laser-cutting layouts, optimizing for precision and efficiency.
-
-<p>
-<ul>
-<li>Finger hinges allow quick folding and assembly without the need for adhesives or tabs, reducing assembly time by 2.9x compared to traditional methods.</li>
-<li>HingeCore models are highly durable, withstanding significant loads (e.g., 62kg with 5mm foamcore).</li>
-<li>The generated layouts leverage three cut types (full, half-way, and crease) for optimized assembly.</li>
-</ul>
-</p>
-<p>
-<a href="https://hpi.de/baudisch/projects/hingecore.html" target="_blank">HCI chair Project Page</a> | 
-<a href="https://doi.org/10.1145/3526113.3545618" target="_blank">Publication (ACM Digital Library)</a> | 
-<a href="https://youtu.be/N710JaRqcq8" target="_blank">Demo Video (YouTube)</a>
-</p>
-</section>
-<section>
-<h3>Technical Details</h3>
-I contributed the following:
-<ul>
-<li>Developed a custom unfolding algorithm in TypeScript to automatically convert 3D models into 2D layouts for laser cutting, ensuring no collision of parts during folding or assembly.</li>
-<li>Enhanced software performance by identifying and resolving critical bugs and implementing structural improvements.</li>
-<li>Contributed to the integration of HingeCoreMaker into Kyub, streamlining user workflows while preserving compatibility with standard 3D modeling tools.</li>
-<li>Collaborated on the development of layout generation using precision calibration for distinct cut types (full, half-way, crease).</li>
-</ul>
-</section>
-<section>
-<h3>Gallery</h3>
-<img src="/images/portfolio/projects/csm_figure_8_87b9e1e26d.png" alt="HingeCore assembly process" />
-<img src="/images/portfolio/projects/Screenshot 2025-01-17 at 16.25.25.png" alt="HingeCore interface example" />
-</section>
-<section>
-<h3>Videos</h3>
-<iframe title="youtube-player" src="https://www.youtube.com/embed/N710JaRqcq8" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
-</section>
-</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="engineering" /><category term="software" /><summary type="html"><![CDATA[HingeCoreMaker automates the design and unfolding of 3D models for laser-cutting layouts.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/csm_Figure_1_0f047a8bef.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/csm_Figure_1_0f047a8bef.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Measures for more diversity in computer science</title><link href="https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science.html" rel="alternate" type="text/html" title="Measures for more diversity in computer science" /><published>2022-02-15T00:00:00+01:00</published><updated>2022-02-15T00:00:00+01:00</updated><id>https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science</id><content type="html" xml:base="https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science.html"><![CDATA[<p>Intellectual people predominantly populate academia, natural sciences, and computer science. This makes sense and serves society as a whole; you need to do abstract thinking detached from emotions to find objective truth, flaws in your or others’ thinking, logic errors in your computer code. If you do study computer science, the goal of your computer science institute and professors is usually primarily to teach and train this intellectual mind, this abstract and logical thinking. That’s what makes you a computer scientist after all. I came to realize after a couple of years of studying computer sciences that all the lectures, exercises, research I was spending most of my waking time on were training a very narrow part of my human mind. My human experience relies on a much broader repertoire of modes of thinking and parts of my mind in everyday life. You have emotions, empathy, fear, wants, and needs expressed in the non-intellectual and non-abstract subconscious parts of the mind. These things make up the majority of experiencing being alive. But studying computer science focused me on a tiny part of my human mind, the abstract, intellectual, logical thinking. I was trained by spending and understanding this mode of thinking during my studies. It’s interesting to think about what effect this has on my mind if I spend so much time on a part of my mind that has so little to do with everyday human experience and satisfaction.</p>
-
-<!--more-->
-
-<p>This is highly speculative, but let’s ask how this circumstance could impact diversity in computer science? And more important how could we then increase diversity in computer science? I refer to diversity in a broad sense, socio-economic, gender, nationality, ethnicity. From my experience, it’s fair to say that computer science has an above-average presence of neurodivergent humans, introverts, and a lack of social skills. This can go two ways; on the one hand, I have experienced environments of non-judgment, where nerds just nerd out and really do not care about social norms and therefore also create an inclusive environment, e.g., I’m thinking of the <a href="https://en.wikipedia.org/wiki/Chaos_Communication_Congress">Chaos Communication Congress</a> here. There you can see a lot of neurodivergence, cross-dressers, trans-humans walking the halls, and also a sense of everyone just being very open and friendly and helpful in ways I haven’t come across elsewhere. For example, when you are tearing something down at the end of the congress, random nerds will show up and offer to help you. The other way this nerdiness can swing is an environment where a lack of self-awareness, empathy, and ego comes together and creates an unempathetic, competitive, and cold climate. There can be dynamics of everyone trying to outsmart everyone else in a hostile instead of humble and caring manner. This is likely to make diverse people, who might identify with being in a weaker minority already, reconsider getting into such an environment. For example, I witnessed male nerds being irritated and, consequently, hurtful or demeaning towards women. They saw them primarily as women and as fellow human second. In conclusion, the question is how to leverage nerdiness to tip the scale towards the first way of the inclusive and non-judgemental environment?</p>
-
-<p>A couple of goals come to mind that in my current understanding could increase diversity in computer science:</p>
-
-<ol>
-  <li>Promote the values of humbleness, support, collaboration.</li>
-  <li>Increase self-awareness and using the emotional mind and less lone wolf attitude.</li>
-  <li>Help everyone to decrease their ego and increase a sense of empathy towards others.</li>
-  <li>Support of otherness, questioning, and counter-culture.</li>
-</ol>
-
-<p>Now the follow-up question is how to get closer to these goals in academic institutions that teach computer science?</p>
-
-<ol>
-  <li>For group exercises, add tutors or coaches with high empathy and let them support the team building and relating in the groups. Tools like <a href="https://en.wikipedia.org/wiki/Eye_contact">eye-gazing</a>, talking about how you make each other feel, <a href="http://dramaclassnow.com/?tag=trust-exercises">trust-building</a> exercises used in theater and improv classes.</li>
-  <li>Make emotional development a first-class citizen, support groups, and classes where understanding and regulating one’s emotions is taught. These should be fun and difficult at the same time.</li>
-  <li>Incorporate meditation teachers into the curriculum that teach basic mindfulness skills.</li>
-  <li>Encourage professors and staff to mentor diverse students.</li>
-</ol>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;essay&quot;]" /><category term="tech" /><category term="ethics" /><category term="essay" /><category term="opinion" /><category term="english" /><summary type="html"><![CDATA[Intellectual people predominantly populate academia, natural sciences, and computer science. This makes sense and serves society as a whole; you need to do abstract thinking detached from emotions to find objective truth, flaws in your or others’ thinking, logic errors in your computer code. If you do study computer science, the goal of your computer science institute and professors is usually primarily to teach and train this intellectual mind, this abstract and logical thinking. That’s what makes you a computer scientist after all. I came to realize after a couple of years of studying computer sciences that all the lectures, exercises, research I was spending most of my waking time on were training a very narrow part of my human mind. My human experience relies on a much broader repertoire of modes of thinking and parts of my mind in everyday life. You have emotions, empathy, fear, wants, and needs expressed in the non-intellectual and non-abstract subconscious parts of the mind. These things make up the majority of experiencing being alive. But studying computer science focused me on a tiny part of my human mind, the abstract, intellectual, logical thinking. I was trained by spending and understanding this mode of thinking during my studies. It’s interesting to think about what effect this has on my mind if I spend so much time on a part of my mind that has so little to do with everyday human experience and satisfaction.]]></summary></entry></feed>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Implemented a deep learning model for human path prediction in interactive theater (PyTorch, PyQT5).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
