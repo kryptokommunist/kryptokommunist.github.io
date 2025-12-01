@@ -54,6 +54,9 @@ Heater Spiral is a wearable body-computer interface that delivers gentle, progra
 <img src="/images/portfolio/projects/necklace_heater_spiral.jpeg" alt="Pendant render showing Heater Spiral board front">
 <img src="/images/portfolio/projects/necklace_heater_spiral_2.jpeg" alt="Pendant render angled view">
 <img src="/images/portfolio/projects/heater_spiral_bake.png" alt="Heater Spiral board baking in an oven">
+</section>
+<h3>Videos</h3>
+<section>
 <div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JpYmuttcDTM" title="Heater Spiral build video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
