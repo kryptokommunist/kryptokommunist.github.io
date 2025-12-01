@@ -26,6 +26,7 @@ The software can be used to explore evolving geometric textures, then translate 
 etching and laser engraving with a fibo laser. The current pipeline renders animated patterns, prepares high-resolution frames for
 laser engraving. The surfaces reflections can be changed based on the angle of the engrave line pattern.
 </p>
+<!--more-->
 <p>
 <a href="https://github.com/kryptokommunist/doyle_packing" target="_blank">GitHub Repository</a>
 </p>

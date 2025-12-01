@@ -24,6 +24,7 @@ tags:
 <h3>Overview</h3>
 
 Matelight is an piece that displays various patterns and that can be modularly set up in different sizes. More info <a href="/tech/2015/03/08/matepi-raspberry-pi-meets-mate-crates-how-to.html">here</a>. It was displayed in different clubs and parties.
+<!--more-->
 <p>
 <ul>
   <li>480 bottle of Club Mate in 24 crates</li>
@@ -32,7 +33,7 @@ Matelight is an piece that displays various patterns and that can be modularly s
   <li>raspberry pi microcontroller</li>
   <li>power supply</li>
 </ul>
-</p><!--more-->
+</p>
 </section>
 <section>
 <h3>Gallery</h3>
