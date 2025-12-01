@@ -16,7 +16,7 @@ tags:
 <h1>{{ page.title }}</h1>
 <h2>{{ page.subtitle }}</h2>
 <section>
-<img src="/images/portfolio/projects/heater-spiral-front.png" alt="Heater Spiral PCB front">
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB">
 </section>
 <section>
 <h3>Overview</h3>
