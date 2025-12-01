@@ -34,10 +34,6 @@ include: true
 
         <div id="event2Container">
             {% for post in site.categories['portfolio/projects'] %}
-            {% assign post_preview = post.excerpt %}
-            {% if post.content contains '<!--more-->' %}
-                {% assign post_preview = post.content | split: '<!--more-->' | first %}
-            {% endif %}
             <section class="projectCard">
                 <a class="titleLink desktopHide" href="{{ post.url }}">
                     <h2>{{ post.title }}</h2>
@@ -51,7 +47,6 @@ include: true
                     </a>
                     <h3>{{ post.subtitle }}</h3>
                     <p>{{ post.year }}</p>
-                    <p>{{ post_preview }}</p>
                 </div>
             </section>
             {% endfor %}
