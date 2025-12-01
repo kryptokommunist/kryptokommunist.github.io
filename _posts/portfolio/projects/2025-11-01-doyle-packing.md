@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Heater Spiral"
-subtitle: "Heat-based body-computer interface"
+subtitle: "Heat-based body-computer interface pendant"
 year: "2025"
 image: /images/portfolio/projects/heater-spiral-front.png
 categories: portfolio/projects
@@ -54,3 +54,6 @@ Heater Spiral is a wearable body-computer interface that delivers gentle, progra
 <img src="/images/portfolio/projects/heater-spiral-pendant-angle.png" alt="Pendant render angled view">
 </section>
 </div>
+ 
+EOF
+)
