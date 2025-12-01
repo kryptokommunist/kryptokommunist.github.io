@@ -56,6 +56,3 @@ tooling, and documents each iteration alongside the source code.
 </section>
 <section>
 </div>
- 
-EOF
-)
