@@ -39,6 +39,7 @@ laser engraving. The surfaces reflections can be changed based on the angle of t
 <li>Future experiments with pixel-grid renderings to compare against the smooth circle packings for alternative animation aesthetics.</li>
 </ul>
 </section>
+<section>
 <h3>Gallery</h3>
 <img src="/images/portfolio/projects/doyle_software_2.png" alt="Doyle Packing software view 1">
 <img src="/images/portfolio/projects/doyle_software.png" alt="Doyle Packing software view 2">
@@ -46,7 +47,7 @@ laser engraving. The surfaces reflections can be changed based on the angle of t
 <img src="/images/portfolio/projects/doyle_spiral.png" alt="Rendered Doyle spiral 2">
 <img src="/images/portfolio/projects/doyle_spiral_3.png" alt="Rendered Doyle spiral 3">
 </section>
- <section>
+<section>
 <h3>Videos</h3>
 <iframe title="Doyle Packing software demo" src="https://www.youtube.com/embed/qkzsHEQotLk?si=xtfMyvqlOFirsrTB" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 <p></p>
@@ -54,5 +55,3 @@ laser engraving. The surfaces reflections can be changed based on the angle of t
 <p></p>
 <iframe title="Wood laser result" src="https://www.youtube.com/embed/EdZXvTYIgcg?si=x5p5dOq0x1jZuLTG" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 </section>
-<section>
-</div>
