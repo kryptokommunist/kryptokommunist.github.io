@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Doyle Packing"
+title: "Doyle Spiral Studio"
 subtitle: "Generative Doyle spiral animations etched into steel and wood"
 year: "2025"
 image: /images/portfolio/projects/doyle_spiral_2.png
@@ -22,7 +22,7 @@ tags:
 <h3>Overview</h3>
 <p>
 Doyle Studio is a generative art tool I created to compute <a href="https://en.wikipedia.org/wiki/Doyle_spiral" target="_blank">Doyle spirals</a> and more patterns that can be exported as SVGs for fabrication with a fiber laser. The software can be used to animate geometric textures on a rotating disk, then translate the animations into physical pieces through engraving angled line patterns with a fibo laser. The current pipeline renders animated patterns and generates high-resolution SVGs for
-laser engraving. The surfaces reflection sequences can be changed based on the angle of the engrave line pattern similar to a <a href="https://en.wikipedia.org/wiki/Zoetrope" target="_blank">zoetrope</a.
+laser engraving. The surfaces reflection sequences can be changed based on the angle of the engrave line pattern similar to a <a href="https://en.wikipedia.org/wiki/Zoetrope" target="_blank">zoetrope</a>.
 </p>
 <!--more-->
 <p>
