@@ -21,10 +21,8 @@ tags:
 <section>
 <h3>Overview</h3>
 <p>
-Doyle Packing is a generative art tool I created to Doyle spiral circle packings and exports frames for fabrication.
-The software can be used to explore evolving geometric textures, then translate the animations into physical pieces through
-etching and laser engraving with a fibo laser. The current pipeline renders animated patterns, prepares high-resolution frames for
-laser engraving. The surfaces reflections can be changed based on the angle of the engrave line pattern.
+Doyle Studio is a generative art tool I created to compute <a href="https://en.wikipedia.org/wiki/Doyle_spiral" target="_blank">Doyle spirals</a> and more patterns that can be exported as SVGs for fabrication with a fiber laser. The software can be used to animate geometric textures on a rotating disk, then translate the animations into physical pieces through engraving angled line patterns with a fibo laser. The current pipeline renders animated patterns and generates high-resolution SVGs for
+laser engraving. The surfaces reflection sequences can be changed based on the angle of the engrave line pattern similar to a <a href="https://en.wikipedia.org/wiki/Zoetrope" target="_blank">zoetrope</a.
 </p>
 <!--more-->
 <p>
