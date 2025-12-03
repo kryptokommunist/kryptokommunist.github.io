@@ -56,6 +56,6 @@ laser engraving. The surfaces reflection sequences can be changed based on the a
 </section>
 <section>
 <h3>Acknowledgments</h3>
-Thanks to Arram Sabeti for coming up with the idea originally, I encountered his art on <a href="https://x.com/arram/status/1438541186319282178">twitter</a>.
+Thanks to <a href="https://arr.am">Arram Sabeti</a> for coming up with the idea originally, I encountered his art on <a href="https://x.com/arram/status/1438541186319282178">twitter</a>.
 </section>
 </div>
