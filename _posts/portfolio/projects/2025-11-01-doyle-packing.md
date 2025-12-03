@@ -56,3 +56,8 @@ laser engraving. The surfaces reflections can be changed based on the angle of t
 <p></p>
 <iframe title="Wood laser result" src="https://www.youtube.com/embed/EdZXvTYIgcg?si=x5p5dOq0x1jZuLTG" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 </section>
+<section>
+<h3>Acknowledgments</h3>
+Thanks to Arram Sabeti for coming up with the idea originally, I encountered his art on <a href="https://x.com/arram/status/1438541186319282178">twitter</a>.
+</section>
+</div>
