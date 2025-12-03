@@ -61,6 +61,32 @@ include: true
                 <div class="titleContainer">
                     <div>
                         <h2>Software Engineer</h2>
+                        <a class="titleLink" href="https://www.signavio.com/">
+                            <h3>SAP Signavio</h3>
+                        </a>
+                        <p class="date">December 2025 – Present</p>
+                        <p class="description">Part-time role in Potsdam building application prototypes to explore and demonstrate new technologies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projectCard">
+                <div class="titleContainer">
+                    <div>
+                        <h2>Software Engineer Intern</h2>
+                        <a class="titleLink" href="https://www.rolls-royce.com/">
+                            <h3>Rolls-Royce</h3>
+                        </a>
+                        <p class="date">May 2025 – December 2025</p>
+                        <p class="description">Automated DevOps applications and developed RAG agent applications in Berlin.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projectCard">
+                <div class="titleContainer">
+                    <div>
+                        <h2>Software Engineer</h2>
                         <a class="titleLink" href="https://www.pts.space">
                             <h3>Planetary Transportation Systems</h3>
                         </a>
