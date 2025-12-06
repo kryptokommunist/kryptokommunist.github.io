@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2025-12-06T02:08:54+01:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Doyle Spiral Studio</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html" rel="alternate" type="text/html" title="Doyle Spiral Studio" /><published>2025-11-01T00:00:00+01:00</published><updated>2025-11-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html"><![CDATA[<div class="portfolio">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2025-12-06T02:14:51+01:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Heater Spiral</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html" rel="alternate" type="text/html" title="Heater Spiral" /><published>2025-12-01T00:00:00+01:00</published><updated>2025-12-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html"><![CDATA[<div class="portfolio">
+<h1>Heater Spiral</h1>
+<h2>Heat-based body-computer interface pendant</h2>
+<section>
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB" />
+</section>
+<section>
+<h3>Overview</h3>
+Heater Spiral is a wearable body-computer interface that delivers gentle, programmable warmth through a spiral heater trace. I designed and assembled the circular PCB from scratch, integrating a MOSFET-controlled heater that can raise the surface temperature to around 50&nbsp;°C. One application I explored was wearing it as a necklace over the heart with rhythmic warm-up and cooldown phases to anchor attention in the body—similar to metta meditation sessions I tested during retreat. I also prototyped an app that modulates heat based on how near another wearer is, and I plan to redesign the next iteration with a UWB chip for more accurate distance sensing.
+<!--more-->
+<p></p>
+<p>
+<a href="https://github.com/kryptokommunist/heater_spiral" target="_blank">GitHub Repository</a> |
+<a href="https://x.com/kryptokommunist/status/1901057389018681477" target="_blank">Project Tweet Thread</a>
+</p>
+</section>
+<section>
+<h3>Technical Details</h3>
+<ul>
+<li>Custom two-layer PCB with ornamental copper spiral heater and matching silkscreen art.</li>
+<li>MOSFET-based power stage to drive the heater element up to ~50&nbsp;°C.</li>
+<li>USB-C for power and programming, with onboard microcontroller and status LEDs.</li>
+<li>Test program cycles heating and cooling periods for somatic awareness practice, plus a proximity-based heating demo for paired wearers.</li>
+<li>Designed pendant enclosure concepts to house the board as wearable jewelry.</li>
+</ul>
+</section>
+<section>
+<h3>Explorations &amp; Next Steps</h3>
+<ul>
+<li>Next hardware spin will include UWB to refine distance-based warming interactions. Also include fuses as failsafe in case of software failures.</li>
+<li>Long-term vision: scale the concept into a pixel-style thermal display that can cover the whole body.</li>
+<li>Inspired by meditation practice, sauna rituals, and hot stone massage as embodied, heat-driven experiences.</li>
+</ul>
+</section>
+<section>
+<h3>Gallery</h3>
+<img src="/images/portfolio/projects/rendered_heater_spiral.png" alt="Front of Heater Spiral PCB" />
+<img src="/images/portfolio/projects/rendered_heater_spiral_2.png" alt="Back of Heater Spiral showing heater spiral art" />
+<img src="/images/portfolio/projects/solderered_heater_spiral.png" alt="Heater Spiral PCB illuminated during test" />
+<img src="/images/portfolio/projects/necklace_heater_spiral.jpeg" alt="Pendant render showing Heater Spiral board front" />
+<img src="/images/portfolio/projects/necklace_heater_spiral_2.jpeg" alt="Pendant render angled view" />
+<img src="/images/portfolio/projects/heater_spiral_bake.png" alt="Heater Spiral board baking in an oven" />
+</section>
+<h3>Videos</h3>
+<section>
+<div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JpYmuttcDTM" title="Heater Spiral build video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+</div>
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Self-designed PCB pendant that uses a MOSFET-driven heater spiral for embodied awareness practices.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/rendered_heater_spiral.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/rendered_heater_spiral.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Doyle Spiral Studio</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html" rel="alternate" type="text/html" title="Doyle Spiral Studio" /><published>2025-11-01T00:00:00+01:00</published><updated>2025-11-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/11/01/doyle-packing.html"><![CDATA[<div class="portfolio">
 <h1>Doyle Spiral Studio</h1>
 <h2>Generative Doyle spiral animations etched into steel and wood</h2>
 <section>
@@ -44,7 +93,117 @@ laser engraving. The surfaces reflection sequences can be changed based on the a
 <h3>Acknowledgments</h3>
 Thanks to <a href="https://arr.am">Arram Sabeti</a> for coming up with the idea originally, I encountered his art on <a href="https://x.com/arram/status/1438541186319282178">twitter</a>.
 </section>
-</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Animating Doyle spiral circle packings and translating them into etched steel and wood artworks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What I learned about meditation, love, and trauma on and after a TWIM retreat with Delson Armstrong</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong.html" rel="alternate" type="text/html" title="What I learned about meditation, love, and trauma on and after a TWIM retreat with Delson Armstrong" /><published>2024-01-01T00:00:00+01:00</published><updated>2024-01-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong.html"><![CDATA[<p>I have been practicing tranquil wisdom insight meditation (<a href="https://library.dhammasukha.org/books.html">TWIM</a>), a powerful loving-kindness-based meditation system, for the past six months with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided <a href="https://www.youtube.com/watch?v=-5a028RS5Ck">TWIM metta meditation</a>. During that practice after a month I accidentally dropped into the first and second <a href="https://www.youtube.com/watch?v=0K5ypXyF3dY">Jhana</a>, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.</p>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Animating Doyle spiral circle packings and translating them into etched steel and wood artworks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/doyle_spiral_2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">findmyfl.at</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html" rel="alternate" type="text/html" title="findmyfl.at" /><published>2025-08-21T00:00:00+02:00</published><updated>2025-08-21T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/08/21/findmyflat.html"><![CDATA[<div class="portfolio">
+
+<h1>findmyfl.at</h1>
+<h2>Automated Berlin Apartment Search</h2>
+
+<section>
+<img img="" src="/images/portfolio/projects/findmyflatlandingpage.png" />
+</section>
+
+<section>
+<h3>Overview</h3>
+
+<a href="https://findmyfl.at" target="_blank">findmyflat</a> is a self-hosted web service that helps people find public housing in Berlin more effectively.  
+It continuously scans all major public Berlin housing providers and notifies users instantly via Telegram whenever a new offer appears.  
+With smart filters, real-time updates, and fair pricing, it makes the stressful apartment hunt much easier.  
+
+<!--more-->
+
+<p>
+<ul>
+  <li>24/7 continuous scanning of all Berlin public housing providers</li>
+  <li>Instant Telegram notifications through <code>@findmyfl_at_bot</code></li>
+  <li>Advanced filters: price, rooms, districts, WBS eligibility</li>
+  <li>Transparent pricing with a 7-day free trial</li>
+</ul>
+</p>
+</section>
+
+<section>
+<h3>Technology</h3>
+<p>
+<ul>
+  <li>Python Flask backend</li>
+  <li>React frontend</li>
+  <li>PostgreSQL database</li>
+  <li>Stripe API for payments</li>
+  <li>Telegram API for instant apartment notifications</li>
+  <li>Open Street Maps API for address completion</li>
+  <li>Self-hosted on a VPS</li>
+</ul>
+</p>
+</section>
+
+
+<section>
+<h3>Gallery</h3>
+<img img="" src="/images/portfolio/projects/findmyflatlandingpage.png" />
+<!-- Optional: add screenshots of Telegram bot, pricing page, filters -->
+</section>
+
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="web" /><category term="flask" /><category term="react" /><category term="postgres" /><category term="api" /><summary type="html"><![CDATA[findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html" rel="alternate" type="text/html" title="anattā – 𑀅𑀦𑀢𑁆𑀢𑀸" /><published>2024-07-01T00:00:00+02:00</published><updated>2024-07-01T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html"><![CDATA[<div class="portfolio">
+ 
+<h1>anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</h1>
+<h2>LED installation</h2>
+ 
+<section>
+<img img="" src="/images/portfolio/art/IMG_2698.jpeg" />
+</section>
+<section>
+<h3>Overview</h3>
+ 
+Anattā is an experiment in which you are invited to be playful with your identity and that of someone else. Anattā (“non-self”) is a term from Buddhist texts and practices. This experiment for two people invites you to expand the space around the fixed self and to experience that it may not be quite as solid and stable as we often assume. How does it feel to be me?
+ 
+How does someone who is not me feel? How does it feel when both categories dissolve?
+In 2025 I modified the mirror with two time-of-flight laser sensors so visitors can use hand gestures in front of the surface to control how the two reflections merge, bringing agency and playfulness directly into the blending effect.
+ <!--more-->
+Experiment suggestion:
+<p>
+<ul>
+  <li>Stand with another human on each side of the mirror</li>
+  <li>Position yourselves so that your faces overlap exactly</li>
+  <li>steel wire</li>
+  <li>Turn the dial to adjust the frequency of the light</li>
+</ul>
+</p>
+Two-way mirror
+ 
+The glass is coated with, or has been encased within, a thin and almost transparent layer of metal (window film usually containing aluminium). The result is a mirrored surface that reflects some light and is penetrated by the rest. Light always passes equally in both directions. However, when one side is brightly lit and the other kept dark, the darker side becomes difficult to see from the brightly lit side because it is masked by the much brighter reflection of the lit side.
+<p>
+<ul>
+  <li>Half-transparent mirror</li>
+  <li>aluminium frame</li>
+  <li>3D printed parts</li>
+  <li>microcontroller &amp; knob &amp; led stripe</li>
+</ul>
+</p>
+</section>
+
+<section>
+<h3>Gallery</h3>
+<img img="" src="/images/portfolio/art/IMG_2788.jpeg" />
+<img img="" src="/images/portfolio/art/IMG_2676.jpeg" />
+<img img="" src="/images/portfolio/art/Screenshot 2025-01-16 at 19.54.22.png" />
+</section>
+
+<section>
+<h3>Videos</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rdVOaDW7ID4?si=I9GRIFfshx4vULWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1TenTbWGko8?si=37uTXHwUKxARrl8L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJ331BnvYXY?si=p2mF45AG65sA1ODG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+<p></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6lovjHYQL-c?si=ucy6QAcC1MTSun9P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+</section>
+
+<section>
+<h3>Acknowledgments</h3>
+Thanks to Moritz Wehrmann for inspiring this work with his installation <a href="https://moritzwehrmann.com/portfolio/alter-ego-version-ii/">Alter Ego</a>
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Anattā is an interactive mirror experiment highlighting impermanence of identity.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/art/IMG_2698.jpeg" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/art/IMG_2698.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">What I learned about meditation, love, and trauma on and after a TWIM retreat with Delson Armstrong</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong.html" rel="alternate" type="text/html" title="What I learned about meditation, love, and trauma on and after a TWIM retreat with Delson Armstrong" /><published>2024-01-01T00:00:00+01:00</published><updated>2024-01-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/01/01/what-i-learned-about-meditation-love-and-trauma-on-and-after-a-twim-retreat-with-delson-armstrong.html"><![CDATA[<p>I have been practicing tranquil wisdom insight meditation (<a href="https://library.dhammasukha.org/books.html">TWIM</a>), a powerful loving-kindness-based meditation system, for the past six months with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided <a href="https://www.youtube.com/watch?v=-5a028RS5Ck">TWIM metta meditation</a>. During that practice after a month I accidentally dropped into the first and second <a href="https://www.youtube.com/watch?v=0K5ypXyF3dY">Jhana</a>, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.</p>
 
 <p><img src="/images/TWIM/bhudda.jpeg" alt="" /></p>
 
@@ -108,7 +267,36 @@ Thanks to <a href="https://arr.am">Arram Sabeti</a> for coming up with the idea 
 
 <h2 id="tldr-by-chatgpt">TL;DR (by ChatGPT)</h2>
 
-<p>This post details my transformative journey through a Tranquil Wisdom Insight Meditation (TWIM) retreat. It helped me break patterns of guilt and shame, uncover deep-seated traumas, and understand my depressive episodes and anxiety. The retreat fostered a sense of presence, acceptance, and expanded awareness in me. I gained insights into the mind-body connection and the power of love and kindness. Post-retreat, I experienced intense emotional release and self-realization, leading to significant life changes. I learned the importance of authenticity, honesty, and listening to my heart. The experience underscored the need for downtime after such an intense retreat for proper integration and adjustment. This retreat has been a life-changing journey, inspiring self-discovery and healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[I have been practicing tranquil wisdom insight meditation (TWIM), a powerful loving-kindness-based meditation system, for the past six months with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided TWIM metta meditation. During that practice after a month I accidentally dropped into the first and second Jhana, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.]]></summary></entry><entry><title type="html">My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html" rel="alternate" type="text/html" title="My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique" /><published>2023-04-20T00:00:00+02:00</published><updated>2023-04-20T00:00:00+02:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html"><![CDATA[<p>Last week, I went on my first silent retreat at <a href="https://gaiahouse.co.uk">Gaia House</a> in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on <a href="https://dharmaseed.org">dharmaseed.org</a>. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience.</p>
+<p>This post details my transformative journey through a Tranquil Wisdom Insight Meditation (TWIM) retreat. It helped me break patterns of guilt and shame, uncover deep-seated traumas, and understand my depressive episodes and anxiety. The retreat fostered a sense of presence, acceptance, and expanded awareness in me. I gained insights into the mind-body connection and the power of love and kindness. Post-retreat, I experienced intense emotional release and self-realization, leading to significant life changes. I learned the importance of authenticity, honesty, and listening to my heart. The experience underscored the need for downtime after such an intense retreat for proper integration and adjustment. This retreat has been a life-changing journey, inspiring self-discovery and healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[I have been practicing tranquil wisdom insight meditation (TWIM), a powerful loving-kindness-based meditation system, for the past six months with a special focus on forgiveness practice. Through that, I already discovered that I and my friends often use shame and guilt to try to control each other. After becoming aware of that I dropped a lot of these patterns. When I started on my meditative path I started with a guided TWIM metta meditation. During that practice after a month I accidentally dropped into the first and second Jhana, thinking I might be having a stroke. So after practicing different models, I returned to TWIM, knowing its power, since firstly loving kindness simply feels good and also many people report that it’s the faster path and that it helps avoid dark night of the soul type of episodes.]]></summary></entry><entry><title type="html">Curium</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five.html" rel="alternate" type="text/html" title="Curium" /><published>2023-12-01T00:00:00+01:00</published><updated>2023-12-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2023/12/01/curium-five.html"><![CDATA[<div class="portfolio">
+
+<h1>Curium</h1>
+<h2>12U CubeSat on board computer software</h2>
+
+<section>
+<img img="" src="/images/portfolio/projects/banner.png" />
+</section>
+<section>
+<h3>Overview</h3>
+The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers. We utilized a launch opportunity from the <a href="https://www.dlr.de/en/latest/news/2022/02/20220620_go-ahead-for-second-round-of-microlauncher-payload-competition" rel="nofollow">DLR microlauncher competition 2022</a>. I was part of the on board computer (OBC) team. The written code is publicly accessible on <a href="https://github.com/Curium-Five">github</a> and <a href="https://gitlab.com/curiumsat">gitlab</a>. The satellite was <a href="https://www.nanosats.eu/sat/curium-one">launched succesfully in July 2024</a> on Ariane 6.
+
+<!--more-->
+My contributions:
+
+<p>
+<ul>
+  <li>surveyed open source cubesat projects and communities</li>
+  <li>wrote C code for the custom designed OBC pcb</li>
+  <li>set up CI pipeline</li>
+  <li>contributed to architecture decisions for OBC pcb and software design</li>
+</ul>
+</p>
+
+</section>
+<section>
+<h3>Gallery</h3>
+<img img="" src="/images/portfolio/projects/pcb.png" />
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><summary type="html"><![CDATA[The Curium project was designed around the development of 12U CubeSats, using components primarily sourced from commercial manufacturers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html" rel="alternate" type="text/html" title="My First Five-Day Silent Retreat: Jhanas &amp;amp; Alexander Technique" /><published>2023-04-20T00:00:00+02:00</published><updated>2023-04-20T00:00:00+02:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2023/04/20/my-first-five-day-silent-retreat-jhanas-and-alexander-technique.html"><![CDATA[<p>Last week, I went on my first silent retreat at <a href="https://gaiahouse.co.uk">Gaia House</a> in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on <a href="https://dharmaseed.org">dharmaseed.org</a>. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience.</p>
 
 <p>At the end of the retreat, I went to London, which was quite a stark contrast to the quiet and peaceful scenery of the rural landscape around the retreat center oozing stillness and peacefulness. But even though it was harder to notice, I could still access the stillness within. It’s always there when I am sensitive enough to look for it. I also noticed colors more intensely and saw the positive and beautiful everywhere, all after five days of maybe six hours of daily meditation in a mix of walking and sitting meditation.</p>
 
@@ -390,267 +578,41 @@ Somehow, I can't shake off the impression this was real in some way.
 
 <p>I’m grateful for the openness of the internet that allows such peeks into so many different human minds. I’m grateful for this movie and the recommendation by my friend.</p>
 
-<p>May you all find curiosity and wonder in your confusion. May you all move towards healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;trauma&quot;, &quot;English&quot;]" /><category term="trauma" /><category term="movie" /><summary type="html"><![CDATA[A friend recommended me the old sci-fi classic Fantastic Planet (link to the whole movie). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It’s a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I invite you to watch the film before reading the text.]]></summary></entry><entry><title type="html">Measures for more diversity in computer science</title><link href="https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science.html" rel="alternate" type="text/html" title="Measures for more diversity in computer science" /><published>2022-02-15T00:00:00+01:00</published><updated>2022-02-15T00:00:00+01:00</updated><id>https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science</id><content type="html" xml:base="https://kryptokommun.ist/essay/2022/02/15/measures-for-more-diversity-in-computer-science.html"><![CDATA[<p>Intellectual people predominantly populate academia, natural sciences, and computer science. This makes sense and serves society as a whole; you need to do abstract thinking detached from emotions to find objective truth, flaws in your or others’ thinking, logic errors in your computer code. If you do study computer science, the goal of your computer science institute and professors is usually primarily to teach and train this intellectual mind, this abstract and logical thinking. That’s what makes you a computer scientist after all. I came to realize after a couple of years of studying computer sciences that all the lectures, exercises, research I was spending most of my waking time on were training a very narrow part of my human mind. My human experience relies on a much broader repertoire of modes of thinking and parts of my mind in everyday life. You have emotions, empathy, fear, wants, and needs expressed in the non-intellectual and non-abstract subconscious parts of the mind. These things make up the majority of experiencing being alive. But studying computer science focused me on a tiny part of my human mind, the abstract, intellectual, logical thinking. I was trained by spending and understanding this mode of thinking during my studies. It’s interesting to think about what effect this has on my mind if I spend so much time on a part of my mind that has so little to do with everyday human experience and satisfaction.</p>
-
+<p>May you all find curiosity and wonder in your confusion. May you all move towards healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;trauma&quot;, &quot;English&quot;]" /><category term="trauma" /><category term="movie" /><summary type="html"><![CDATA[A friend recommended me the old sci-fi classic Fantastic Planet (link to the whole movie). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It’s a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I invite you to watch the film before reading the text.]]></summary></entry><entry><title type="html">System Failed</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2022/09/01/systemfailed.html" rel="alternate" type="text/html" title="System Failed" /><published>2022-09-01T00:00:00+02:00</published><updated>2022-09-01T00:00:00+02:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2022/09/01/systemfailed</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2022/09/01/systemfailed.html"><![CDATA[<div class="portfolio">
+<h1>System Failed</h1>
+<h2>human path prediction - interactive ML application with GUI</h2>
+<section>
+<img src="/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" alt="System Failed main image" />
+</section>
+<section>
+<h3>Overview</h3>
+System Failed is an AI-powered interactive installation that combines advanced motion tracking, machine learning, and real-time audience interaction. I developed the entire software pipeline, from processing raw laser tracking data to generating live path predictions. Key features include the ability to record and retrain models using new data and a PyQT5-based graphical user interface for system control. The production was succesfully shown to a live audience 11 times.
 <!--more-->
-
-<p>This is highly speculative, but let’s ask how this circumstance could impact diversity in computer science? And more important how could we then increase diversity in computer science? I refer to diversity in a broad sense, socio-economic, gender, nationality, ethnicity. From my experience, it’s fair to say that computer science has an above-average presence of neurodivergent humans, introverts, and a lack of social skills. This can go two ways; on the one hand, I have experienced environments of non-judgment, where nerds just nerd out and really do not care about social norms and therefore also create an inclusive environment, e.g., I’m thinking of the <a href="https://en.wikipedia.org/wiki/Chaos_Communication_Congress">Chaos Communication Congress</a> here. There you can see a lot of neurodivergence, cross-dressers, trans-humans walking the halls, and also a sense of everyone just being very open and friendly and helpful in ways I haven’t come across elsewhere. For example, when you are tearing something down at the end of the congress, random nerds will show up and offer to help you. The other way this nerdiness can swing is an environment where a lack of self-awareness, empathy, and ego comes together and creates an unempathetic, competitive, and cold climate. There can be dynamics of everyone trying to outsmart everyone else in a hostile instead of humble and caring manner. This is likely to make diverse people, who might identify with being in a weaker minority already, reconsider getting into such an environment. For example, I witnessed male nerds being irritated and, consequently, hurtful or demeaning towards women. They saw them primarily as women and as fellow human second. In conclusion, the question is how to leverage nerdiness to tip the scale towards the first way of the inclusive and non-judgemental environment?</p>
-
-<p>A couple of goals come to mind that in my current understanding could increase diversity in computer science:</p>
-
-<ol>
-  <li>Promote the values of humbleness, support, collaboration.</li>
-  <li>Increase self-awareness and using the emotional mind and less lone wolf attitude.</li>
-  <li>Help everyone to decrease their ego and increase a sense of empathy towards others.</li>
-  <li>Support of otherness, questioning, and counter-culture.</li>
-</ol>
-
-<p>Now the follow-up question is how to get closer to these goals in academic institutions that teach computer science?</p>
-
-<ol>
-  <li>For group exercises, add tutors or coaches with high empathy and let them support the team building and relating in the groups. Tools like <a href="https://en.wikipedia.org/wiki/Eye_contact">eye-gazing</a>, talking about how you make each other feel, <a href="http://dramaclassnow.com/?tag=trust-exercises">trust-building</a> exercises used in theater and improv classes.</li>
-  <li>Make emotional development a first-class citizen, support groups, and classes where understanding and regulating one’s emotions is taught. These should be fun and difficult at the same time.</li>
-  <li>Incorporate meditation teachers into the curriculum that teach basic mindfulness skills.</li>
-  <li>Encourage professors and staff to mentor diverse students.</li>
-</ol>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;essay&quot;]" /><category term="tech" /><category term="ethics" /><category term="essay" /><category term="opinion" /><category term="english" /><summary type="html"><![CDATA[Intellectual people predominantly populate academia, natural sciences, and computer science. This makes sense and serves society as a whole; you need to do abstract thinking detached from emotions to find objective truth, flaws in your or others’ thinking, logic errors in your computer code. If you do study computer science, the goal of your computer science institute and professors is usually primarily to teach and train this intellectual mind, this abstract and logical thinking. That’s what makes you a computer scientist after all. I came to realize after a couple of years of studying computer sciences that all the lectures, exercises, research I was spending most of my waking time on were training a very narrow part of my human mind. My human experience relies on a much broader repertoire of modes of thinking and parts of my mind in everyday life. You have emotions, empathy, fear, wants, and needs expressed in the non-intellectual and non-abstract subconscious parts of the mind. These things make up the majority of experiencing being alive. But studying computer science focused me on a tiny part of my human mind, the abstract, intellectual, logical thinking. I was trained by spending and understanding this mode of thinking during my studies. It’s interesting to think about what effect this has on my mind if I spend so much time on a part of my mind that has so little to do with everyday human experience and satisfaction.]]></summary></entry><entry><title type="html">Does it make you feel more alive – A personal framework for approximatively evaluating ethics of technology as a user as well as technologist</title><link href="https://kryptokommun.ist/tech/2022/01/24/does-it-make-you-feel-more-alive.html" rel="alternate" type="text/html" title="Does it make you feel more alive – A personal framework for approximatively evaluating ethics of technology as a user as well as technologist" /><published>2022-01-24T00:00:00+01:00</published><updated>2022-01-24T00:00:00+01:00</updated><id>https://kryptokommun.ist/tech/2022/01/24/does-it-make-you-feel-more-alive</id><content type="html" xml:base="https://kryptokommun.ist/tech/2022/01/24/does-it-make-you-feel-more-alive.html"><![CDATA[<p>I subscribe to the notion that ethics is entirely rational and maps to game theory. Ethics is about the principled resolution of conflicts of interest between autonomous agents under conditions of shared purpose when playing long games. <a href="https://twitter.com/Plinz/status/1200189702919225344?s=20">[1]</a> With this in mind, it is crucial to model incentives and their consequences for systems to evaluate ethics. On the most general level, we can take the goal of avoiding suffering as the shared purpose of all humans on earth. Additionally, maintaining the global civilization might be another high-level goal. Technologists with the ability to create and change technological systems should do so ethically by considering these goals and projecting the impact of the system they create into the distant future. Making this difficult, the complexity of networks of human and non-human entities interacting through technology on a global scale has become overwhelming. Additionally, technology changes at such a fast pace that national and global elites cannot anticipate its full impact anymore, leading to increasing randomness in societies trajectories without anyone being able to formulate and implement a coherent plan projecting them into the future. Therefore it is even more critical that technologists evaluate the ethics and impacts of their actions, especially given the enormous leverage that computer technology offers.</p>
-
-<!--more-->
-
-<p>A field that does evaluate the consequences of actions and systems and their incentives in a computational fashion is game theory, which considers the global and local outcomes, given that all actors act only on their local incentives. It allows analyzing games and creating rules for games such that desired outcomes are achieved. Climate change is a simple example of game theory and its relationship to ethics: Given a set of players, they can play two actions: polluting or not polluting. However, given that polluting is cheaper than not polluting, the optimal strategy for every player is to pollute. The problem is the incentive structure. Thus the concept of carbon footprint and shifting the responsibility of climate change to the individual is unethical since the incentives will be set up for everyone to keep polluting. Instead, a global entity needs to update the payout matrix of the players in such a way that the updated costs lead to behavior that optimizes for the global environmental costs.</p>
-
-<p>Thinking through the consequences of technology systems on these goals in a long game is cumbersome. Therefore I propose a simplified framework to approximate the ethics of technological systems locally. It is based on the observation that a lot of the dark side of deploying computer technologies seems to be about it being used to control human behavior by offering short-term and shallow fulfillment of human needs and desires. Often technology is used to control humans, treating them more like machines instead of helping them to be more human. As a user, you could ask yourself: “Does this in the long term help me feel more alive and human?”. As a technologist, you could ask yourself: “Does this in the long term help users feel more alive and human?”. While this question is quite open for interpretation, I propose referring to the five hindrances mentioned in Buddhistic scripture that are said to hinder progress in meditation and daily life. Technology that does increase the strength of the five hindrances (<a href="https://en.wikipedia.org/wiki/Five_hindrances">[2]</a>) in its users could be said to contribute to them feeling less alive and human in the long term:</p>
-
-<ol>
-  <li>Sensory desire: seeking for pleasure through the five senses of sight, sound, smell, taste and physical feeling.</li>
-  <li>Ill-will: feelings of hostility, resentment, hatred and bitterness.</li>
-  <li>Sloth-and-torpor: half-hearted action with little or no effort or concentration.</li>
-  <li>Restlessness-and-worry: the inability to calm the mind and focus one’s energy.</li>
-  <li>Doubt: lack of conviction or trust in one’s abilities.</li>
-</ol>
-
-<p>Let us apply this framework to a few examples from the user side. As a first example, let us look at some features of the Instagram iOS app. When I want to search for something, I have to open the search screen (see image below), which offers a small search bar at the top and the rest of the screen filled with images and videos curated by an automatic recommender system. Does this usage of technology make me feel more alive and human? No, it mostly does not. First of all, this unwanted recommendation directly subverts my intent of wanting to search for something, which already is undermining me exercising my will. Second, to a large degree, the recommended content is superficial posts that are optimized for engagement. A picture of a beautiful woman with an inspiring caption will not boost my mood in the long term and is just a technological knock-off version of a physical world one-to-one human interaction that inspires me. Also, the asymmetry of the following concept makes for a less human experience compared to the real world. Since the recommended content is mostly by accounts with a larger following which optimize for engagement. Interacting with that account will entail receiving less attention than I put in due to the asymmetric situation when users with large followings interact with their followers. This example shows that the app contributes to increasing hindrances one, three, and four.</p>
-
-<p><img src="/images/instagram-search-screen.png" alt="" /></p>
-<p class="caption">The Instagram iOS search screen.</p>
-
-<p>Another example is video calling, which is part of the Instagram app and many other apps. Video calling facilitates a symmetric, real-time communication channel between two or more users. Even though this mode of communication lacks the elements of touch, smell, body language, and high-resolution of physical world interactions, it makes up for this by keeping human interaction possible over large distances. Additionally, to hearing the voice with all its emotional subtleties, I can see the other person and their facial expressions approximating a physical world human interaction. Keeping in touch with friends I value and otherwise would only get to interact within the physical world a couple of times a year makes me feel more human and alive.</p>
-
-<p>Let us look at 3D printing, a technology that allows volumetric printing of shapes from digital 3D models. This allows processing digital intangible 3D models into physical world objects that I can touch and use. Overall this makes me feel more human and alive. I can have an idea or look at someone else’s idea for a 3D model and then print it out and get a sense of the idea with much more senses than the current restriction to a 2D view on a screen.</p>
-
-<p>There are technologies for which this framework is not sufficient for evaluation since they are too abstract and general to be evaluated personally. For example, Javascript can be used to create interactive Web apps that engage more and help me understand a machine learning algorithm by displaying a visual model I can step through, which feels livelier and more human than reading from a static book. Then also, Javascript can be used to surveil and record my usage of the Facebook site, which is used to maximize engagement leading to an inevitable race to the bottom of the brain stem. <a href="https://bigthink.com/high-culture/tristan-harris-the-attention-economy-a-race-to-the-bottom-of-the-brain-stem/">[3]</a> This ultimately engages me short-term, but long-term glues my attention to the screen, making me feel less alive and human.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="ethics" /><category term="essay" /><category term="opinion" /><category term="english" /><summary type="html"><![CDATA[I subscribe to the notion that ethics is entirely rational and maps to game theory. Ethics is about the principled resolution of conflicts of interest between autonomous agents under conditions of shared purpose when playing long games. [1] With this in mind, it is crucial to model incentives and their consequences for systems to evaluate ethics. On the most general level, we can take the goal of avoiding suffering as the shared purpose of all humans on earth. Additionally, maintaining the global civilization might be another high-level goal. Technologists with the ability to create and change technological systems should do so ethically by considering these goals and projecting the impact of the system they create into the distant future. Making this difficult, the complexity of networks of human and non-human entities interacting through technology on a global scale has become overwhelming. Additionally, technology changes at such a fast pace that national and global elites cannot anticipate its full impact anymore, leading to increasing randomness in societies trajectories without anyone being able to formulate and implement a coherent plan projecting them into the future. Therefore it is even more critical that technologists evaluate the ethics and impacts of their actions, especially given the enormous leverage that computer technology offers.]]></summary></entry><entry><title type="html">Sonne und Sozialismus auf Kuba</title><link href="https://kryptokommun.ist/travel/2021/01/01/sonne-und-sozialismus-auf-kuba.html" rel="alternate" type="text/html" title="Sonne und Sozialismus auf Kuba" /><published>2021-01-01T00:00:00+01:00</published><updated>2021-01-01T00:00:00+01:00</updated><id>https://kryptokommun.ist/travel/2021/01/01/sonne-und-sozialismus-auf-kuba</id><content type="html" xml:base="https://kryptokommun.ist/travel/2021/01/01/sonne-und-sozialismus-auf-kuba.html"><![CDATA[<p>Ein Touristen-VISA für einen Kubaaufenthalt zu bekommen ist nicht schwer, der Tourismus ist eine feste Devisenquelle für die kleine Karibische Insel mit seiner so wilden Vergangenheit. Spanische Kolonie, Revolution und Kubakrise lautet die Kurzzusammenfassung. Und nun ist Kuba eines der wenigen Länder, welches sich noch der Coca-Cola-Marktwirtschaft verweigert. Es sei der Vollständigkeit halber angemerkt, dass es dennoch ein leichtes ist, auf Kuba käuflich eine Cola zu erwerben.</p>
-
-<p>Die Republik Kuba wartet mit tropisch-feuchtheißem Meeresklima auf und die Hauptinsel ist 1200 Kilometer lang und zwischen 30 und 190 Kilometer breit. Insgesamt leben dort 11,2 Millionen Kubaner. Zusammen erwirtschaften sie ein BIP von 85 Milliarden USD (2015), wobei das Durchschnittseinkommen bei 29 USD liegt. Auf Kuba waren einige Werbetafeln zu sehen, welche für Demokratie und die anstehenden Wahlen warben. Das auswärtige Amt bemerkt hierzu jedoch lakonisch in <a href="https://www.auswaertiges-amt.de/de/kubasicherheit/212208">den Länderinformationen</a>:</p>
-
-<blockquote>
-<p><b>Regierungspartei:</b></p>
-<p>ausschließlich zugelassen: Kommunistische Partei Kubas</p>
-<p><b>Opposition:</b></p>
-<p>neben der Kommunistischen Partei sind keine anderen Parteien zugelassen</p>
-</blockquote>
-<!--more-->
-
-<p>Dabei dürfte es sich wohl um ein diplomatische Formulierung handeln. Auch der folgende Auszug macht deutlich, wie es um die demokratische Verfassung Kubas bestellt ist:</p>
-
-<blockquote>
-Besucher sollten politische Betätigung unterlassen, dies kann mit hohen Haftstrafen geahndet werden.
-</blockquote>
-
-<p>Dann gibt es da noch die Sache mit den zwei Währungen <a href="https://de.wikipedia.org/wiki/Kubanischer_Peso">CUC und CUP</a>. Ein CUC (Peso convertible) ist einen US-Dollar wert, 24 CUP (Peso cubano) entsprechen 1 CUC und können nicht in Fremdwährung getauscht werden. Der CUP wird hauptsächlich zur Bezahlung staatlich subventionierter Waren benutzt und ist für die meisten Touristen folglich irrelevant. Nichtsdestoweniger ist es bemerkenswert, dass sich Kuba zwei Währungen leistet. Zwar wurde 2013 angekündigt die Währungen zusammenführen zu wollen, doch auch ich habe Leute mit CUP zahlen sehen.</p>
-
-<p>Um die zur Einreise erforderliche Touristenkarte zu erhalten, begibt man sich zum kubanischen Konsulat in Berlin und erhält
-diese nach kurzer Wartezeit. Es wiehert der Amtsschimmel. Die Räumlichkeiten selbst geben ein Vor­ge­fühl auf das Reiseland. In dem zweifelsohne noch der DDR entsprungenen Bau nimmt eine ältere Dame hinter einem hohen Tresen Gesuche entgegen und bittet auf einem der muffigen Sessel Platz zu nehmen. Das WiFi funktioniert nicht. Insgesamt eine gute Einstimmung auf Kuba.</p>
-
-<h2 id="havanna">Havanna</h2>
-
-<p>Zeitsprung, Ortswechsel, ich bin grade am <em>La Habana Aeroporto</em> gelandet. Von dort nehme ich ein Taxi zum Hostel. Auf der Fahrt wird bereits ersichtlich, dass Havanna eine morbide Schönheit ist. Die vielen bunten Häuser und Autos sind hübsch anzusehen. Sie scheinen ein wenig aus der Zeit gefallen und eisern dem Verfall zu trotzen. Überall sind die für Kuba bekannten Oldtimer zu sehen. Einige Modelle sehen noch aus wie neu, andere hingegen lassen ernsthaft um Sicherheit der Insassen fürchten. Was man auf den tollen Werbeprospekt-Bildchen nicht sieht, ist der zugehörige Geruch, wenn eine ganze Insel verkehrstechnisch die Siebziger-Jahre wiederaufleben lässt. Nach einer Weile gewöhnt man sich zwar an den Benzingestank, dennoch schmälert dies den Charme der bulligen Cruiser auf den Straßen.</p>
-
-<p>An der Adresse angekommen wundere ich mich erst einmal, wo denn das Hostel ist. An der Stelle an welcher das Hostel sein sollte sehe ich lediglich eine baufällige Ruine. Hat sich der Taxifahrer verfahren? Am winzigen Schild am Eingang erkenne ich schließlich, dass besagte <del>Ruine</del> renovierungsbedürftige Baute meine Unterkunft für die nächsten Tage ist. In Havanna sind sehr viele Gebäude marode, dennoch wohnen Leute in den Häusern. Selbst Gebäude, die in den letzen Atemzügen liegen, werden noch bewohnt. Insofern passt das Hostel gut ins Bild, zum Glück sieht es innen deutlich besser aus. Die quirlige Hostelbesitzerin Aylin erklärt allen Gästen Kuba und was man umbedingt gesehen haben muss. Außerdem beklagt sie, dass sie für den ganzen Monat lediglich 30 Stunden Internetzugang erhält. Dennoch kostet es 50 <a href="https://de.wikipedia.org/wiki/Peso_convertible">CUC</a>, was etwa 50 Euro entspricht. Der einschlägige Telekom-Manager dürfte hier eine Freudenträne nicht unterdrücken können.</p>
-
-<p><img src="https://farm5.staticflickr.com/4650/28340833849_21511946ba_k.jpg" alt="" /></p>
-<p class="caption">Das <a href="https://www.hostelworld.com/hosteldetails.php/Cuba-58-Hostel/Havana/281668?dia=500">Cuba 58 Hostel</a></p>
-
-<p><img src="https://farm5.staticflickr.com/4611/28306212469_dd5e2eb08a_k.jpg" alt="" /></p>
-<p class="caption">Effektive Lösung gegen die marode Fassade: Von innen nach außen schauen.</p>
-
-<p><img src="https://farm5.staticflickr.com/4648/39224979275_49aaae6d89_k.jpg" alt="" /></p>
-<p class="caption">Pluspunkt: Das Dach war sehr aufgeräumt.</p>
-
-<p><img src="https://farm5.staticflickr.com/4765/28306219179_ea36e1e257_k.jpg" alt="" /></p>
-<p class="caption">Eine Gasse trotzt der Zeit.</p>
-
-<p><img src="https://farm5.staticflickr.com/4747/28306218009_86c34a9a4e_k.jpg" alt="" /></p>
-<p class="caption">Eine weitere Gasse trotzt ebenfalls der Zeit.</p>
-
-<p><img src="https://farm5.staticflickr.com/4724/40047402361_a260f2de78_k.jpg" alt="" /></p>
-<p class="caption">Sozialismus trifft auf spanische Kolonialzeit.</p>
-
-<p>Geht man vor die Tür, fällt dem deutschen Auge sofort eine ungewohnte Gelassenheit der Menschen auf. Die Menschen gehen gelassen durch die Stadt und hetzen nicht. Das Leben findet auf der Straße statt.</p>
-
-<p>Nicht vergessen darf man den obligatorischen Besuch des Revolutionsmuseums in welchem die Befreiung Kubas durch Fidel Castro und Che Guevara als <del>Musical</del> Ausstellung dargeboten wird. Das Museum selbst ist –  wie so vieles hier – in einem Dämmerzustand gefangen. Zersprungene Fenster, Farbkleckse auf dem Boden, Baugerüste und sogar arbeitende Maler verteilen sich im Museum. Dennoch strahlt das Gebäude eine Grandezza aus, welche von der bedeutsamen Historie zeugt. Die spanischen Kolonialherren, der Diktator Batista und schließlich Fidel Castro selbst nutzten das Gebäude als Regierungssitz. Teile des Gebäudes lassen noch immer erahnen, wie prunkvoll es sich hier einst gelebt haben lassen musste. Der Museumsabschnitt, welcher die Zeit nach der Revolution behandelt, berichtet nüchtern von der Verstaatlichung der amerikanischen Unternehmen und der politisch Linke Teil in mir freut sich heimlich etwas. Darüber hinaus findet die CIA viel unrühmliche Erwähnung, Dengue-Fieber-Epidemien, Schweinepest, Nutztierseuchen und Angriffe auf Plantagen soll sie laut Ausstellung zu verantworten haben. Auch wenn die CIA eindeutig <a href="https://de.wikipedia.org/wiki/Operation_Mongoose">Sabotagepläne verfolgt hat</a>, bleibt fraglich ob es soweit ging gezielt <a href="http://www.nytimes.com/1981/09/06/world/epidemic-in-cuba-sets-off-dispute-with-us.html">Krankheiten zu verbreiten</a>. Dafür und für die Schweinebuchtinvasion gibt es dann am Ausgang auch die bei Besuchern populäre US-Präsidenten-Karikaturen (+ Batista).</p>
-
-<p>Im Außenbereich finden sich Artefakte aus der Geschichte Kubas. Neben dem Boot auf dem Castro vor der erfolgreichen Revolution mit nur 50 Männern übersetzte findet sich auch allerlei vermischtes. So hat es das Triebwerk eines abgeschossenen U2-Spionageflugzeugs der Amerikaner in den Geschichtspark geschafft. Soldaten in strenger Uniform wachen über die Besucher und greifen bei Betreten des Rasens beherzt zur revolutionären Trillerpfeife. Alles in allem hat der Mythos Revolution an Glanz eingebüßt, die “Che Guevara”-Wachsfigur kann nicht den maroden Zustand Kubas vergessen machen. Ob dies als Narrativ stark genug ist, um die Menschen vom Aufbegehren und den Versuchungen des Kapitalismus abzuhalten wird die Zukunft zeigen.</p>
-
-<p><img src="https://farm5.staticflickr.com/4664/28341034649_10bdf70341_k.jpg" alt="" /></p>
-<p class="caption">Einschusslöcher, welche aus der Erstürmung des Gebäudes durch die Revolutionsgarden stammen sollen.</p>
-
-<p><img src="https://farm5.staticflickr.com/4670/40089236032_24f62434bf_k.jpg" alt="" /></p>
-<p class="caption">"Unter den Talaren, der Muff von Tausend Jahren" mag auch hier passend erscheinen, obschon Fidel Castro selbst hier zum El Presidente ernannt wurde.</p>
-
-<p><img src="https://farm5.staticflickr.com/4750/26247984708_3fa1f85b4f_k.jpg" alt="" /></p>
-<p class="caption">Repräsentativer Ausschnitt aus der Ausstellung.</p>
-
-<p><img src="https://farm5.staticflickr.com/4660/39410153874_2ef61492cb_k.jpg" alt="" /></p>
-<p class="caption">Madamé Tussauds auf Kubanisch (Madamé Esperanza?)</p>
-
-<p><img src="https://farm5.staticflickr.com/4626/28341036409_3b6798a1a7_k.jpg" alt="" /></p>
-<p class="caption">Ob Obama und Trump bereits in Arbeit sind?</p>
-
-<p>Doch was sagen eigentlich die Kubaner zu all dem? Ein junger Kubaner, welcher an der Universität in Havanna studiert möchte umbedingt Kuba verlassen und erzählt, dass er lediglich nach einem Arbeitgeber sucht, welcher ihm den Umzug finanziert. Mit dem vorherrschenden System scheint er wenig anfangen zu können. Er erklärt, dass es hier normal sei, dass ein Taxifahrer mehr verdient als ein Arzt. Dies deckt sich mit Aussagen aus Reiseführern in welchen beschrieben steht, dass hinter vielen kubanischen Ärzten und Professoren, Burgerbrater und Putzkräfte im Ausland stehen, welche mit ihren Geldüberweisungen die geistige Landeselite querfinanzieren. Die Limitierung auf 200 Megabyte Internet pro Woche für Studierende ist sicherlich ebenfalls ein Problem. In ganz Havanna gibt es aktuell nur 60 WIFI-Hotspots des staatlichen Internetproviders. Dort versammeln sich die Menschen für die tägliche Dosis Netz. Auch die langen Schlangen vor den Internetkartenläden zeugen von einem digitalen Versorgungsmangel.</p>
-
-<p>Zufälligerweise treffe ich einen der Maintainer des kubanischen <a href="https://media.ccc.de/v/34c3-8740-the_internet_in_cuba_a_story_of_community_resilience">Internetersatzes SNET</a>. Neben <a href="http://paquetedecuba.com">El paquete</a> – bestehend aus Festplatten welche wöchentlich aktualisiert und geteilt werden, stellt <a href="https://motherboard.vice.com/de/article/mg7ddx/kubanische-jugendliche-bauen-ihrem-land-ein-unabhaengiges-intranet-555">SNET</a> einen weiteren Weg dar, um Daten zu teilen. Dies erfolgt ohne Internetzugang in einem lokalen <a href="https://de.wikipedia.org/wiki/Ad-hoc-Netz">Mesh-Netzwerk</a>. Dieser erzählt auch von allerhand Problemen mit technischer Infrastruktur und den findigen Workarounds. Auch erfahre ich, dass die Kubaner ihre Kommunikationsdaten zur weitergehenden Analyse vermutlich an die Russen weitergeben. Die Frage warum Kubas Internetversorgung zu den schlechtesten der Welt gehört bleibt jedoch unklar. Angst vor Oppositions oder schlicht Ignoranz und Ressourcenmangel könnten Gründe sein.</p>
-
-<h2 id="varadero">Varadero</h2>
-
-<p>Die Touristenhochburg Varadero liegt drei Stunden Autofahrt östlich von Havanna. Hier finden sich karibischer Katalogsandstrand und eine Reihe von All-Inclusive-Bunkern, die sich wie an einer Perlenkette aufgeschnürt um die Strände Varaderos legen. Der lokalen Bevölkerung von 20.000 Menschen stehen jährlich 1.000.000 Besucher gegenüber. Für das gute Karma übernachte ich in einer <a href="https://en.wikipedia.org/wiki/Casa_particular">Casa Particular</a>. Für 35 CUC pro Nacht bietet die Wohnung neben einer Dusche, welche eine Art elektrischer Stuhl darstellt auch sonst wenig erfreuliches.</p>
-
-<p><img src="https://farm5.staticflickr.com/4751/40054165742_9cb069ec5c_k.jpg" alt="" /></p>
-<p class="caption">Ein geradezu unverschämt gutaussehender Strand.</p>
-
-<p><img src="https://farm5.staticflickr.com/4670/39188284255_9537eb425d_k.jpg" alt="" /></p>
-
-<p><img src="https://farm5.staticflickr.com/4677/28343123909_aaf5cd98f2_k.jpg" alt="" /></p>
-<p class="caption">Spätrömische Dekadenz.</p>
-
-<p><img src="https://farm5.staticflickr.com/4618/25251911607_5d4f57aae6_k.jpg" alt="" /></p>
-<p class="caption">Liebevolles Detail: Duschen mit Adrenalinkick und potenziell tödlichem Ausgang (Man beachte die an die Decke geklebte Erdung).</p>
-
-<p><img src="https://farm5.staticflickr.com/4659/28306224639_e156c35d68_k.jpg" alt="" /></p>
-<p class="caption">Die Casa Particular von außen.</p>
-
-<p><img src="https://farm5.staticflickr.com/4628/40091319622_2e2365c780_k.jpg" alt="" /></p>
-<p class="caption">Wie sehr man an den Überfluss gewohnt ist, merkt man in den Supermärkten mit ihrem übersichtlichem Sortiment.</p>
-
-<p><img src="https://farm5.staticflickr.com/4705/40124382871_fa0349717e_k.jpg" alt="" /></p>
-<p class="caption">Die Preise sind verglichen mit Deutschland  genauso hoch bzw. teurer.</p>
-
-<p>Neben all dem Disneyland-Charme eines Tourismusortes versöhnt die wunderschöne Natur – dort wo sie erhalten wurde – schnell. Am Ende der Halbinsel auf welcher Varadero liegt, besteht ein Naturschutgebiet mit Wäldern und Höhlen, welche man erkunden kann. In den Höhlen nisten Fledermäuse, zudem gibt es teilweise tausende Jahre alte Malereien von den Ureinwohnern sowie den afrikanischen Sklaven. So ganz ohne Internet in einer Höhle auf Kuba kommt selbst der pathologischste Internettroll zur Ruhe. Die Natur wirkt wie ein angenehmes Sedativum gegen die moderne Smartphone-, Newsfeed- und Pushnotification-Welt.</p>
-
-<p><img src="https://farm5.staticflickr.com/4611/39188281815_3ece90225b_k.jpg" alt="" /></p>
-
-<p><img src="https://farm5.staticflickr.com/4630/39336582584_61e16e956f_k.jpg" alt="" /></p>
-<p class="caption">Eine der vielen natürlichen Höhlen.</p>
-
-<p><img src="https://farm5.staticflickr.com/4606/25252287077_8eced39ae0_k.jpg" alt="" /></p>
-<p class="caption">Wenn ein Stadtkind plötzlich auf Wald trifft.</p>
-
-<p>Alles in allem ist Kuba einen Besuch wert. Wenn man nicht nur im touristischen Paralleluniversum am Sandstrand bleibt, gibt es auf Kuba viel zu entdecken. Dies kann auch die ein oder andere Lebensmittelvergiftung nicht schmälern. Leider habe ich die Größe Kubas völlig unterschätzt. Man sollte genug Zeit einplanen, um die ganze Insel zu entdecken. Hinzu kommt, dass das Leben recht teuer ist, da der Staat die Wirtschaft kontrolliert und Tourismus eine wichtige Einahmequelle ist. Einfach in einen Supermarkt zu gehen und selbst etwas zu kochen ist nicht so einfach. Dies hat sich bemerkbar gemacht, als ich danach in Mexico (freie Marktwirtschaft + keine Insel) war und festellen musste, dass ich dort viel länger Leben könnte, ohne dass eine Pleite droht. Auf Kuba lagen die Lebenshaltungskosten bei circa 42 Euro pro Tag. Auch fiel auf, dass auf Kuba zwar ein niedrigerer Lebensstandard als in Mexico-City herrscht, aber auf Kuba niemand auf der Straße um Geld gebettelt hat. Die Frage wäre ob dies nun Sozialismus oder strikterem Vorgehen gegen Bettler zuzuschreiben ist. Kuba wird nach dem Abdanken Raul Castros in diesem Jahr sich womöglich öffnen und ein anderes Kuba werden, als jenes, das ich erleben durfte.</p>
-
-<p>TL;DR;</p>
-
-<p>Kuba ist sehr schön und es gibt für Besucher einen faktischen Internetzölibat.</p>]]></content><author><name>Marcus Ding</name></author><category term="travel" /><summary type="html"><![CDATA[Ein Touristen-VISA für einen Kubaaufenthalt zu bekommen ist nicht schwer, der Tourismus ist eine feste Devisenquelle für die kleine Karibische Insel mit seiner so wilden Vergangenheit. Spanische Kolonie, Revolution und Kubakrise lautet die Kurzzusammenfassung. Und nun ist Kuba eines der wenigen Länder, welches sich noch der Coca-Cola-Marktwirtschaft verweigert. Es sei der Vollständigkeit halber angemerkt, dass es dennoch ein leichtes ist, auf Kuba käuflich eine Cola zu erwerben. Die Republik Kuba wartet mit tropisch-feuchtheißem Meeresklima auf und die Hauptinsel ist 1200 Kilometer lang und zwischen 30 und 190 Kilometer breit. Insgesamt leben dort 11,2 Millionen Kubaner. Zusammen erwirtschaften sie ein BIP von 85 Milliarden USD (2015), wobei das Durchschnittseinkommen bei 29 USD liegt. Auf Kuba waren einige Werbetafeln zu sehen, welche für Demokratie und die anstehenden Wahlen warben. Das auswärtige Amt bemerkt hierzu jedoch lakonisch in den Länderinformationen: Regierungspartei: ausschließlich zugelassen: Kommunistische Partei Kubas Opposition: neben der Kommunistischen Partei sind keine anderen Parteien zugelassen]]></summary></entry><entry><title type="html">Google Summer of Code 2020 – Creating a FreeCAD 3D view inside Jupyter Notebooks</title><link href="https://kryptokommun.ist/tech/english/2020/09/01/google-summer-of-code.html" rel="alternate" type="text/html" title="Google Summer of Code 2020 – Creating a FreeCAD 3D view inside Jupyter Notebooks" /><published>2020-09-01T00:00:00+02:00</published><updated>2020-09-01T00:00:00+02:00</updated><id>https://kryptokommun.ist/tech/english/2020/09/01/google-summer-of-code</id><content type="html" xml:base="https://kryptokommun.ist/tech/english/2020/09/01/google-summer-of-code.html"><![CDATA[<p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and everyone to use. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization.</p>
-
-<p>I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a <a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> project to get closer to realizing this idea.</p>
-
-<!--more-->
-
-<p>So I sent out two applications: <a href="https://docs.google.com/document/d/1VgfsD06Qvb87S-tQazfTsyYTp14Z3EjF4V9puPVNCTQ/edit?usp=sharing">A better IPython and Jupyter Notebook Integration for FreeCAD</a> and <a href="https://docs.google.com/document/d/1lxe3MTVMQYnv6r3W7KuuzcKgY_rLS2Qgd6FjZlstwaU/edit?usp=sharing">Measurement tool for FreeCAD</a>. In the end the first one was chosen which was closer to my original idea that got me excited and on the path of applying. I definitely didn’t expect the application to succeed, but that might just be the classic imposter syndrome. I put in quite some thought researching the topic and contacted some of the previous students, I even the one who applied for the exact same idea some years before. He was so nice to send me a link to his old application so I could use the feedback he got on his application from back then. This was especially helpful since I didn’t get any feedback on my application that I admittedly started a bit late. After the acceptance the project started moving. The FreeCAD community ist mostly organized in an old school internet forum. I haven’t used one since I was active on an RC car forum when I was 14. Anyways here is the project thread: <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">link</a>.</p>
-
-<p><img src="/images/gsoc-2020-interactivity-demo.gif" alt="" /></p>
-<p class="caption">It's not much, but it's honest work. This demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
-
-<p>Here is a demo of the entire example Jupyter Notebook. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb">the notebook</a> yourself.</p>
-
-<iframe width="800" height="640" src="/google-summer-of-code-2020" frameborder="0" allowfullscreen=""></iframe>
-
-<p></p>
-
-<p>But enough with the story telling let’s get to the technical details shall we? As said before, the project is targeting <a href="https://jupyter.org">Jupyter Notebooks</a>. They allow users to run and visualize their code together with markdown text inside the web browser. The notebooks support a multitude of programming environments. One of them is Python. Since FreeCAD is a C++ application with an Python binding, that means we can script FreeCAD inside the notebook. Some members of the FreeCAD community played with the idea before and managed to get FreeCAD running from within the notebook. Unfortunately you had to start the entire desktop app along side if you wanted to visualize what you were scripting. This is were the GSoC (Google Summer of Code) project comes to play. The goal was to display the FreeCAD 3D view inside the notebook.</p>
-
-<p>Since the goal is to have a very general solution that will be able to display any content that exists inside the desktop apps 3D view we need to work directly with it’s scene graph. So how does FreeCAD generate it’s 3D view. Internally FreeCAD relies on an CAD library that calculates all shapes mathematically in an potentially infinite resolution. The visualization on the other hand is realized with an probably not widely know framework called <a href="https://coin3d.github.io">Coin3D</a>. Thankfully someone started creating a Python binding for the Coin3D library as a masterthesis. It still lives on under the name <a href="https://github.com/coin3d/pivy">pivy</a>.</p>
-
-<p>Based on this the plan was to somehow extract the objects from the Coin3D scene graph and to then translate them into a <a href="https://en.wikipedia.org/wiki/WebGL">WebGL</a> based library that can be rendered inside the notebook. Yikes this meant I might have to touch JavaScript which is not a beauty to work with. After some deliberations I chose <a href="https://github.com/jupyter-widgets/pythreejs">pythreejs</a> which is a Jupyter Notebook extension that integrates the infamous <a href="https://github.com/mrdoob/three.js">ThreeJS</a> with a Python bridge. That meant less JavaScript and a smooth integration into the Jupyter Notebook environment. My previous experiments with directly inserting the ThreeJS JavaScript library all failed horribly.</p>
-
-<p>In the end the task was not that complex. All I needed to do was to extract faces and edges from the Coin3D scene graph and then reassemble it in a slightly modified structure inside pythreejs. What still made this project a challenge was starting from zero knowledge about FreeCADs internals and computer graphics. Additionally some potential bugs make their way into the project and finding and solving can take a lot of time. Also communication with many stake holder slows down the progress and it can be frustrating if you think you found a bug and then the project is not maintained regularly and you have to watch your <a href="https://github.com/jupyter-widgets/pythreejs/issues/329">issues</a> <a href="https://github.com/jupyter-widgets/pythreejs/issues/331">die silently</a> on Github. Overall it’s still a great experience to work so autonomously on an project that is used by so many people. So I hope there will be some people interested in using FreeCAD inside Jupyter Notebook as well.</p>
-
-<p>I will continue to improve the project in the future. You can find the repository here. If you use the module and encounter any issues or just find it useful, don’t hesitate to post to the <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">forum thread</a> or let me know with a <a href="https://twitter.com/kryptokommunist">tweet</a> or an issue in the <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">repository</a>.</p>
-
-<p>Thanks to my mentors: <a href="https://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=686">@ickby</a>, <a href="https://twitter.com/thekurtwk">@kkremitzki</a>, <a href="https://twitter.com/yorikvanhavre">@yorik</a>. I’m grateful for them spending time on helping me with the project. Doing this entirely in their spare time is insanely great! Also thanks to the entire FreeCAD community who gave helpful input. I was especially impressed by how much effort <a href="https://github.com/FreeCAD/FreeCAD/pull/3569">@vocx-fc</a> put into reviewing my second pull request to FreeCAD.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;, &quot;english&quot;]" /><category term="tech" /><category term="gsoc" /><category term="freecad" /><summary type="html"><![CDATA[Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free and everyone to use. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. This way you can change your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. This gives great flexibility and allows for fast customization. I was seeing the potential of designing a parametric lamp and creating a web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. But after some research I saw that this does not exist for FreeCAD yet. Some coincidences later I thought I could apply for a Google Summer of Code project to get closer to realizing this idea.]]></summary></entry><entry><title type="html">Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020</title><link href="https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html" rel="alternate" type="text/html" title="Creating a FreeCAD 3D view inside Jupyter Notebooks - GSoC 2020" /><published>2020-08-31T00:00:00+02:00</published><updated>2020-08-31T00:00:00+02:00</updated><id>https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code</id><content type="html" xml:base="https://kryptokommun.ist/tech/2020/08/31/google-summer-of-code.html"><![CDATA[<p>Accidentally while <a href="https://forum.freecadweb.org/viewtopic.php?f=24&amp;t=48957">creating a lamp</a> I ended up learning <a href="https://www.freecadweb.org">FreeCAD</a>. FreeCAD is an amazing open source <a href="https://en.m.wikipedia.org/wiki/Computer-aided_design">CAD program</a>. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the <a href="https://forum.freecadweb.org/viewtopic.php?t=43461">heated discussions</a> around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD <a href="https://de.wikipedia.org/wiki/NP-Vollständigkeit">NP-complete</a>? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my <a href="https://github.com/kryptokommunist/tolv">lamp design</a> the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization.</p>
-
-<p><a href="https://summerofcode.withgoogle.com">Google Summer of Code</a> (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the <a href="https://card10-cover.0x1b.de/index.php">card1o cover generator</a> created with <a href="https://www.openscad.org">OpenSCAD</a>. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020.</p>
-
-<p><img src="/images/card1o_badge.gif" alt="" /></p>
-<p class="caption">The result from printing the cover generator customized <a href="https://card10.badge.events.ccc.de">card1o badge</a> cover. It's such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don't have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That's the experience I wanted to create for my lamp design.</p>
-
-<!--more-->
-
-<p>I sent out two applications: <a href="https://docs.google.com/document/d/1VgfsD06Qvb87S-tQazfTsyYTp14Z3EjF4V9puPVNCTQ/edit?usp=sharing">A better IPython and Jupyter Notebook Integration for FreeCAD</a> and <a href="https://docs.google.com/document/d/1lxe3MTVMQYnv6r3W7KuuzcKgY_rLS2Qgd6FjZlstwaU/edit?usp=sharing">Measurement tool for FreeCAD</a>. In the end the first one was chosen. It was closer to my original idea that got me excited and on the path of applying. I definitely didn’t expect the application to succeed, but that might just be the classic imposter syndrome. I put in quite some thought researching the topic and contacted some of the previous students, I even managed to email the student who applied for the exact same idea a couple years before. He was so nice to send me a link to his old application so that I could make us of the feedback he got on his application from back then. After the acceptance the project started moving. The FreeCAD community is mainly organized in an old school internet forum. I haven’t used one since I was active on an RC car forum when I was 14 before I signed up on <a href="https://forum.freecadweb.org">forum.freecadweb.org</a>. Here is the project thread where I posted questions and updates on work progress: <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">link</a>. For the unlikely case that you haven’t read through my 8 page project application let me summarize it for you. Or actually the document is very well written so let me quote it instead:</p>
-
-<blockquote>
-  <p>Currently, FreeCAD’s IPython and Jupyter Notebook integration can only provide visualization by running the entire FreeCAD GUI alongside the notebook. Besides not being elegant it brings many problems with it, like not being able to save the visualizations inside the notebook for sharing or bringing visual complexity of the entire GUI into the view instead of just displaying the 3D model. It is therefore important to find a way to visualize FreeCAD’s 3D scene in the IPython display system as supported by Jupyter Notebook.</p>
-
-  <p>Tackling the open issue <a href="https://tracker.freecadweb.org/view.php?id=2869">“IPython / Jupyter support”</a> I aim to implement a IPython compatible visualization of FreeCAD’s 3D Open Inventor scene graph. To achieve this I intend to choose a suitable JavaScript library able to render a 3D scene graph and to implement a mapping between it and the Open Inventor scene graph. After this as a byproduct I want to implement a better WebGL export based on the scene graph instead of document objects as currently found in FreeCAD. For this I can reuse and integrate the scene graph mapping component. Lastly I want to document the results in the Wiki and create an example Jupyter notebook.</p>
-</blockquote>
-
-<p>To make things a bit more clear, <a href="https://jupyter.org">Juypter Notebook</a> is an multi purpose computation evironment, which basically means you can run interactive code on the web. Since Juypter Notebook and FreeCAD both support Python this is a match made in heaven. With Jupyter you can quickly create interactive UIs and mix them with text into a great experience for learning, communicating and experimenting. Opening this space to FreeCAD users and developers brings potentially endless new possibilities. You get access to all the powerful Jupyter widgets that make it so popular. I certainly hope some of you reading this will take this idea further by writing that interactive Python scripting tutorial inside a notebook, by writing that new workbench which will have a widget for notebooks, by improving your workbenches Python API so you can easily access all GUI functions inside a notebook.</p>
-
-<p><img src="/images/jupyterpreview.png" alt="" /></p>
-<p class="caption">"The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more." (Quote and image from <a href="https://jupyter.org">juypter.org</a>)</p>
-
-<p>During this GSoC I successfully implemented a 3D viewer that can display FreeCAD objects inside a notebook. Currently it’s still limited to the Part Workbench, I still have to implement modifications to handle scene objects created by other workbenches. The current project is a good base to build upon. The basic features working right now are:</p>
-
+<p>
+</p>
+<p>
+<a href="https://github.com/birkschmithuesen/SystemFailed_trajnetplusplusbaselines" target="_blank">GitHub Repository</a> | <a href="https://www.artesmobiles.art/_systemfailed" target="_blank">Project Page</a> | <a href="https://www.artesmobiles.art/_sf_technische_entwicklung.html" target="_blank">Technical Page</a>
+</p>
+</section>
+<section>
+<h3>Technical Details</h3>
 <ul>
-  <li>displaying FreeCAD scene graph face sets</li>
-  <li>displaying FreeCAD scene graph line sets</li>
-  <li>setting view parameters according to FreeCAD scene graph
-    <ul>
-      <li>position</li>
-      <li>rotation</li>
-      <li>metalness</li>
-      <li>transparency</li>
-      <li>color</li>
-      <li>emissive color</li>
-    </ul>
-  </li>
-  <li>highlighting FreeCAD object faces</li>
-  <li>selecting FreeCAD object faces</li>
-  <li>displaying FreeCAD object edges indices</li>
-  <li>selecting FreeCAD object edges</li>
-  <li>displaying FreeCAD object faces indices</li>
-  <li>rotating the view</li>
-  <li>zooming the view</li>
+<li>LiDAR-based motion tracking using <a href="https://ars.electronica.art/futurelab/en/pharus/">pharus laser tracking system</a></li>
+<li>Machine Learning: Trajectory Forecasting using <a href="https://github.com/vita-epfl/trajnetplusplusbaselines">TrajNet++</a> based on <a href="http://arxiv.org/pdf/2007.03639">Human Trajectory Forecasting in Crowds:
+A Deep Learning Perspective by Kothari et al.</a></li>
+<li>Custom GUI built with PyQT5</li>
 </ul>
-
-<p>There obviously are many more features that should be implemented over time to make this project maximally useful. For example moving the view, view controls matching the FreeCAD key combinations and having the standard FreeCAD view buttons (“top”, “bottom”, etc.) available would be great.</p>
-
-<p><img src="/images/gsoc-2020-interactivity-demo.gif" alt="" /></p>
-<p class="caption">It's not much, but it's honest work. This project demo shows the benefits of using the Jupyter Notebook environment. You can quickly code an interactive UI that creates objects in a FreeCAD document and removes them again. Also you can see that the viewer will tell you the index of faces and edges. This is important if you want to script FreeCAD entirely in a notebook.</p>
-
-<p>Here is an example Jupyter Notebook that uses the <code class="language-plaintext highlighter-rouge">freecadviewer</code> Python module I created during the GSoC. Be aware that due to the missing Python kernel (this is just a static site) most of the interactivity is lost. For full interactivity you should run <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD/blob/7dc507e295525909668996adf47bb0df68950fdf/FreeCAD%20inside%20Jupyter%20Notebook%20-%20Examples.ipynb">the notebook</a> yourself. The link to the full static notebook is <a href="/google-summer-of-code-2020">here</a>. But still you can pan and zoom the 3D views inside the notebook. Also I recommend viewing this on a bigger screen than a smartphone, even though mobile works, it’s not ideal:</p>
-
-<iframe height="800" src="/google-summer-of-code-2020"></iframe>
-
-<p><br />As you probably already have guessed, this enables you to embed interactive FreeCAD views on your web sites, e.g. like this:</p>
-
-<iframe height="770" src="/embedding-single-widget-gsoc-2020-demo" frameborder="0"></iframe>
-
-<p><br />You get this cool feature almost for free thanks to Jupyter and without touching any Javascript. I created an example notebook to illustrate the process and potential. The link to the full static notebook is <a href="/embedding-single-widget-gsoc-2020">here</a>:</p>
-
-<iframe height="800" src="/embedding-single-widget-gsoc-2020"></iframe>
-
-<p><br />But enough with the “Why” let’s get to the “How” aka technical details shall we? Since the goal is to have a very general 3D viewer solution that will be able to display any content that exists inside the desktop applications 3D view we need to work directly with it’s scene graph. So how does FreeCAD generate it’s 3D view? Internally FreeCAD relies on a C++ CAD library called <a href="https://www.opencascade.com/content/overview">Open Cascade</a> that implements 2D and 3D geometric modelling. You could say Open Cascade is FreeCADs CAD kernel. Internally Open Cascade represents Geometries mathematically in potentially infinite resulution. The visualization on the other hand is realized with a probably not that widely know framework called <a href="https://coin3d.github.io">Coin3D</a> which itself is based on a format called Open Inventor:</p>
-
-<blockquote>
-  <p>Coin is an OpenGL-based, 3D graphics library that has its roots in the Open Inventor 2.1 API, which Coin still is compatible with.</p>
-
-  <p>If you are not familiar with Open Inventor, it is a scene-graph based, retain-mode, rendering and model manipulation, C++ class library, originally designed by SGI. It quickly became the de facto standard graphics library for 3D visualization and visual simulation software in the scientific and engineering community after its release. It also became the basis for the VRML1 file format standard. Several books exists on the subject of Open Inventor, most notably The Inventor Mentor, and The Inventor Toolmaker, both highly recommended for those who wants to learn how to use Open Inventor.</p>
-</blockquote>
-
-<p>Thankfully someone started creating a Python binding for the Coin3D library as a topic for his masterthesis. It still lives on under the name <a href="https://github.com/coin3d/pivy">pivy</a>. This means that I possibly can implement the project entirely in Python. Which has been a very pleasent language to work with so far.</p>
-
-<p>Based on this the plan was to extract the objects from the Coin3D scene graph and to then translate and represent them within a <a href="https://en.wikipedia.org/wiki/WebGL">WebGL</a> based library that can be used inside a Jupyter notebook. This meant I might have to touch JavaScript which is not a beauty to work with. After some deliberations I chose <a href="https://github.com/jupyter-widgets/pythreejs">pythreejs</a> which is a Jupyter Notebook extension that integrates the infamous <a href="https://github.com/mrdoob/three.js">ThreeJS</a> with a Python bridge. That meant less JavaScript and a smooth integration into the Jupyter Notebook environment. My previous experiments with directly inserting the ThreeJS JavaScript library all failed horribly. Additionally this means that FreeCAD users and developers already familiar with scripting in Python can modify the Jupyter 3D view themselves with a minimal learning curve.</p>
-
-<p>In the end the task was not extremely complex. All I needed to do was to extract faces and edges from the Coin3D scene graph and then reassemble it in a slightly modified structure inside pythreejs. The fundamental structure between both 3D libraries is similar enough that I can represent Coin3D in ThreeJS without major changes. What still made this project a challenge was starting from zero knowledge about FreeCADs internals and computer graphics. Additionally some bugs alsways make their way into the project and finding and solving them can take a lot of time. Especially the notebook environment was new for me and made some aspects more complicated. For examples you now also have to take a look at the Javascript console in the browser from time to time to diagnose a problem. Also coordination and communication with many stake holder slows down the progress and it can be especially frustrating if you think you found a bug and then the project is not maintained regularly and you have to watch your <a href="https://github.com/jupyter-widgets/pythreejs/issues/329">issues</a> <a href="https://github.com/jupyter-widgets/pythreejs/issues/331">die silently</a> on Github. Overall it’s still a great experience to work so autonomously on for an open source project that is used by so many people. So I hope there will be some people interested in using FreeCAD inside Jupyter Notebook as well out there.</p>
-
-<p>I will continue to improve the project in the future. You can find the repository <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">here</a>. If you use the module and encounter any issues or just find it useful, don’t hesitate to post to the <a href="https://forum.freecadweb.org/viewtopic.php?f=8&amp;t=46039">forum thread</a> or let me know with a <a href="https://twitter.com/kryptokommunist">tweet</a> or an issue in the <a href="https://github.com/kryptokommunist/Jupyter_FreeCAD">repository</a>.</p>
-
-<p>Thanks to my mentors: <a href="https://forum.freecadweb.org/memberlist.php?mode=viewprofile&amp;u=686">@ickby</a>, <a href="https://twitter.com/thekurtwk">@kkremitzki</a>, <a href="https://twitter.com/yorikvanhavre">@yorik</a>. I’m grateful for them spending time on helping me with the project. Doing this entirely in their spare time is insanely great! Also thanks to the entire FreeCAD community who gave helpful input. I was especially impressed by how much effort <a href="https://github.com/FreeCAD/FreeCAD/pull/3569">@vocx-fc</a> put into reviewing my second pull request to FreeCAD. So this GSoC, also by watching what my fellow students where doing, definitely taught me to appreciate free software and open source even more. ❤️</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="gsoc" /><category term="opensource" /><category term="freecad" /><category term="english" /><summary type="html"><![CDATA[Accidentally while creating a lamp I ended up learning FreeCAD. FreeCAD is an amazing open source CAD program. It still amazes me that people created this for free in their spare time. The software is still in it’s alpha version and is far from perfect as you can tell by the current release version number 0.19 and the heated discussions around how soon a 1.0 release could be reached. Still it’s very usable and once you get the gist of it you can create powerful and complex designs. FreeCADs approach to CAD is a parametric design. That means that you specify shapes with parameters. E.g. you base the 3D shape on a 2D drawing. The geometric figures of the 2D drawing - circles, recatangles, lines - are all constrained with parameters. Then you create a 3D shape out of your 2D sketch, for example by extruding it. And every step is based on certain parameters that can reference previous parameters. It’s basically visual programming. Is FreeCAD NP-complete? Probably, but that’s a topic for another time. Anyways. The parametric approach allows you to easily modify your design at any time just by tuning these parameters. For example with my lamp design the number of aluminium bars is a parameter I can simply tweak at any point in time. All the relevant details depending on this number will be automatically recomputed by FreeCAD. This gives great flexibility and allows for fast customization. Google Summer of Code (GSoC) is a program run by Google that gives stipends to students who over a period of three months implement an open source project with a mentor organization. Among the organizations are well known ones like Arduino, Ruby or Wikimedia. But there are also more niche organizations that are not so widely known. The great part about GSoC is that students apply for specific projects, so you yourself determine how exciting the thing you work on is if you get accepted. This and the work from home aspects are definitely something a lot of internships can’t offer. For me it started with seeing the potential of first designing a parametric lamp and then creating a custom web page where you could change the parameters to your liking and see a live 3D rendering of the changed lamp. Then you just download the 3D files and 3D-print the lamp. I was heavily inspired by the card1o cover generator created with OpenSCAD. After some research I realized that something comparable to rendering OpenSCAD in the web browser does not exist for FreeCAD yet. I already knew about GSoC and to my suprise FreeCAD was one of the open source organizations taking part in GSoC 2020. The result from printing the cover generator customized card1o badge cover. It's such a cool experience to customize something so effortlessly and to then have it in your hands. Unlike designing everything you don't have to think a about it too much, but you still feel more connected to the end product since it has a personal touch. That's the experience I wanted to create for my lamp design.]]></summary></entry></feed>
+</section>
+<section>
+<h3>Gallery</h3>
+<img src="/images/portfolio/projects/78efd1fed1d15a481c3f4784a9819432_size_1200x1200.png" alt="Gallery image 1" />
+<img src="/images/portfolio/projects/f6c08c4579747ebbc59a4628bdcdf8b1_size_1200x1200.jpeg" alt="Gallery image 2" />
+<img src="/images/portfolio/projects/eb349075d3fc07bfd3538d65ebbb6dc8_size_1200x1200.jpeg" alt="Gallery image 3" />
+</section>
+<section>
+<h3>Videos</h3>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/659791516?h=2d57d24e08" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+<p></p>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/727335495?h=6933fc5d6a" width="640" height="360" frameborder="0" allowfullscreen=""></iframe>
+</section>
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="art" /><summary type="html"><![CDATA[Implemented a deep learning model for human path prediction in interactive theater (PyTorch, PyQT5).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/684d71454ea53d478139ec0bf36d120b_size_1200x1200.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
