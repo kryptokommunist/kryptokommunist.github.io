@@ -12,10 +12,13 @@ Here are some details and photos of my place. I'd like to swap for a place > 40 
 
 ---
 
-## Key facts
+## Key facts flat offered
 
 - 5 minutes walking from **Frankfurter Tor** (U5 / U-Bahn)
-- **Warmmiete:** 1.588 €
+- **Kaltmiete:** 1500 €, **Nebenkosten:** 180 € BK + 215 HK, **total: 1895 €** 
+- long-term with **24 months minimum** before you can terminate
+- **index rent** that rises according to inflation index, limited bei Mietpreisbremse
+- requires ideally household netto income of 5.600,00 € or more
 - **Big: 4 rooms, 103 sqm!**
 - **Erdgeschoss** apartment
 - Quiet side street with **friendly families as neighbours**
