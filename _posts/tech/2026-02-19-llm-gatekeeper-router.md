@@ -31,7 +31,7 @@ I wanted a system that would:
 
 ## The Hardware
 
-I used a **GL.iNet GL-MT3000 (Beryl AX)** travel router running OpenWrt. It's compact, powerful enough to run Python, and sits between my devices and the main internet connection. The key specs:
+I used a [**GL.iNet GL-MT3000 (Beryl AX)**](https://aliexpress.com/item/1005008375955032.html) travel router running OpenWrt. At just ~60 Euro, it's a compact, affordable device that's powerful enough to run Python and sits between my devices and the main internet connection. The key specs:
 
 - ARM Cortex-A53 processor
 - ~155MB free storage
