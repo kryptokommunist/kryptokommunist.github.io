@@ -1,304 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2026-02-21T10:00:47-06:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Building an AI Gatekeeper – How I Made My Router Ask “Why Do You Need Internet Right Now?”</title><link href="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" rel="alternate" type="text/html" title="Building an AI Gatekeeper – How I Made My Router Ask “Why Do You Need Internet Right Now?”" /><published>2026-02-19T00:00:00-06:00</published><updated>2026-02-19T00:00:00-06:00</updated><id>https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router</id><content type="html" xml:base="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"><![CDATA[<p>Late-night doomscrolling is a universal struggle. You tell yourself “just five more minutes” at 11 PM, and suddenly it’s 2 AM. I decided to solve this problem the engineering way: by building an AI-powered captive portal that forces me to justify why I need internet access during nighttime hours. If the AI isn’t convinced, no internet for me.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2026-02-21T10:15:42-06:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet</title><link href="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" rel="alternate" type="text/html" title="Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet" /><published>2026-02-19T00:00:00-06:00</published><updated>2026-02-19T00:00:00-06:00</updated><id>https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router</id><content type="html" xml:base="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"><![CDATA[<p>I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it.</p>
+
+<p>The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was.</p>
 
 <!--more-->
-
-<h2 id="the-problem">The Problem</h2>
-
-<p>Between 9 PM and 5 AM, the internet becomes a black hole for productivity and sleep. Social media, YouTube, Reddit – they’re all designed to keep you engaged. Willpower alone isn’t enough when billion-dollar algorithms are optimized to capture your attention.</p>
-
-<p>I wanted a system that would:</p>
-<ol>
-  <li>Block all internet access during nighttime hours</li>
-  <li>Force me to articulate <em>why</em> I need access right now</li>
-  <li>Have an AI evaluate whether my reason is legitimate</li>
-  <li>Grant time-limited access only for valid reasons</li>
-  <li>Be completely automatic – no way to “just disable it real quick”</li>
-</ol>
-
-<h2 id="the-hardware">The Hardware</h2>
-
-<p>I used a <a href="https://aliexpress.com/item/1005008375955032.html"><strong>GL.iNet GL-MT3000 (Beryl AX)</strong></a> travel router running OpenWrt. At just ~60 Euro, it’s a compact, affordable device that’s powerful enough to run Python and sits between my devices and the main internet connection. The key specs:</p>
-
-<ul>
-  <li>ARM Cortex-A53 processor</li>
-  <li>~155MB free storage</li>
-  <li>OpenWrt-based firmware</li>
-  <li>Full iptables/firewall control</li>
-</ul>
-
-<p>![Router setup placeholder]</p>
-
-<h2 id="the-architecture">The Architecture</h2>
-
-<p>The system has three main components:</p>
-
-<h3 id="1-captive-portal-python-http-server">1. Captive Portal (Python HTTP Server)</h3>
-
-<p>When you connect to WiFi during restricted hours, all HTTP traffic gets redirected to a local web page. This splash page presents a chat interface where you explain your reason for needing internet access.</p>
-
-<h3 id="2-ai-gatekeeper-google-gemini-api">2. AI Gatekeeper (Google Gemini API)</h3>
-
-<p>Your justification gets sent to Google’s Gemini LLM with a carefully crafted system prompt. The AI acts as a strict but fair gatekeeper:</p>
-
-<ul>
-  <li><strong>10 minutes</strong>: Quick checks that genuinely can’t wait</li>
-  <li><strong>Up to 60 minutes</strong>: Work/school tasks due TODAY</li>
-  <li><strong>Up to 120 minutes</strong>: Video calls and meetings</li>
-</ul>
-
-<p>The AI can ask up to 3 clarifying questions before making a decision. It’s instructed to be understanding but firm – “I want to browse Reddit” gets denied, while “I have a work deadline at midnight” gets approved.</p>
-
-<h3 id="3-dns-hijacking--http-redirect">3. DNS Hijacking + HTTP Redirect</h3>
-
-<p>Getting iOS and macOS to reliably show the captive portal popup required a two-pronged approach:</p>
-
-<p><strong>DNS Hijacking</strong>: All domain lookups resolve to the router’s IP address:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uci add_list dhcp.@dnsmasq[0].address<span class="o">=</span><span class="s1">'/#/192.168.8.1'</span>
-</code></pre></div></div>
-
-<p><strong>HTTP Redirect</strong>: All port 80 traffic gets redirected to our portal:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables <span class="nt">-t</span> nat <span class="nt">-I</span> PREROUTING 1 <span class="nt">-i</span> br-lan <span class="nt">-p</span> tcp <span class="nt">--dport</span> 80 <span class="se">\</span>
-  <span class="nt">-j</span> REDIRECT <span class="nt">--to-port</span> 2050
-</code></pre></div></div>
-
-<p><strong>Internet Blocking</strong>: Forward chain blocks all LAN→WAN traffic:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>iptables <span class="nt">-t</span> filter <span class="nt">-I</span> FORWARD 1 <span class="nt">-i</span> br-lan <span class="nt">-o</span> eth0 <span class="nt">-j</span> REJECT
-</code></pre></div></div>
-
-<p>When access is granted, these rules are temporarily removed, and normal DNS resolution is restored.</p>
-
-<h2 id="the-conversation-flow">The Conversation Flow</h2>
-
-<p>Here’s what a typical interaction looks like:</p>
-
-<p><img src="/images/2026-02-19-llm-gatekeeper-router_chat.png" alt="Nighttime Access Request chat interface" /></p>
-
-<p><strong>AI</strong>: Hi! It’s 11:30 PM. Why do you need internet access right now? I’ll evaluate if it’s urgent enough.</p>
-
-<p><strong>Me</strong>: I need to check my email for work.</p>
-
-<p><strong>AI</strong>: How many minutes do you need?</p>
-
-<p><strong>Me</strong>: About 30 minutes.</p>
-
-<p><strong>AI</strong>: Why do you need 30 minutes specifically? What will you be doing that requires this much time?</p>
-
-<p><strong>Me</strong>: I’m expecting an important response from a client about tomorrow’s presentation. I need to review it and possibly make changes to my slides.</p>
-
-<p><strong>AI</strong>: ✓ Access Granted for 30 minutes!</p>
-
-<p>The system then:</p>
-<ol>
-  <li>Adds firewall rules to allow my device’s MAC address</li>
-  <li>Starts a timer</li>
-  <li>Kicks me off WiFi when time expires</li>
-  <li>Requires re-justification for more time</li>
-</ol>
-
-<h2 id="proof-required-for-longer-access">Proof Required for Longer Access</h2>
-
-<p>For requests over 10 minutes, the AI requires proof – a screenshot of the email, calendar invite, or assignment. The image gets sent to Gemini’s multimodal API, which analyzes whether it supports the stated reason.</p>
-
-<p>![Proof upload interface placeholder]</p>
-
-<p>This prevents gaming the system with vague claims about “work stuff.”</p>
-
-<h2 id="persistent-request-logging">Persistent Request Logging</h2>
-
-<p>The system maintains a log of all requests throughout the night. This gets included in the AI’s context, so it can see patterns:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Previous requests tonight:
-- [22:15] ✓ Quick email check (10 min)
-- [23:30] ✓ Client presentation prep (30 min)
-- [01:45] ✗ "just want to browse"
-</code></pre></div></div>
-
-<p>If I’ve already been granted access three times tonight, the AI becomes more skeptical. The log gets cleared at 5 AM – each night is a fresh start.</p>
-
-<h2 id="auto-start-and-scheduling">Auto-Start and Scheduling</h2>
-
-<p>The system is fully automatic:</p>
-
-<ul>
-  <li><strong>On boot</strong>: Checks the time and starts in the appropriate mode</li>
-  <li><strong>9:00 PM</strong>: Cron job enables gatekeeper mode</li>
-  <li><strong>5:00 AM</strong>: Cron job disables it, clears the request log</li>
-</ul>
-
-<p>Even if I reboot the router at midnight trying to escape, it comes back up in gatekeeper mode.</p>
-
-<h2 id="the-code">The Code</h2>
-
-<p>The entire system is a single Python script (~1100 lines) that handles:</p>
-
-<ul>
-  <li>HTTP server for the captive portal</li>
-  <li>Gemini API integration (with multimodal support for images)</li>
-  <li>iptables firewall management</li>
-  <li>DNS hijacking for captive portal detection</li>
-  <li>External DNS resolution to bypass local hijacking for API calls</li>
-  <li>Session tracking and rate limiting</li>
-  <li>Persistent request logging</li>
-</ul>
-
-<p>Key technologies:</p>
-<ul>
-  <li>Python 3 with <code class="language-plaintext highlighter-rouge">http.server</code> (no external dependencies)</li>
-  <li>Google Gemini API (<code class="language-plaintext highlighter-rouge">gemma-3-27b-it</code> model)</li>
-  <li>iptables for traffic control</li>
-  <li>dnsmasq wildcard DNS for captive portal detection</li>
-  <li>OpenWrt’s procd for service management</li>
-</ul>
-
-<p>The source code is available on GitHub: <a href="https://github.com/kryptokommunist/smart_router">github.com/kryptokommunist/smart_router</a></p>
-
-<h2 id="built-with-claude-code-from-idea-to-working-system-in-one-evening">Built with Claude Code: From Idea to Working System in One Evening</h2>
-
-<p>Here’s the part that still amazes me: <strong>this entire project was built in a single evening using Claude Code</strong>, Anthropic’s agentic coding assistant. What would have been a week of tinkering, Stack Overflow searches, and frustrating debugging sessions became a fluid conversation with an AI pair programmer.</p>
-
-<h3 id="the-old-way-vs-agentic-coding">The Old Way vs. Agentic Coding</h3>
-
-<p>Pre-agentic coding, this project would have involved:</p>
-
-<ol>
-  <li><strong>Research phase</strong> (1-2 days): Reading OpenWrt documentation, understanding iptables, figuring out captive portal options, learning the Gemini API</li>
-  <li><strong>Setup struggles</strong> (1 day): SSH configuration, package installation failures, storage constraints</li>
-  <li><strong>Implementation</strong> (2-3 days): Writing Python code, debugging firewall rules, handling edge cases</li>
-  <li><strong>Integration hell</strong> (1-2 days): Making all the pieces work together, fixing race conditions, handling timeouts</li>
-</ol>
-
-<p>With Claude Code, I described what I wanted, and it:</p>
-
-<ul>
-  <li><strong>Explored the router</strong> via SSH, checking available storage, installed packages, and system capabilities</li>
-  <li><strong>Made architectural decisions</strong> based on constraints (abandoned nodogsplash when it proved unreliable, built a custom solution instead)</li>
-  <li><strong>Wrote and deployed code</strong> directly to the router, testing incrementally</li>
-  <li><strong>Debugged issues in real-time</strong> – when the captive portal wasn’t triggering, it analyzed iptables rules and fixed the ordering</li>
-  <li><strong>Iterated on feedback</strong> – “the redirect isn’t working” led to immediate investigation and fixes</li>
-</ul>
-
-<h3 id="what-made-it-work">What Made It Work</h3>
-
-<p>The key insight is that agentic coding isn’t just “AI writes code.” It’s having a collaborator who can:</p>
-
-<ol>
-  <li><strong>Execute commands</strong> on remote systems (SSH into the router, check logs, restart services)</li>
-  <li><strong>Maintain context</strong> across a long session (remembering that we switched from nodogsplash to a custom solution)</li>
-  <li><strong>Debug systematically</strong> (checking firewall rules, testing API endpoints, reading logs)</li>
-  <li><strong>Handle the tedious parts</strong> (iptables syntax, JSON parsing edge cases, init script boilerplate)</li>
-</ol>
-
-<p>I focused on <em>what</em> I wanted: “block internet at night, require AI justification, grant timed access.” Claude Code figured out <em>how</em> to make it happen on this specific hardware with these specific constraints.</p>
-
-<h3 id="the-development-flow">The Development Flow</h3>
-
-<p>The session went something like this:</p>
-
-<ol>
-  <li><strong>Me</strong>: “I want an LLM-gated internet access system for my GL-MT3000 router”</li>
-  <li><strong>Claude</strong>: <em>SSHs into router, checks specs, proposes architecture</em></li>
-  <li><strong>Me</strong>: “The captive portal isn’t showing up”</li>
-  <li><strong>Claude</strong>: <em>Checks iptables, finds rule ordering issue, fixes it</em></li>
-  <li><strong>Me</strong>: “Now require image proof for longer requests”</li>
-  <li><strong>Claude</strong>: <em>Adds file upload UI, integrates Gemini multimodal API</em></li>
-  <li><strong>Me</strong>: “The AI should know about previous requests tonight”</li>
-  <li><strong>Claude</strong>: <em>Adds persistent logging, includes history in LLM context</em></li>
-</ol>
-
-<p>Each iteration took minutes, not hours. The AI handled the implementation details while I steered the direction.</p>
-
-<h3 id="where-agentic-coding-still-falls-short">Where Agentic Coding Still Falls Short</h3>
-
-<p>Let me be clear: Claude Code isn’t magic, and this project required corrections. Here are real examples of where I had to step in:</p>
-
-<p><strong>1. The Captive Portal Showed the Wrong Page</strong></p>
-
-<p>After implementing DNS hijacking (all domains → router IP), the captive portal showed the router’s admin web UI instead of our splash page. Claude had added this iptables rule:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># BROKEN: Excludes gateway IP from redirect</span>
-iptables ... <span class="nt">--dport</span> 80 <span class="o">!</span> <span class="nt">-d</span> 192.168.8.1 <span class="nt">-j</span> REDIRECT <span class="nt">--to-port</span> 2050
-</code></pre></div></div>
-
-<p>The logic seemed sound – “don’t redirect traffic meant for the router itself.” But with DNS hijacking active, <em>all</em> HTTP requests were now destined for the router IP, so <em>nothing</em> got redirected. I had to point out that the splash page was wrong, and Claude then diagnosed and fixed it:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># FIXED: Redirect ALL port 80 traffic</span>
-iptables ... <span class="nt">--dport</span> 80 <span class="nt">-j</span> REDIRECT <span class="nt">--to-port</span> 2050
-</code></pre></div></div>
-
-<p><strong>2. The AI Couldn’t Reach the Internet</strong></p>
-
-<p>After enabling DNS hijacking, the Gemini API calls started failing with “failed to reach AI service.” The router was using its own DNS server (dnsmasq), which had the wildcard hijack rule – so <code class="language-plaintext highlighter-rouge">generativelanguage.googleapis.com</code> resolved to <code class="language-plaintext highlighter-rouge">192.168.8.1</code> instead of Google’s servers.</p>
-
-<p>Claude’s initial instinct was to hardcode the IP address in the URL. This broke SSL certificate validation (SNI mismatch). I pointed out the error, and after a few iterations, Claude implemented a proper solution: resolve the hostname via external DNS (8.8.8.8), then monkey-patch Python’s <code class="language-plaintext highlighter-rouge">socket.getaddrinfo</code> to inject the resolved IP while keeping the hostname intact for proper SSL/SNI handling.</p>
-
-<p><strong>3. What This Tells Us About Agentic Coding in 2026</strong></p>
-
-<p>These bugs share a common pattern: <strong>Claude optimized for the immediate problem without fully modeling downstream effects</strong>. The gateway IP exclusion made sense in isolation. DNS hijacking made sense for captive portal detection. But their interaction created a bug that required human oversight to catch.</p>
-
-<p>Current AI coding assistants are excellent at:</p>
-<ul>
-  <li>Implementing well-defined components</li>
-  <li>Debugging when you can describe the symptom</li>
-  <li>Handling boilerplate and syntax details</li>
-  <li>Exploring unfamiliar systems (SSH, check logs, read configs)</li>
-</ul>
-
-<p>They still struggle with:</p>
-<ul>
-  <li>Reasoning about system-wide interactions</li>
-  <li>Anticipating how change A affects component B</li>
-  <li>Knowing what they don’t know (no “wait, this might break X”)</li>
-</ul>
-
-<p>The workflow that works: <strong>AI implements, human validates</strong>. I couldn’t have built this project solo in an evening, but Claude couldn’t have shipped it without me catching these integration bugs. We’re in the “centaur” phase of AI coding – the combination outperforms either alone.</p>
-
-<h3 id="this-changes-everything">This Changes Everything</h3>
-
-<p>I’ve been programming for over a decade. The jump from pre-LLM to agentic coding feels as significant as the jump from assembly to high-level languages. Not because AI writes perfect code (it doesn’t – see above), but because it removes the friction between <em>having an idea</em> and <em>seeing it work</em>.</p>
-
-<p>Projects that lived in my “someday maybe” list because of the activation energy required are now afternoon experiments. The gatekeeper idea had been bouncing around in my head for months – “it would be cool, but dealing with router firmware and captive portals sounds painful.” With Claude Code, the pain disappeared – even accounting for the debugging.</p>
-
-<h2 id="does-it-actually-work">Does It Actually Work?</h2>
-
-<p><strong>Yes.</strong> The friction of having to justify myself to an AI is surprisingly effective. When I’m about to request access for “just checking Twitter,” I realize how weak that sounds and often just go to bed instead.</p>
-
-<p>The key insights:</p>
-
-<ol>
-  <li><strong>Articulating intent creates friction</strong>: Having to type out why you need something makes you evaluate whether you actually need it</li>
-  <li><strong>Time limits create urgency</strong>: Knowing I only have 30 minutes makes me focused and efficient</li>
-  <li><strong>No easy escape</strong>: The router sits between me and the internet – there’s no “disable just this once” button</li>
-  <li><strong>AI is more objective than willpower</strong>: I can’t negotiate with myself at 1 AM</li>
-</ol>
 
 <h2 id="video-demo">Video Demo</h2>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eoj_pzWLsXc?si=2nUCxVeSLl-oRVpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
-<h2 id="future-improvements">Future Improvements</h2>
+<h2 id="the-problem">The Problem</h2>
 
-<p>Some ideas I’m considering:</p>
+<p>Between 9 PM and 5 AM, my internet usage is basically 95% garbage. Social media, YouTube rabbit holes, Reddit arguments with strangers – you know the drill. The thing is, I <em>know</em> this while I’m doing it. But somehow at 1 AM my brain goes “yeah but what if there’s one more interesting thread” and before I know it the birds are chirping outside.</p>
 
+<p>What I wanted was simple:</p>
+<ol>
+  <li>Block internet at night (no exceptions button I can just click)</li>
+  <li>Force myself to explain <em>why</em> I need access</li>
+  <li>Have something more objective than my 1 AM brain decide if that’s legit</li>
+  <li>Time limits so I can’t abuse a single approval for hours</li>
+</ol>
+
+<h2 id="the-hardware">The Hardware</h2>
+
+<p>I grabbed a <a href="https://aliexpress.com/item/1005008375955032.html">GL.iNet GL-MT3000 (Beryl AX)</a> travel router for about 60 Euro. It runs OpenWrt, has enough storage for Python, and sits between all my devices and the actual internet. This is important – there’s no way to bypass it without physically unplugging it (and at that point, if I’m that desperate, maybe I deserve the internet).</p>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<p>When I connect to WiFi after 9 PM, instead of getting internet I get a chat interface. An AI (Google’s Gemini) asks me why I need access. The conversation goes something like:</p>
+
+<p><img src="/images/2026-02-19-llm-gatekeeper-router_chat.png" alt="Nighttime Access Request chat interface" /></p>
+
+<p><strong>AI</strong>: “It’s 11:30 PM. Why do you need internet access?”</p>
+
+<p><strong>Me</strong>: “I need to check email.”</p>
+
+<p><strong>AI</strong>: “How many minutes do you need?”</p>
+
+<p><strong>Me</strong>: “30 minutes.”</p>
+
+<p><strong>AI</strong>: “Why specifically 30 minutes? What will you be doing?”</p>
+
+<p>And here’s the thing – having to actually type out “I want to mindlessly scroll Twitter” makes you realize how stupid that sounds. Half the time I just give up and go to bed instead. Which is exactly the point.</p>
+
+<p>The AI grants different amounts of time based on what you need:</p>
 <ul>
-  <li><strong>Multiple user support</strong>: Different rules for different family members</li>
-  <li><strong>Graduated strictness</strong>: Stricter as the night goes on (easier at 9 PM, harder at 2 AM)</li>
-  <li><strong>Weekly reports</strong>: Summary of access patterns and sleep improvements</li>
-  <li><strong>Voice interface</strong>: Ask the AI verbally through a smart speaker</li>
+  <li>10 minutes for quick checks</li>
+  <li>Up to 60 minutes for actual work due TODAY</li>
+  <li>Up to 120 minutes for video calls</li>
 </ul>
 
-<h2 id="conclusion">Conclusion</h2>
+<p>For anything over 10 minutes, it wants proof. Screenshot of that urgent email? Calendar invite for that meeting? Upload it. The AI actually looks at the image and checks if it matches what you claimed. No more “I have work stuff” as a universal excuse.</p>
 
-<p>This project is a double showcase of AI capabilities: an LLM enforcing digital wellbeing, built with the help of an AI coding assistant. Both represent the same insight – AI can be a tool for human flourishing, not just engagement and productivity metrics.</p>
+<h2 id="the-technical-bits">The Technical Bits</h2>
 
-<p>The gatekeeper forces me to articulate my intentions, adding friction where friction is needed. Claude Code removed friction where it was just getting in the way of building something useful.</p>
+<p>If you care about the implementation (if not, skip to the Claude Code section):</p>
 
-<p>Building this project was a fun exercise in using AI for behavioral change rather than engagement optimization. Instead of an algorithm trying to keep me online longer, I have one trying to get me offline and to bed. And instead of spending a week wrestling with router firmware, I spent an evening having a conversation.</p>
+<p>The whole thing is a Python script running on the router. It does DNS hijacking so all domains point to the router, then redirects HTTP traffic to a captive portal page. When you’re chatting with the AI, your messages go to Google’s Gemini API. If approved, it adds iptables rules to let your specific device through for the approved duration.</p>
 
-<p>The technology that powers addictive apps can also power tools for digital wellbeing. Sometimes you just need to put a stern AI between yourself and your bad habits – and another one to help you build it.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># All DNS queries resolve to router</span>
+uci add_list dhcp.@dnsmasq[0].address<span class="o">=</span><span class="s1">'/#/192.168.8.1'</span>
+
+<span class="c"># All HTTP goes to captive portal</span>
+iptables <span class="nt">-t</span> nat <span class="nt">-I</span> PREROUTING 1 <span class="nt">-i</span> br-lan <span class="nt">-p</span> tcp <span class="nt">--dport</span> 80 <span class="nt">-j</span> REDIRECT <span class="nt">--to-port</span> 2050
+
+<span class="c"># Block actual internet access</span>
+iptables <span class="nt">-t</span> filter <span class="nt">-I</span> FORWARD 1 <span class="nt">-i</span> br-lan <span class="nt">-o</span> eth0 <span class="nt">-j</span> REJECT
+</code></pre></div></div>
+
+<p>The system also keeps a log of all my requests throughout the night. So if I’ve already asked three times, the AI gets more skeptical. “You already got approved twice tonight, why do you need more time?” It’s like having a disappointed parent watching over your shoulder.</p>
+
+<p>Cron jobs handle the scheduling – gatekeeper mode enables at 9 PM, disables at 5 AM. Even rebooting the router at midnight doesn’t help, it comes back up in restricted mode.</p>
+
+<p>Source code: <a href="https://github.com/kryptokommunist/open-sesame">github.com/kryptokommunist/open-sesame</a></p>
+
+<h2 id="built-with-claude-code-in-one-evening">Built with Claude Code in One Evening</h2>
+
+<p>Here’s the part that blows my mind: I built this entire thing in a single evening using Claude Code. Normally a project like this would involve days of reading OpenWrt docs, fighting with iptables syntax, debugging why the captive portal won’t show up, etc. Instead I just told Claude what I wanted and it SSHed into the router, figured out the constraints, and wrote the code.</p>
+
+<p>The workflow was basically:</p>
+<ol>
+  <li>Me: “I want an AI-gated internet system on this router”</li>
+  <li>Claude: <em>checks router specs, proposes architecture</em></li>
+  <li>Me: “The captive portal isn’t showing”</li>
+  <li>Claude: <em>debugs iptables, finds issue, fixes it</em></li>
+  <li>Me: “Now add image proof for longer requests”</li>
+  <li>Claude: <em>adds file upload, integrates multimodal API</em></li>
+</ol>
+
+<p>Each iteration took minutes. I steered, Claude implemented.</p>
+
+<h2 id="where-claude-code-screwed-up">Where Claude Code Screwed Up</h2>
+
+<p>Let me be clear though – it wasn’t magic. Some real bugs I had to catch:</p>
+
+<p><strong>Bug 1</strong>: After setting up DNS hijacking (all domains → router IP), the captive portal showed the router’s admin UI instead of my splash page. Claude had excluded the router IP from the redirect, but with DNS hijacking <em>everything</em> pointed to the router IP, so nothing got redirected. I had to point out the wrong page was showing before Claude figured it out.</p>
+
+<p><strong>Bug 2</strong>: The AI couldn’t reach Google’s servers because… my own DNS hijacking was hijacking the API hostname too. Claude first tried hardcoding the IP (broke SSL). Eventually got a proper fix: resolve via external DNS, then monkey-patch Python’s socket handling. Took a few iterations.</p>
+
+<p>The pattern: Claude optimized for the immediate problem without seeing how it’d interact with other parts. Classic AI coding issue. The workflow that actually works is AI implements, human validates. I couldn’t have built this in an evening alone, but Claude couldn’t have shipped it without me catching these bugs. We’re in the centaur phase of AI coding.</p>
+
+<h2 id="does-it-actually-work">Does It Actually Work?</h2>
+
+<p>Yeah, embarrassingly well. The friction of having to justify myself to an AI is surprisingly effective. When I’m about to type “I just want to browse Reddit” I realize how pathetic that sounds and often just go to bed. Which was the whole point.</p>
+
+<p>TL;DR: Built an AI that guards my internet at night because I have zero self-control. It works better than willpower. Claude Code built most of it in one evening but still needed a human to catch the integration bugs. Source code on GitHub if you want to build your own digital parent.</p>
 
 <hr />
 
-<p><em>The source code is available at <a href="https://github.com/kryptokommunist/smart_router">github.com/kryptokommunist/smart_router</a>. Have questions? Find me on [contact placeholder].</em></p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="ai" /><category term="llm" /><category term="router" /><category term="openwrt" /><category term="project" /><category term="claude-code" /><category term="agentic-coding" /><category term="english" /><summary type="html"><![CDATA[Late-night doomscrolling is a universal struggle. You tell yourself “just five more minutes” at 11 PM, and suddenly it’s 2 AM. I decided to solve this problem the engineering way: by building an AI-powered captive portal that forces me to justify why I need internet access during nighttime hours. If the AI isn’t convinced, no internet for me.]]></summary></entry><entry><title type="html">Heater Spiral</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html" rel="alternate" type="text/html" title="Heater Spiral" /><published>2025-12-01T00:00:00-06:00</published><updated>2025-12-01T00:00:00-06:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html"><![CDATA[<div class="portfolio">
+<p><em>The source code is available at <a href="https://github.com/kryptokommunist/open-sesame">github.com/kryptokommunist/open-sesame</a>.</em></p>
+
+<p><em>This post was written with the help of Claude Code.</em></p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="ai" /><category term="llm" /><category term="router" /><category term="openwrt" /><category term="project" /><category term="claude-code" /><category term="agentic-coding" /><category term="english" /><summary type="html"><![CDATA[I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it. The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was.]]></summary></entry><entry><title type="html">Heater Spiral</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html" rel="alternate" type="text/html" title="Heater Spiral" /><published>2025-12-01T00:00:00-06:00</published><updated>2025-12-01T00:00:00-06:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2025/12/01/heater-spiral.html"><![CDATA[<div class="portfolio">
 <h1>Heater Spiral</h1>
 <h2>Heat-based body-computer interface pendant</h2>
 <section>
