@@ -84,7 +84,7 @@ When access is granted, these rules are temporarily removed, and normal DNS reso
 
 Here's what a typical interaction looks like:
 
-![Chat interface placeholder]
+![Nighttime Access Request chat interface](/images/2026-02-19-llm-gatekeeper-router_chat.png)
 
 **AI**: Hi! It's 11:30 PM. Why do you need internet access right now? I'll evaluate if it's urgent enough.
 
