@@ -1,13 +1,37 @@
-# Repo for [kryptokommunist.github.io](https://kryptokommunist.github.io) [![Build Status](https://app.travis-ci.com/kryptokommunist/kryptokommunist.github.io.svg?branch=jekyll)](https://app.travis-ci.com/kryptokommunist/kryptokommunist.github.io)
+# [kryptokommun.ist](https://kryptokommun.ist)
 
-This is the repo for my personal blog powered by static site generator [jekyll](https://jekyllrb.com) and [github pages](https://pages.github.com).
+Personal blog powered by [Jekyll](https://jekyllrb.com) and [GitHub Pages](https://pages.github.com).
 
-## Using the docker environment
+## Branch Structure
 
-Generate container: `docker build -t blog`. 
+- `jekyll` - Source files (posts, templates, images)
+- `master` - Built static site (published to GitHub Pages)
 
-Run with terminal: `docker run -it --rm -v $(pwd):/site -p 4000:4000 blog /bin/bash`
+## Quick Start
 
-Serve: `bundle exec jekyll serve --host 0.0.0.0`.
+### Local Development
 
-Generate site: `bundle exec jekyll build`.
+```bash
+# Serve locally with Docker
+docker run --rm -v "$(pwd):/srv/jekyll" -w /srv/jekyll -p 4000:4000 jekyll/jekyll:4 jekyll serve --host 0.0.0.0
+```
+
+Visit http://localhost:4000
+
+### Build Site
+
+```bash
+docker run --rm -v "$(pwd):/srv/jekyll" -w /srv/jekyll jekyll/jekyll:4 jekyll build
+```
+
+Built site outputs to `_site/`.
+
+## Publishing
+
+See [CLAUDE.md](CLAUDE.md) for detailed build and publish workflow.
+
+## Adding Content
+
+- Posts: `_posts/<category>/YYYY-MM-DD-slug.md`
+- Images: `images/`
+- Portfolio projects: `_posts/portfolio/projects/`
