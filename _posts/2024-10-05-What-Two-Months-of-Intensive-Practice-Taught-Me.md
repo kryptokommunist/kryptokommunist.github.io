@@ -87,7 +87,7 @@ With continued practice, the sensations became less scary. The fear of them had 
 
 The retreat gave me more trust in awareness and in my capacity to be okay. I saw repeatedly that fear is usually worse than whatever I'm afraid of. But the bigger shift was a reorientation. I'd come hoping that more metta and jhana practice would bring transcendence — rising above the messiness of human experience. What I left with was the opposite conviction: being with my body, chakras, and emotions is the path. Radiating metta from the head while ignoring the body below isn't freedom, it's spiritual bypassing with good concentration.
 
-Practice that brings me down into the body to live my humanity, rather than escape it — that's what I'm pursuing now. What remains: a deeper trust in life. A changed relationship with time—the retreat felt like a single day, and later I often found myself simply in the present moment without a sense of time. When things get hard, I turned to practice intuitively in the months after. And after the retreat I felt a sense or glimpse how emptiness might be all-encompassing love, and that I might be able to infuse my whole experience with it within this lifetime.
+Practice that brings me down into the body to live my humanity, rather than escape it — that's what I'm pursuing now. What remains: a deeper trust in life. A changed relationship with time — the retreat felt like a single day, and later I often found myself simply in the present moment without a sense of time. When things get hard, I turned to practice intuitively in the months after. And after the retreat I felt a sense or glimpse how emptiness might be all-encompassing love, and that I might be able to infuse my whole experience with it within this lifetime.
 
 ---
 
