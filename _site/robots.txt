@@ -1,1 +1,1 @@
-Sitemap: http://localhost:3333/sitemap.xml
+Sitemap: https://kryptokommun.ist/sitemap.xml

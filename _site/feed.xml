@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2026-02-23T11:25:45-06:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet</title><link href="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" rel="alternate" type="text/html" title="Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet" /><published>2026-02-19T00:00:00-06:00</published><updated>2026-02-19T00:00:00-06:00</updated><id>https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router</id><content type="html" xml:base="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"><![CDATA[<p>I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://kryptokommun.ist/feed.xml" rel="self" type="application/atom+xml" /><link href="https://kryptokommun.ist/" rel="alternate" type="text/html" /><updated>2026-02-23T15:58:38-06:00</updated><id>https://kryptokommun.ist/feed.xml</id><title type="html">marcusding’s blog</title><subtitle>May you be happy, friend.</subtitle><author><name>Marcus Ding</name></author><entry><title type="html">Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet</title><link href="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" rel="alternate" type="text/html" title="Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet" /><published>2026-02-19T00:00:00-06:00</published><updated>2026-02-19T00:00:00-06:00</updated><id>https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router</id><content type="html" xml:base="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"><![CDATA[<p>I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it.</p>
 
 <p>The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was.</p>
 
@@ -271,7 +271,134 @@ With smart filters, real-time updates, and fair pricing, it makes the stressful 
 <!-- Optional: add screenshots of Telegram bot, pricing page, filters -->
 </section>
 
-</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="web" /><category term="flask" /><category term="react" /><category term="postgres" /><category term="api" /><summary type="html"><![CDATA[findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html" rel="alternate" type="text/html" title="anattā – 𑀅𑀦𑀢𑁆𑀢𑀸" /><published>2024-07-01T00:00:00-05:00</published><updated>2024-07-01T00:00:00-05:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html"><![CDATA[<div class="portfolio">
+</div>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;tech&quot;]" /><category term="tech" /><category term="web" /><category term="flask" /><category term="react" /><category term="postgres" /><category term="api" /><summary type="html"><![CDATA[findmyflat is a web service that continuously scans all public housing providers in Berlin and instantly notifies you via Telegram about new apartment offers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" /><media:content medium="image" url="https://kryptokommun.ist/images/portfolio/projects/findmyflatlandingpage.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">When Your Meditation Teacher Becomes the Lesson</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/When-Your-Meditation-Teacher-Becomes-the-Lesson.html" rel="alternate" type="text/html" title="When Your Meditation Teacher Becomes the Lesson" /><published>2024-10-05T00:00:00-05:00</published><updated>2024-10-05T00:00:00-05:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/When-Your-Meditation-Teacher-Becomes-the-Lesson</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/When-Your-Meditation-Teacher-Becomes-the-Lesson.html"><![CDATA[<p>After two months on a silent retreat in the California mountains, I left two weeks early – not because of what I discovered about my mind, but because of what I discovered about my teacher. I’m writing this for anyone considering intensive practice with a teacher, and for anyone who has felt confused by dynamics with somebody in a position of authority they couldn’t name.</p>
+
+<h2 id="the-setup">The Setup</h2>
+
+<p>A two-month silent retreat is a significant commitment. No reading, no writing, no contact with the outside world. Your teacher becomes your only external reference point. I knew this going in, so I vetted carefully. The teacher was welcoming and accommodating. He seemed sensitive to my concerns about undertaking such a long retreat while carrying childhood trauma. He gave space. He listened. Everything felt right. What I didn’t understand then is that this is often how it begins.</p>
+
+<!--more-->
+
+<h2 id="the-gradual-shift">The Gradual Shift</h2>
+
+<p>The longer the retreat progressed, the more controlling and grandiose the teacher became. It wasn’t sudden — it was incremental, which made it harder to trust my own perception. Some specific examples:</p>
+
+<ul>
+  <li>No questions during dharma talks. For the entire duration of my time there, students could not ask questions in this setting.</li>
+  <li>Emotional control. He would verbally welcome students crying, but his body language communicated discomfort. This created a confusing double message that made it harder to process grief.</li>
+  <li>Lashing out. I witnessed him react with disproportionate anger to small things—someone being sad, someone arriving late.</li>
+  <li>Image over relationship. It increasingly felt like being seen as a great teacher mattered more to him than actually teaching. Validation from students seemed to be the priority.
+What struck me most was the contradiction between his words and his actions. He spoke of acceptance while communicating rejection. He taught equanimity while modeling reactivity.</li>
+</ul>
+
+<h2 id="the-reality-distortion-field">The Reality Distortion Field</h2>
+
+<p>What felt strange to me was that this teacher had practiced intensively for fifteen years in monasteries. He had genuine access to spaciousness and concentration. And I began to notice something: just sitting in front of him would shift sensations in my stomach. It felt like he transmitted anger packaged in spaciousness — my mind wouldn’t catch it, but my body reacted.
+My working theory on this is that someone with highly developed concentration can transmit their reality through presence alone, without words. They don’t need to be loud or aggressive. If they have more concentration than you do, they can—consciously or unconsciously—influence your felt sense of what’s happening. You find yourself questioning your own perception while their version of reality gets reinforced simply through the weight of their presence. I think this may be part of how the guru phenomenon works. It sidesteps the mind entirely. The student feels confused, doubts themselves, and the teacher’s reality becomes the default. Of course the authority of a dozen people kinda worshipping the guy in front of your eyes also does something. Because of noble silence you can’t ask what they actually think about him. How convenient.</p>
+
+<h2 id="the-turning-point">The Turning Point</h2>
+
+<p>Two things helped me see clearly. First, my therapist. When I described what was happening in a check-in call, she said: “Oh, this sounds like narcissism.” Having a word for it was an enormous relief. The confusing soup of experiences suddenly had a shape. Second, <a href="https://dharmaseed.org/retreats/1466/">Rob Burbea</a>. Towards the end I smuggled my phone back and started listening to his retreat recordings. The contrast was immediate. Where my teacher practiced with a kind of desperate urgency, Burbea was flexible, grounded, gentle, slow. My teacher positioned awakening as the most important thing. Burbea advocated for being human first. Hearing Burbea helped me escape the reality distortion field. It gave me an external reference point that reminded me what good teaching sounds and feels like.</p>
+
+<h2 id="what-i-learned-about-myself">What I Learned About Myself</h2>
+
+<p>I couldn’t write this honestly without acknowledging my own part. I went to this retreat hoping a long period of practice would finally make me “enlightened.” I was looking for a teacher who would give me that. I was primed to believe in someone’s grandiosity because I had my own grandiose parts that wanted to be special. I could only fall for his narcissism because I took my own too seriously. When I learned to laugh at my own parts that thought they were better than everyone else, I could also laugh when I saw those parts in the teacher. The dynamic required two participants. This doesn’t excuse harmful behavior from someone in a position of power. But it does help explain why I was susceptible, and it’s something I’ll watch for in the future.</p>
+
+<h2 id="the-harder-nuance">The Harder Nuance</h2>
+
+<p>I’ve been sitting with this post for months, and I want to be honest about something that complicates the narrative: the teacher also had a genuinely loving and accepting side. He had a sensitivity, an ability to say the right thing in tense moments, that I haven’t encountered in many people. In some ways, working with his difficult aspects helped me process wounds from my childhood. People are not all one thing. But I also believe he poses a real risk to students, particularly if they do not have very strong and solid boundaries. He lacks the self-awareness to see how his need for validation interferes with his teaching. He lacks the training to work safely with trauma. And the container of a silent retreat — isolated, no outside contact, one authority figure — amplifies whatever dynamics are present. I have heard that he in following retreats had issues with keeping boundaries regarding becoming romantically involved with his students, and later dismissed them when they shared how they felt harmed. Someone I met later at Esalen, who had spent years in Zen monasteries, told me that some of the biggest egos he’d encountered in his life were in those communities. Intensive practice does not automatically confer psychological health. In some cases, it provides a hiding place.</p>
+
+<h2 id="the-takeaway">The Takeaway</h2>
+
+<p>If you’re considering working with a teacher, especially in an intensive or isolated setting:
+Watch for contradictions between words and actions. Notice your body. If you consistently feel confused, anxious, or “off” in their presence, take that seriously. Maintain outside reference points if at all possible. Even occasional contact with a trusted friend or therapist can help you stay oriented. Be suspicious of urgency. Good teachers don’t need you to wake up on their timeline. And if you are dealing with significant trauma consider limiting the length of retreat and finding alternative spiritual practices aside from formal sits that can be <a href="https://maija-haavisto.medium.com/dark-nights-spiritual-crises-and-psychotic-breaks-6f3bdfb24f5a">harmful</a> in themselves.</p>
+
+<p>I left that retreat believing I had witnessed the early stages of a cult. Maybe that’s too strong. Maybe it’s not strong enough. What I know for certain is that meditation does not solve psychological issues — and in some cases, it can provide sophisticated cover for them.
+The teacher’s name is Milo North, and his organization is <a href="https://boundlessness.org">Boundlessness</a>. I share this not to condemn him as a person, but because I wish someone had told me before I signed up for a two-month retreat.</p>
+
+<hr />
+
+<p><em>For what I actually learned from the practice itself during this retreat, see <a href="/meditation/jhanas/therapy/english/2024/10/05/What-Two-Months-of-Intensive-Practice-Taught-Me.html">What Two Months of Intensive Practice Taught Me</a>.</em></p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[After two months on a silent retreat in the California mountains, I left two weeks early – not because of what I discovered about my mind, but because of what I discovered about my teacher. I’m writing this for anyone considering intensive practice with a teacher, and for anyone who has felt confused by dynamics with somebody in a position of authority they couldn’t name. The Setup A two-month silent retreat is a significant commitment. No reading, no writing, no contact with the outside world. Your teacher becomes your only external reference point. I knew this going in, so I vetted carefully. The teacher was welcoming and accommodating. He seemed sensitive to my concerns about undertaking such a long retreat while carrying childhood trauma. He gave space. He listened. Everything felt right. What I didn’t understand then is that this is often how it begins.]]></summary></entry><entry><title type="html">What Two Months of Intensive Practice Taught Me About Emotions, Self, and the Body</title><link href="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/What-Two-Months-of-Intensive-Practice-Taught-Me.html" rel="alternate" type="text/html" title="What Two Months of Intensive Practice Taught Me About Emotions, Self, and the Body" /><published>2024-10-05T00:00:00-05:00</published><updated>2024-10-05T00:00:00-05:00</updated><id>https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/What-Two-Months-of-Intensive-Practice-Taught-Me</id><content type="html" xml:base="https://kryptokommun.ist/meditation/jhanas/therapy/english/2024/10/05/What-Two-Months-of-Intensive-Practice-Taught-Me.html"><![CDATA[<p>After previous retreats gave me a taste of the joy, love, and freedom that practice can bring, I wanted to see what would happen with sustained intensive practice. I spent two months on retreat in the California mountains, practicing six to ten hours daily. What I expected: deeper jhana access, maybe some insight stages, perhaps a taste of awakening. What I got: a fundamentally different relationship with my emotional body, direct experience of the plural nature of mind, and a reorientation away from transcendence toward embodiment.</p>
+
+<p><img src="/images/boundlessness/tent.jpeg" alt="" /></p>
+<p class="caption">The tent I slept in for two months.</p>
+
+<p><img src="/images/boundlessness/nature.jpeg" alt="" /></p>
+<p class="caption">The retreat was held in a beautiful mountain scenery in California.</p>
+
+<!--more-->
+
+<h2 id="the-emotional-body-what-emotions-actually-are">The Emotional Body: What Emotions Actually Are</h2>
+
+<p>Toward the end of the retreat, I began working with Rob Burbea’s recordings from <a href="https://dharmaseed.org/retreats/1466/">The Boundless Heart</a>. This shifted my attention to what Rob calls the “emotional body” — the axis from root to crown. What became clear through sustained attention is that what we call “emotions” are actually constellations of physical sensations with remarkably consistent mappings:</p>
+
+<ul>
+  <li>Shame: tension in the lower belly</li>
+  <li>Fear: tension in belly, throat, and shoulders</li>
+  <li>Love/spaciousness: warmth and softness in the heart center</li>
+</ul>
+
+<p>Most of the time, I couldn’t name the emotion. The combination of tensions and sensations was so unique in each moment that conceptual labels felt reductive. This was itself freeing — I stopped trying to figure out what I was feeling and just felt. From Rob, I took the insight that practice doesn’t require cathartic release. You can simply be with the emotional body as it shifts. Watching these constant shifts made something viscerally clear: I am not a conceptual thing. I cannot grasp myself using words or mind. Two techniques from Rob’s recordings proved particularly useful: Spacious holding. Feel the tensions in the body and imagine a soft white bubble of spaciousness around them. This made unpleasant tensions workable rather than something to push through. Playing with views. Rob suggested holding the idea that the world is sacred—lightly, experimentally. After a day of this, everything around me did feel more meaningful. It was subtle but unmistakable how much views shape perception. I also experimented with repeating limiting beliefs aloud (“I need to be a good boy”) until they released into laughter. The belief would just… dissolve.</p>
+
+<p>What I appreciated most about Rob’s approach was the underlying message: everything is just a view. There’s no solid meditation approach you need to twist yourself into like a pretzel. That helped me release my mental image of what meditation and awakening should look like.</p>
+
+<h2 id="ifs-on-retreat-rewiring-the-inner-dialogue">IFS on Retreat: Rewiring the Inner Dialogue</h2>
+
+<p>For the first three weeks, I practiced Internal Family Systems intensively. The retreat container made this remarkably potent—hours of uninterrupted access to parts that normally stay submerged. I encountered parts with beliefs I’d never been aware of. Again and again, I found myself explaining to various parts that I’m an adult now and don’t live with my parents anymore. This sounds almost comically simple, but the felt sense of parts receiving this information was profound. I also practiced befriending parts directly — asking questions, offering to work together rather than against each other. After three weeks, something shifted. I’d look in the mirror and the voice in my head would say, “You look great, I love you.” I’d drop something and hear, “No worries, I love you.”</p>
+
+<p>The inner critic didn’t disappear, but the default inner dialogue became friendly. My sense is that IFS operates similarly to metta practice. The verbal component gives the mind an illusion of control, which eases resistance. Speaking from Self felt like generating metta — while the voice spoke kindly to parts, tensions in the body would soften and unwind.</p>
+
+<h2 id="emotional-release-meeting-anger">Emotional Release: Meeting Anger</h2>
+
+<p>We did breathwork every morning on this retreat—screaming, kicking, the full cathartic toolkit. I also set up a punching bag in a small hut on the property. What I discovered: whenever I felt depressed and stuck, punching the bag would leave me feeling more whole and loving afterward. This surprised me. I’d expected anger release to leave me agitated or drained. Through this work, I started to notice a pattern. I’d tap into anger, then fear would arise to block it. But I kept going deeper. At some point I was shocked by how hard I could kick when I actually allowed the anger. I realized I’d been holding back my own strength my entire life, perceiving myself as weaker because of my resistance to feeling anger.</p>
+
+<p>After the first month, I could access anger and fear like never before. I made it a daily practice—one to two hours of feeling into anger and fear through singing, laughing, punching, jumping. From the outside, it probably looked unhinged. From the inside, it was just processing.
+One observation: societal norms around emotional expression are strange when you examine them. Full emotional expression is considered crazy unless you’re an actor. But on retreat, without social pressure, I found myself walking around singing and laughing by myself. The fear of being judged simply fell away.</p>
+
+<p><img src="/images/boundlessness/bag_before.jpeg" alt="" /></p>
+<p class="caption">The punching bag in the hut I found.</p>
+
+<p><img src="/images/boundlessness/bag_after.jpeg" alt="" /></p>
+<p class="caption">The punching bag after a very freeing anger release session. I didn't expect how much strength there is in my body.</p>
+
+<h2 id="fourth-jhana-and-the-deconstruction-of-self">Fourth Jhana and the Deconstruction of Self</h2>
+
+<p>My primary practice was metta, radiating from the head in six directions. I’d accessed fourth jhana on a previous retreat and wanted to deepen this. While I didn’t progress to the formless jhanas, sustained fourth jhana practice set certain processes in motion.
+Over weeks, my body began to feel thinner, lighter, more nebulous. This correlated with my sense of self feeling similarly thin. At some point, my visual field started flickering whenever I closed my eyes or after longer sits. I could glimpse that I was seeing discrete frames of experience. The flickering correlated with subtle tension around the eyes.
+Then a connection became clear: the tension around the eyes arose every time a sense of self was created. And this correlated with any shift of tensions throughout the body—the body would take a slightly new shape, and that constituted a new sense of self.</p>
+
+<p>One insight that sounds obvious but felt deeply freeing: I am living in the present. Each self is created fresh in the present moment. I am not bound by my past. In one sitting, I went through my entire life chronologically and realized something strange: I couldn’t find myself in any of the memories. I wasn’t in them. The one who had those experiences wasn’t locatable now. This was disorienting and liberating in equal measure.</p>
+
+<h2 id="changes-in-awareness">Changes in Awareness</h2>
+
+<p>After several weeks, I noticed my awareness had become wider. Looking at a cornfield, I could see the waves of wind across the entire field simultaneously rather than tracking a portion of it. The first time this happened, it felt psychedelic. This persisted after retreat. Watching ocean waves with wide awareness became fascinating—seeing the whole pattern of wave interference at once rather than following individual waves. I also began remembering most of my dreams. And after a few weeks of metta practice, a golden heart started appearing repeatedly in dreams. I took this as a sign the practice was saturating deeper layers.</p>
+
+<h2 id="multiple-selves-direct-experience-of-plurality">Multiple Selves: Direct Experience of Plurality</h2>
+
+<p>Before this retreat, my life had often felt fragmented—like a movie with fast cuts, chaotic and disorienting. About two years ago, after developing stable witness awareness, it started feeling like a continuous film. On retreat, I got to observe directly that I’m not a monolithic self but a system of parts, as IFS describes. I started by noticing different voices. I’d ask them their names and ages. Then I had the strange experience of noticing co-consciousness—being aware that a different self was operating my body while “I” observed. I could talk to that self and intervene if needed.</p>
+
+<p>The most disorienting experience: I sat down to meditate and began interacting with a friendly inner voice. Then I realized that yesterday, I had been that voice. But today I was identified with a different one, now observing my previous “self” from outside. This could have been terrifying—the realization that my current self could disappear, and I don’t know when or if it would return. Instead, it built trust. While selves, voices, and identity shifted, awareness remained. Safety lies in resting in that which doesn’t change.</p>
+
+<h2 id="trauma-practice">Trauma Practice</h2>
+
+<p>I came to this retreat partly to work with childhood trauma. Some observations:
+Stillness as trigger. In the first week, I noticed that extended stillness itself was activating — the body remembered freeze and helplessness. I could hear some fellow practitioners breathing in fight/flight for the first weeks during sitting practice which faded. But I don’t think that is the safest way to ground the body. I introduced movement before and during sits: power stances, fists on legs, pushing arms outward, moving the head. This helped discharge the freeze response.</p>
+
+<p>Root awareness. After several weeks, sexual feelings began arising during sits as awareness moved into the root. I realized I’d never breathed fully because deep breaths bring attention to the root at the end of the inhale, which triggered discomfort. The talk of root chakra as life force suddenly made experiential sense—I’d been cut off from it. I spent many sits just being with these sensations, working through layers until I could hold that energy without being overwhelmed.</p>
+
+<p>Sleep and activation. I noticed that before sleep, fear would arise in my stomach along with root sensations — in hindsight that was fight/flight activation. My lifelong sleep difficulties suddenly made sense: the body replays activating memories before sleep, and I’d spent countless nights on YouTube or other distractions to escape these sensations without knowing that’s what I was doing.</p>
+
+<p>With continued practice, the sensations became less scary. The fear of them had been worse than the sensations themselves. Metta and yoga nidra helped. Eventually, I could go to sleep more easily than I ever had. Also I found parts with extreme beliefs. One part thought it was my father. Many parts held hatred toward me, and working with them took patience. Initially I tried only befriending, but after weeks of continued abuse from certain parts, I began setting boundaries: “You can’t talk to me like that. We can talk when you’re more friendly.” Teaching targeted parts to hold boundaries helped too. Also a lot of shame came up. In my IFS practice I kept repeating to objecting parts: this is not my fault. It’s not any part’s fault.</p>
+
+<h2 id="what-shifted">What Shifted</h2>
+
+<p>The retreat gave me more trust in awareness and in my capacity to be okay. I saw repeatedly that fear is usually worse than whatever I’m afraid of. But the bigger shift was a reorientation. I’d come hoping that more metta and jhana practice would bring transcendence — rising above the messiness of human experience. What I left with was the opposite conviction: being with my body, chakras, and emotions is the path. Radiating metta from the head while ignoring the body below isn’t freedom, it’s spiritual bypassing with good concentration.</p>
+
+<p>Practice that brings me down into the body to live my humanity, rather than escape it — that’s what I’m pursuing now. What remains: a deeper trust in life. A changed relationship with time—the retreat felt like a single day, and later I often found myself simply in the present moment without a sense of time. When things get hard, I turned to practice intuitively in the months after. And after the retreat I felt a sense or glimpse how emptiness might be all-encompassing love, and that I might be able to infuse my whole experience with it within this lifetime.</p>
+
+<hr />
+
+<p><em>For the other side of this retreat experience—what I learned about the teacher—see <a href="/meditation/jhanas/therapy/english/2024/10/05/When-Your-Meditation-Teacher-Becomes-the-Lesson.html">When Your Meditation Teacher Becomes the Lesson</a>.</em></p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[After previous retreats gave me a taste of the joy, love, and freedom that practice can bring, I wanted to see what would happen with sustained intensive practice. I spent two months on retreat in the California mountains, practicing six to ten hours daily. What I expected: deeper jhana access, maybe some insight stages, perhaps a taste of awakening. What I got: a fundamentally different relationship with my emotional body, direct experience of the plural nature of mind, and a reorientation away from transcendence toward embodiment. The tent I slept in for two months. The retreat was held in a beautiful mountain scenery in California.]]></summary></entry><entry><title type="html">anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</title><link href="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html" rel="alternate" type="text/html" title="anattā – 𑀅𑀦𑀢𑁆𑀢𑀸" /><published>2024-07-01T00:00:00-05:00</published><updated>2024-07-01T00:00:00-05:00</updated><id>https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata</id><content type="html" xml:base="https://kryptokommun.ist/portfolio/projects/tech/2024/07/01/annata.html"><![CDATA[<div class="portfolio">
  
 <h1>anattā – 𑀅𑀦𑀢𑁆𑀢𑀸</h1>
 <h2>LED installation</h2>
@@ -454,256 +581,4 @@ Another new idea I got from the retreat was in a talk by Catherine McGee, who ex
 
 <p>In the Alexander Technique class, when the teacher opened the student’s awareness, I could feel the student seeming to command the room as an equal to the teacher. However, a pitfall of Alexander Technique is that this experience of expanded awareness may be tied to permission from the teacher more easily than with meditation. With meditation practice, the teacher is far removed, so you realize that you are giving yourself permission to expand your awareness. But a good Alexander Technique teacher should be aware of this and make sure you credit yourself for expanding your awareness.</p>
 
-<p>Overall, attending a silent retreat and learning about Jhanas and Alexander Technique was a life-changing experience for me. I’m grateful for the insights and tools I gained, and I hope to continue integrating them into my daily life.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[Last week, I went on my first silent retreat at Gaia House in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on dharmaseed.org. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience. At the end of the retreat, I went to London, which was quite a stark contrast to the quiet and peaceful scenery of the rural landscape around the retreat center oozing stillness and peacefulness. But even though it was harder to notice, I could still access the stillness within. It’s always there when I am sensitive enough to look for it. I also noticed colors more intensely and saw the positive and beautiful everywhere, all after five days of maybe six hours of daily meditation in a mix of walking and sitting meditation.]]></summary></entry><entry><title type="html">How to notice a great therapist</title><link href="https://kryptokommun.ist/trauma/therapy/english/2023/01/27/how-to-notice-a-great-therapist.html" rel="alternate" type="text/html" title="How to notice a great therapist" /><published>2023-01-27T00:00:00-06:00</published><updated>2023-01-27T00:00:00-06:00</updated><id>https://kryptokommun.ist/trauma/therapy/english/2023/01/27/how-to-notice-a-great-therapist</id><content type="html" xml:base="https://kryptokommun.ist/trauma/therapy/english/2023/01/27/how-to-notice-a-great-therapist.html"><![CDATA[<p>You have decided that you want to get serious about loving all of you and want to start working with a therapist or changing from one you are not quite sure about. I commend you on your courage, deciding to look inwards, even if parts of you might be worried about what lurks in your subconscious. Looking inside and being really curious about yourself is an revolutionary act in todays world. And unlike a view of being curious and involved with yourself as narcissistic, it’s very different. Trying to control how you and others see yourself is narcissistic, based on deep fears. Being curious and open to see who you really are from a place of love is healing and will benefit not only yourself but everyone around you. Your relationship to the parts of yourself is how you relate to everyone else. No one can be more intimate and loving towards you than yourself. That is the threshold of how much you can let in from others. And that threshold can be infinitely larger than you imagine right now.</p>
-
-<p>In June of 2022, during a trip to the US, I worked with a therapist that completely changed my view of how much positive change is possible with a great therapist. Working with this therapist was as psychoactive as the psychedelic experiences I had, only that these changes in how I perceived me and the world stayed permanently. This therapist would just sit in front of me and ask me to scan my body. On the first day, my awareness of my body was strong as never before. I could notice when I would dissociate and the room would feel bigger. 
-I would notice when a fear in me arose that projected that the therapist might hit me. All that was a level of awareness I had never had access to before. I noticed how I used humor to distract from fear. I cried in session three. After every appointment, I felt hopeful and joyful as never before. My mind got quiet, and I could enjoy just sitting in the park and watching the birds. Something I would have never done before. All of this within a week of three hours of daily therapy. Even when you discount that, before, I did half a year of weekly behavior therapy and never experienced such fundamental shifts in well-being. I never left the appointments feeling joy and hope. That new therapy experience made me realize that before, I was afraid of the therapy appointments because the therapist was afraid of my emotions. I only cried once with the previous therapist within half a year because she subconsciously communicated that she couldn’t hold my sadness.</p>
-
-<p>On the other hand, with the therapist from the US, I noticed that opening up so many things so quickly was also destabilizing because when I moved back to Berlin, I now needed to continue without her presence. That was also due to losing trust because she had a weak spot that she could not address when I raised it. So what makes a great therapist? Here is my answer in the hope that it may inspire you to find yours. Overall it seems that the therapist can only raise you to their own level of awareness, emotional resiliency, and healing:</p>
-
-<p>First, what is the goal of therapy? It’s learning to become aware of parts of your mind that you are hiding from yourself. It’s to learn to love the parts of yourself that you disown. It’s learning to become more embodied or embodied at all. It’s learning to feel safe in your body. It’s learning to notice how feeling relates to body sensations. It’s learning to let the emotions move through you rather than fully identifying with them. It’s learning to love all of your emotional experiences, especially the difficult ones. It’s learning to have boundaries. It’s understanding who you are and stopping wanting to change. It’s learning to know that you are already perfect. It’s learning that whatever you dislike about yourself is a natural, human reaction to your life experience. First I thought that crying often is a sign of a good therapist, but then some people, like me, have parts blocking crying at times.</p>
-
-<p><b><em>A simple heuristic for how good the therapist is: How often do you notice shifts in how you relate to yourself and others after your sessions? And how much do you feel like you are responsible for your progress?</em></b></p>
-
-<!--more-->
-
-<p>All of those things can show up in very obvious or subtle ways. If you have a history of trauma, your first instinct is likely to doubt yourself. Actually, from my experience, your body will likely know pretty well what’s going on. If you avoid going to your appointments, e.g., by being late, and you don’t feel better afterward or, even worse, your body is telling you something.</p>
-
-<p><strong>So what will a great therapist do to support you in that?</strong></p>
-
-<ul>
-  <li>never judges you</li>
-  <li>always on your side</li>
-  <li>they can sit with your sadness, and you can cry around them. But, if you never cry, you are most likely picking up on them, not being okay with your sadness.</li>
-  <li>they want to work with you long-term</li>
-  <li>they do not worry about you</li>
-  <li>they are open to your feedback, and your suggestions (let’s walk outside, I want to go outside for a break)</li>
-  <li>they are stable in their emotions</li>
-  <li>they can hold your gaze for a long time without hardness</li>
-  <li>they are gentle and know that slower is faster with trauma</li>
-  <li>is aware of transference and will work with it, making you feel it’s safe to discuss how you feel towards them. E.g., you project your mother onto your therapist and feel like she might be disappointed about something you said, but you feel safe to tell your therapist, and they don’t feel threatened in their identity but rather work with that.</li>
-  <li>they mainly help you to notice things in your body and mind</li>
-  <li>they point you to yourself a lot; they are humble and curious. So your progress will feel like it’s all your work.</li>
-  <li>they create a relationship where you feel like an equal</li>
-  <li>they ooze a nonjudgemental ness and openness</li>
-  <li>they will teach you techniques to regulate your nervous system</li>
-  <li>they know about dissociation and can notice when you dissociate and then do exercises with you to regulate your nervous system</li>
-  <li>they don’t want you to change</li>
-  <li>they are more curious about you than you are yourself</li>
-  <li>if you are chronically late, see that as a sign that parts of you are afraid of the therapy appointment and address that directly</li>
-  <li>they know and have experience with meditation practice</li>
-  <li>they will not just talk with you; they will use hypnosis, exercises, embodiment, and pauses to allow you to get out of your head into your body and emotions.</li>
-  <li>they will let you have your emotions and not interfere with that</li>
-  <li>they will do boundary work with you; they will train you to say no and feel your inner boundaries</li>
-  <li>they are aware of how deep the impact of trauma goes, they will be open to you asking to leave the room, going for a walk outside, asking for shaking your body alone in the room, etc., to feel safe</li>
-  <li>if they are insanely great, they will even suggest those things above to you when they notice you are triggered and dissociating</li>
-  <li>they learn from you and want to learn from you</li>
-  <li>they are creative and think for themselves; they don’t follow strict rules but rather experiment with what works</li>
-  <li>their main agenda is for you to become more you</li>
-</ul>
-
-<p><strong>What will a well-intentioned but not great therapist do to keep you stuck?</strong></p>
-
-<ul>
-  <li>think they know what you need better than yourself, and you might start believing them at some point.</li>
-  <li>Can’t deal with big emotions; they will subtly signal that they are uncomfortable with what you share or you are being emotional. E.g., crossing their arms, slightly tensing their eyes when you become emotional or talk about a problematic experience. You might even feel you are a burden or manipulative because you subconsciously sense that they are afraid of your emotions (it’s called countertransference).</li>
-  <li>they create a relationship where you feel they have authority</li>
-  <li>they will worry about you</li>
-  <li>they want you to change and want your approval</li>
-  <li>see drug use as a problem without being curious about the underlying pain</li>
-  <li>they will only talk about emotions to avoid emotions</li>
-  <li>they will try to make you feel better</li>
-  <li>they think that just experiencing the pain is healing when actually the amount of pain felt must be met with an equal amount of love and patience. Anything else is just reexperiencing trauma.</li>
-  <li>strictly follow the rules and guidelines</li>
-  <li>promises you quick solutions and fixes</li>
-  <li>they want you to become like someone they imagine</li>
-</ul>
-
-<p>May your heart be filled with love for all your parts, friend. May you have a safe journey inside and through this mystical adventure of life.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;trauma&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="trauma" /><category term="therapy" /><summary type="html"><![CDATA[You have decided that you want to get serious about loving all of you and want to start working with a therapist or changing from one you are not quite sure about. I commend you on your courage, deciding to look inwards, even if parts of you might be worried about what lurks in your subconscious. Looking inside and being really curious about yourself is an revolutionary act in todays world. And unlike a view of being curious and involved with yourself as narcissistic, it’s very different. Trying to control how you and others see yourself is narcissistic, based on deep fears. Being curious and open to see who you really are from a place of love is healing and will benefit not only yourself but everyone around you. Your relationship to the parts of yourself is how you relate to everyone else. No one can be more intimate and loving towards you than yourself. That is the threshold of how much you can let in from others. And that threshold can be infinitely larger than you imagine right now. In June of 2022, during a trip to the US, I worked with a therapist that completely changed my view of how much positive change is possible with a great therapist. Working with this therapist was as psychoactive as the psychedelic experiences I had, only that these changes in how I perceived me and the world stayed permanently. This therapist would just sit in front of me and ask me to scan my body. On the first day, my awareness of my body was strong as never before. I could notice when I would dissociate and the room would feel bigger. I would notice when a fear in me arose that projected that the therapist might hit me. All that was a level of awareness I had never had access to before. I noticed how I used humor to distract from fear. I cried in session three. After every appointment, I felt hopeful and joyful as never before. My mind got quiet, and I could enjoy just sitting in the park and watching the birds. Something I would have never done before. All of this within a week of three hours of daily therapy. Even when you discount that, before, I did half a year of weekly behavior therapy and never experienced such fundamental shifts in well-being. I never left the appointments feeling joy and hope. That new therapy experience made me realize that before, I was afraid of the therapy appointments because the therapist was afraid of my emotions. I only cried once with the previous therapist within half a year because she subconsciously communicated that she couldn’t hold my sadness. On the other hand, with the therapist from the US, I noticed that opening up so many things so quickly was also destabilizing because when I moved back to Berlin, I now needed to continue without her presence. That was also due to losing trust because she had a weak spot that she could not address when I raised it. So what makes a great therapist? Here is my answer in the hope that it may inspire you to find yours. Overall it seems that the therapist can only raise you to their own level of awareness, emotional resiliency, and healing: First, what is the goal of therapy? It’s learning to become aware of parts of your mind that you are hiding from yourself. It’s to learn to love the parts of yourself that you disown. It’s learning to become more embodied or embodied at all. It’s learning to feel safe in your body. It’s learning to notice how feeling relates to body sensations. It’s learning to let the emotions move through you rather than fully identifying with them. It’s learning to love all of your emotional experiences, especially the difficult ones. It’s learning to have boundaries. It’s understanding who you are and stopping wanting to change. It’s learning to know that you are already perfect. It’s learning that whatever you dislike about yourself is a natural, human reaction to your life experience. First I thought that crying often is a sign of a good therapist, but then some people, like me, have parts blocking crying at times. A simple heuristic for how good the therapist is: How often do you notice shifts in how you relate to yourself and others after your sessions? And how much do you feel like you are responsible for your progress?]]></summary></entry><entry><title type="html">Fantastic Planet – A 1973 movie revealing hidden truths about the human mind and human condition</title><link href="https://kryptokommun.ist/trauma/english/2022/11/01/fantastic-planet.html" rel="alternate" type="text/html" title="Fantastic Planet – A 1973 movie revealing hidden truths about the human mind and human condition" /><published>2022-11-01T00:00:00-05:00</published><updated>2022-11-01T00:00:00-05:00</updated><id>https://kryptokommun.ist/trauma/english/2022/11/01/fantastic-planet</id><content type="html" xml:base="https://kryptokommun.ist/trauma/english/2022/11/01/fantastic-planet.html"><![CDATA[<p>A friend recommended me the old sci-fi classic <em>Fantastic Planet</em> (<a href="https://www.youtube.com/watch?v=-7LuNSHlPco">link to the whole movie</a>). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It’s a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I invite you to watch the film before reading the text.</p>
-
-<!--more-->
-
-<p><em>Please note: This text explores sexual abuse.</em></p>
-
-<p>A quick summary of the movie is as follows:</p>
-
-<blockquote>
-Nothing else has ever looked or felt like director René Laloux s animated marvel Fantastic Planet, a politically minded and visually inventive work of science fiction. The film is set on a distant planet called Ygam, where enslaved humans (Oms) are the playthings of giant blue natives (Draags). After Terr, kept as a pet since infancy, escapes from his gigantic child captor, he is swept up by a band of radical fellow Oms who resist the Draags oppression and violence. With its eerie, coolly surreal cutout animation by Roland Topor; brilliant psychedelic jazz score by Alain Goraguer; and wondrous creatures and landscapes, this Cannes-awarded 1973 counterculture classic is a perennially compelling statement against conformity and violence.
-</blockquote>
-
-<p>But let’s dive into what it depicts and the meaning behind it. In the beginning, it introduces us to the blue giants that are the masters of the little human that is still a baby at this point in the plot.</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxrF89rMfSpZ3cy93hNBsv8uWE2h6eSQ-G&amp;clipt=EKrhGhjKgB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-
-<p>In the context of the rest of the movie, this meditation refers to having sex while being dissociated. The eyes are turning red and the bubble floating above the blue aliens is a great visualization of dissociation, of disconnecting from the body. In the next scene, the relatively little human is encountering something in his host family:</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/zrJMgm6dBHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-
-<p>This key scene of the movie depicts sexual child abuse in a very detached and ingeniously subtle form. I know this might seem like a far-fetched claim. First of all, there are some details later in the movie that makes this interpretation obvious, and as well if you closely pay attention to what is happening, you can see this. The trick is not to interpret the scene literally and start to see and be aware of the meaning behind what is directly happening. You have to loosen your awareness and connect with the body to see this. Let’s take it slowly.</p>
-
-<p><img src="/images/fantastic-planet-1.png" alt="" /></p>
-<p class="caption"> The human child shows up at the beginning of this movie scene. The background seems alien, but it does not take much fantasy to see that these shapes resemble penises.</p>
-
-<p><img src="/images/fantastic-planet-2.png" alt="" /></p>
-<p class="caption">The child then sees a group of male aliens, and they start to close their eyes, dissociate, and disconnect. A black tentacle makes contact with their bodies, and the music implies pleasure.</p>
-<p><img src="/images/fantastic-planet-3.png" alt="" /></p>
-<p class="caption">The group of male aliens lose their boundaries, and their bodies merge.</p>
-<p><img src="/images/fantastic-planet-4.png" alt="" /></p>
-<p class="caption">The small child is shocked, almost ashamed to have witnessed this.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zrJMgm6dBHA?clip=UgkxifcIE2rbUgYZ1-aoyU57FX4rcf-id5is&amp;clipt=EI-KBRjX_gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<p>When the men are caught, they just stop their act suddenly and pretend that nothing happened.</p>
-
-<p><img src="/images/fantastic-planet-6.png" alt="" /></p>
-<p class="caption">The small child runs under a rain cloud. That represents fear and also grief; the rain is a detached depiction of tears.</p>
-
-<p><img src="/images/fantastic-planet-7.png" alt="" /></p>
-<p class="caption">Notice how the child at the end of that rain scene, after running away in desperation smiles. It just puts on a good face.</p>
-
-<p>The child character says the telling words.</p>
-
-<blockquote>
-A drag week was equivalent to one of my years. I was just a live plaything who sometimes dared to rebel. 
-</blockquote>
-
-<p>When you read the reviews, discussions, and interpretations of the movie, it is astonishing how some people pick up on the movie being about how we should not hurt animals or how totalitarian regimes are evil. No one seems to see the most obvious here. It’s a story about how children growing up in abusive homes are powerless and at the mercy of their parents. With abusive parents, in the worst case, sexually abusive parents, their children are prisoners of giant aliens that they need to please, and they try to rebel, but their power is almost none compared to their parents. This movie is about how vulnerable children are. Something that not many that reviewed the movie seemed to have picked up on.</p>
-
-<p>The next scene is one where my hunch about this being about child sexual abuse got very certain:</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxZEPvXWcE3Oy_P0ritkFNJpnMrJbb6x3w&amp;clipt=ENChXRiw9mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-<p>Do you remember the adult aliens’ dissociation meditation? Well, now here the movie explains that it was time for the children to be initiated to this as well. Now, what is sexual here? Again it’s so subtlely depicted that you need to loosen your awareness and become curious about the plants. In the movie reviews, many viewers mention that they found the bizarre plants particularly interesting. Well, if you look at them closely in this clip of the child meditation, you can make a stunning observation.</p>
-
-<p><img src="/images/fantastic-planet-8.png" alt="" /></p>
-<p class="caption">Notice what these plants might point to in a sexual context. Without viewing these scenes through that way of looking, it's easy to miss this. The entire movie has a sexual undertone to activate this consciously and subconsciously. But let's put some more attention in here.</p>
-
-<p><img src="/images/fantastic-planet-9.png" alt="" /></p>
-<p class="caption">Maybe you did see it. These plants are pointing to anal and vaginal penetration. Together with the floating children, this scene also seems to be depicting sexual child abuse. The movie makes the allusions in such a distanced and relatively subtle way that I feel it's unclear if the movie makers were themselves fully aware of what they were writing and drawing.</p>
-
-<p>After this and some more background story, the now adolescent human manages to escape his prison and flees. Not without encountering yet another pointer to the sexual undercurrent of this movie. I think no explanation is needed for this one:</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=Ugkxo20SXqDo2w4QI4hD9Y8MPlu7EIIllrRU&amp;clipt=EMzhZBjLzGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-<p>After fleeing, our adolescent main protagonist encounters a group of undomesticated wild humans that live in a park. There he observes their mating ritual. Symbolically it begins with them receiving some magical stones that make them glow. Also, they receive that glow while they walk over the dead skull of one of the blue aliens. This one is not entirely obvious, but it seems to me that healing of sexuality is depicted here. The humans in this sequence overcome their childhood abuse by symbolically climbing over the dead abuser and then engaging in adult, consensual sexuality.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=Ugkx_B5H51K1v6zcNWawEklSkbe_8bwVR2RQ&amp;clipt=ENGXfRix7IAB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-<p>At the movie’s end, the meaning of the meditation is revealed to be sexuality, and intercourse. The humans discover this, allowing them to force the blue aliens to give them their own planet and live without hate.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-7LuNSHlPco?clip=UgkxDkUDF3k98Vp3ty_2Vvq_4Hp7wrdYhr8D&amp;clipt=EIbG7QEY5prxAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-<p>The movie has many other layers of meaning, but I focused on childhood sexual abuse because this side of the movie is not mentioned by any review or comment. So given the above, I hope to have shown that this movie is an ingeniously subtle and covert depiction of child sexual abuse. The film ties this to dissociation, and disembodiment. But it also has a message of the possibility of healing your sexuality despite the abuse. Now when you read the movie reviews and comments, this is where it gets really interesting. First, some of the words under the entire length <a href="https://www.youtube.com/watch?v=-7LuNSHlPco">movie on youtube</a>:</p>
-
-<blockquote>
-I absolutely love this movie. I wish sci Fi was artistic like this, just pure creativity. It isn't like anything I ever seen, this movie actually is a inspiration in my artwork, still gotta practice but it's my main inspiration. It's so, random but it's not random? If that makes sense, it's a wonderful movie.
-</blockquote>
-
-<p>This commenter is pointing out how their subconscious is picking up on certain meanings without it landing fully in awareness.</p>
-
-<blockquote>
-My mom saw this movie in 1978ish at drive-in in Denver CO, I just watched it with her. She's in her 60s now, and she just kept saying  "Wow...Wow!".
-</blockquote>
-
-<p>This movie activates hidden away parts that might have experienced sexual abuse, which would explain these strong reactions. Another set of comments that stands out is comments that point out that the commenter saw the movie as a kid and was scared and fascinated at the same time:</p>
-
-<blockquote>
-I watched this when i was five I loved it so much this is so nostalgic
-</blockquote>
-
-<blockquote>
-Yall talking about how great this is, honestly traumatized by seeing it as a kid
-</blockquote>
-
-<blockquote>
-I can only be attracted to people who like this movie
-</blockquote>
-
-<p>The comments under the trailer <a href="https://www.youtube.com/watch?v=SgCxCZNkQ9E">on youtube</a> also give room for thought given the insights from above:</p>
-
-<blockquote>
-I had vague memories of this film growing up, that would just pop into my head out of nowhere, or in my dreams a few times a year. I think I may have watched it when I was very young, and it just stuck. Until today, I always thought it was just a weird reoccurring dream. Pretty crazy that I just happened to stumble upon the trailer. I never even knew it was an actual movie.
-</blockquote>
-
-<p>This weird recurring dream might be this commenter expressing how deep in his subconscious certain traumatized parts of the mind were supressed.</p>
-
-<blockquote>
-For anyone under the age of 5 this is a horror movie. Speaking from experience, those cold red eyes peer into my soul every night still.
-</blockquote>
-
-<blockquote>
-My god, this film is giving me emotions I can't even describe. I feel like I wanna a cry and curl up into a ball, terrified and amazed by the sheer beauty of the art, all the while giving me a type of anxiety I've never felt before
-</blockquote>
-
-<p>This might be someone describing how this movie activates buried memories of their own abuse. But they do not have it fully in their awareness and are therefore left with a lot of confusion about this.</p>
-
-<blockquote>
-I remembered when I was like 8 years old (that was in the 90's) and watched this film on TV all alone in the hall in the middle of the night. In that moment, it really seemed "fascinating" to me... yeah, also like... disturbing (lacking a better word) and ended with a feeling of emptiness... I don't know how to explain it... I'm happy to finally know the title of this film.
-</blockquote>
-
-<blockquote>
-This cartoon struck me like a ton of bricks when I was a kid.  The art style is so much like old scientific illustrations.
-</blockquote>
-
-<blockquote>
-I remember seeing the trailer for this movie when I was maybe 4. It scarred me in ways I can't even explain and it's only when I actually saw it as an adult that I was able to make sense of what I had seen. 
-
-This is not a kids movie.
-</blockquote>
-
-<blockquote>
-Really awesome movie to watch on acid. Just not something you'd want to watch if you never watched a movie on acid before. This was the 3rd movie I ever saw on acid. (1st was yellow submarine movie by the beatles, 2nd was the wall movie by pink floyd.) It's mostly mesmerizing &amp; serene. It has it's share of tense moments too, but  well worth it in the end. It really helped me learn to not give up on things so easily. Even when everything seem utterly hopeless.
-</blockquote>
-
-<blockquote>
-I watched this movie when i was very kid, but I'll never forget it, a masterpiece...a dream telling, through dream languages, about reality ! 
-</blockquote>
-
-<blockquote>
-I remember seeing this movie for some reason when I was a kid and it totally synced into my mind. I don’t remember going to see it in a movie theater I think it was actual TV back in the 70s. I don’t think that ever shows something like that where kids could see it. It’s probably created some really far out nightmares
-</blockquote>
-
-<blockquote>
-This movie is so brilliant. I'm glad I watched it again. It freaked me out when I was little.
-</blockquote>
-
-<blockquote>
-Amazing movie. A friend of mine told me to get ready for some "disturbing shizzz", but that was not the case. The whole time I felt like this was the work of something from outer space, as if someone who's living this reality couldn't have come up with this. It had a blend of innocence and maturity, painting human life as primal as possible. Loved it. I was also high as shit.e.
-</blockquote>
-
-<blockquote>
-i've seen this madness last night in a bar. I just had the image without sound and i couldn't stop watching. Simply AMAZING
-</blockquote>
-
-<blockquote>
-I saw this as a child 
-It made me scared of the world
-Now that I am older I found out it was true!
-</blockquote>
-
-<blockquote>
-My parents took me to see this in the theater in 1973. I was 10. It traumatized me.
-</blockquote>
-
-<blockquote>
-I remember my father showing me this movie when I was 7 years old and ending up semi-traumatised
-</blockquote>
-
-<blockquote>
-This didn't scare me when I was young (about 8) and came across it when I was watching t.v., but now. It mortifies me. It REALLY freaks me out. I don't think I could ever watch it again. That fascinates me. I was so fearless as a child, but now, just the thought of watching this scares the hell out of me.
-</blockquote>
-
-<p>Maybe this is not the movie this commenter is scared about, but their own experience this movie is pointing towards.</p>
-
-<blockquote>
-There's something disturbing about this movie,but i cant get it out of my head.Genius
-</blockquote>
-
-<blockquote>
-Somehow, I can't shake off the impression this was real in some way.
-</blockquote>
-
-<p>This comment is truly amazing. It could be read as this person being somehow aware that this movie is pointing to their own experience of sexual abuse. But it is buried so deeply that they can not bring it into their awareness. Reading all the comments and making sense of them given this movie’s hidden meaning, we can speculate that these comments might point to the fact that, first of all, there are many people who have experienced sexual abuse that this movie resonates. Then also, the comments show how the human mind is very good at hiding this. The comments describe emotional experiences or point to how the movie traumatised or scared them. But to me, it seems likely that for many commenters, the movie is just pointing to their own experience, which is where these feelings come from. Then they watch the movie and resonate strongly, but without full awareness of what is going on. This, to me, seems to be best explained by trauma and dissociation. The memories are split off and buried deep inside the mind. When subtly triggered, as this movie does very well, these parts deep inside resonate. Because they are still very much suppressed, the viewers can’t make sense of the movie. It seems alien and weird and does not make sense. Yet they are captivated and in trance. All of this, to me, is an amazing insight how subtle and hidden signals are picked up on by the mind without coming fully into awareness. It’s influencing humans, captivating them, but they do not realize what is happening. It’s like they are not actually a single solid self. But they actually have hidden away parts that they can only faintly hear in the distance, so they don’t understand what they are communicating. I invite you to watch the movie and read through some reviews by film critics on Amazon, and comments on Youtube and try to make sense of this phenomenon. It’s eery how many people seem to miss this, almost as if they are prevented from seeing the child sexual abuse aspect of this film which has been around since the 70s. It shows how widespread this tragic phenomenon is and how much suppression the mind is capable of. This is how the mind works. We as humans are not these solid, monolithic selves. Especially when there is trauma, parts get split off, causing confusion. But just looking closely at this movie and its reception, we can see how normal this is. This also is an invitation to ponder and wonder more deeply, what are the things you are picking up on that draw in your interest, what people are picking up on beyond the obvious. Assuming people are truthful, and their minds sometimes or often strongly filter what they can be aware of. If you look closely and with curiosity there are a lot of surprising answers.</p>
-
-<p>I’m grateful for the openness of the internet that allows such peeks into so many different human minds. I’m grateful for this movie and the recommendation by my friend.</p>
-
-<p>May you all find curiosity and wonder in your confusion. May you all move towards healing.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;trauma&quot;, &quot;English&quot;]" /><category term="trauma" /><category term="movie" /><summary type="html"><![CDATA[A friend recommended me the old sci-fi classic Fantastic Planet (link to the whole movie). This movie and its reception hold the key to understanding a lot of human behavior and functioning around dissociation, trauma, and human sexuality. It’s a great example of how mindful awareness and investigation help to understand something that possibly millions of humans who watched the movie did not fully piece together. I invite you to watch the film before reading the text.]]></summary></entry></feed>
+<p>Overall, attending a silent retreat and learning about Jhanas and Alexander Technique was a life-changing experience for me. I’m grateful for the insights and tools I gained, and I hope to continue integrating them into my daily life.</p>]]></content><author><name>Marcus Ding</name></author><category term="[&quot;meditation&quot;, &quot;jhanas&quot;, &quot;therapy&quot;, &quot;English&quot;]" /><category term="meditation" /><category term="jhanas" /><category term="therapy" /><summary type="html"><![CDATA[Last week, I went on my first silent retreat at Gaia House in Britain. I was drawn to the place by the charm and resonance of Rob Burbea’s teachings, which I listened to on dharmaseed.org. He was a resident teacher at Gaia House, and the retreat I attended was led by Catherine McGee and Yahel Avigur, both of whom were strongly influenced by his teachings. The retreat was a challenging but still surprisingly effortless and very rewarding experience. At the end of the retreat, I went to London, which was quite a stark contrast to the quiet and peaceful scenery of the rural landscape around the retreat center oozing stillness and peacefulness. But even though it was harder to notice, I could still access the stillness within. It’s always there when I am sensitive enough to look for it. I also noticed colors more intensely and saw the positive and beautiful everywhere, all after five days of maybe six hours of daily meditation in a mix of walking and sitting meditation.]]></summary></entry></feed>
