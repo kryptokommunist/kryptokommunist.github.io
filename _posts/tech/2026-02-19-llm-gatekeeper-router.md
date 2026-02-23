@@ -114,6 +114,18 @@ The pattern: Claude optimized for the immediate problem without seeing how it'd 
 
 Yeah, embarrassingly well. The friction of having to justify myself to an AI is surprisingly effective. When I'm about to type "I just want to browse Reddit" I realize how pathetic that sounds and often just go to bed. Which was the whole point.
 
+## Update: Daytime Features
+
+After using this for a few days, I wanted the same focus superpowers during the day too. So I added daytime features:
+
+**Focus Mode**: One-click blocking of distracting sites (YouTube, Instagram, Twitter, etc.). Uses both DNS and IP firewall blocking – so you can't bypass it by using the IP address directly. Customize which sites get blocked via a settings page.
+
+**Voluntary Lockdown**: Full internet block during daytime – same AI chat to get back online. For deep work sessions where you want zero distractions.
+
+**Stats Dashboard**: Charts showing usage patterns over time. Scatter plot shows request times and durations. Bar chart breaks down by weekday. Night/Day tabs let you see nighttime requests separately from daytime Focus Mode and Lockdown usage.
+
+The UI also theme-switches – golden during the day, dark at night. Nice visual cue for which mode you're in.
+
 TL;DR: Built an AI that guards my internet at night because I have zero self-control. It works better than willpower. Claude Code built most of it in one evening but still needed a human to catch the integration bugs. Source code on GitHub if you want to build your own digital parent.
 
 ---
