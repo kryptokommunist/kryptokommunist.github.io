@@ -10,196 +10,31 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it. The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was." />
 <meta property="og:description" content="I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it. The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was." />
-<link rel="canonical" href="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" />
-<meta property="og:url" content="https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html" />
+<link rel="canonical" href="http://localhost:4000/tech/2026/02/19/llm-gatekeeper-router.html" />
+<meta property="og:url" content="http://localhost:4000/tech/2026/02/19/llm-gatekeeper-router.html" />
 <meta property="og:site_name" content="marcusding’s blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-02-19T00:00:00-06:00" />
+<meta property="article:published_time" content="2026-02-19T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2026-02-19T00:00:00-06:00","datePublished":"2026-02-19T00:00:00-06:00","description":"I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it. The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was.","headline":"Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet","mainEntityOfPage":{"@type":"WebPage","@id":"https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"},"url":"https://kryptokommun.ist/tech/2026/02/19/llm-gatekeeper-router.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Marcus Ding"},"dateModified":"2026-02-19T00:00:00+01:00","datePublished":"2026-02-19T00:00:00+01:00","description":"I have a problem. It’s 11 PM, I tell myself “just five more minutes of Reddit” and suddenly it’s 2 AM and I hate myself. Sound familiar? After years of failing to fix this with willpower alone (spoiler: willpower doesn’t work against billion-dollar engagement algorithms), I decided to solve it the only way I know how: by overengineering the hell out of it. The result? My router now interrogates me like a strict parent whenever I want internet after 9 PM. If I can’t convince an AI that I actually need to be online, no internet for me. Yes, I built my own digital bedtime enforcer. No, I’m not proud of how necessary this was.","headline":"Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tech/2026/02/19/llm-gatekeeper-router.html"},"url":"http://localhost:4000/tech/2026/02/19/llm-gatekeeper-router.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://kryptokommun.ist/feed.xml" title="marcusding&apos;s blog" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="marcusding&apos;s blog" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper">
-    
-    
-    <a href="/" class="site-title"><span id="first-name">marcus</span><span id="last-name">ding</span></a>
-
-    
-      <nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/">marcusding&#39;s blog</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
             </svg>
           </span>
         </label>
 
-        <div class="trigger">
-          <a class="page-link" href="/tech/">Tech</a>
-          
-            
-            
-          
-            
-            
-              
-                <a class="page-link" href="/berlinplaces/">Berlin places</a>
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-          
-            
-            
-              
-                <a class="page-link" href="/overview/">Overview</a>
-              
-            
-          
-            
-            
-              
-                <a class="page-link" href="/portfolio/">Portfolio</a>
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-            
-            
-              
-            
-          
-          <a class="page-link" href="#" id="search-link">
-            <i class="fa fa-search"></i>
-          </a>
-        </div>
-      </nav>
-    
-  </div>
+        <div class="trigger"><a class="page-link" href="/berlinplaces/">Berlin places</a><a class="page-link" href="/berlinplaces/">Berlin places</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/categories/">Categories</a><a class="page-link" href="/flatswap/">Flat swap in Berlin – Frankfurter Tor</a><a class="page-link" href="/flatswap/">Flat swap in Berlin – Frankfurter Tor</a><a class="page-link" href="/overview/">Overview</a><a class="page-link" href="/overview/">Overview</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/portfolio/">Portfolio</a><a class="page-link" href="/search.html">Search</a><a class="page-link" href="/tags/">Tags</a><a class="page-link" href="/tags/">Tags</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a><a class="page-link" href="/index.html">marcusding&#39;s blog</a></div>
+      </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -208,7 +43,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Open Sesame - I Now Have to Ask My Internet Router to Give Me Internet</h1>
     <p class="post-meta">
-      <time datetime="2026-02-19T00:00:00-06:00" itemprop="datePublished">
+      <time datetime="2026-02-19T00:00:00+01:00" itemprop="datePublished">
         
         Feb 19, 2026
       </time>
@@ -321,6 +156,18 @@ iptables <span class="nt">-t</span> filter <span class="nt">-I</span> FORWARD 1 
 
 <p>Yeah, embarrassingly well. The friction of having to justify myself to an AI is surprisingly effective. When I’m about to type “I just want to browse Reddit” I realize how pathetic that sounds and often just go to bed. Which was the whole point.</p>
 
+<h2 id="update-daytime-features">Update: Daytime Features</h2>
+
+<p>After using this for a few days, I wanted the same focus superpowers during the day too. So I added daytime features:</p>
+
+<p><strong>Focus Mode</strong>: One-click blocking of distracting sites (YouTube, Instagram, Twitter, etc.). Uses both DNS and IP firewall blocking – so you can’t bypass it by using the IP address directly. Customize which sites get blocked via a settings page.</p>
+
+<p><strong>Voluntary Lockdown</strong>: Full internet block during daytime – same AI chat to get back online. For deep work sessions where you want zero distractions.</p>
+
+<p><strong>Stats Dashboard</strong>: Charts showing usage patterns over time. Scatter plot shows request times and durations. Bar chart breaks down by weekday. Night/Day tabs let you see nighttime requests separately from daytime Focus Mode and Lockdown usage.</p>
+
+<p>The UI also theme-switches – golden during the day, dark at night. Nice visual cue for which mode you’re in.</p>
+
 <p>TL;DR: Built an AI that guards my internet at night because I have zero self-control. It works better than willpower. Claude Code built most of it in one evening but still needed a human to catch the integration bugs. Source code on GitHub if you want to build your own digital parent.</p>
 
 <hr />
@@ -357,48 +204,30 @@ iptables <span class="nt">-t</span> filter <span class="nt">-I</span> FORWARD 1 
 </article>
 
       </div>
-    </main>
-<footer class="site-footer h-card">
+    </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
+
+    <h2 class="footer-heading">marcusding&#39;s blog</h2>
+
     <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Marcus Ding</li></ul>
+      </div>
 
-
-  <div style="text-align: center">
-    <span><a href="mailto:marcusding@me.com"><span class="username"><i class="fas fa-envelope-square"></i> mail</span></a></span>
-    <span><a href="https://twitter.com/kryptokommunist"><span class="username"><i class="fab fa-twitter-square"></i> follow</span></a></span>
-    <span><a href="https://www.letterboxd.com/kryptokommunist"><span class="username"><i class="fas fa-film"></i> watch</span></a></span>
-    <span><a href="https://www.github.com/kryptokommunist"><i class="fab fa-github-square"></i> code</span></a></span>
-    <span><a href="https://www.flickr.com/photos/kryptokommunist/"><span class="username"><i class="fab fa-flickr"></i> see</span></a></span>
-    <span><a href="https://www.instagram.com/kryptokommunist/"><span class="username"><i class="fab fa-instagram"></i> see more</span></a></span>
-  </div>
-</div>
-</footer>
-<div class="madewith">
-  <span class="post-meta">powered by ❤️ and <a href="https://github.com/kryptokommunist/kryptokommunist.github.io/tree/jekyll">jekyll</a></span>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
 </div>
 
-<!-- Search Overlay -->
-<div id="search-overlay">
-  <div class="search-overlay-content">
-    <div class="search-overlay-header">
-      <input type="text" id="overlay-search-input" placeholder="Search posts..." autocomplete="off">
-      <button id="close-search" type="button">×</button>
-    </div>
-    <div id="overlay-search-results" class="search-overlay-results">
-      <div class="search-overlay-placeholder">
-        <i class="fas fa-search"></i>
-        <p>Start typing to search...</p>
-        <p class="search-tip"><i class="fas fa-lightbulb"></i> Use ⌘K to quickly open search</p>
+      <div class="footer-col footer-col-3">
+        <p>May you be happy, friend.</p>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Search Scripts -->
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script src="/js/search-overlay.js"></script>
+  </div>
+
+</footer>
 </body>
 
 </html>
