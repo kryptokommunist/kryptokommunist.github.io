@@ -60,5 +60,9 @@ I've been sitting with this post for months, and I want to be honest about somet
 If you're considering working with a teacher, especially in an intensive or isolated setting:
 Watch for contradictions between words and actions. Notice your body. If you consistently feel confused, anxious, or "off" in their presence, take that seriously. Maintain outside reference points if at all possible. Even occasional contact with a trusted friend or therapist can help you stay oriented. Be suspicious of urgency. Good teachers don't need you to wake up on their timeline. And if you are dealing with significant trauma consider limiting the length of retreat and finding alternative spiritual practices aside from formal sits that can be [harmful](https://maija-haavisto.medium.com/dark-nights-spiritual-crises-and-psychotic-breaks-6f3bdfb24f5a) in themselves.
 
-I left that retreat believing I had witnessed the early stages of a cult. Maybe that's too strong. Maybe it's not strong enough. What I know for certain is that meditation does not solve psychological issues—and in some cases, it can provide sophisticated cover for them.
+I left that retreat believing I had witnessed the early stages of a cult. Maybe that's too strong. Maybe it's not strong enough. What I know for certain is that meditation does not solve psychological issues — and in some cases, it can provide sophisticated cover for them.
 The teacher's name is Milo North, and his organization is [Boundlessness](https://boundlessness.org). I share this not to condemn him as a person, but because I wish someone had told me before I signed up for a two-month retreat.
+
+---
+
+*For what I actually learned from the practice itself during this retreat, see [What Two Months of Intensive Practice Taught Me](/meditation/jhanas/therapy/english/2024/10/05/What-Two-Months-of-Intensive-Practice-Taught-Me.html).*

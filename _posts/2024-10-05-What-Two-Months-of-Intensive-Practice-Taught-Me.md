@@ -15,23 +15,23 @@ tags:
 
 After previous retreats gave me a taste of the joy, love, and freedom that practice can bring, I wanted to see what would happen with sustained intensive practice. I spent two months on retreat in the California mountains, practicing six to ten hours daily. What I expected: deeper jhana access, maybe some insight stages, perhaps a taste of awakening. What I got: a fundamentally different relationship with my emotional body, direct experience of the plural nature of mind, and a reorientation away from transcendence toward embodiment.
 
-![](/images/boundlessness/bag_before.jpeg)
-<p class="caption">The punching bag in the hut I found.</p>
+![](/images/boundlessness/tent.jpeg)
+<p class="caption">The tent I slept in for two months.</p>
 
-![](/images/boundlessness/bag_after.jpeg)
-<p class="caption">The punching bag after a very freeing anger release session. I didn't expect how much strength there is in my body.</p>
+![](/images/boundlessness/nature.jpeg)
+<p class="caption">The retreat was held in a beautiful mountain scenery in California.</p>
 
 <!--more-->
 
 ## The Emotional Body: What Emotions Actually Are
 
-Toward the end of the retreat, I began working with Rob Burbea's recordings from The Boundless Heart. This shifted my attention to what Rob calls the "emotional body"—the axis from perineum to crown. What became clear through sustained attention is that what we call "emotions" are actually constellations of physical sensations with remarkably consistent mappings:
+Toward the end of the retreat, I began working with Rob Burbea's recordings from [The Boundless Heart](https://dharmaseed.org/retreats/1466/). This shifted my attention to what Rob calls the "emotional body" — the axis from root to crown. What became clear through sustained attention is that what we call "emotions" are actually constellations of physical sensations with remarkably consistent mappings:
 
 - Shame: tension in the lower belly
 - Fear: tension in belly, throat, and shoulders
 - Love/spaciousness: warmth and softness in the heart center
 
-Most of the time, I couldn't name the emotion. The combination of tensions and sensations was so unique in each moment that conceptual labels felt reductive. This was itself freeing—I stopped trying to figure out what I was feeling and just felt. From Rob, I took the insight that practice doesn't require cathartic release. You can simply be with the emotional body as it shifts. Watching these constant shifts made something viscerally clear: I am not a conceptual thing. I cannot grasp myself using words or mind. Two techniques from Rob's recordings proved particularly useful: Spacious holding. Feel the tensions in the body and imagine a soft white bubble of spaciousness around them. This made unpleasant tensions workable rather than something to push through. Playing with views. Rob suggested holding the idea that the world is sacred—lightly, experimentally. After a day of this, everything around me did feel more meaningful. It was subtle but unmistakable how much views shape perception. I also experimented with repeating limiting beliefs aloud ("I need to be a good boy") until they released into laughter. The belief would just... dissolve.
+Most of the time, I couldn't name the emotion. The combination of tensions and sensations was so unique in each moment that conceptual labels felt reductive. This was itself freeing — I stopped trying to figure out what I was feeling and just felt. From Rob, I took the insight that practice doesn't require cathartic release. You can simply be with the emotional body as it shifts. Watching these constant shifts made something viscerally clear: I am not a conceptual thing. I cannot grasp myself using words or mind. Two techniques from Rob's recordings proved particularly useful: Spacious holding. Feel the tensions in the body and imagine a soft white bubble of spaciousness around them. This made unpleasant tensions workable rather than something to push through. Playing with views. Rob suggested holding the idea that the world is sacred—lightly, experimentally. After a day of this, everything around me did feel more meaningful. It was subtle but unmistakable how much views shape perception. I also experimented with repeating limiting beliefs aloud ("I need to be a good boy") until they released into laughter. The belief would just... dissolve.
 
 What I appreciated most about Rob's approach was the underlying message: everything is just a view. There's no solid meditation approach you need to twist yourself into like a pretzel. That helped me release my mental image of what meditation and awakening should look like.
 
@@ -88,3 +88,7 @@ With continued practice, the sensations became less scary. The fear of them had 
 The retreat gave me more trust in awareness and in my capacity to be okay. I saw repeatedly that fear is usually worse than whatever I'm afraid of. But the bigger shift was a reorientation. I'd come hoping that more metta and jhana practice would bring transcendence — rising above the messiness of human experience. What I left with was the opposite conviction: being with my body, chakras, and emotions is the path. Radiating metta from the head while ignoring the body below isn't freedom, it's spiritual bypassing with good concentration.
 
 Practice that brings me down into the body to live my humanity, rather than escape it — that's what I'm pursuing now. What remains: a deeper trust in life. A changed relationship with time—the retreat felt like a single day, and later I often found myself simply in the present moment without a sense of time. When things get hard, I turned to practice intuitively in the months after. And after the retreat I felt a sense or glimpse how emptiness might be all-encompassing love, and that I might be able to infuse my whole experience with it within this lifetime.
+
+---
+
+*For the other side of this retreat experience—what I learned about the teacher—see [When Your Meditation Teacher Becomes the Lesson](/meditation/jhanas/therapy/english/2024/10/05/When-Your-Meditation-Teacher-Becomes-the-Lesson.html).*
