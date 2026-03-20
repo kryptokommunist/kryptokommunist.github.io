@@ -35,10 +35,10 @@ git push origin jekyll
 
 ### 4. Update the master branch
 
-**IMPORTANT:** The master branch must be completely replaced with fresh build files to avoid duplicate file accumulation. Do NOT use rsync which can leave stale files.
+**IMPORTANT:** The master branch must be completely replaced with fresh build files to avoid duplicate file accumulation. Do NOT use rsync which can leave stale files. The built files go directly in the ROOT of master, NOT in a `_site/` subdirectory!
 
 ```bash
-# Copy _site to temp location BEFORE switching branches
+# Copy _site CONTENTS to temp location BEFORE switching branches
 cp -R _site /tmp/_site_backup
 
 # Clean up images (they conflict between branches due to encoding differences)
@@ -52,7 +52,7 @@ cp CNAME /tmp/CNAME_backup
 find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} \;
 cp /tmp/CNAME_backup CNAME
 
-# Copy build files from backup
+# Copy build files from backup TO ROOT (not into _site/)
 cp -R /tmp/_site_backup/* .
 
 # Add .nojekyll to prevent GitHub Pages from rebuilding with Jekyll
@@ -69,12 +69,14 @@ git push origin master
 ```bash
 rm -rf images/
 git checkout jekyll
+git checkout -- images/
 ```
 
 **Why this approach?**
 - Using rsync or incremental copies causes duplicate files (e.g., `file.md` and `file 2.md`) to accumulate
 - The `.nojekyll` file is required because GitHub Pages would otherwise try to rebuild with Jekyll, which fails due to source files in _posts/
-- The master branch should ONLY contain: CNAME, .nojekyll, and the static site files from _site/
+- The master branch should ONLY contain at ROOT level: CNAME, .nojekyll, and the static site files from _site/ (NOT a _site/ folder itself!)
+- GitHub Pages serves from the root of master, so files must be at root, not in a subdirectory
 
 ## Local Development
 
