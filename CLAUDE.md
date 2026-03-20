@@ -53,7 +53,8 @@ find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} \;
 cp /tmp/CNAME_backup CNAME
 
 # Copy build files from backup TO ROOT (not into _site/)
-cp -R /tmp/_site_backup/* .
+# IMPORTANT: Exclude nested _site folder if it exists in backup
+rsync -av --exclude='_site' /tmp/_site_backup/ .
 
 # Add .nojekyll to prevent GitHub Pages from rebuilding with Jekyll
 touch .nojekyll
