@@ -7,8 +7,6 @@ include: false
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
-## 30 sqm cozy apartment near Rathaus Schöneberg and Volkspark Wilmersdorf
-
 Kick back and relax in this calm, stylish space. It's right next to U Rathaus Schöneberg and a beautiful park with a small lake. It has big windows. I just renovated the place. So it has great floors and lots of cozy details. You get the entire apartment for yourself.
 
 **Note: The flat will be rented out empty with an oven and sink included. Electricity and internet are included in the rent. Optionally, I could leave some furniture if needed, such as a bed frame and lights.**
