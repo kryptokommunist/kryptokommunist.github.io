@@ -9,9 +9,9 @@ include: false
 
 ## 30 sqm cozy apartment near Rathaus Schöneberg and Volkspark Wilmersdorf
 
-Kick back and relax in this calm, stylish space. It's right next to U Rathaus Schöneberg and a beautiful park with a small lake. It has big windows and a beautiful IKEA kitchen. I just renovated the place. So it has great floors and lots of cozy details. It has WiFi. You get the entire apartment for yourself.
+Kick back and relax in this calm, stylish space. It's right next to U Rathaus Schöneberg and a beautiful park with a small lake. It has big windows. I just renovated the place. So it has great floors and lots of cozy details. You get the entire apartment for yourself.
 
-**Note: The flat will be rented out empty with an oven and sink included.**
+**Note: The flat will be rented out empty with an oven and sink included. Electricity and internet are included in the rent. Optionally, I could leave some furniture if needed, such as a bed frame and lights.**
 
 ---
 
@@ -20,7 +20,7 @@ Kick back and relax in this calm, stylish space. It's right next to U Rathaus Sc
 | | |
 |---|---|
 | **Rent (Kaltmiete):** | 350 € |
-| **Utilities (Nebenkosten):** | 100 € |
+| **Utilities (Nebenkosten):** | 100 € (electricity & internet included) |
 | **Total:** | 450 € |
 | **Size:** | 25 m² |
 | **Location:** | Berlin-Schöneberg, near U Rathaus Schöneberg |
@@ -30,7 +30,6 @@ Kick back and relax in this calm, stylish space. It's right next to U Rathaus Sc
 
 ## Caveats
 
-- Because I am renovating, the entrance will have some things standing as depicted.
 - The shower is shared with the neighbors on the same floor. But it is modern and spacious.
 
 ---
