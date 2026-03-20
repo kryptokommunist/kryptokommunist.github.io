@@ -38,6 +38,12 @@ Kick back and relax in this calm, stylish space. It's right next to U Rathaus Sc
 
 ![Apartment](/images/meraner45/apartment.jpeg)
 
+![Living room](/images/meraner45/living-room.jpeg)
+
+![Bathroom](/images/meraner45/bathroom.jpeg)
+
+![Shared shower](/images/meraner45/shower.jpeg)
+
 ---
 
 ## 3D Tour
