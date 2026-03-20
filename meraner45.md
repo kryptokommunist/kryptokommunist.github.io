@@ -9,7 +9,7 @@ include: false
 
 Kick back and relax in this calm, stylish space. It's right next to U Rathaus Schöneberg and a beautiful park with a small lake. It has big windows. I just renovated the place. So it has great floors and lots of cozy details. You get the entire apartment for yourself.
 
-**Note: The flat will be rented out empty with an oven and sink included. Electricity and internet are included in the rent. Optionally, I could leave some furniture if needed, such as a bed frame and lights.**
+**Note: The flat will be rented out unfurnished (I'm moving out and taking the furniture). Oven and sink are included. WiFi and electricity are included in the rent. I can leave some furniture if needed, such as a bed frame and lights.**
 
 ---
 
@@ -18,11 +18,12 @@ Kick back and relax in this calm, stylish space. It's right next to U Rathaus Sc
 | | |
 |---|---|
 | **Rent (Kaltmiete):** | 350 € |
-| **Utilities (Nebenkosten):** | 100 € (electricity & internet included) |
+| **Utilities (Nebenkosten):** | 100 € (WiFi & electricity included) |
 | **Total:** | 450 € |
 | **Size:** | 25 m² |
 | **Location:** | Meraner Straße 45, Berlin-Schöneberg (near U Rathaus Schöneberg) |
 | **Available:** | 01.04.2026 - 31.05.2026 |
+| **Furnished:** | Unfurnished (oven & sink included, some furniture available on request) |
 
 ---
 
