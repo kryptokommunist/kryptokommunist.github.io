@@ -23,7 +23,7 @@ Kick back and relax in this calm, stylish space. It's right next to U Rathaus Sc
 | **Utilities (Nebenkosten):** | 100 € (electricity & internet included) |
 | **Total:** | 450 € |
 | **Size:** | 25 m² |
-| **Location:** | Berlin-Schöneberg, near U Rathaus Schöneberg |
+| **Location:** | Meraner Straße 45, Berlin-Schöneberg (near U Rathaus Schöneberg) |
 | **Available:** | 01.04.2026 - 31.05.2026 |
 
 ---
@@ -56,4 +56,18 @@ Explore the apartment in 3D:
 
 ---
 
+## Location
+
+Meraner Straße 45, 10825 Berlin
+
+<iframe src="https://maps.google.com/maps?q=Meraner+Straße+45,+10825+Berlin,+Germany&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+
+---
+
 If you are interested in subletting for one or two months, please mention it in your request.
+
+**Contact:** <span id="email"></span>
+<script>
+(function(){var e='marcusding',d='me.com',s=document.getElementById('email');s.innerHTML='<a href="mai'+'lto:'+e+'@'+d+'">'+e+'@'+d+'</a>';})();
+</script>
+<noscript>marcusding [at] me [dot] com</noscript>
