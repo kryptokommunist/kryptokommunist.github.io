@@ -35,11 +35,13 @@ git push origin jekyll
 
 ### 4. Update the master branch
 
-**IMPORTANT:** The master branch must be completely replaced with fresh build files to avoid duplicate file accumulation. Do NOT use rsync which can leave stale files. The built files go directly in the ROOT of master, NOT in a `_site/` subdirectory!
+**IMPORTANT:**
+- The CONTENTS of `_site/` go directly in the ROOT of master (NOT the `_site/` folder itself!)
+- Master should have `index.html`, `images/`, etc. at root level - NOT inside a `_site/` subdirectory
 
 ```bash
-# Copy _site CONTENTS to temp location BEFORE switching branches
-cp -R _site /tmp/_site_backup
+# Copy CONTENTS of _site to temp (trailing slash important!)
+cp -R _site/ /tmp/_site_backup/
 
 # Clean up images (they conflict between branches due to encoding differences)
 rm -rf images/
@@ -47,21 +49,22 @@ rm -rf images/
 # Switch to master
 git checkout master
 
-# Remove ALL files except .git and CNAME
-cp CNAME /tmp/CNAME_backup
+# Remove ALL files except .git
 find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} \;
-cp /tmp/CNAME_backup CNAME
 
-# Copy build files from backup TO ROOT (not into _site/)
-# IMPORTANT: Exclude nested _site folder if it exists in backup
-rsync -av --exclude='_site' /tmp/_site_backup/ .
+# Copy CONTENTS from backup to root (trailing slash = contents only, not the folder)
+cp -R /tmp/_site_backup/. .
 
-# Add .nojekyll to prevent GitHub Pages from rebuilding with Jekyll
+# Remove any nested _site that might have been included
+rm -rf _site/
+
+# Add required files
 touch .nojekyll
+echo "kryptokommun.ist" > CNAME
 
 # Commit and push
 git add -A
-git commit -m "Rebuild site with <description>"
+git commit -m "Rebuild site"
 git push origin master
 ```
 
