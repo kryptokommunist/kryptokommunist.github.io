@@ -37,6 +37,7 @@ pagination:
   per_page: 6
 autopages:
   enabled: false
+future: true
 excerpt_separator: "<!--more-->"
 sass:
   load_paths: _sass
